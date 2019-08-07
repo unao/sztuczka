@@ -40,12 +40,12 @@ const t = fs.readFileSync(__dirname + '/../assets/text-raw.txt', 'utf8').split('
       person === null && (acc[act].prelude = acc[act].prelude.join(' '))
       person = n[1].replace(':', '')
     } else if (n[0] === 15) {
-      if (p && p.who === person) {
+      if (p && p.who === person.replace(/ł/g, 'Ł')) {
         p.what += ' ' + n[1]
       } else {
         s.plot.push({
           type: 'say',
-          who: person,
+          who: person.replace(/ł/g, 'Ł'),
           what: n[1]
         })
       }

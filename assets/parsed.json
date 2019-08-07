@@ -3171,7 +3171,7 @@
           },
           {
             "type": "say",
-            "who": "MARTA (GłOS W TEL.)",
+            "who": "MARTA (GŁOS W TEL.)",
             "what": "Cześć !"
           },
           {
@@ -3700,7 +3700,7 @@
           },
           {
             "type": "say",
-            "who": "TATA EWY (GłOS W TEL.)",
+            "who": "TATA EWY (GŁOS W TEL.)",
             "what": "Cześć skarbie ! Jak tam ? Co słychać ?"
           },
           {
@@ -4433,7 +4433,7 @@
           },
           {
             "type": "say",
-            "who": "PAWEŁ (GłOS W TEL.)",
+            "who": "PAWEŁ (GŁOS W TEL.)",
             "what": "Dobry wieczór. Pani komputer gotowy."
           },
           {
@@ -5840,7 +5840,7 @@
           },
           {
             "type": "say",
-            "who": "GłOS AUTOMATYCZNEJ SEKRETARKI",
+            "who": "GŁOS AUTOMATYCZNEJ SEKRETARKI",
             "what": "Nie masz żadnych nowych e-mail'i."
           },
           {
@@ -6425,7 +6425,7 @@
           },
           {
             "type": "say",
-            "who": "IGOR (GłOS W TEL.)",
+            "who": "IGOR (GŁOS W TEL.)",
             "what": "Dzięki, że się odezwałaś."
           },
           {
@@ -6720,7 +6720,7 @@
           },
           {
             "type": "say",
-            "who": "NELA (GłOS W TEL.)",
+            "who": "NELA (GŁOS W TEL.)",
             "what": "Tak tato. Możesz rozmawiać ?"
           },
           {
@@ -7166,7 +7166,7 @@
           },
           {
             "type": "say",
-            "who": "DAREK (GłOS W TEL.)",
+            "who": "DAREK (GŁOS W TEL.)",
             "what": "Co to za głosik zbitego psa ? Podobno miałeś siedzieć w domu ? Już ci przeszła gorączka ? ... Nie odezwiesz się ?"
           },
           {
@@ -7800,7 +7800,7 @@
           },
           {
             "type": "say",
-            "who": "MARCIN (GłOS W TEL.)",
+            "who": "MARCIN (GŁOS W TEL.)",
             "what": "Od dwóch tygodni ci się nagrywam."
           },
           {
@@ -7952,7 +7952,7 @@
           },
           {
             "type": "say",
-            "who": "MARIKA (GłOS W TEL.)",
+            "who": "MARIKA (GŁOS W TEL.)",
             "what": "Halo, Czarek ? Halo, kochanie ! Późno już, ale spanikowałam. Jestem w łazience. Zrobiłam test i wyszły dwie kreski. To dodatni wynik... nie rozumiem... słyszysz mnie ? ... Chyba jestem w ciąży... Słyszysz ? ... Jesteś tam ?"
           },
           {
@@ -7970,7 +7970,7 @@
           },
           {
             "type": "say",
-            "who": "MARIKA (GłOS W TEL.)",
+            "who": "MARIKA (GŁOS W TEL.)",
             "what": "Aniela,..."
           },
           {
@@ -7979,7 +7979,7 @@
           },
           {
             "type": "say",
-            "who": "MARIKA (GłOS W TEL.)",
+            "who": "MARIKA (GŁOS W TEL.)",
             "what": "... otwórz drzwi."
           },
           {
@@ -8186,7 +8186,7 @@
           },
           {
             "type": "say",
-            "who": "NIEZNAJOMY (GłOS W TEL.)",
+            "who": "NIEZNAJOMY (GŁOS W TEL.)",
             "what": "Karolina, to ty ?"
           },
           {
