@@ -1,0 +1,21 @@
+{
+  "name": "sztuczka",
+  "version": "0.0.1",
+  "description": "-",
+  "main": "-",
+  "scripts": {
+    "test": "-"
+  },
+  "repository": {
+    "type": "git",
+    "url": "-"
+  },
+  "keywords": [
+    "-"
+  ],
+  "author": "-",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^3.5.3"
+  }
+}
