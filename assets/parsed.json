@@ -1385,21 +1385,7 @@
           },
           {
             "type": "desc",
-            "what": "(podchodzi i przytula ANIELĘ) (do KRYSTIANA)"
-          },
-          {
-            "type": "say",
-            "who": "KAROLINA",
-            "what": "To opowiesz nam jak ją zdobyłeś ?"
-          },
-          {
-            "type": "say",
-            "who": "KRYSTIAN",
-            "what": "Nooo...."
-          },
-          {
-            "type": "desc",
-            "what": "(zastanowienie) (do Roberta)"
+            "what": "(podchodzi i przytula ANIELĘ) (do Roberta)"
           },
           {
             "type": "say",
