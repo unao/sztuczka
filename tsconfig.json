@@ -2,6 +2,19 @@
   "compilerOptions": {
     "target": "es5",
     "module": "commonjs",
+    "baseUrl": "./src",
+    "outDir": "./build",
+
     "strict": true,
+    "lib": ["es2015", "dom"],
+    // TODO: support for DEV and PROD config
+    // "noUnusedLocals": true,
+    // "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+
+    "sourceMap": true,
+
+    "jsx": "react"
   }
 }
