@@ -5,6 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = env => {
   const base = {
     entry: {
+      actor: './src/actor/index.ts',
       prep: './src/prep/index.ts',
       control: './src/control/index.ts'
     },
@@ -28,9 +29,16 @@ module.exports = env => {
     plugins: [
       new HtmlWebpackPlugin({
         title: 'Cma - Zas',
+        chunks: ['actor'],
+        meta: {
+          viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no'
+        },
+        filename: `actor/index.html`
+      }),
+      new HtmlWebpackPlugin({
+        title: 'Cma - Zas',
         chunks: ['prep'],
         filename: `prep/index.html`
-        //  template: path.resolve('./src', 'prep', 'index.tmpl.html')
       }),
       new HtmlWebpackPlugin({
         title: 'Cma - Zas',
@@ -53,6 +61,7 @@ module.exports = env => {
       devServer: {
         port: 3355,
         host: '0.0.0.0'
+        // https: true
       }
     }
   } else {

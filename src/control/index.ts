@@ -1,1 +1,3 @@
-console.log('control1')
+import { connectWS, defaultWS } from 'common'
+
+connectWS(defaultWS('control')).subscribe()
