@@ -1,9 +1,9 @@
-// @ts-check
-const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+import * as path from 'path'
+import * as HtmlWebpackPlugin from 'html-webpack-plugin'
+import * as webpack from 'webpack'
 
-module.exports = env => {
-  const base = {
+module.exports = (env: 'PROD' | 'DEV'): webpack.Configuration => {
+  const base: webpack.Configuration = {
     entry: {
       actor: './src/actor/index.ts',
       prep: './src/prep/index.ts',
@@ -58,6 +58,7 @@ module.exports = env => {
     return {
       ...base,
       mode: 'development',
+      devtool: false,
       devServer: {
         port: 3355,
         host: '0.0.0.0'
