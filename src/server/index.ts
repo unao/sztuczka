@@ -20,7 +20,11 @@ const run = (port = 3356) => {
 
   console.log(`Server listening on ${host}:${port}`)
 
-  wss.on('connection', (ws, req) => console.log('connection', req.url))
+  wss.on('connection', (ws, req) => {
+    const role = req.url!.split('role=')[1]
+    console.log('CONN', role)
+    ws.on('close', () => console.log('CLOSED', role))
+  })
 }
 
 run()
