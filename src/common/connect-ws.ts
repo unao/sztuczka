@@ -1,7 +1,7 @@
 import { Observable } from 'rxjs'
 
 export const defaultWS = (role = '') =>
-  `ws://${window.location.hostname}:${parseInt(window.location.port, 10) +
+  `wss://${window.location.hostname}:${parseInt(window.location.port, 10) +
     1}/ws${role && `?role=${role}`}`
 
 export const connectWS = (url = defaultWS()) =>

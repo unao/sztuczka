@@ -1,3 +1,7 @@
-import { connectWS, defaultWS } from 'common'
+import { connectWS, defaultWS, tap } from 'common'
 
-connectWS(defaultWS('control')).subscribe()
+connectWS(defaultWS('control'))
+  .pipe(tap(x => console.log('CONNECTED', x)))
+  .subscribe()
+
+console.log('control')

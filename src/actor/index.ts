@@ -1,4 +1,4 @@
-import { connectWS, retry, repeat, tap, switchMap } from '../common'
+import { connectWS, retry, repeat, tap, switchMap, retryWhen } from '../common'
 import { fromEvent } from 'rxjs'
 
 console.log('actor')
@@ -6,13 +6,13 @@ document.body.innerHTML = `<h1>${window.innerWidth}x${window.innerHeight}</h1>
 <button id="vib">vib</button>
 <div id="orient">WTF?</div>
 <div id="mo"></div>
+<video id="vid" autoplay style="width:100%;"></video>
 `
 
 connectWS()
   .pipe(
     tap(ws => console.log('CONNECTED', ws)),
-    retry(),
-    repeat()
+    retryWhen(es => es.pipe(tap(e => alert(e))))
   )
   .subscribe()
 
@@ -31,16 +31,18 @@ fromEvent<DeviceOrientationEvent>(window, 'deviceorientation')
   )
   .subscribe()
 
-// fromEvent<DeviceMotionEvent>(window, 'devicemotion')
-//   .pipe(
-//     tap(
-//       mo =>
-//         (document.getElementById('mo')!.innerText = `
-//           ${Math.round(mo.acceleration!.x!)} ${Math.round(
-//           mo.acceleration!.y!
-//         )} ${Math.round(mo.acceleration!.z!)}`)
-//     )
-//   )
-//   .subscribe()
+const constraints = {
+  video: true
+  //  audio: true
+}
 
-setTimeout(() => navigator.vibrate(2000), 10000)
+if (navigator.mediaDevices.getUserMedia) {
+  navigator.mediaDevices
+    .getUserMedia(constraints)
+    .then(
+      s => ((document.getElementById('vid')! as HTMLVideoElement).srcObject = s)
+    )
+    .catch(e => alert(e))
+} else {
+  alert('Your browser does not support getUserMedia API')
+}

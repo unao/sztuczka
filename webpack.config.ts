@@ -1,6 +1,7 @@
 import * as path from 'path'
 import * as HtmlWebpackPlugin from 'html-webpack-plugin'
 import * as webpack from 'webpack'
+import { readFileSync } from 'fs'
 
 module.exports = (env: 'PROD' | 'DEV'): webpack.Configuration => {
   const base: webpack.Configuration = {
@@ -61,8 +62,11 @@ module.exports = (env: 'PROD' | 'DEV'): webpack.Configuration => {
       devtool: false,
       devServer: {
         port: 3355,
-        host: '0.0.0.0'
-        // https: true
+        host: '0.0.0.0',
+        https: {
+          key: readFileSync(path.resolve(__dirname, 'cert/key.pem')),
+          cert: readFileSync(path.resolve(__dirname, 'cert/cert.pem'))
+        }
       }
     }
   } else {
