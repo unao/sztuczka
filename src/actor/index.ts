@@ -7,6 +7,7 @@ document.body.innerHTML = `<h1>${window.innerWidth}x${window.innerHeight}</h1>
 <div id="orient">WTF?</div>
 <div id="mo"></div>
 <video id="vid" autoplay style="width:100%;"></video>
+<div style="height:2000px"></div>
 `
 
 connectWS()
@@ -17,7 +18,10 @@ connectWS()
   .subscribe()
 
 fromEvent(document.getElementById('vib')!, 'click')
-  .pipe(tap(() => navigator.vibrate(2000)))
+  .pipe(
+    tap(() => navigator.vibrate(2000)),
+    tap(() => document.body.requestFullscreen())
+  )
   .subscribe()
 
 fromEvent<DeviceOrientationEvent>(window, 'deviceorientation')
@@ -46,3 +50,8 @@ if (navigator.mediaDevices.getUserMedia) {
 } else {
   alert('Your browser does not support getUserMedia API')
 }
+
+// ;(document.getElementById('vid')! as HTMLVideoElement)
+//   .requestFullscreen()
+//   .catch(err => alert(err.message))
+// document.fullscreenElement()

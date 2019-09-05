@@ -1,6 +1,6 @@
 const fs = require('fs')
 
-const countLeftSpaces = (s) => {
+const countLeftSpaces = s => {
   let c = 0
   for (let i = 0; i < s.length; i++) {
     if (s[i] !== ' ') {
@@ -13,7 +13,9 @@ const countLeftSpaces = (s) => {
 let act = null
 let person = null
 
-const t = fs.readFileSync(__dirname + '/../assets/text-raw.txt', 'utf8').split('\n')
+const t = fs
+  .readFileSync(__dirname + '/../src/assets/text-raw.txt', 'utf8')
+  .split('\n')
   .map(l => l.trimRight())
   .filter(l => l)
   .map(l => [countLeftSpaces(l), l.trimLeft()])
@@ -64,7 +66,8 @@ const t = fs.readFileSync(__dirname + '/../assets/text-raw.txt', 'utf8').split('
     return acc
   }, {})
 
-fs.writeFileSync(__dirname + '/../assets/parsed.json',
+fs.writeFileSync(
+  __dirname + '/../assets/src/parsed.json',
   JSON.stringify(t, null, 2)
     .replace(/ŁUKASZ/g, 'LEON')
     .replace(/Łukasz/g, 'Leon')

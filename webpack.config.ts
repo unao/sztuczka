@@ -32,7 +32,8 @@ module.exports = (env: 'PROD' | 'DEV'): webpack.Configuration => {
         title: 'Cma - Zas',
         chunks: ['actor'],
         meta: {
-          viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no'
+          viewport: 'width=device-width, initial-scale=1, user-scalable=no',
+          'mobile-web-app-capable': 'yes'
         },
         filename: `actor/index.html`
       }),
