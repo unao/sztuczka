@@ -11,7 +11,7 @@ import {
   render,
   fullscreen
 } from '../common'
-import { fromEvent } from 'rxjs'
+import { fromEvent, merge, of, Observable } from 'rxjs'
 
 const selectActor = () => {
   render(
@@ -22,16 +22,16 @@ const selectActor = () => {
       .join('')
   )
 
-  return fromEvent(document, 'click').pipe(
-    filter(ev =>
-      actors.includes(
-        (ev.target && ((ev.target as HTMLElement).id as any)) || ''
-      )
+  return merge(
+    fromEvent(document, 'click').pipe(
+      map(ev => (ev.target as HTMLElement).id as Actor)
     ),
-    map(ev => (ev.target as HTMLElement).id as Actor),
+    of(location.search.split('a=')[1] as Actor)
+  ).pipe(
+    filter(actor => actors.includes(actor)),
     take(1),
-    tap(() => navigator.vibrate([200, 200, 200, 200, 200])),
-    tap(fullscreen),
+    tap(() => navigator.vibrate([200, 200, 200])),
+    // tap(fullscreen),
     shareReplay()
   )
 }

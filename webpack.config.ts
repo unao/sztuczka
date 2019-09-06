@@ -3,13 +3,17 @@ import * as HtmlWebpackPlugin from 'html-webpack-plugin'
 import * as webpack from 'webpack'
 import { readFileSync } from 'fs'
 
+const apps = ['actor', 'prep', 'control', 'grouped']
+
 module.exports = (env: 'PROD' | 'DEV'): webpack.Configuration => {
   const base: webpack.Configuration = {
-    entry: {
-      actor: './src/actor/index.ts',
-      prep: './src/prep/index.ts',
-      control: './src/control/index.ts'
-    },
+    entry: apps.reduce(
+      (acc, a) => ({
+        ...acc,
+        [a]: `./src/${a}/index.ts`
+      }),
+      {}
+    ),
     output: {
       filename: '[name]/index.js',
       path: path.resolve('./build')
@@ -27,28 +31,18 @@ module.exports = (env: 'PROD' | 'DEV'): webpack.Configuration => {
       extensions: ['.ts', '.js', '.tsx'],
       modules: [path.resolve('./src'), 'node_modules']
     },
-    plugins: [
-      new HtmlWebpackPlugin({
-        title: 'Cma - Zas',
-        chunks: ['actor'],
-        meta: {
-          viewport: 'width=device-width, initial-scale=1, user-scalable=no',
-          'mobile-web-app-capable': 'yes'
-        },
-        filename: `actor/index.html`
-      }),
-      new HtmlWebpackPlugin({
-        title: 'Cma - Zas',
-        chunks: ['prep'],
-        filename: `prep/index.html`
-      }),
-      new HtmlWebpackPlugin({
-        title: 'Cma - Zas',
-        chunks: ['control'],
-        filename: `control/index.html`
-        // template: path.resolve('./src', 'control', 'index.tmpl.html')
-      })
-    ]
+    plugins: apps.map(
+      a =>
+        new HtmlWebpackPlugin({
+          title: 'Cma - Zas',
+          chunks: [a],
+          meta: {
+            viewport: 'width=device-width, initial-scale=1, user-scalable=no',
+            'mobile-web-app-capable': 'yes'
+          },
+          filename: `${a}/index.html`
+        })
+    )
   }
 
   if (env === 'PROD') {

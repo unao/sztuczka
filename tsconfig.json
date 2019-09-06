@@ -7,6 +7,7 @@
 
     "strict": true,
     "lib": ["es2015", "dom"],
+    "resolveJsonModule": true,
     // TODO: support for DEV and PROD config
     // "noUnusedLocals": true,
     // "noUnusedParameters": true,
