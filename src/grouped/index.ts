@@ -1,10 +1,10 @@
 import { actors, render } from 'common'
 
 const scene = actors
-  .filter(a => a !== 'EWA')
+  .filter(a => a !== 'KRYSTIAN')
   .map(
-    a => `<iframe frameBorder="0"
-  seamless="seamless" style="width:33vw;height:48vh" src="${window.location.origin}/actor?a=${a}"></iframe>`
+    a => `<iframe
+  seamless style="border:0;width:33vw;height:49vh" src="${window.location.origin}/actor?a=${a}"></iframe>`
   )
 
 render(

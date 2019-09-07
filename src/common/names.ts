@@ -1,4 +1,5 @@
-export type Actor = typeof actors extends Array<infer K> ? K : never
+export type Actor = typeof actors extends ReadonlyArray<infer K> ? K : never
+export type Role = Actor | 'control' | 'screen'
 
 export const actors = [
   'ANIELA',
