@@ -9,7 +9,9 @@ import {
   switchMap,
   connectWS,
   render,
-  fullscreen
+  fullscreen,
+  delay,
+  retryWhen
 } from '../common'
 import { fromEvent, merge, of, Observable } from 'rxjs'
 
@@ -50,5 +52,11 @@ export const init = () =>
       render(`
 <h1>${a.actor}</h1>
 <h3>...ale, ale momencik...<h1>`)
+    ),
+    retryWhen(errs =>
+      errs.pipe(
+        tap(err => console.warn(err)),
+        delay(1000)
+      )
     )
   )
