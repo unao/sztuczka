@@ -20,13 +20,9 @@ const handle = {
 
 connectWS('control')
   .pipe(
-    tap(x => console.log('CONNECTED', x)),
     switchMap(ws => fromEvent<WebSocketEventMap['message']>(ws, 'message')),
     map(m => JSON.parse(m.data) as ServerToControl),
     groupBy(d => d.type),
     mergeMap(ms => handle[ms.key](ms))
-    //    tap(() => render(JSON.stringify(play)))
   )
   .subscribe()
-
-console.log('control')
