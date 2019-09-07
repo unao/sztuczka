@@ -32,10 +32,11 @@ const run = (port = 3356) => {
 
   wss.on('connection', (ws, req) => {
     const role = req.url!.split('role=')[1] as Role
-    console.log('joined', role)
+    console.log('joined:', role)
     conn[role] = ws
     sendConn()
     ws.on('close', () => {
+      console.log('left:', role)
       delete conn[role]
       sendConn()
     })

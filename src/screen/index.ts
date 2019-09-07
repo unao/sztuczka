@@ -5,7 +5,6 @@ document.body.innerHTML = `<div style="background-color:black;width:100vw;s">
 </div>`
 
 const vid = document.getElementsByTagName('video')[0]
-
 vid.playbackRate = 0.07
 
 connectWS('screen').subscribe()

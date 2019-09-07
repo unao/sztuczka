@@ -11,9 +11,11 @@ import {
   render,
   fullscreen,
   delay,
-  retryWhen
+  retryWhen,
+  playAudio,
+  catchError
 } from '../common'
-import { fromEvent, merge, of, Observable } from 'rxjs'
+import { fromEvent, merge, of, Observable, EMPTY } from 'rxjs'
 
 const selectActor = () => {
   render(
@@ -41,11 +43,14 @@ const selectActor = () => {
 export const init = () =>
   selectActor().pipe(
     switchMap(a =>
-      connectWS(a).pipe(
-        map(ws => ({
-          ws,
-          actor: a
-        }))
+      merge(
+        connectWS(a).pipe(
+          map(ws => ({
+            ws,
+            actor: a
+          }))
+        )
+        // playAudio(`/call/${a}.mp3`).pipe(catchError(() => EMPTY))
       )
     ),
     tap(a =>
