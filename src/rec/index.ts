@@ -8,7 +8,8 @@ import {
   shareReplay,
   switchMap,
   render,
-  recordAudio
+  recordAudio,
+  hash
 } from '../common'
 import { fromEvent, merge, of, Observable, EMPTY, pipe } from 'rxjs'
 
@@ -19,19 +20,40 @@ const ps = new URLSearchParams(location.search)
 
 const scenes = txt['AKT I'].scenes.concat(txt['AKT II'].scenes)
 
-recordAudio(fromEvent(document, 'click'), 'test')
-  .pipe(
-    tap(f => console.log(f)),
-    switchMap(f => {
-      const u = URL.createObjectURL(f)
-      const audio = document.createElement('audio')
-      audio.src = u
-      document.body.append(audio)
-      console.log('audio', audio.duration)
-      return merge(audio.play(), saveRec('KRYSTIAN', f))
-    })
+// const hs = scenes.reduce(
+//   (acc, s) => {
+//     s.plot
+//       .filter(p => p.who)
+//       .forEach(p => {
+//         const h = hash(p.what)
+//         if (acc[h] && acc[h][0].what !== p.what) {
+//           console.log('collision', p, acc[h])
+//         } else {
+//           acc[h] = (acc[h] || []).concat([p])
+//         }
+//       })
+//     return acc
+//   },
+//   {} as any
+// )
+
+console.log(
+  scenes.reduce(
+    (acc, s) => {
+      s.plot.forEach(p => p.who && (acc[p.who] = (acc[p.who] || 0) + 1))
+      return acc
+    },
+    {} as any
   )
-  .subscribe()
+)
+
+// recordAudio(fromEvent(document, 'click'), Date.now() + '').pipe(
+//  tap(f => console.log(f)),
+//  switchMap(({ file, audio }) => {
+//    return merge(audio.play(), saveRec('KRYSTIAN', file))
+//  })
+// )
+//  .subscribe()
 
 const init = () => {
   render(
@@ -50,8 +72,7 @@ const init = () => {
   ).pipe(
     filter(actor => actors.includes(actor)),
     take(1),
-    tap(() => navigator.vibrate([200, 200, 200])),
-    // tap(fullscreen),
+    // tap(() => navigator.vibrate([200, 200, 200])),
     shareReplay()
   )
 }
