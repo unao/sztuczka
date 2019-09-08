@@ -1,6 +1,6 @@
 import * as F from 'firebase/app'
 import 'firebase/storage'
-import { Actor, map } from 'common'
+import { Actor, map, tap } from 'common'
 import { defer } from 'rxjs'
 import { pathToFileURL } from 'url'
 
@@ -26,10 +26,11 @@ export const listAll = (actor: Actor) =>
       .ref(`/${actor}/`)
       .listAll()
   ).pipe(
+    tap(ls => console.log(ls.items.map(l => l.name))),
     map(ls =>
       ls.items.reduce(
         (acc, i) => {
-          const [sayId, duration] = i.name.split('__')
+          const [_, sayId, duration] = i.name.split('__')
           acc[sayId] = {
             sayId,
             durationMS: parseInt(duration.replace('.webm', ''), 10),

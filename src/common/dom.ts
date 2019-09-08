@@ -15,6 +15,7 @@ import {
   delay,
   retryWhen
 } from 'rxjs/operators'
+import { recId } from './names'
 
 Object.assign(document.body.style, { margin: 0, overflow: 'hidden' })
 
@@ -40,12 +41,12 @@ export const playAudio = (name: string) =>
     }
   })
 
-export const recordAudio = (stop: Observable<unknown>, prefix: string) =>
-  defer(() =>
-    navigator.mediaDevices.getUserMedia({
-      audio: true
-    })
-  )
+export const recordAudio = (
+  stream: MediaStream,
+  stop: Observable<unknown>,
+  prefix: string
+) =>
+  of(stream) // TODO - simplify
     .pipe(
       mergeMap(stream => {
         const sub = new Subject<Blob>()
@@ -57,7 +58,6 @@ export const recordAudio = (stop: Observable<unknown>, prefix: string) =>
             recorder.ondataavailable = e => sub.next(e.data)
             recorder.start()
             return () => {
-              stream.getTracks().forEach(t => t.stop())
               recorder.stop()
             }
           }).pipe(takeUntil(stop)),
@@ -83,9 +83,13 @@ export const recordAudio = (stop: Observable<unknown>, prefix: string) =>
           map(() => ({
             audio,
             duration: audio.duration,
-            file: new File([file], `${prefix}__${audio.duration * 1000}.webm`, {
-              lastModified: Date.now()
-            })
+            file: new File(
+              [file],
+              `${recId(Date.now(), prefix, audio.duration * 1000)}.webm`,
+              {
+                lastModified: Date.now()
+              }
+            )
           }))
         )
       })

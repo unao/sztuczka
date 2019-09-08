@@ -11,9 +11,10 @@ import {
   recordAudio,
   hash,
   sayId,
-  playAudio
+  playAudio,
+  delay
 } from '../common'
-import { fromEvent, merge, of, BehaviorSubject, EMPTY } from 'rxjs'
+import { fromEvent, merge, of, BehaviorSubject, EMPTY, defer } from 'rxjs'
 
 import * as txt from '../assets/parsed.json'
 import { listAll, saveRec, Rec, recUrl } from './firebase'
@@ -41,6 +42,13 @@ const init = () => {
     map(a => a.toUpperCase() as Actor),
     filter(actor => actors.includes(actor)),
     take(1),
+    switchMap(a =>
+      defer(() =>
+        navigator.mediaDevices.getUserMedia({
+          audio: true
+        })
+      ).pipe(map(s => ({ stream: s, actor: a })))
+    ),
     shareReplay()
   )
 }
@@ -48,13 +56,13 @@ const init = () => {
 const recs$ = new BehaviorSubject<{ [K in string]: Rec }>({})
 init()
   .pipe(
-    switchMap(a => {
+    switchMap(({ stream, actor }) => {
       const ss = scenes
         .map((s, idx) => ({
           idx: idx,
           title: s.title,
           plot: s.plot
-            .filter(p => p.who === a)
+            .filter(p => p.who === actor)
             .map(p => ({
               ...p,
               id: sayId(idx, p.who!, p.what)
@@ -62,21 +70,22 @@ init()
         }))
         .filter(s => s.plot.length)
       return merge(
-        listAll(a).pipe(
+        listAll(actor).pipe(
           tap(rs => recs$.next(rs)),
           switchMap(() => EMPTY)
         ),
         recs$.pipe(
           tap(rs => console.log(rs)),
           map(rs => ({
-            actor: a,
+            stream,
+            actor,
             recs: rs,
             scenes: ss
           }))
         )
       )
     }),
-    switchMap(({ recs, scenes, actor }) => {
+    switchMap(({ recs, scenes, actor, stream }) => {
       console.log('RECS', recs, scenes)
 
       render(`<div style="padding:16px">
@@ -89,10 +98,10 @@ init()
               .map(
                 p => `<div style="padding:8px">
               <div style="margin-bottom:4px">${p.what}</div>
-              <button id="rec-${p.id}">nagraj</button>
+              <button style="padding:8px" id="rec-${p.id}">nagraj</button>
               ${
                 recs[p.id]
-                  ? `<button id="play-${recs[p.id].url}">odtwórz</button>`
+                  ? `<button style="padding:8px" id="play-${recs[p.id].url}">odtwórz</button>`
                   : ''
               }
             </div>`
@@ -116,11 +125,15 @@ init()
           map((id: string | null) => !!id && id.split('rec-')[1]),
           filter(x => !!x),
           take(1),
-          tap(x => console.log('id', x)),
+          delay(128),
           switchMap(id => {
             const btn = document.getElementById('rec-' + id)!
             btn.innerText = 'stop'
-            return recordAudio(fromEvent(btn!, 'click'), id as string).pipe(
+            return recordAudio(
+              stream,
+              fromEvent(btn!, 'click'),
+              id as string
+            ).pipe(
               switchMap(r =>
                 saveRec(actor, r.file).pipe(
                   tap(() =>
