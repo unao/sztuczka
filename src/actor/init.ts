@@ -35,7 +35,7 @@ const selectActor = () => {
     filter(actor => actors.includes(actor)),
     take(1),
     tap(() => navigator.vibrate([200, 200, 200])),
-    // tap(fullscreen),
+    tap(fullscreen),
     shareReplay()
   )
 }

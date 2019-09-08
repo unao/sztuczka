@@ -4,7 +4,7 @@ import * as webpack from 'webpack'
 import { readFileSync } from 'fs'
 import * as Copy from 'copy-webpack-plugin'
 
-const apps = ['actor', 'prep', 'control', 'grouped', 'screen']
+const apps = ['actor', 'prep', 'control', 'grouped', 'rec', 'screen', 'text']
 
 module.exports = (env: 'PROD' | 'DEV'): webpack.Configuration => {
   const base: webpack.Configuration = {
