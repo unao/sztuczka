@@ -28,7 +28,7 @@ export const render = (content: string) => (c.innerHTML = content)
 export const playAudio = (name: string) =>
   Observable.create((obs: Observer<any>) => {
     const el = document.createElement('audio')
-    el.src = `/assets/${name}`
+    el.src = name.startsWith('https') ? name : `/assets/${name}`
     document.body.appendChild(el)
     el.play().catch(e => obs.error(e))
     el.onended = () => obs.complete()
@@ -83,7 +83,7 @@ export const recordAudio = (stop: Observable<unknown>, prefix: string) =>
           map(() => ({
             audio,
             duration: audio.duration,
-            file: new File([file], `${prefix}_${audio.duration * 1000}.webm`, {
+            file: new File([file], `${prefix}__${audio.duration * 1000}.webm`, {
               lastModified: Date.now()
             })
           }))

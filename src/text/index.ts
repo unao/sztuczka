@@ -7,15 +7,9 @@ import {
   take,
   shareReplay,
   switchMap,
-  connectWS,
-  render,
-  fullscreen,
-  delay,
-  retryWhen,
-  playAudio,
-  catchError
+  render
 } from '../common'
-import { fromEvent, merge, of, Observable, EMPTY, pipe } from 'rxjs'
+import { fromEvent, merge, of } from 'rxjs'
 
 import * as txt from '../assets/parsed.json'
 
