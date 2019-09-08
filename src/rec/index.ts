@@ -37,7 +37,7 @@ const init = () => {
     fromEvent(document, 'click').pipe(
       map(ev => (ev.target as HTMLElement).id as Actor)
     ),
-    of(ps.get('a') as Actor)
+    of(ps.get('a') || ('' as Actor))
   ).pipe(
     map(a => a.toUpperCase() as Actor),
     filter(actor => actors.includes(actor)),
@@ -53,7 +53,7 @@ const init = () => {
   )
 }
 
-const recs$ = new BehaviorSubject<{ [K in string]: Rec }>({})
+const recs$ = new BehaviorSubject<{ [K in string]: Rec & { new?: true } }>({})
 init()
   .pipe(
     switchMap(({ stream, actor }) => {
@@ -95,8 +95,12 @@ init()
           s =>
             `<h3>${s.title}</h3>
             ${s.plot
-              .map(
-                p => `<div style="padding:8px">
+              .map(p =>
+                ps.get('f') === 'no' && recs[p.id] && !recs[p.id].new
+                  ? ''
+                  : `<div style="${
+                      recs[p.id] ? 'background-color:rgba(0,200,0,0.08);' : ''
+                    }padding:8px">
               <div style="margin-bottom:4px">${p.what}</div>
               <button style="padding:8px" id="rec-${p.id}">nagraj</button>
               ${
@@ -140,6 +144,7 @@ init()
                     recs$.next({
                       ...recs$.value,
                       [`${id}`]: {
+                        new: true,
                         durationMS: r.duration,
                         sayId: id as string,
                         url: recUrl(`${actor}%2F${r.file.name}`)
