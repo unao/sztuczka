@@ -13,9 +13,12 @@ import {
   delay,
   retryWhen,
   playAudio,
-  catchError
+  catchError,
+  selfie
 } from '../common'
 import { fromEvent, merge, of, Observable, EMPTY } from 'rxjs'
+
+const ps = new URLSearchParams(location.search)
 
 const selectActor = () => {
   render(
@@ -30,8 +33,9 @@ const selectActor = () => {
     fromEvent(document, 'click').pipe(
       map(ev => (ev.target as HTMLElement).id as Actor)
     ),
-    of(location.search.split('a=')[1] as Actor)
+    of(ps.get('a') || ('' as Actor))
   ).pipe(
+    map(a => a.toUpperCase() as Actor),
     filter(actor => actors.includes(actor)),
     take(1),
     tap(() => navigator.vibrate([200, 200, 200])),
@@ -58,10 +62,11 @@ export const init = () =>
 <h1>${a.actor}</h1>
 <h3>...ale, ale momencik...<h1>`)
     ),
+    switchMap(x => (x.actor === 'ANIELA' ? selfie(x.ws) : EMPTY)),
     retryWhen(errs =>
       errs.pipe(
         tap(err => console.warn(err)),
-        delay(1000)
+        delay(250)
       )
     )
   )
