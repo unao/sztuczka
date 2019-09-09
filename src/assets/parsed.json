@@ -61,13 +61,8 @@
           },
           {
             "type": "say",
-            "who": "ANIELA",
-            "what": "Przestałam brać pigułkę."
-          },
-          {
-            "type": "say",
             "who": "CZAREK",
-            "what": "I dobrze."
+            "what": "Jak zawsze. Piękna i seksowna."
           },
           {
             "type": "say",
@@ -156,25 +151,7 @@
           },
           {
             "type": "desc",
-            "what": "(rozłącza się) LEON jest zajęty pisaniem wiadomości w telefonie. KAROLINA korzystając z jego nieuwagi wrzuca telefon do torebki, jednocześnie wyjmuje z niej piersiówkę i wypija łyczek, po czym szybko chowa ją znów do torebki. LEON skończył pisać wiadomość, chowa telefon do kieszeni spodni, odwraca się do KAROLINY."
-          },
-          {
-            "type": "say",
-            "who": "LEON",
-            "what": "Daj."
-          },
-          {
-            "type": "desc",
-            "what": "(wyciąga ręce do KAROLINY, aby odebrać od niej blachę)"
-          },
-          {
-            "type": "say",
-            "who": "KAROLINA",
-            "what": "Dzięki."
-          },
-          {
-            "type": "desc",
-            "what": "(podaje mu blachę) LEON do kieszeni w spodniach wkłada kluczyki i telefon. KAROLINA i LEON idą drogą, którą szli CZAREK i ANIELA. Ich też prowadzi szperacz."
+            "what": "(rozłącza się) LEON jest zajęty pisaniem wiadomości w telefonie. KAROLINA korzystając z jego nieuwagi wrzuca telefon do torebki, jednocześnie wyjmuje z niej piersiówkę i wypija łyczek, po czym szybko chowa ją znów do torebki. LEON skończył pisać wiadomość, chowa telefon do kieszeni spodni, odwraca się do KAROLINY. LEON do kieszeni w spodniach wkłada kluczyki i telefon. KAROLINA i LEON idą drogą, którą szli CZAREK i ANIELA. Ich też prowadzi szperacz."
           },
           {
             "type": "say",
@@ -923,7 +900,7 @@
           {
             "type": "say",
             "who": "KRYSTIAN",
-            "what": "Przeprasza, ale ma gorączkę."
+            "what": "Przeprasza, ale jest chora."
           },
           {
             "type": "say",
@@ -933,7 +910,7 @@
           {
             "type": "say",
             "who": "KRYSTIAN",
-            "what": "Nie... no, skoro ma gorączkę..."
+            "what": "Nie... no, skoro jest chora..."
           },
           {
             "type": "say",
@@ -947,7 +924,7 @@
           {
             "type": "say",
             "who": "KRYSTIAN",
-            "what": "Ona też żałuje."
+            "what": "Ona też bardzo żałuje."
           },
           {
             "type": "desc",
@@ -1004,7 +981,7 @@
           {
             "type": "say",
             "who": "KRYSTIAN",
-            "what": "Nie mówiłem. Jest w naszym wieku."
+            "what": "Chyba nie mówiłem, ale jest w naszym wieku."
           },
           {
             "type": "say",
@@ -1196,7 +1173,7 @@
           {
             "type": "say",
             "who": "KRYSTIAN",
-            "what": "Analizujesz takie rzeczy."
+            "what": "Przecież analizujesz takie rzeczy."
           },
           {
             "type": "say",
@@ -1258,7 +1235,7 @@
           {
             "type": "say",
             "who": "KRYSTIAN",
-            "what": "Tak się złożyło."
+            "what": "Nic szczególnego. Tak się akurat złożyło."
           },
           {
             "type": "say",
@@ -1319,7 +1296,7 @@
           {
             "type": "say",
             "who": "LEON",
-            "what": "Nic dziwnego, jest na prochach."
+            "what": "Nic dziwnego. Chora - jest na prochach."
           },
           {
             "type": "desc",
@@ -2168,7 +2145,7 @@
           {
             "type": "say",
             "who": "KRYSTIAN",
-            "what": "Nieważne."
+            "what": "To nieważne."
           },
           {
             "type": "say",
@@ -2338,7 +2315,7 @@
           {
             "type": "say",
             "who": "KRYSTIAN",
-            "what": "U chińczyków góra dziewięćdziesiąt."
+            "what": "E, u chińczyków góra dziewięćdziesiąt."
           },
           {
             "type": "say",
@@ -2479,7 +2456,7 @@
           {
             "type": "say",
             "who": "KRYSTIAN",
-            "what": "Ile Nela ma lat ?"
+            "what": "Ewa, ile Nela ma lat ?"
           },
           {
             "type": "say",
@@ -2848,7 +2825,7 @@
           {
             "type": "say",
             "who": "EWA",
-            "what": "Jesteś w ciąży ?"
+            "what": "Wybraliście już imię ?"
           },
           {
             "type": "say",
@@ -2858,7 +2835,7 @@
           {
             "type": "say",
             "who": "KAROLINA",
-            "what": "Ale się staracie ?"
+            "what": "Ale wziąż się bzykacie ?"
           },
           {
             "type": "say",
@@ -3401,7 +3378,7 @@
           {
             "type": "say",
             "who": "KRYSTIAN",
-            "what": "Dzięki Leo, ale nie chcę. Sam z tego wybrnę. Spokojnie, bez nacisków, i nie jadąc do Sopotu."
+            "what": "Dzięki Leo, ale nie chcę. Sam z tego wybrnę. Spokojnie, bez nacisków, i bez przeprowadzki do Sopotu."
           },
           {
             "type": "say",
@@ -3711,7 +3688,7 @@
           {
             "type": "say",
             "who": "KRYSTIAN",
-            "what": "Co to za operacja ?"
+            "what": "Ewa, co to za operacja ?"
           },
           {
             "type": "say",
@@ -3809,7 +3786,7 @@
           {
             "type": "say",
             "who": "KRYSTIAN",
-            "what": "No właśnie, czemu nie ty ?"
+            "what": "Robert, no właśnie, czemu nie ty ?"
           },
           {
             "type": "say",
@@ -4077,12 +4054,12 @@
           },
           {
             "type": "say",
-            "who": "KRYSTIAN",
+            "who": "LEON",
             "what": "Jak tam zaćmienie ?"
           },
           {
             "type": "say",
-            "who": "LEON",
+            "who": "KRYSTIAN",
             "what": "Postępuje."
           },
           {
@@ -4097,7 +4074,7 @@
           {
             "type": "say",
             "who": "KRYSTIAN",
-            "what": "Dobranockę ?"
+            "what": "O dziesiątej? Hmm, dobranockę ?"
           },
           {
             "type": "say",
@@ -4194,7 +4171,7 @@
           {
             "type": "say",
             "who": "KRYSTIAN",
-            "what": "Nie mam ochoty."
+            "what": "Nie mam ochoty i to nie fair wobec Karoliny."
           },
           {
             "type": "say",
@@ -4208,7 +4185,7 @@
           {
             "type": "say",
             "who": "KRYSTIAN",
-            "what": "Jaka to miałaby być fotka ?"
+            "what": "Leo, jaka to miałaby być fotka ?"
           },
           {
             "type": "say",
@@ -4252,7 +4229,7 @@
           {
             "type": "say",
             "who": "KRYSTIAN",
-            "what": "Zrzędzisz."
+            "what": "Zrzędzisz, stary."
           },
           {
             "type": "desc",
@@ -4567,7 +4544,7 @@
           {
             "type": "say",
             "who": "KRYSTIAN",
-            "what": "Jaki ?"
+            "what": "No jaki ?"
           },
           {
             "type": "say",
@@ -4916,7 +4893,7 @@
           },
           {
             "type": "desc",
-            "what": "ROBERT wszystkich rozbawił i bawi dalej."
+            "what": "KRYSTIAN wszystkich rozbawił i bawi dalej."
           },
           {
             "type": "say",
@@ -4974,7 +4951,7 @@
           {
             "type": "say",
             "who": "KRYSTIAN",
-            "what": "Spalam je !"
+            "what": "Właśnie je spalam !"
           },
           {
             "type": "desc",
@@ -4988,7 +4965,7 @@
           {
             "type": "say",
             "who": "KRYSTIAN",
-            "what": "Z internetu."
+            "what": "Dzieciaki mi przesłały."
           },
           {
             "type": "desc",
@@ -5299,11 +5276,11 @@
           {
             "type": "say",
             "who": "CZAREK",
-            "what": "Daj telefon, bo wstanę."
+            "what": "Daj telefon."
           },
           {
             "type": "desc",
-            "what": "(wstaje od stołu i idzie w stronę Krystiana) KRYSTIAN łapie tel. CZAREK i KAROLINA starają się odebrać tel. KRYSTIANOWI."
+            "what": "KRYSTIAN łapie tel. CZAREK i KAROLINA starają się odebrać tel. KRYSTIANOWI."
           },
           {
             "type": "say",
@@ -5604,7 +5581,7 @@
           {
             "type": "say",
             "who": "KRYSTIAN",
-            "what": "Nie odpiszesz ?"
+            "what": "Nie zamierasz odpisać ?"
           },
           {
             "type": "say",
@@ -5623,7 +5600,7 @@
           {
             "type": "say",
             "who": "KRYSTIAN",
-            "what": "Miło ze strony tego gościa, że się zainteresował. Wystarczy zdanko: \"Dobrze, jestem w domu\" i kropka."
+            "what": "Racej miło ze strony tego gościa, że się zainteresował. Wystarczy zdanko: \"Dobrze, jestem w domu\" i kropka."
           },
           {
             "type": "say",
@@ -5642,7 +5619,7 @@
           {
             "type": "say",
             "who": "KRYSTIAN",
-            "what": "Tak tylko powiedziałem."
+            "what": "Oj tak tylko powiedziałem."
           },
           {
             "type": "say",
@@ -5651,7 +5628,7 @@
           },
           {
             "type": "desc",
-            "what": "(zdenerwowany)"
+            "what": "(zdenerwowany, wali ręką w stół)"
           },
           {
             "type": "say",
@@ -5665,7 +5642,7 @@
           {
             "type": "say",
             "who": "KRYSTIAN",
-            "what": "Dla zasady, ponieważ dziś już nie mamy żadnej prywatności. Nie zaczynamy od: \"Jak się miewasz ?\", tylko: \"Gdzie jesteś ?\"."
+            "what": "Dziś już nie mamy żadnej prywatności. Nie zaczynamy od: \"Jak się miewasz ?\", tylko: \"Gdzie jesteś ?\"."
           },
           {
             "type": "desc",
@@ -5944,6 +5921,11 @@
           },
           {
             "type": "say",
+            "who": "EWA",
+            "what": "Możliwe. Obecność matki może wpływać kastrująco na mężczyznę."
+          },
+          {
+            "type": "say",
             "who": "KAROLINA",
             "what": "Udajmy, że nic nie powiedziałam. Wszystko w porządku."
           },
@@ -6022,7 +6004,7 @@
           {
             "type": "say",
             "who": "KRYSTIAN",
-            "what": "Super miłą to nie jest."
+            "what": "Super miła --- to ona nie jest."
           },
           {
             "type": "say",
@@ -6371,7 +6353,7 @@
           {
             "type": "say",
             "who": "KRYSTIAN",
-            "what": "Niech wezwie weterynarza."
+            "what": "A i dlatego dzwoni do weterynarza."
           },
           {
             "type": "desc",
@@ -7489,7 +7471,7 @@
           {
             "type": "say",
             "who": "KRYSTIAN",
-            "what": "Sobą. Nie zmienił się. Jemu się zwierzałeś i z nim wszystko dzieliłeś."
+            "what": "Nadal sobą. Nie zmienił się. Jemu się zwierzałeś i z nim wszystko dzieliłeś."
           },
           {
             "type": "say",
@@ -8454,7 +8436,7 @@
           },
           {
             "type": "desc",
-            "what": "KRYSTIAN podchodzi do LEONA oddaje mu jego telefon, a swój chowa do kieszeni spodni. (do Leonaa)"
+            "what": "KRYSTIAN podchodzi do LEONA oddaje mu jego telefon, a swój chowa do kieszeni spodni. (do Leona)"
           },
           {
             "type": "say",
@@ -8515,7 +8497,7 @@
           {
             "type": "say",
             "who": "KRYSTIAN",
-            "what": "Słowo \"gej\" kiepsko brzmi w twoich ustach."
+            "what": "Wybacz Robert, ale słowo \"gej\" kiepsko brzmi w twoich ustach."
           },
           {
             "type": "desc",
@@ -8534,7 +8516,7 @@
           {
             "type": "say",
             "who": "KRYSTIAN",
-            "what": "Wam nie potrafiłem się przyznać, więc jak mam to powiedzieć przed sądem, adwokatami, ..., przed rodziną ? ... Mnie się podobała ta gra. Czułem się trochę jak seryjny zabójca liczący na to, że go zdemaskują, aczkolwiek nie w ten sposób."
+            "what": "Wam nie potrafiłem się przyznać, więc jak mam to powiedzieć przed sądem, przed nauczycielami, ..., przed rodziną? ... Mnie się podobała ta gra. Czułem się trochę jak seryjny zabójca liczący na to, że go zdemaskują, aczkolwiek nie w ten sposób."
           },
           {
             "type": "desc",

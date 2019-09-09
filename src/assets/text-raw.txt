@@ -63,11 +63,8 @@
                     CZAREK i ANIELA stojąc już twarzą w twarz obejmują
                     się i patrzą sobie w oczy.
 
-          ANIELA:
-               Przestałam brać pigułkę.
-
           CZAREK:
-               I dobrze.
+               Jak zawsze. Piękna i seksowna.
 
           ANIELA:
                Naprawdę ?
@@ -157,17 +154,7 @@
                     ją znów do torebki.
 
                     LEON skończył pisać wiadomość, chowa telefon do
-                    kieszeni spodni, odwraca się do KAROLINY.
-
-          LEON:
-               Daj.
-                         (wyciąga ręce do KAROLINY, aby odebrać
-                         od niej blachę)
-
-          KAROLINA:
-               Dzięki.
-                         (podaje mu blachę)
-               
+                    kieszeni spodni, odwraca się do KAROLINY.             
 
                     LEON do kieszeni w spodniach wkłada kluczyki i
                     telefon.
@@ -659,13 +646,13 @@
                A Daria ?
 
           KRYSTIAN:
-               Przeprasza, ale ma gorączkę.
+               Przeprasza, ale jest chora.
 
           KAROLINA:
                Więc nie przyjdzie ?
 
           KRYSTIAN:
-               Nie... no, skoro ma gorączkę...
+               Nie... no, skoro jest chora...
 
           KAROLINA:
                Chcieliśmy ją poznać.
@@ -675,7 +662,7 @@
                     KRYSTIAN stoi jak skamieniały.
 
           KRYSTIAN:
-               Ona też żałuje.
+               Ona też bardzo żałuje.
 
                     Pauza - chwila ciszy wszystkich bohaterów;
                     zamarli.
@@ -715,7 +702,7 @@
                Mówiłeś, że ile ma lat ?
 
           KRYSTIAN:
-               Nie mówiłem. Jest w naszym wieku.
+               Chyba nie mówiłem, ale jest w naszym wieku.
 
           CZAREK I ROBERT:
                AJ !
@@ -837,7 +824,7 @@
                Mnie pytasz ?
 
           KRYSTIAN:
-               Analizujesz takie rzeczy.
+               Przecież analizujesz takie rzeczy.
 
           ANIELA:
                Jeśli gadasz z nią pół godziny dziennie to jesteś
@@ -877,7 +864,7 @@
                Czemu to dziś chciałeś nam ją przedstawić ?
 
           KRYSTIAN:
-               Tak się złożyło.
+               Nic szczególnego. Tak się akurat złożyło.
 
           ANIELA:
                Pamiętasz wieczór kiedy was poznałam ?
@@ -911,7 +898,7 @@
                Szczęściara.
 
           LEON:
-               Nic dziwnego, jest na prochach.
+               Nic dziwnego. Chora - jest na prochach.
 
                     Bohaterowie kwitują każdy żart śmiechem.
 
@@ -1433,7 +1420,7 @@
                Daria jest w domu.
 
           KRYSTIAN:
-               Nieważne.
+               To nieważne.
 
           LEON:
                Bo nawet mama nie dzwoni po dziewiętnastej.
@@ -1532,7 +1519,7 @@
                czterysta złotych.
 
           KRYSTIAN:
-               U chińczyków góra dziewięćdziesiąt.
+               E, u chińczyków góra dziewięćdziesiąt.
 
           LEON:
                OK. Położę ją frontem do góry.
@@ -1620,7 +1607,7 @@
                     przez drzwi.
 
           KRYSTIAN:
-               Ile Nela ma lat ?
+               Ewa, ile Nela ma lat ?
 
           EWA:
                Kończy 17 w czerwcu.
@@ -1853,13 +1840,13 @@
                Nie wiem czy ja będę dobrą mamą.
 
           EWA:
-               Jesteś w ciąży ?
+               Wybraliście już imię ?
 
           ANIELA:
                Nieee...
 
           KAROLINA:
-               Ale się staracie ?
+               Ale wziąż się bzykacie ?
 
           ANIELA:
                Eee... powiedzmy, że tak.
@@ -2194,7 +2181,7 @@
 
           KRYSTIAN:
                Dzięki Leo, ale nie chcę. Sam z tego wybrnę. Spokojnie,
-               bez nacisków, i nie jadąc do Sopotu.
+               bez nacisków, i bez przeprowadzki do Sopotu.
 
           CZAREK:
                Spokojnie ? To rusz wreszcie tyłek !
@@ -2397,7 +2384,7 @@
 
           KRYSTIAN:
                          (z przejęciem)
-               Co to za operacja ?
+               Ewa, co to za operacja ?
 
           EWA:
                Nic poważnego.
@@ -2452,7 +2439,7 @@
                Czemu nie zoperuje cię Robert ?
 
           KRYSTIAN:
-               No właśnie, czemu nie ty ?
+               Robert, no właśnie, czemu nie ty ?
 
           ROBERT:
                Bo tatuś - ordynator sobie nie życzy. Dla córki ma być
@@ -2633,10 +2620,10 @@
                     półmrok. Tam dalej toczy się akcja - ruch
                     sceniczny.
 
-          KRYSTIAN:
+          LEON:
                Jak tam zaćmienie ?
 
-          LEON:
+          KRYSTIAN:
                Postępuje.
 
                     Widok tarczy księżyca.
@@ -2646,7 +2633,7 @@
                dziesiątej znajoma przysyła mi ... yyy...
 
           KRYSTIAN:
-               Dobranockę ?
+               O dziesiątej? Hmm, dobranockę ?
 
           LEON:
                Coś w tym stylu. Fotkę.
@@ -2698,7 +2685,7 @@
                Pomożesz mi, czy nie.
 
           KRYSTIAN:
-               Nie mam ochoty.
+               Nie mam ochoty i to nie fair wobec Karoliny.
 
           LEON:
                Nie ?! I tylko dlatego wybuchnie afera o bzdurę ?
@@ -2707,7 +2694,7 @@
                     Cisza.
 
           KRYSTIAN:
-               Jaka to miałaby być fotka ?
+               Leo, jaka to miałaby być fotka ?
 
           LEON:
                Zwyczajna.
@@ -2733,7 +2720,7 @@
                Właściwie to nie wiem... Pomożesz czy nie ?
 
           KRYSTIAN:
-               Zrzędzisz.
+               Zrzędzisz, stary.
 
                     LEON i KRYSTIAN nadal palą.
 
@@ -2942,7 +2929,7 @@
                jest.
 
           KRYSTIAN:
-               Jaki ?
+               No jaki ?
 
           LEON:
                Roztrzepany.
@@ -3136,7 +3123,7 @@
           ROBERT:
                Dziś zacząłeś ?
 
-                    ROBERT wszystkich rozbawił i bawi dalej.
+                    KRYSTIAN wszystkich rozbawił i bawi dalej.
 
           ROBERT:
                Musisz teraz ?
@@ -3175,7 +3162,7 @@
                O cholera !
 
           KRYSTIAN:
-               Spalam je !
+               Właśnie je spalam !
 
                     KRYSTIAN zdyszany i zasapany przestaje ćwiczyć.
 
@@ -3183,7 +3170,7 @@
                Genialne ! Ja też chcę. Skąd to masz ?
 
           KRYSTIAN:
-               Z internetu.
+               Dzieciaki mi przesłały.
                          (wraca do stołu)
 
           KAROLINA:
@@ -3412,10 +3399,7 @@
                Dziś upubliczniamy.
 
           CZAREK:
-               Daj telefon, bo wstanę.
-                         (wstaje od stołu i idzie w stronę
-                         Krystiana)
-               
+               Daj telefon.               
 
                     KRYSTIAN łapie tel.
 
@@ -3632,7 +3616,7 @@
                się od pięciu lat, a on to widział.
 
           KRYSTIAN:
-               Nie odpiszesz ?
+               Nie zamierasz odpisać ?
 
           LEON:
                Nie.
@@ -3645,7 +3629,7 @@
                     dialogu.
 
           KRYSTIAN:
-               Miło ze strony tego gościa, że się zainteresował.
+               Racej miło ze strony tego gościa, że się zainteresował.
                Wystarczy zdanko: "Dobrze, jestem w domu" i kropka.
 
           KAROLINA:
@@ -3657,14 +3641,14 @@
                Fakt.
 
           KRYSTIAN:
-               Tak tylko powiedziałem.
+               Oj tak tylko powiedziałem.
 
           KAROLINA:
                Więc napisz - "Dobrze, dzięki. Jestem u przyjaciół na
                kolacji.".
 
           KRYSTIAN:
-                         (zdenerwowany)
+                         (zdenerwowany, wali ręką w stół)
                Po co ma pisać gdzie jest ?!
 
                     Konsternacja.
@@ -3672,8 +3656,8 @@
                     LEON to podnosi, to odkłada tel.
 
           KRYSTIAN:
-               Dla zasady, ponieważ dziś już nie mamy żadnej
-               prywatności. Nie zaczynamy od: "Jak się miewasz ?",
+               Dziś już nie mamy żadnej prywatności.
+               Nie zaczynamy od: "Jak się miewasz ?",
                tylko: "Gdzie jesteś ?".
 
                     Pozostali bohaterowie patrzą na KRYSTIANA próbując
@@ -3856,6 +3840,9 @@
                Aha ! Mamy problem, bo mama śpi w kanciapce w głębi
                korytarza. Taaak... to całkiem możliwe.
 
+          EWA:
+               Możliwe. Obecność matki może wpływać kastrująco na mężczyznę.
+
           KAROLINA:
                Udajmy, że nic nie powiedziałam. Wszystko w porządku.
 
@@ -3900,7 +3887,7 @@
                Za mało.
 
           KRYSTIAN:
-               Super miłą to nie jest.
+               Super miła --- to ona nie jest.
 
           LEON:
                Przyznaję, bywa męcząca.
@@ -4144,7 +4131,7 @@
                a on się oszukuje. Kocha ją i cierpi jak zbity pies.
 
           KRYSTIAN:
-               Niech wezwie weterynarza.
+               A i dlatego dzwoni do weterynarza.
                          (patrząc wymownie na Anielę)
                
 
@@ -4541,7 +4528,7 @@
           KRYSTIAN:
                Znowu żaba.
 
-                    ŁUKASZ nie zdążył zareagować i tel. przejmuje
+                    LEON nie zdążył zareagować i tel. przejmuje
                     KAROLINA.
 
                     KAROLINA czyta szybko i po cichu sms.
@@ -4862,7 +4849,7 @@
                Przyjaźnimy się od dziecka. Kim jesteś ?!
 
           KRYSTIAN:
-               Sobą. Nie zmienił się. Jemu się zwierzałeś i z nim
+               Nadal sobą. Nie zmienił się. Jemu się zwierzałeś i z nim
                wszystko dzieliłeś.
 
           CZAREK:
@@ -5633,7 +5620,7 @@
                     telefon, a swój chowa do kieszeni spodni.
 
           KRYSTIAN:
-                         (do Leonaa)
+                         (do Leona)
                To nie był najlepszy pomysł.
 
           LEON:
@@ -5667,7 +5654,7 @@
                Bo jesteś gejem.
 
           KRYSTIAN:
-               Słowo "gej" kiepsko brzmi w twoich ustach.
+               Wybacz Robert, ale słowo "gej" kiepsko brzmi w twoich ustach.
                          (gestykuluje rękami)
                Mówcie dalej "pedał", tak jest naturalniej.
 
@@ -5676,8 +5663,8 @@
 
           KRYSTIAN:
                Wam nie potrafiłem się przyznać, więc jak mam to
-               powiedzieć przed sądem, adwokatami, ..., przed rodziną
-               ? ... Mnie się podobała ta gra. Czułem się trochę jak
+               powiedzieć przed sądem, przed nauczycielami, ..., przed rodziną? ...
+               Mnie się podobała ta gra. Czułem się trochę jak
                seryjny zabójca liczący na to, że go zdemaskują,
                aczkolwiek nie w ten sposób.
 
