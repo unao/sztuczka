@@ -1,5 +1,6 @@
 import * as fs from 'fs'
 import { resolve } from 'path'
+import { hash } from '../src/common/utils'
 
 const countLeftSpaces = (s: string) => {
   let c = 0
@@ -14,6 +15,9 @@ const countLeftSpaces = (s: string) => {
 
 let act: any = null
 let person: any = null
+
+const sayId = (sceneIdx: number, who: string, what: string) =>
+  `${sceneIdx}_${hash(who + what)}`
 
 const t = fs
   .readFileSync(resolve(__dirname, '../src/assets/text-raw.txt'), 'utf8')
@@ -45,13 +49,23 @@ const t = fs
         person === null && (acc[act].prelude = acc[act].prelude.join(' '))
         person = n[1].replace(':', '')
       } else if (n[0] === 15) {
-        if (p && p.who === person.replace(/ł/g, 'Ł')) {
+        if (p && p.who === person) {
           p.what += ' ' + n[1]
+          p.id = sayId(
+            acc[act].scenes.length - 1 + (act === 'AKT II' ? 23 : 0),
+            person,
+            p.what
+          )
         } else {
           s.plot.push({
             type: 'say',
-            who: person.replace(/ł/g, 'Ł'),
-            what: n[1]
+            who: person,
+            what: n[1],
+            id: sayId(
+              acc[act].scenes.length - 1 + (act === 'AKT II' ? 23 : 0),
+              person,
+              n[1]
+            )
           })
         }
       } else if (n[0] === 20 || n[0] === 25) {
@@ -60,7 +74,8 @@ const t = fs
         } else {
           s.plot.push({
             type: 'desc',
-            what: n[1]
+            what: n[1],
+            id: ''
           })
         }
       } else {
@@ -74,7 +89,4 @@ const t = fs
 fs.writeFileSync(
   resolve(__dirname, '../src/assets/parsed.json'),
   JSON.stringify(t, null, 2)
-    .replace(/ŁUKASZ/g, 'LEON')
-    .replace(/Łukasz/g, 'Leon')
-    .replace(/NELA\(GŁOS W TEL.\)/g, 'NELA (GŁOS W TEL.)')
 )

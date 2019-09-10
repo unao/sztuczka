@@ -9,8 +9,6 @@ import {
   switchMap,
   render,
   recordAudio,
-  hash,
-  sayId,
   playAudio,
   delay
 } from '../common'
@@ -61,12 +59,7 @@ init()
         .map((s, idx) => ({
           idx: idx,
           title: s.title,
-          plot: s.plot
-            .filter(p => p.who === actor)
-            .map(p => ({
-              ...p,
-              id: sayId(idx, p.who!, p.what)
-            }))
+          plot: s.plot.filter(p => p.who === actor)
         }))
         .filter(s => s.plot.length)
       return merge(

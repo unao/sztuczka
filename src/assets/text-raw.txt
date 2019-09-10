@@ -1530,7 +1530,7 @@
                          (sięga po telefon do torebki)
                ... telefonu od matki nie odbiorę.
                          (kładzie swój telefon obok telefonu
-                         Łukasza)
+                         Leona)
 
           ANIELA:
                A ja od faceta z psem uczulonym na roztocza.
@@ -2037,7 +2037,7 @@
           KRYSTIAN:
                Cześć !
 
-          MARTA (GłOS W TEL.):
+          MARTA (GŁOS W TEL.):
                Cześć !
 
           KRYSTIAN:
@@ -2130,7 +2130,7 @@
                Fajnie pracować nad morzem.
 
           KRYSTIAN:
-               Tak ?
+               Czyżby ?
 
           ANIELA:
                Ja bym z mety się tam przeniosła. 
@@ -2297,7 +2297,7 @@
                Podasz mi półmisek ?
 
           LEON:
-               Pieczone placuszki z cukinii ?
+               Placuszki z cukinii... Pieczone...
 
           ROBERT:
                Znowu wolałbyś smażone ? Musiałbym stać i przekładać je
@@ -2364,7 +2364,7 @@
                          (do tel.)
                Cześć tato.
 
-          TATA EWY (GłOS W TEL.):
+          TATA EWY (GŁOS W TEL.):
                Cześć skarbie ! Jak tam ? Co słychać ?
 
           EWA:
@@ -2833,7 +2833,7 @@
           KAROLINA:
                Dobry wieczór Panie Pawle.
 
-          PAWEŁ (GłOS W TEL.):
+          PAWEŁ (GŁOS W TEL.):
                Dobry wieczór. Pani komputer gotowy.
 
           KAROLINA:
@@ -3098,7 +3098,7 @@
                Wybaczcie.
                          (pokazuje wszystkim telefon i wstaje od
                          stołu)
-               Moja amerykańska apka.
+               Moja nowa apka.
 
           KAROLINA:
                Pokaż.
@@ -3412,7 +3412,7 @@
                     CZAREK odbiera tel. KRYSTIANOWI.
 
                     CZAREK ogląda zdjęcie w tel. stojąc po stronie
-                    stołu, którą zajmują KAROLINA i ŁUKASZ. Oni też
+                    stołu, którą zajmują KAROLINA i LEON. Oni też
                     zaglądają do tel.
 
                     PROJEKTOR - foto z What's Up - ocenzurowane.
@@ -3760,7 +3760,7 @@
           KRYSTIAN:
                Przeczytaj e-mail.
 
-          GłOS AUTOMATYCZNEJ SEKRETARKI:
+          GŁOS AUTOMATYCZNEJ SEKRETARKI:
                Nie masz żadnych nowych e-mail'i.
 
           LEON:
@@ -3851,7 +3851,7 @@
                nami...
                          (zwraca się do Czarka)
                ... skarbie wybacz...
-                         (zwraca się do Karoliny i Łukasza)
+                         (zwraca się do Karoliny i Leona)
                ... nie wyrobiłabym.
 
           CZAREK:
@@ -4162,7 +4162,7 @@
 
                     Dźwięk - sygnał w tel. - ktoś odbiera.
 
-          IGOR (GłOS W TEL.):
+          IGOR (GŁOS W TEL.):
                Dzięki, że się odezwałaś.
 
           ANIELA:
@@ -4344,7 +4344,7 @@
                          (do tel.)
                Cześć Neluś. Wszystko dobrze ?
 
-          NELA (GłOS W TEL.):
+          NELA (GŁOS W TEL.):
                Tak tato. Możesz rozmawiać ?
 
           ROBERT:
@@ -4358,7 +4358,7 @@
 
                     EWA zgaszona, popija wino.
 
-          NELA(GŁOS W TEL.):
+          NELA (GŁOS W TEL.):
                Jesteś tam tato ?
 
           ROBERT:
@@ -4636,7 +4636,7 @@
                Słucham ?
                          (niepewnie, badawczo do tel.)
 
-          DAREK (GłOS W TEL.):
+          DAREK (GŁOS W TEL.):
                Co to za głosik zbitego psa ? Podobno miałeś siedzieć w
                domu ? Już ci przeszła gorączka ? ... Nie odezwiesz się
                ?
@@ -4869,8 +4869,7 @@
                A dlaczego ?
 
           CZAREK:
-               Razem sypialiśmy, braliśmy prysznic. Chcę wiedzieć czy
-               mój przyjaciel jest pedałem i czy mi to pasuje. Kurwa !
+               Razem sypialiśmy, braliśmy prysznic, spaliśmy w jednym namiocie. Chcę wiedzieć czy mój przyjaciel jest pedałem i czy mi to pasuje. Kurwa !
                          (ponownie odwraca się)
 
           LEON:
@@ -5087,7 +5086,7 @@
 
                     PROJEKTOR - rozmowa przez głośnik.
 
-          MARCIN (GłOS W TEL.):
+          MARCIN (GŁOS W TEL.):
                Od dwóch tygodni ci się nagrywam.
 
                     CZAREK odkłada tel. na stół.
@@ -5202,7 +5201,7 @@
                     PROJEKTOR - odebrane połączenie - MARIKA -
                     głośnik.
 
-          MARIKA (GłOS W TEL.):
+          MARIKA (GŁOS W TEL.):
                Halo, Czarek ? Halo, kochanie ! Późno już, ale
                spanikowałam. Jestem w łazience. Zrobiłam test i wyszły
                dwie kreski. To dodatni wynik... nie rozumiem...
@@ -5237,9 +5236,12 @@
                     Pozostali na scenie są w szoku.
 
                     CZAREK podchodzi do drzwi.
-               Aniela,...
-                         (naciska klamkę; drzwi są zamknięte)
-               ... otwórz drzwi.
+                    
+          CZAREK: Aniela,...
+
+                    (naciska klamkę; drzwi są zamknięte)
+
+          CZAREK: ... otwórz drzwi.
 
                     Nagle za plecami CZARKA pojawia się EWA, chwyta go
                     za rękaw i ciągnie za sobą na taras. Wychodzą.
@@ -5438,7 +5440,7 @@
                     o stół, kładzie obie ręce na blacie. Spuszcza
                     głowę.
 
-          NIEZNAJOMY (GłOS W TEL.):
+          NIEZNAJOMY (GŁOS W TEL.):
                Karolina, to ty ?
 
           EWA:
@@ -5864,7 +5866,7 @@
           LEON:
                A ci ciągle się migdalą.
 
-                    Za ŁUKASZEM wchodzi KAROLINA.
+                    Za LEONEM wchodzi KAROLINA.
 
                     KAROLINA bierze LEONA pod rękę.
 
@@ -5877,7 +5879,7 @@
 
                     W tym momencie przez drzwi wypada KRYSTIAN.
 
-          ŁUKASZ:
+          Leon:
                Idę, idę,...
 
                     Wszyscy zbierają się w jednym miejscu.

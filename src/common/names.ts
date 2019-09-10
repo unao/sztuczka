@@ -14,8 +14,5 @@ export const actors = [
   // 'NELA'
 ] as const
 
-export const sayId = (sceneIdx: number, who: string, what: string) =>
-  `${sceneIdx}_${hash(who + what)}`
-
 export const recId = (date: number, sayId: string, duration: number) =>
   `${date}__${sayId}__${duration}`
