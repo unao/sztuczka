@@ -39,7 +39,7 @@ const selectActor = () => {
     filter(actor => actors.includes(actor)),
     take(1),
     tap(() => navigator.vibrate([200, 200, 200])),
-    tap(fullscreen),
+    // tap(fullscreen),
     shareReplay()
   )
 }
@@ -62,7 +62,7 @@ export const init = () =>
 <h1>${a.actor}</h1>
 <h3>...ale, ale momencik...<h1>`)
     ),
-    switchMap(x => (x.actor === 'ANIELA' ? selfie(x.ws) : EMPTY)),
+    // switchMap(x => (x.actor === 'ANIELA' ? selfie(x.ws) : EMPTY)),
     retryWhen(errs =>
       errs.pipe(
         tap(err => console.warn(err)),
