@@ -13,7 +13,9 @@ import {
   switchMap,
   map,
   delay,
-  retryWhen
+  retryWhen,
+  tap,
+  take
 } from 'rxjs/operators'
 import { recId } from './names'
 
@@ -73,13 +75,24 @@ export const recordAudio = (
         document.body.append(audio)
         // https://stackoverflow.com/questions/21522036/html-audio-tag-duration-always-infinity
         audio.currentTime = 9999999999
+        audio.play()
         return defer(() => of(audio.duration)).pipe(
           mergeMap(() =>
             audio.duration === Infinity || !audio.duration
-              ? throwError('')
+              ? throwError({ message: 'AUDIO_DURATION' })
               : of(true)
           ),
-          retryWhen(errs => errs.pipe(delay(50))),
+          retryWhen(errs =>
+            errs.pipe(
+              take(10),
+              tap(() => audio.play()),
+              delay(50)
+            )
+          ),
+          tap(() => {
+            audio.pause()
+            audio.currentTime = 0
+          }),
           map(() => ({
             audio,
             duration: audio.duration,

@@ -152,7 +152,15 @@ init()
       )
     })
   )
-  .subscribe()
+  .subscribe({
+    error: err =>
+      render(`<div style="background-color:rgba(255,0,0,0.05);padding:16px">
+      <h1>Critical Error</h1>
+      <pre>
+        ${err && err.message}
+      </pre>
+    </div>`)
+  })
 
 // console.log(
 //   scenes.reduce(
