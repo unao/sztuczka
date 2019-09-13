@@ -16,19 +16,17 @@ import { handleScene } from './scene'
 
 const { txt, sceneTitles } = state
 
-state.updateScene('SCENA 4')
-
 document.body.style.overflow = 'auto'
 
 const initUI = () => {
   render(`<div style="padding:16px">
       <select id="scene-select" style="font-size:24px;margin:16px">
-        ${sceneTitles
+        ${txt
           .map(
-            s =>
+            (s, idx) =>
               `<option ${
                 s === state.scene.value ? 'selected' : ''
-              } value="${s}">${s}</option>`
+              } value="scene-${idx}">${s.title}</option>`
           )
           .join('')}
       </select>
@@ -55,7 +53,8 @@ const el = initUI()
 const ui = <K extends keyof ReturnType<typeof initUI>>(k: K, c: string) =>
   (el[k].innerHTML = c)
 
-el.sceneSelect.onchange = () => state.updateScene(el.sceneSelect.value)
+el.sceneSelect.onchange = () =>
+  state.updateScene(parseInt(el.sceneSelect.value.replace('scene-', ''), 10))
 
 const handle = {
   conn: (ms: Observable<ServerToControl>) =>
@@ -76,7 +75,9 @@ connectWS('control')
         handle[ms.key](ms),
         state.scene.pipe(
           switchMap(s =>
-            handleScene(txt.find(t => t.title === s)!.plot, el.scene)
+            handleScene(s.plot, el.scene).pipe(
+              tap(x => !x && state.updateScene(txt.findIndex(p => p === s) + 1))
+            )
           )
         )
       )

@@ -25,9 +25,8 @@ const sceneTitles = txt.map(s => s.title)
 
 const ps = new URLSearchParams(location.search)
 
-const scene = new BehaviorSubject(
-  sceneTitles.find(t => t === ps.get('s')) || 'SCENA 1'
-)
+const s = parseInt(ps.get('s') || '1', 10) - 1
+const scene = new BehaviorSubject(txt.find((_, idx) => idx === s) || txt[0])
 
 export const state = {
   txt,
@@ -36,13 +35,14 @@ export const state = {
   sceneTitles,
   scene,
 
-  updateScene: (s: string) => {
-    ps.set('s', s)
+  updateScene: (idx: number) => {
+    ps.set('s', `${idx + 1}`)
     history.replaceState(
       null,
-      s,
+      'G25 | CONTROL',
       window.location.pathname + `?${ps.toString()}`
     )
-    scene.next(s)
+    scene.next(txt[idx])
   }
 }
+state.updateScene(s)
