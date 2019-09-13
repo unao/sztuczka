@@ -45,9 +45,9 @@ const initUI = () => {
   </div>`)
 
   return {
+    sceneSelect: document.getElementById('scene-select') as HTMLSelectElement,
     scene: document.getElementById('scene')! as HTMLDivElement,
-    connected: document.getElementById('connected') as HTMLDivElement,
-    sceneSelect: document.getElementById('scene-select') as HTMLSelectElement
+    connected: document.getElementById('connected') as HTMLDivElement
   }
 }
 

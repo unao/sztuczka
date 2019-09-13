@@ -2,6 +2,7 @@ import * as play from '../assets/parsed.json'
 import { BehaviorSubject } from 'rxjs'
 
 export type Plot = typeof plot
+export type Say = Plot extends Array<infer U> ? U : never
 
 const txt = play['AKT I'].scenes.concat(play['AKT II'].scenes)
 const plot = txt.reduce((acc, t) => acc.concat(t.plot), [] as Array<{
