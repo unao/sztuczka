@@ -3,15 +3,12 @@ import {
   tap,
   render,
   switchMap,
-  map,
-  groupBy,
-  ServerToControl,
-  mergeMap,
   retryWhen,
-  delay
+  delay,
+  ProtocolHandler
 } from 'common'
 
-import { fromEvent, Observable, merge, EMPTY } from 'rxjs'
+import { merge } from 'rxjs'
 
 import { state } from './state'
 import { handleScene } from './scene'
@@ -59,13 +56,9 @@ const ui = <K extends keyof ReturnType<typeof initUI>>(k: K, c: string) =>
 el.sceneSelect.onchange = () =>
   state.updateScene(parseInt(el.sceneSelect.value.replace('scene-', ''), 10))
 
-const handle = {
-  conn: (ms: Observable<ServerToControl>) =>
-    ms.pipe(
-      tap(ms =>
-        ui('connected', ms.payload.filter(x => x !== 'control').join(' '))
-      )
-    )
+const handle: ProtocolHandler = {
+  conn: rs =>
+    rs.pipe(tap(r => ui('connected', r.filter(x => x !== 'control').join(' '))))
 }
 
 connectWS('control')
@@ -73,22 +66,12 @@ connectWS('control')
     retryWhen(errs => errs.pipe(delay(250))),
     switchMap(ws =>
       merge(
-        fromEvent<WebSocketEventMap['message']>(ws, 'message').pipe(
-          map(m => JSON.parse(m.data) as ServerToControl),
-          groupBy(d => d.type),
-          mergeMap(ms => (handle[ms.key] ? handle[ms.key](ms) : EMPTY))
-        ),
+        ws.handle(handle),
         state.scene.pipe(
           switchMap(s =>
             handleScene(s.plot, s.title === 'SCENA 23', el.scene).pipe(
               tap(x => {
-                x &&
-                  ws.send(
-                    JSON.stringify({
-                      type: 'txt',
-                      payload: x.id
-                    })
-                  )
+                x && ws.send('txt', x.id)
                 if (!x) {
                   const idx = txt.findIndex(p => p === s) + 1
 

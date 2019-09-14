@@ -53,16 +53,7 @@ export const init = () =>
           map(ws => ({
             ws,
             actor: a
-          })),
-          tap(
-            x =>
-              (x.ws.onmessage = m => {
-                const msg = JSON.parse(m.data)
-                if (msg.type === 'txt') {
-                  setCurrent(msg.payload)
-                }
-              })
-          )
+          }))
         )
         // playAudio(`/call/${a}.mp3`).pipe(catchError(() => EMPTY))
       )

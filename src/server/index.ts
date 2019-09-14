@@ -4,7 +4,7 @@ import * as https from 'https'
 import * as path from 'path'
 
 import { localIP } from './utils'
-import { Role, ServerToControl } from '../common'
+import { Role } from '../common'
 
 const run = (port = 3356) => {
   const host = localIP()
@@ -27,7 +27,7 @@ const run = (port = 3356) => {
       JSON.stringify({
         type: 'conn',
         payload: Object.keys(conn)
-      } as ServerToControl)
+      })
     )
 
   wss.on('connection', (ws, req) => {

@@ -14,11 +14,11 @@ connectWS('screen')
   .pipe(
     tap(ws => {
       // fullscreen()
-      ws.onmessage = e => {
+      // ws.onmessage = e => {
         // const m = JSON.parse(e.data)
         // img.style.display = m.payload ? 'block' : 'none'
         // img.src = m.payload
-      }
+      // }
     }),
     retryWhen(errs =>
       errs.pipe(
