@@ -6,30 +6,33 @@ import {
   map,
   groupBy,
   ServerToControl,
-  mergeMap
+  mergeMap,
+  retryWhen,
+  delay
 } from 'common'
 
-import { fromEvent, Observable, merge } from 'rxjs'
+import { fromEvent, Observable, merge, EMPTY } from 'rxjs'
 
 import { state } from './state'
 import { handleScene } from './scene'
 
-const { txt, sceneTitles } = state
+const { txt } = state
 
 document.body.style.overflow = 'auto'
 
 const initUI = () => {
   render(`<div style="padding:16px">
-      <select id="scene-select" style="font-size:24px;margin:16px">
-        ${txt
-          .map(
-            (s, idx) =>
-              `<option ${
-                s === state.scene.value ? 'selected' : ''
-              } value="scene-${idx}">${s.title}</option>`
-          )
-          .join('')}
-      </select>
+    <select id="scene-select" style="font-size:24px;margin:16px">
+      ${txt
+        .map(
+          (s, idx) =>
+            `<option ${
+              s === state.scene.value ? 'selected' : ''
+            } value="scene-${idx}">${s.title}</option>`
+        )
+        .join('')}
+    </select>
+
     <div id="scene" style="width:66vw"></div>
 
     <div id="aux" style="width:33vw;position:fixed;right:0;top:0">
@@ -67,16 +70,39 @@ const handle = {
 
 connectWS('control')
   .pipe(
-    switchMap(ws => fromEvent<WebSocketEventMap['message']>(ws, 'message')),
-    map(m => JSON.parse(m.data) as ServerToControl),
-    groupBy(d => d.type),
-    mergeMap(ms =>
+    retryWhen(errs => errs.pipe(delay(250))),
+    switchMap(ws =>
       merge(
-        handle[ms.key](ms),
+        fromEvent<WebSocketEventMap['message']>(ws, 'message').pipe(
+          map(m => JSON.parse(m.data) as ServerToControl),
+          groupBy(d => d.type),
+          mergeMap(ms => (handle[ms.key] ? handle[ms.key](ms) : EMPTY))
+        ),
         state.scene.pipe(
           switchMap(s =>
-            handleScene(s.plot, el.scene).pipe(
-              tap(x => !x && state.updateScene(txt.findIndex(p => p === s) + 1))
+            handleScene(s.plot, s.title === 'SCENA 23', el.scene).pipe(
+              tap(x => {
+                x &&
+                  ws.send(
+                    JSON.stringify({
+                      type: 'txt',
+                      payload: x.id
+                    })
+                  )
+                if (!x) {
+                  const idx = txt.findIndex(p => p === s) + 1
+
+                  if (idx === 41) {
+                    console.log('THE-END')
+                    return
+                  }
+
+                  state.updateScene(idx)
+                  Array.from(el.sceneSelect.children).forEach(
+                    (s, i) => ((s as HTMLOptionElement).selected = i === idx)
+                  )
+                }
+              })
             )
           )
         )

@@ -17,6 +17,7 @@ import {
   selfie
 } from '../common'
 import { fromEvent, merge, of, Observable, EMPTY } from 'rxjs'
+import { text, setCurrent } from './text'
 
 const ps = new URLSearchParams(location.search)
 
@@ -52,15 +53,24 @@ export const init = () =>
           map(ws => ({
             ws,
             actor: a
-          }))
+          })),
+          tap(
+            x =>
+              (x.ws.onmessage = m => {
+                const msg = JSON.parse(m.data)
+                if (msg.type === 'txt') {
+                  setCurrent(msg.payload)
+                }
+              })
+          )
         )
         // playAudio(`/call/${a}.mp3`).pipe(catchError(() => EMPTY))
       )
     ),
     tap(a =>
       render(`
-<h1>${a.actor}</h1>
-<h3>...ale, ale momencik...<h1>`)
+      <h1>${a.actor}</h1>
+      ${text(a.actor)}`)
     ),
     // switchMap(x => (x.actor === 'ANIELA' ? selfie(x.ws) : EMPTY)),
     retryWhen(errs =>

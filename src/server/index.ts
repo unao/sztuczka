@@ -42,7 +42,8 @@ const run = (port = 3356) => {
     })
     ws.on('message', m => {
       console.log('MSG', (m as string).substr(0, 16))
-      conn['screen'] && conn['screen'].send(m)
+      wss.clients.forEach(w => w.send(m))
+      // conn['screen'] && conn['screen'].send(m)
     })
   })
 }

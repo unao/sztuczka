@@ -15,9 +15,9 @@ connectWS('screen')
     tap(ws => {
       // fullscreen()
       ws.onmessage = e => {
-        const m = JSON.parse(e.data)
-        img.style.display = m.payload ? 'block' : 'none'
-        img.src = m.payload
+        // const m = JSON.parse(e.data)
+        // img.style.display = m.payload ? 'block' : 'none'
+        // img.src = m.payload
       }
     }),
     retryWhen(errs =>
