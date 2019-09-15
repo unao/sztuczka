@@ -34,11 +34,14 @@ export const playAudio = (name: string) =>
     const el = document.createElement('audio')
     el.src = name.startsWith('https') ? name : `/assets/${name}`
     document.body.appendChild(el)
-    el.play().catch(e => obs.error(e))
+    el.play().catch(e => {
+      console.warn(e)
+      obs.complete()
+      // obs.error(e)
+    })
     el.onended = () => obs.complete()
     obs.next(el)
     return () => {
-      console.log('CLEAN-UP', name)
       el.pause()
       el.remove()
     }

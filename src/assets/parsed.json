@@ -6704,19 +6704,19 @@
             "id": "23_565963100"
           },
           {
-            "id": "23_1612796646",
+            "id": "23_m1282308616",
             "type": "msgGet",
             "who": "LEON",
-            "what": "msgGet:sms -- LEON",
+            "what": "msgGet:sms -- LEON -- Jak się miewasz?",
             "kind": "sms",
             "from": "Darek",
             "number": "517849625",
-            "body": "",
+            "body": "Jak się miewasz?",
             "variant": "frog"
           },
           {
             "type": "desc",
-            "what": "ROBERT zajmuje swoje miejsce przy stole. PROJEKTOR - zrzut ekranu - 21:58 DAREK \"Jak się miewasz ?\".",
+            "what": "ROBERT zajmuje swoje miejsce przy stole. msgShow_sms_LEON_Darek!517849625_Jak się miewasz?_frog",
             "id": ""
           },
           {
@@ -6977,13 +6977,13 @@
             "variant": ""
           },
           {
-            "id": "24_1015649346",
+            "id": "24_m341446881",
             "type": "msgGet",
             "who": "KAROLINA",
             "what": "msgGet:sms -- KAROLINA",
             "kind": "sms",
             "from": "",
-            "number": "874546259",
+            "number": "555937416",
             "body": "",
             "variant": ""
           },
@@ -7575,19 +7575,30 @@
             "id": "25_m144574949"
           },
           {
-            "id": "25_716075818",
+            "id": "25_m1332244251",
             "type": "msgGet",
             "who": "ANIELA",
-            "what": "msgGet:sms -- ANIELA",
+            "what": "msgGet:sms -- ANIELA -- Cześć",
             "kind": "sms",
             "from": "Igor",
             "number": "509657412",
-            "body": "",
+            "body": "Cześć",
+            "variant": ""
+          },
+          {
+            "id": "25_1302827314",
+            "type": "msgShow",
+            "who": "ANIELA",
+            "what": "msgShow:sms -- ANIELA -- Cześć",
+            "kind": "sms",
+            "from": "Igor",
+            "number": "509657412",
+            "body": "Cześć",
             "variant": ""
           },
           {
             "type": "desc",
-            "what": "PROJEKTOR - sms - IGOR - \"Cześć\". CZAREK zginając ramię z tel. w stronę ANIELI.",
+            "what": "CZAREK zginając ramię z tel. w stronę ANIELI.",
             "id": ""
           },
           {
@@ -7714,21 +7725,21 @@
             "id": "25_m1943322612"
           },
           {
-            "id": "25_716075818",
-            "type": "msgGet",
-            "who": "ANIELA",
-            "what": "msgGet:sms -- ANIELA",
-            "kind": "sms",
-            "from": "Igor",
-            "number": "509657412",
-            "body": "",
-            "variant": ""
-          },
-          {
             "id": "25_m1152290476",
             "type": "msgGet",
             "who": "ANIELA",
             "what": "msgGet:sms -- ANIELA -- Chce mi się bzykać!",
+            "kind": "sms",
+            "from": "Igor",
+            "number": "509657412",
+            "body": "Chce mi się bzykać!",
+            "variant": ""
+          },
+          {
+            "id": "25_1130391265",
+            "type": "msgShow",
+            "who": "ANIELA",
+            "what": "msgShow:sms -- ANIELA -- Chce mi się bzykać!",
             "kind": "sms",
             "from": "Igor",
             "number": "509657412",
@@ -8616,19 +8627,19 @@
             "id": "27_331972041"
           },
           {
-            "id": "27_1612796646",
+            "id": "27_438151259",
             "type": "msgGet",
             "who": "LEON",
-            "what": "msgGet:sms -- LEON",
+            "what": "msgGet:sms -- LEON -- Dupek",
             "kind": "sms",
             "from": "Darek",
             "number": "517849625",
-            "body": "",
+            "body": "Dupek",
             "variant": "frog"
           },
           {
             "type": "desc",
-            "what": "KAROLINA podnosi tel. i czyta. PROJEKTOR - DAREK \"Dupek\".",
+            "what": "KAROLINA podnosi tel. i czyta. msgShow_sms_LEON_Darek!517849625_Dupek_frog",
             "id": ""
           },
           {
@@ -9044,14 +9055,14 @@
         "title": "SCENA 30",
         "plot": [
           {
-            "id": "29_1612796646",
+            "id": "29_m700786247",
             "type": "msgGet",
             "who": "LEON",
-            "what": "msgGet:sms -- LEON",
+            "what": "msgGet:sms -- LEON -- Tęsknię...",
             "kind": "sms",
             "from": "Darek",
             "number": "517849625",
-            "body": "",
+            "body": "Tęsknię...",
             "variant": "frog"
           },
           {
@@ -9077,8 +9088,19 @@
             "id": "29_1898317073"
           },
           {
+            "id": "29_1778040566",
+            "type": "msgGet",
+            "who": "LEON",
+            "what": "msgGet:sms -- LEON -- Tęsknię za Twoimi",
+            "kind": "sms",
+            "from": "Darek",
+            "number": "517849625",
+            "body": "Tęsknię za Twoimi",
+            "variant": ""
+          },
+          {
             "type": "desc",
-            "what": "PROJEKTOR - sms - DAREK \"Tęsknię za Twoimi pocałunkami\". KAROLINA bierze kieliszek wina, wstaje i wychodzi z jadalni. Idzie na taras. ANIELA zabiera ze stołu całą butelkę wina i idzie za KAROLINĄ. LEON zagubiony, patrzy po twarzach innych i zatrzymuje się na KRYSTIANIE. Wymieniają się spojrzeniami. KAROLINA i ANIELA są już na tarasie. ANIELA podaje KAROLINIE chusteczki higieniczne. W jadalni:",
+            "what": "pocałunkami..._frog KAROLINA bierze kieliszek wina, wstaje i wychodzi z jadalni. Idzie na taras. ANIELA zabiera ze stołu całą butelkę wina i idzie za KAROLINĄ. LEON zagubiony, patrzy po twarzach innych i zatrzymuje się na KRYSTIANIE. Wymieniają się spojrzeniami. KAROLINA i ANIELA są już na tarasie. ANIELA podaje KAROLINIE chusteczki higieniczne. W jadalni:",
             "id": ""
           },
           {

@@ -5,7 +5,7 @@ import { filter, tap, map, switchMap, delay } from 'common'
 type Say = _Say & { next: () => Say | undefined }
 
 const current = new BehaviorSubject<{
-  say: Say
+  say?: Say
   el: HTMLDivElement
 }>({} as any)
 
@@ -37,13 +37,18 @@ const sel = (s?: Say & { next: () => Say | undefined }) => {
   if (s) {
     current.value.el.style.border = null
     const e = el(s.id)
-    current.value.say.next() === s
+    current.value.say && current.value.say.next() === s
       ? current.value.el.scrollIntoView()
       : e.scrollIntoView()
     e.style.border = '2px solid black'
     current.next({
       say: s,
       el: e
+    })
+  } else {
+    current.next({
+      say: undefined,
+      el: current.value.el
     })
   }
 }
@@ -77,8 +82,8 @@ export const handleScene = (
       fromEvent<KeyboardEvent>(document, 'keydown').pipe(
         filter(e => e.key === 'ArrowDown'),
         tap(e => e.preventDefault()),
-        tap(() => sel(current.value.say.next())),
-        filter(_ => !current.value.say.next() && !actIEnd)
+        tap(() => sel(current.value.say && current.value.say.next())),
+        filter(_ => !current.value.say && !actIEnd)
       )
     ).pipe(map(() => undefined))
   )

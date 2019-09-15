@@ -5,10 +5,11 @@ import {
   switchMap,
   retryWhen,
   delay,
-  ProtocolHandler
+  ProtocolHandler,
+  playAudio
 } from 'common'
 
-import { merge } from 'rxjs'
+import { merge, of } from 'rxjs'
 
 import { state } from './state'
 import { handleScene } from './scene'
@@ -45,7 +46,8 @@ const initUI = () => {
   return {
     sceneSelect: document.getElementById('scene-select') as HTMLSelectElement,
     scene: document.getElementById('scene')! as HTMLDivElement,
-    connected: document.getElementById('connected') as HTMLDivElement
+    connected: document.getElementById('connected') as HTMLDivElement,
+    aux: document.getElementById('aux')! as HTMLDivElement
   }
 }
 
@@ -72,7 +74,6 @@ connectWS('control')
             handleScene(s.plot, s.title === 'SCENA 23', el.scene).pipe(
               tap(x => {
                 if (x) {
-                  console.log(x)
                   ws.send('txt', x.id)
                   if (x.type === 'msgGet') {
                     ws.send('msgGet', x as any, x.who! as any)
@@ -91,6 +92,12 @@ connectWS('control')
                     (s, i) => ((s as HTMLOptionElement).selected = i === idx)
                   )
                 }
+              }),
+              switchMap(x => {
+                if (x && x.type === 'say' && state.missing.includes(x.who!)) {
+                  return playAudio(`recs/${x.who}/${x.id}.webm`)
+                }
+                return of(x)
               })
             )
           )

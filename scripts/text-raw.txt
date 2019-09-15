@@ -3554,12 +3554,11 @@
           CZAREK:
                Alleluja.
 
-                    msgGet_sms_LEON_Darek!517849625__frog
+                    msgGet_sms_LEON_Darek!517849625_Jak się miewasz?_frog
 
                     ROBERT zajmuje swoje miejsce przy stole.
 
-                    PROJEKTOR - zrzut ekranu - 21:58 DAREK "Jak się
-                    miewasz ?".
+                    msgShow_sms_LEON_Darek!517849625_Jak się miewasz?_frog
 
           EWA:
                Co to ? SMS ?
@@ -3691,7 +3690,7 @@
 
                     msgGet_sms_ROBERT_booking.com
 
-                    msgGet_sms_KAROLINA_!874546259
+                    msgGet_sms_KAROLINA_!555937416
 
           KRYSTIAN:
                Robert dostałeś e-mail.
@@ -4005,9 +4004,9 @@
           CZAREK:
                Uśmiech !!!
 
-                    msgGet_sms_ANIELA_Igor!509657412
+                    msgGet_sms_ANIELA_Igor!509657412_Cześć
 
-                    PROJEKTOR - sms - IGOR - "Cześć".
+                    msgShow_sms_ANIELA_Igor!509657412_Cześć
 
                     CZAREK zginając ramię z tel. w stronę ANIELI.
 
@@ -4080,9 +4079,9 @@
           CZAREK:
                A tam ... jest niegroźny. To kwestia zasad. Uśmiech.
 
-                    msgGet_sms_ANIELA_Igor!509657412
-
                     msgGet_sms_ANIELA_Igor!509657412_Chce mi się bzykać!
+
+                    msgShow_sms_ANIELA_Igor!509657412_Chce mi się bzykać!
 
                     PROJEKTOR - zrzut ekranu ANIELI.
 
@@ -4554,11 +4553,11 @@
           LEON:
                No wiem, ale...
 
-                    msgGet_sms_LEON_Darek!517849625__frog
+                    msgGet_sms_LEON_Darek!517849625_Dupek_frog
 
                     KAROLINA podnosi tel. i czyta.
 
-                    PROJEKTOR - DAREK "Dupek".
+                    msgShow_sms_LEON_Darek!517849625_Dupek_frog
 
           KAROLINA:
                Napisał: "Dupek".
@@ -4765,7 +4764,7 @@
 
                                    SCENA 30
 
-                    msgGet_sms_LEON_Darek!517849625__frog
+                    msgGet_sms_LEON_Darek!517849625_Tęsknię..._frog
 
                     KAROLINA wolno obraca głowę w stronę tel., aby na
                     niego spojrzeć, szuka wzrokiem wsparcia u innych,
@@ -4776,8 +4775,8 @@
                          (odkłada tel. na stół)
                Tęskni za twoimi pocałunkami.
 
-                    PROJEKTOR - sms - DAREK "Tęsknię za Twoimi
-                    pocałunkami".
+                    msgGet_sms_LEON_Darek!517849625_Tęsknię za Twoimi
+                    pocałunkami..._frog
 
                     KAROLINA bierze kieliszek wina, wstaje i wychodzi
                     z jadalni. Idzie na taras.

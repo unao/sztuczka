@@ -31,6 +31,7 @@ const scene = new BehaviorSubject(txt.find((_, idx) => idx === s) || txt[0])
 export const state = {
   txt,
   plot,
+  missing: (ps.get('m') || '').toUpperCase().split(','),
   progress,
   sceneTitles,
   scene,
