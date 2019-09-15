@@ -13,11 +13,14 @@ export type Message<K extends keyof Protocol> = {
   payload: Protocol[K]
 }
 
-interface MSG {
-  type: 'sms' | 'email' | 'whatsup' | 'timer'
+interface MSGBase {
+  kind: 'sms' | 'email' | 'whatsup' | 'timer'
+}
+
+interface MSG extends MSGBase {
   from: string
   number: string
-  msg: string
+  body: string
 }
 
 interface Call {
@@ -35,7 +38,7 @@ interface Protocol {
   callGet: Call
   callStart: Call
   callEnd: null
-  msgGet: MSG
+  msgGet: MSGBase
   msgShow: MSG
 }
 
@@ -48,11 +51,7 @@ export const withProtocol = (ws: {
   // off: (m: string) => void
 }) => {
   return {
-    send: <K extends keyof Protocol>(
-      k: K,
-      p: Protocol[K],
-      to?: Role | Role[]
-    ) => {
+    send: <K extends keyof Protocol>(k: K, p: Protocol[K], to?: Role) => {
       ws.send(
         JSON.stringify({
           type: k,

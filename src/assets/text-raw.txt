@@ -1641,7 +1641,7 @@
           KAROLINA:
                Przestańcie, proszę.
 
-                    msgGet_sms_CZAREK_505414628
+                    msgGet_sms_CZAREK_!505414628
 
           ANIELA:
                Jest pierwszy SMS. Przeczytamy ?
@@ -1652,7 +1652,7 @@
                          (bierze telefon w rękę)
                Yyyyy...
 
-                    msgShow_sms_CZAREK_505414628_Pragnę twojego ciała.
+                    msgShow_sms_CZAREK_!505414628_Pragnę twojego ciała.
 
           ANIELA:
                          (czyta SMS na głos)

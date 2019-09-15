@@ -44,7 +44,8 @@ const t = fs
           who,
           what: `${type}:${kind} -- ${who}${body ? ` -- ${body}` : ''}`,
           kind,
-          other,
+          from: other.split('!')[0],
+          number: other.split('!')[1],
           body
         }
       }

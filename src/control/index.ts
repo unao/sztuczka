@@ -71,7 +71,13 @@ connectWS('control')
           switchMap(s =>
             handleScene(s.plot, s.title === 'SCENA 23', el.scene).pipe(
               tap(x => {
-                x && ws.send('txt', x.id)
+                if (x) {
+                  console.log(x)
+                  ws.send('txt', x.id)
+                  if (x.type === 'msgGet') {
+                    ws.send('msgGet', x as any, x.who! as any)
+                  }
+                }
                 if (!x) {
                   const idx = txt.findIndex(p => p === s) + 1
 

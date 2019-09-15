@@ -3030,7 +3030,7 @@
             "who": "CZAREK",
             "what": "msgGet:sms -- CZAREK",
             "kind": "sms",
-            "other": "505414628"
+            "from": "505414628"
           },
           {
             "type": "say",
@@ -3055,7 +3055,7 @@
             "who": "CZAREK",
             "what": "msgShow:sms -- CZAREK -- Pragnę twojego ciała.",
             "kind": "sms",
-            "other": "505414628",
+            "from": "505414628",
             "body": "Pragnę twojego ciała."
           },
           {
