@@ -29,6 +29,25 @@ const t = fs
     (acc, n) => {
       const s = acc[act] && acc[act].scenes[acc[act].scenes.length - 1]
       const p = s && s.plot && s.plot[s.plot.length - 1]
+      const id = (who: string, what: string) =>
+        sayId(
+          acc[act].scenes.length - 1 + (act === 'AKT II' ? 23 : 0),
+          who,
+          what
+        )
+      const msg = (line: string) => {
+        const [type, kind, who, other, body] = line.split('_')
+        console.log(type, kind, who, other, body)
+        return {
+          id: id(who, line),
+          type,
+          who,
+          what: `${type}:${kind} -- ${who}${body ? ` -- ${body}` : ''}`,
+          kind,
+          other,
+          body
+        }
+      }
       if (n[0] === 35) {
         if (n[1][0] === 'A') {
           act = n[1]
@@ -51,32 +70,28 @@ const t = fs
       } else if (n[0] === 15) {
         if (p && p.who === person) {
           p.what += ' ' + n[1]
-          p.id = sayId(
-            acc[act].scenes.length - 1 + (act === 'AKT II' ? 23 : 0),
-            person,
-            p.what
-          )
+          p.id = id(person, p.what)
         } else {
           s.plot.push({
             type: 'say',
             who: person,
             what: n[1],
-            id: sayId(
-              acc[act].scenes.length - 1 + (act === 'AKT II' ? 23 : 0),
-              person,
-              n[1]
-            )
+            id: id(person, n[1])
           })
         }
       } else if (n[0] === 20 || n[0] === 25) {
         if (p && p.type === 'desc') {
           p.what += ' ' + n[1]
         } else {
-          s.plot.push({
-            type: 'desc',
-            what: n[1],
-            id: ''
-          })
+          if (n[1].startsWith('msg')) {
+            s.plot.push(msg(n[1]))
+          } else {
+            s.plot.push({
+              type: 'desc',
+              what: n[1],
+              id: ''
+            })
+          }
         }
       } else {
         console.log('WTF', n)

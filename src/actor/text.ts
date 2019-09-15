@@ -21,12 +21,12 @@ export const text = (actor: Actor) =>
 ${scene.plot
   .map(
     p => `<div id="txt-${p.id}" style="padding:4px;margin-left:${
-      p.who ? 4 : 64
-    }px;font-size:${p.who ? 18 : 12}px;${
+      p.type === 'say' ? 4 : 64
+    }px;font-size:${p.type === 'say' ? 18 : 12}px;${
       p.who === actor ? 'background-color:rgba(0,255,0,0.1)' : ''
     }">
   ${
-    p.who
+    p.type === 'say'
       ? `<span style="color:${p.who === actor ? 'green' : 'black'}"><b>${
           p.who
         }: </b></span>`

@@ -1641,11 +1641,7 @@
           KAROLINA:
                Przestańcie, proszę.
 
-                    DŹWIĘK - sygnał SMS telefonu CZARKA.
-
-                    PROJEKTOR - biała tablica - obraz - zrzut ekranu
-                    wyświetlacza telefonu CZARKA: numer telefonu (ciąg
-                    9 cyfr)
+                    msgGet_sms_CZAREK_505414628
 
           ANIELA:
                Jest pierwszy SMS. Przeczytamy ?
@@ -1656,8 +1652,7 @@
                          (bierze telefon w rękę)
                Yyyyy...
 
-                    PROJEKTOR - dymek SMS - tekst: Pragnę twojego
-                    ciała.
+                    msgShow_sms_CZAREK_505414628_Pragnę twojego ciała.
 
           ANIELA:
                          (czyta SMS na głos)

@@ -3025,9 +3025,12 @@
             "id": "11_1867237930"
           },
           {
-            "type": "desc",
-            "what": "DŹWIĘK - sygnał SMS telefonu CZARKA. PROJEKTOR - biała tablica - obraz - zrzut ekranu wyświetlacza telefonu CZARKA: numer telefonu (ciąg 9 cyfr)",
-            "id": ""
+            "id": "11_1303154192",
+            "type": "msgGet",
+            "who": "CZAREK",
+            "what": "msgGet:sms -- CZAREK",
+            "kind": "sms",
+            "other": "505414628"
           },
           {
             "type": "say",
@@ -3047,8 +3050,17 @@
             "id": "11_m674882237"
           },
           {
+            "id": "11_1282712694",
+            "type": "msgShow",
+            "who": "CZAREK",
+            "what": "msgShow:sms -- CZAREK -- Pragnę twojego ciała.",
+            "kind": "sms",
+            "other": "505414628",
+            "body": "Pragnę twojego ciała."
+          },
+          {
             "type": "desc",
-            "what": "PROJEKTOR - dymek SMS - tekst: Pragnę twojego ciała. (czyta SMS na głos)",
+            "what": "(czyta SMS na głos)",
             "id": ""
           },
           {

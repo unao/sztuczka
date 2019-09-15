@@ -32,11 +32,11 @@ interface Protocol {
     duration: number
   }
   txt: string
-  getCall: Call
-  startCall: Call
-  endCall: null
-  getMSG: MSG
-  showMSG: MSG
+  callGet: Call
+  callStart: Call
+  callEnd: null
+  msgGet: MSG
+  msgShow: MSG
 }
 
 const unwrap = <K extends keyof Protocol>(m: string) =>

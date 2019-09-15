@@ -9,22 +9,26 @@ const current = new BehaviorSubject<{
   el: HTMLDivElement
 }>({} as any)
 
-const ui = {
-  desc: (p: _Say) =>
-    `<div style="padding:4px;margin-left:64px;font-size:12px;">
-      ${p.what}
-    </div>`,
-
-  say: (p: _Say) =>
-    `<div id="txt-${p.id}" style="padding:8px;font-size:18px;cursor:pointer">
-      <b>${p.who}: </b>
-      ${p.what}
-    </div>`
+const ui = (p: _Say) => {
+  if (p.type === 'say') {
+    return `<div id="txt-${p.id}" style="padding:8px;font-size:18px;cursor:pointer">
+        <b>${p.who}: </b>
+        ${p.what}
+      </div>`
+  } else if (p.type === 'desc') {
+    return `<div style="padding:4px;margin-left:64px;font-size:12px;">
+    ${p.what}
+  </div>`
+  } else {
+    return `<div id="txt-${p.id}" style="padding:16px;color:gray;font-size:18px;cursor:pointer">
+    <b>${p.what}</b>
+  </div>`
+  }
 }
 
 const txtUI = (plot: Plot) =>
   `<div style="padding:8px;max-width:80%">
-    ${plot.map(p => ui[p.type as keyof typeof ui](p)).join('')}
+    ${plot.map(p => ui(p)).join('')}
     <button id="next-scene" style="padding:8px;margin:8px">Następna</button>
   </div>`
 
