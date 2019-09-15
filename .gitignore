@@ -2,3 +2,5 @@
 .firebase/
 node_modules/
 build/
+cert/firebase.json
+src/assets/recs

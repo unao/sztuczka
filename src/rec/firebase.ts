@@ -2,7 +2,6 @@ import * as F from 'firebase/app'
 import 'firebase/storage'
 import { Actor, map, tap } from 'common'
 import { defer } from 'rxjs'
-import { pathToFileURL } from 'url'
 
 F.initializeApp({
   apiKey: 'AIzaSyBEab6rgh5TpMyRGSjcIy_OmUV_xD1laLg',
