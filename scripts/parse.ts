@@ -20,7 +20,7 @@ const sayId = (sceneIdx: number, who: string, what: string) =>
   `${sceneIdx}_${hash(who + what)}`
 
 const t = fs
-  .readFileSync(resolve(__dirname, '../src/assets/text-raw.txt'), 'utf8')
+  .readFileSync(resolve(__dirname, './text-raw.txt'), 'utf8')
   .split('\n')
   .map(l => l.trimRight())
   .filter(l => l)
@@ -36,17 +36,18 @@ const t = fs
           what
         )
       const msg = (line: string) => {
-        const [type, kind, who, other, body] = line.split('_')
-        console.log(type, kind, who, other, body)
+        const [type, kind, who, other, body, variant] = line.split('_')
+        console.log(type, kind, who, other, body, variant)
         return {
           id: id(who, line),
           type,
           who,
           what: `${type}:${kind} -- ${who}${body ? ` -- ${body}` : ''}`,
           kind,
-          from: other.split('!')[0],
-          number: other.split('!')[1],
-          body
+          from: other.split('!')[0] || '',
+          number: other.split('!')[1] || '',
+          body: body || '',
+          variant: variant || ''
         }
       }
       if (n[0] === 35) {

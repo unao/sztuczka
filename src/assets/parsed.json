@@ -3025,12 +3025,15 @@
             "id": "11_1867237930"
           },
           {
-            "id": "11_1303154192",
+            "id": "11_1777486989",
             "type": "msgGet",
             "who": "CZAREK",
             "what": "msgGet:sms -- CZAREK",
             "kind": "sms",
-            "from": "505414628"
+            "from": "",
+            "number": "505414628",
+            "body": "",
+            "variant": ""
           },
           {
             "type": "say",
@@ -3050,13 +3053,15 @@
             "id": "11_m674882237"
           },
           {
-            "id": "11_1282712694",
+            "id": "11_407248173",
             "type": "msgShow",
             "who": "CZAREK",
             "what": "msgShow:sms -- CZAREK -- Pragnę twojego ciała.",
             "kind": "sms",
-            "from": "505414628",
-            "body": "Pragnę twojego ciała."
+            "from": "",
+            "number": "505414628",
+            "body": "Pragnę twojego ciała.",
+            "variant": ""
           },
           {
             "type": "desc",
@@ -5392,9 +5397,26 @@
         "title": "SCENA 19",
         "plot": [
           {
-            "type": "desc",
-            "what": "Dźwięk - sygnał sms-a tel. CZARKA. Po chwili kolejny - dźwięk - sygnał sms-a tel. LEONA. PROJEKTOR - sms po sms-ie - tekst: Jutro gramy o 17.00 (ew. emotka - piłka nożna).",
-            "id": ""
+            "id": "18_3503523",
+            "type": "msgGet",
+            "who": "CZAREK",
+            "what": "msgGet:sms -- CZAREK",
+            "kind": "sms",
+            "from": "Roman",
+            "number": "668541286",
+            "body": "",
+            "variant": ""
+          },
+          {
+            "id": "18_m1477061092",
+            "type": "msgGet",
+            "who": "LEON",
+            "what": "msgGet:sms -- LEON",
+            "kind": "sms",
+            "from": "Romek",
+            "number": "668541286",
+            "body": "",
+            "variant": ""
           },
           {
             "type": "say",
@@ -5414,9 +5436,15 @@
             "id": "18_838219949"
           },
           {
-            "type": "desc",
-            "what": "Dźwięk - sygnał sms tel. ROBERTA. PROJEKTOR - to co u CZARKA i LEONA.",
-            "id": ""
+            "id": "18_587258204",
+            "type": "msgGet",
+            "who": "ROBERT",
+            "what": "msgGet:sms -- ROBERT",
+            "kind": "sms",
+            "from": "Romek",
+            "number": "668541286",
+            "body": "",
+            "variant": ""
           },
           {
             "type": "say",
@@ -5627,8 +5655,30 @@
         "title": "SCENA 20",
         "plot": [
           {
+            "id": "19_m573638067",
+            "type": "msgGet",
+            "who": "CZAREK",
+            "what": "msgGet:sms -- CZAREK",
+            "kind": "sms",
+            "from": "Marika",
+            "number": "505843759",
+            "body": "",
+            "variant": ""
+          },
+          {
+            "id": "19_472556320",
+            "type": "msgShow",
+            "who": "CZAREK",
+            "what": "msgShow:sms -- CZAREK -- Zadzwoń. to pilne!!!",
+            "kind": "sms",
+            "from": "Marika",
+            "number": "505843759",
+            "body": "Zadzwoń. to pilne!!!",
+            "variant": ""
+          },
+          {
             "type": "desc",
-            "what": "Dźwięk - sygnał sms tel. CZARKA. PROJEKTOR - SMS - MARIKA - tekst: Zadzwoń. to pilne !!! (wskazuje palcem na stół)",
+            "what": "(wskazuje palcem na stół)",
             "id": ""
           },
           {
@@ -6254,8 +6304,19 @@
         "title": "SCENA 23",
         "plot": [
           {
+            "id": "22_1723510059",
+            "type": "msgGet",
+            "who": "KRYSTIAN",
+            "what": "msgGet:sms -- KRYSTIAN",
+            "kind": "sms",
+            "from": "Iza",
+            "number": "What's Up",
+            "body": "",
+            "variant": ""
+          },
+          {
             "type": "desc",
-            "what": "Światło - rozjaśnienie jadalni. Dźwięk - sygnał z tel. KRYSTIANA/LEONA.",
+            "what": "Światło - rozjaśnienie jadalni.",
             "id": ""
           },
           {
@@ -6643,8 +6704,19 @@
             "id": "23_565963100"
           },
           {
+            "id": "23_1612796646",
+            "type": "msgGet",
+            "who": "LEON",
+            "what": "msgGet:sms -- LEON",
+            "kind": "sms",
+            "from": "Darek",
+            "number": "517849625",
+            "body": "",
+            "variant": "frog"
+          },
+          {
             "type": "desc",
-            "what": "ROBERT zajmuje swoje miejsce przy stole. Dźwięk - sygnał sms - rechot żaby  tel. LEONA/KRYSTIANA. PROJEKTOR - zrzut ekranu - 21:58 DAREK \"Jak się miewasz ?\".",
+            "what": "ROBERT zajmuje swoje miejsce przy stole. PROJEKTOR - zrzut ekranu - 21:58 DAREK \"Jak się miewasz ?\".",
             "id": ""
           },
           {
@@ -6894,9 +6966,26 @@
         "title": "SCENA 25",
         "plot": [
           {
-            "type": "desc",
-            "what": "Dźwięk - sygnał e'mail - tel. ROBERTA; tel. trzyma nadal KRYSTIAN. Po krótkiej chwili kolejny dźwięk - SMS - tel. KAROLINY.",
-            "id": ""
+            "id": "24_152757501",
+            "type": "msgGet",
+            "who": "ROBERT",
+            "what": "msgGet:sms -- ROBERT",
+            "kind": "sms",
+            "from": "booking.com",
+            "number": "",
+            "body": "",
+            "variant": ""
+          },
+          {
+            "id": "24_1015649346",
+            "type": "msgGet",
+            "who": "KAROLINA",
+            "what": "msgGet:sms -- KAROLINA",
+            "kind": "sms",
+            "from": "",
+            "number": "874546259",
+            "body": "",
+            "variant": ""
           },
           {
             "type": "say",
@@ -7486,8 +7575,19 @@
             "id": "25_m144574949"
           },
           {
+            "id": "25_716075818",
+            "type": "msgGet",
+            "who": "ANIELA",
+            "what": "msgGet:sms -- ANIELA",
+            "kind": "sms",
+            "from": "Igor",
+            "number": "509657412",
+            "body": "",
+            "variant": ""
+          },
+          {
             "type": "desc",
-            "what": "Dźwięk - sms - tel. ANIELI. PROJEKTOR - sms - IGOR - \"Cześć\". CZAREK zginając ramię z tel. w stronę ANIELI.",
+            "what": "PROJEKTOR - sms - IGOR - \"Cześć\". CZAREK zginając ramię z tel. w stronę ANIELI.",
             "id": ""
           },
           {
@@ -7604,8 +7704,8 @@
           {
             "type": "say",
             "who": "LEON",
-            "what": "Zróbmy to zdjęcie.",
-            "id": "25_m1115011336"
+            "what": "Zróbmy to zdjęcie. CZAREK wyciąga rękę z tel.",
+            "id": "25_1102344561"
           },
           {
             "type": "say",
@@ -7614,8 +7714,30 @@
             "id": "25_m1943322612"
           },
           {
+            "id": "25_716075818",
+            "type": "msgGet",
+            "who": "ANIELA",
+            "what": "msgGet:sms -- ANIELA",
+            "kind": "sms",
+            "from": "Igor",
+            "number": "509657412",
+            "body": "",
+            "variant": ""
+          },
+          {
+            "id": "25_m1152290476",
+            "type": "msgGet",
+            "who": "ANIELA",
+            "what": "msgGet:sms -- ANIELA -- Chce mi się bzykać!",
+            "kind": "sms",
+            "from": "Igor",
+            "number": "509657412",
+            "body": "Chce mi się bzykać!",
+            "variant": ""
+          },
+          {
             "type": "desc",
-            "what": "CZAREK wyciąga rękę z tel. Dźwięk - sygnał sms - tel. ANIELI - IGOR \"Chce mi się bzykać\". PROJEKTOR - zrzut ekranu ANIELI. Wszystkim zrzedły miny. ANIELA przymyka oczy, ściskając powieki.",
+            "what": "PROJEKTOR - zrzut ekranu ANIELI. Wszystkim zrzedły miny. ANIELA przymyka oczy, ściskając powieki.",
             "id": ""
           },
           {
@@ -8415,9 +8537,15 @@
         "title": "SCENA 28",
         "plot": [
           {
-            "type": "desc",
-            "what": "Dźwięk - sygnał sms - rechot żaby.",
-            "id": ""
+            "id": "27_1612796646",
+            "type": "msgGet",
+            "who": "LEON",
+            "what": "msgGet:sms -- LEON",
+            "kind": "sms",
+            "from": "Darek",
+            "number": "517849625",
+            "body": "",
+            "variant": "frog"
           },
           {
             "type": "say",
@@ -8488,8 +8616,19 @@
             "id": "27_331972041"
           },
           {
+            "id": "27_1612796646",
+            "type": "msgGet",
+            "who": "LEON",
+            "what": "msgGet:sms -- LEON",
+            "kind": "sms",
+            "from": "Darek",
+            "number": "517849625",
+            "body": "",
+            "variant": "frog"
+          },
+          {
             "type": "desc",
-            "what": "Dźwięk - sygnał sms - rechot żaby. KAROLINA podnosi tel. i czyta. PROJEKTOR - DAREK \"Dupek\".",
+            "what": "KAROLINA podnosi tel. i czyta. PROJEKTOR - DAREK \"Dupek\".",
             "id": ""
           },
           {
@@ -8905,8 +9044,19 @@
         "title": "SCENA 30",
         "plot": [
           {
+            "id": "29_1612796646",
+            "type": "msgGet",
+            "who": "LEON",
+            "what": "msgGet:sms -- LEON",
+            "kind": "sms",
+            "from": "Darek",
+            "number": "517849625",
+            "body": "",
+            "variant": "frog"
+          },
+          {
             "type": "desc",
-            "what": "Dźwięk - sygnał sms - rechot żaby. KAROLINA wolno obraca głowę w stronę tel., aby na niego spojrzeć, szuka wzrokiem wsparcia u innych, w końcu podnosi tel. i czyta sms.",
+            "what": "KAROLINA wolno obraca głowę w stronę tel., aby na niego spojrzeć, szuka wzrokiem wsparcia u innych, w końcu podnosi tel. i czyta sms.",
             "id": ""
           },
           {
@@ -10643,8 +10793,52 @@
         "title": "SCENA 39",
         "plot": [
           {
+            "id": "38_m573638067",
+            "type": "msgGet",
+            "who": "CZAREK",
+            "what": "msgGet:sms -- CZAREK",
+            "kind": "sms",
+            "from": "Marika",
+            "number": "505843759",
+            "body": "",
+            "variant": ""
+          },
+          {
+            "id": "38_m2069279949",
+            "type": "msgShow",
+            "who": "CZAREK",
+            "what": "msgShow:sms -- CZAREK -- Zadzwoń! to pilne!",
+            "kind": "sms",
+            "from": "Marika",
+            "number": "505843759",
+            "body": "Zadzwoń! to pilne!",
+            "variant": ""
+          },
+          {
+            "id": "38_m895628653",
+            "type": "msgGet",
+            "who": "CZAREK",
+            "what": "msgGet:sms -- CZAREK",
+            "kind": "sms",
+            "from": "Ewa",
+            "number": "882683498",
+            "body": "",
+            "variant": ""
+          },
+          {
+            "id": "38_605890195",
+            "type": "msgShow",
+            "who": "CZAREK",
+            "what": "msgShow:sms -- CZAREK -- Pragnęłam Cię dziś BARDZO",
+            "kind": "sms",
+            "from": "Ewa",
+            "number": "882683498",
+            "body": "Pragnęłam Cię dziś BARDZO",
+            "variant": ""
+          },
+          {
             "type": "desc",
-            "what": "Światło - szperacz 1 - w snopie światła stoją ANIELA i CZAREK. Dźwięk - sygnał sms - tel. CZARKA. PROJEKTOR - sms - MARIKA \"Zadzwoń ! To pilne !\". Dźwięk - sygnał sms - tel. CZARKA. PROJEKTOR - sms - EWA \"Pragnęłam Cię dziś BARDZO\". CZAREK zaczyna odpisywać; ANIELA czeka.",
+            "what": "Światło - szperacz 1 - w snopie światła stoją ANIELA i CZAREK. CZAREK zaczyna odpisywać; ANIELA czeka.",
             "id": ""
           },
           {

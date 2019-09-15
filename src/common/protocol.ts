@@ -15,6 +15,7 @@ export type Message<K extends keyof Protocol> = {
 
 interface MSGBase {
   kind: 'sms' | 'email' | 'whatsup' | 'timer'
+  variant: string
 }
 
 interface MSG extends MSGBase {

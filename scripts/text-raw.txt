@@ -2867,13 +2867,9 @@
 
                                    SCENA 19
 
-                    Dźwięk - sygnał sms-a tel. CZARKA.
+                    msgGet_sms_CZAREK_Roman!668541286
 
-                    Po chwili kolejny - dźwięk - sygnał sms-a tel.
-                    LEONA.
-
-                    PROJEKTOR - sms po sms-ie - tekst: Jutro gramy o
-                    17.00 (ew. emotka - piłka nożna).
+                    msgGet_sms_LEON_Romek!668541286
 
           ANIELA:
                O ! SMS.
@@ -2883,9 +2879,7 @@
                          (patrzy na swój tel.)
                To od Romka w sprawie gały.
 
-                    Dźwięk - sygnał sms tel. ROBERTA.
-
-                    PROJEKTOR - to co u CZARKA i LEONA.
+                    msgGet_sms_ROBERT_Romek!668541286
 
           LEON:
                Potwierdza jutro.
@@ -2988,10 +2982,10 @@
 
                                    SCENA 20
 
-                    Dźwięk - sygnał sms tel. CZARKA.
+                    msgGet_sms_CZAREK_Marika!505843759
 
-                    PROJEKTOR - SMS - MARIKA - tekst: Zadzwoń. to
-                    pilne !!!
+                    msgShow_sms_CZAREK_Marika!505843759_Zadzwoń. to pilne!!!
+
 
           KAROLINA:
                          (wskazuje palcem na stół)
@@ -3326,10 +3320,11 @@
                     ROBERT zniknął za drzwiami.
 
                                    SCENA 23
+                    
+                    msgGet_sms_KRYSTIAN_Iza!What's Up
 
                     Światło - rozjaśnienie jadalni.
 
-                    Dźwięk - sygnał z tel. KRYSTIANA/LEONA.
 
           LEON:
                Uuu... dobre to wino.
@@ -3559,10 +3554,9 @@
           CZAREK:
                Alleluja.
 
-                    ROBERT zajmuje swoje miejsce przy stole.
+                    msgGet_sms_LEON_Darek!517849625__frog
 
-                    Dźwięk - sygnał sms - rechot żaby  tel.
-                    LEONA/KRYSTIANA.
+                    ROBERT zajmuje swoje miejsce przy stole.
 
                     PROJEKTOR - zrzut ekranu - 21:58 DAREK "Jak się
                     miewasz ?".
@@ -3695,11 +3689,9 @@
 
                                    SCENA 25
 
-                    Dźwięk - sygnał e'mail - tel. ROBERTA; tel. trzyma
-                    nadal KRYSTIAN.
+                    msgGet_sms_ROBERT_booking.com
 
-                    Po krótkiej chwili kolejny dźwięk - SMS - tel.
-                    KAROLINY.
+                    msgGet_sms_KAROLINA_!874546259
 
           KRYSTIAN:
                Robert dostałeś e-mail.
@@ -4013,7 +4005,7 @@
           CZAREK:
                Uśmiech !!!
 
-                    Dźwięk - sms - tel. ANIELI.
+                    msgGet_sms_ANIELA_Igor!509657412
 
                     PROJEKTOR - sms - IGOR - "Cześć".
 
@@ -4083,13 +4075,14 @@
           LEON:
                Zróbmy to zdjęcie.
 
+               CZAREK wyciąga rękę z tel.
+
           CZAREK:
                A tam ... jest niegroźny. To kwestia zasad. Uśmiech.
 
-                    CZAREK wyciąga rękę z tel.
+                    msgGet_sms_ANIELA_Igor!509657412
 
-                    Dźwięk - sygnał sms - tel. ANIELI - IGOR "Chce mi
-                    się bzykać".
+                    msgGet_sms_ANIELA_Igor!509657412_Chce mi się bzykać!
 
                     PROJEKTOR - zrzut ekranu ANIELI.
 
@@ -4518,7 +4511,7 @@
 
                                    SCENA 28
 
-                    Dźwięk - sygnał sms - rechot żaby.
+                    msgGet_sms_LEON_Darek!517849625__frog
 
           KRYSTIAN:
                Znowu żaba.
@@ -4561,7 +4554,7 @@
           LEON:
                No wiem, ale...
 
-                    Dźwięk - sygnał sms - rechot żaby.
+                    msgGet_sms_LEON_Darek!517849625__frog
 
                     KAROLINA podnosi tel. i czyta.
 
@@ -4772,7 +4765,7 @@
 
                                    SCENA 30
 
-                    Dźwięk - sygnał sms - rechot żaby.
+                    msgGet_sms_LEON_Darek!517849625__frog
 
                     KAROLINA wolno obraca głowę w stronę tel., aby na
                     niego spojrzeć, szuka wzrokiem wsparcia u innych,
@@ -5952,16 +5945,16 @@
 
                                    SCENA 39
 
+                    msgGet_sms_CZAREK_Marika!505843759
+
+                    msgShow_sms_CZAREK_Marika!505843759_Zadzwoń! to pilne!
+
+                    msgGet_sms_CZAREK_Ewa!882683498
+
+                    msgShow_sms_CZAREK_Ewa!882683498_Pragnęłam Cię dziś BARDZO
+
                     Światło - szperacz 1 - w snopie światła stoją
                     ANIELA i CZAREK.
-
-                    Dźwięk - sygnał sms - tel. CZARKA.
-
-                    PROJEKTOR - sms - MARIKA "Zadzwoń ! To pilne !".
-
-                    Dźwięk - sygnał sms - tel. CZARKA.
-
-                    PROJEKTOR - sms - EWA "Pragnęłam Cię dziś BARDZO".
 
                     CZAREK zaczyna odpisywać;
 

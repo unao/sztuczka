@@ -12,7 +12,7 @@ import { setCurrent } from './text'
 
 const handle = (a: Actor): ProtocolHandler => ({
   txt: ms => ms.pipe(tap(setCurrent)),
-  msgGet: ms => ms.pipe(switchMap(m => playAudio(`${m.kind}/${a}.mp3`)))
+  msgGet: ms => ms.pipe(switchMap(m => playAudio(`${m.kind}/${a}${m.variant || ''}.mp3`)))
 })
 
 init()
