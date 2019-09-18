@@ -6,7 +6,8 @@ import {
   retryWhen,
   delay,
   ProtocolHandler,
-  playAudio
+  playAudio,
+  catchError
 } from 'common'
 
 import { merge, of } from 'rxjs'
@@ -96,6 +97,18 @@ connectWS('control')
               switchMap(x => {
                 if (x && x.type === 'say' && state.missing.includes(x.who!)) {
                   return playAudio(`recs/${x.who}/${x.id}.webm`)
+                }
+                if (x && x.type === 'say' && x.who!.endsWith('(GŁOS W TEL.)')) {
+                  const v = x
+                    .who!.replace(' (GŁOS W TEL.)', '')
+                    .replace(/\s/g, '_')
+                    .toLowerCase()
+                  return playAudio(`voices/${v}.mp3`).pipe(
+                    catchError(err => {
+                      console.warn('MISSING AUDIO', x, v)
+                      return of(true)
+                    })
+                  )
                 }
                 return of(x)
               })

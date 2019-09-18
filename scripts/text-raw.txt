@@ -2359,13 +2359,13 @@
                          (do tel.)
                Cześć tato.
 
-          TATA EWY (GŁOS W TEL.):
+          TATA EWY 1 (GŁOS W TEL.):
                Cześć skarbie ! Jak tam ? Co słychać ?
 
           EWA:
                Dobrze. Mam gości na kolacji.
 
-          TATA EWY (GŁOS W TEL.):
+          TATA EWY 2 (GŁOS W TEL.):
                Ja tylko słówko. Rozmawiałem z Zubertem. Może cię
                zoperować w szpitalu w Pułtusku. Wyślę ci jego numer.
                Umów się z nim sama.
@@ -3746,7 +3746,7 @@
           KRYSTIAN:
                Przeczytaj e-mail.
 
-          GŁOS AUTOMATYCZNEJ SEKRETARKI:
+          AUTOMAT 1 (GŁOS W TEL.):
                Nie masz żadnych nowych e-mail'i.
 
           LEON:
@@ -3759,7 +3759,7 @@
                          (do tel.)
                Przeczytaj wiadomość.
 
-          GŁOS AUTOMATYCZNEJ SEKRETARKI:
+          AUTOMAT 2 (GŁOS W TEL.):
                Masz nową wiadomość z numeru: 555 - 937 - 416 -
                "Szanowna Pani informujemy, że mamy wolne miejsce od
                czerwca z możliwością zniżki dwadzieścia pięć procent.
@@ -3771,7 +3771,7 @@
                     KAROLINA jest przerażona, chwyta tel. i szybko
                     usiłuje go wyłączyć.
 
-          GŁOS AUTOMATYCZNEJ SEKRETARKI:
+          AUTOMAT 3 (GŁOS W TEL.):
                Czy chcesz odpisać ?
 
           KAROLINA:
@@ -4623,7 +4623,7 @@
                Słucham ?
                          (niepewnie, badawczo do tel.)
 
-          DAREK (GŁOS W TEL.):
+          DAREK 1 (GŁOS W TEL.):
                Co to za głosik zbitego psa ? Podobno miałeś siedzieć w
                domu ? Już ci przeszła gorączka ? ... Nie odezwiesz się
                ?
@@ -4631,13 +4631,13 @@
                     LEON zbiera się, żeby coś powiedzieć, ale jest za
                     późno.
 
-          DAREK (GŁOS W TEL.):
+          DAREK 2 (GŁOS W TEL.):
                Powiedzieć ci prawdę dupku ?
 
                     KAROLINA patrzy na LEON zdziwiona, z
                     niedowierzaniem.
 
-          DAREK (GŁOS W TEL.):
+          DAREK 3 (GŁOS W TEL.):
                Nie wiesz czego chcesz w życiu. Nie wiesz nawet czy
                wolisz mężczyzn, czy kobiety. Wal się !!!
 
@@ -5073,7 +5073,7 @@
 
                     PROJEKTOR - rozmowa przez głośnik.
 
-          MARCIN (GŁOS W TEL.):
+          MARCIN 1 (GŁOS W TEL.):
                Od dwóch tygodni ci się nagrywam.
 
                     CZAREK odkłada tel. na stół.
@@ -5081,13 +5081,13 @@
           CZAREK:
                Wiem Marcin.
 
-          MARCIN (GŁOS W TEL.):
+          MARCIN 2 (GŁOS W TEL.):
                Dzwoniłem ze sto razy.
 
           CZAREK:
                Wiem, sorki.
 
-          MARCIN (GŁOS W TEL.):
+          MARCIN 3 (GŁOS W TEL.):
                Pierścionek jej się podobał ?
 
           CZAREK:
@@ -5096,7 +5096,7 @@
                     ANIELA w tym czasie bawi się pierścionkiem na
                     palcu.
 
-          MARCIN (GŁOS W TEL.):
+          MARCIN 4 (GŁOS W TEL.):
                Powiedz tylko czy kolczyki też się podobały ?
 
                     ANIELA zbystrzała, zdębiała, jakby piorun w nią

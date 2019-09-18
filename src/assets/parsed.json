@@ -4434,9 +4434,9 @@
           },
           {
             "type": "say",
-            "who": "TATA EWY (GŁOS W TEL.)",
+            "who": "TATA EWY 1 (GŁOS W TEL.)",
             "what": "Cześć skarbie ! Jak tam ? Co słychać ?",
-            "id": "15_1223183217"
+            "id": "15_194553026"
           },
           {
             "type": "say",
@@ -4446,9 +4446,9 @@
           },
           {
             "type": "say",
-            "who": "TATA EWY (GŁOS W TEL.)",
+            "who": "TATA EWY 2 (GŁOS W TEL.)",
             "what": "Ja tylko słówko. Rozmawiałem z Zubertem. Może cię zoperować w szpitalu w Pułtusku. Wyślę ci jego numer. Umów się z nim sama.",
-            "id": "15_m193547735"
+            "id": "15_m879074437"
           },
           {
             "type": "say",
@@ -7101,9 +7101,9 @@
           },
           {
             "type": "say",
-            "who": "GŁOS AUTOMATYCZNEJ SEKRETARKI",
+            "who": "AUTOMAT 1 (GŁOS W TEL.)",
             "what": "Nie masz żadnych nowych e-mail'i.",
-            "id": "24_939513008"
+            "id": "24_157105664"
           },
           {
             "type": "say",
@@ -7130,9 +7130,9 @@
           },
           {
             "type": "say",
-            "who": "GŁOS AUTOMATYCZNEJ SEKRETARKI",
+            "who": "AUTOMAT 2 (GŁOS W TEL.)",
             "what": "Masz nową wiadomość z numeru: 555 - 937 - 416 - \"Szanowna Pani informujemy, że mamy wolne miejsce od czerwca z możliwością zniżki dwadzieścia pięć procent. Po bliższe informacje prosimy dzwonić. Dziękujemy. Dyrekcja Domu Seniora \"Zachód słońca\".",
-            "id": "24_1306048227"
+            "id": "24_1649634450"
           },
           {
             "type": "desc",
@@ -7141,9 +7141,9 @@
           },
           {
             "type": "say",
-            "who": "GŁOS AUTOMATYCZNEJ SEKRETARKI",
+            "who": "AUTOMAT 3 (GŁOS W TEL.)",
             "what": "Czy chcesz odpisać ?",
-            "id": "24_m75493861"
+            "id": "24_196297293"
           },
           {
             "type": "say",
@@ -8769,9 +8769,9 @@
           },
           {
             "type": "say",
-            "who": "DAREK (GŁOS W TEL.)",
+            "who": "DAREK 1 (GŁOS W TEL.)",
             "what": "Co to za głosik zbitego psa ? Podobno miałeś siedzieć w domu ? Już ci przeszła gorączka ? ... Nie odezwiesz się ?",
-            "id": "27_m219141578"
+            "id": "27_m362179899"
           },
           {
             "type": "desc",
@@ -8780,9 +8780,9 @@
           },
           {
             "type": "say",
-            "who": "DAREK (GŁOS W TEL.)",
+            "who": "DAREK 2 (GŁOS W TEL.)",
             "what": "Powiedzieć ci prawdę dupku ?",
-            "id": "27_m263897122"
+            "id": "27_98382512"
           },
           {
             "type": "desc",
@@ -8791,9 +8791,9 @@
           },
           {
             "type": "say",
-            "who": "DAREK (GŁOS W TEL.)",
+            "who": "DAREK 3 (GŁOS W TEL.)",
             "what": "Nie wiesz czego chcesz w życiu. Nie wiesz nawet czy wolisz mężczyzn, czy kobiety. Wal się !!!",
-            "id": "27_m908629939"
+            "id": "27_1845317914"
           },
           {
             "type": "desc",
@@ -9557,9 +9557,9 @@
           },
           {
             "type": "say",
-            "who": "MARCIN (GŁOS W TEL.)",
+            "who": "MARCIN 1 (GŁOS W TEL.)",
             "what": "Od dwóch tygodni ci się nagrywam.",
-            "id": "31_802408966"
+            "id": "31_m429172651"
           },
           {
             "type": "desc",
@@ -9574,9 +9574,9 @@
           },
           {
             "type": "say",
-            "who": "MARCIN (GŁOS W TEL.)",
+            "who": "MARCIN 2 (GŁOS W TEL.)",
             "what": "Dzwoniłem ze sto razy.",
-            "id": "31_1562900693"
+            "id": "31_1216485735"
           },
           {
             "type": "say",
@@ -9586,9 +9586,9 @@
           },
           {
             "type": "say",
-            "who": "MARCIN (GŁOS W TEL.)",
+            "who": "MARCIN 3 (GŁOS W TEL.)",
             "what": "Pierścionek jej się podobał ?",
-            "id": "31_820172365"
+            "id": "31_m750995750"
           },
           {
             "type": "say",
@@ -9603,9 +9603,9 @@
           },
           {
             "type": "say",
-            "who": "MARCIN (GŁOS W TEL.)",
+            "who": "MARCIN 4 (GŁOS W TEL.)",
             "what": "Powiedz tylko czy kolczyki też się podobały ?",
-            "id": "31_1099364371"
+            "id": "31_666102271"
           },
           {
             "type": "desc",
