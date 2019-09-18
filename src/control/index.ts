@@ -7,12 +7,14 @@ import {
   delay,
   ProtocolHandler,
   playAudio,
-  catchError
+  catchError,
+  Role,
+  filter
 } from 'common'
 
-import { merge, of } from 'rxjs'
+import { merge, of, EMPTY } from 'rxjs'
 
-import { state } from './state'
+import { state, Say } from './state'
 import { handleScene } from './scene'
 
 const { txt } = state
@@ -59,9 +61,13 @@ const ui = <K extends keyof ReturnType<typeof initUI>>(k: K, c: string) =>
 el.sceneSelect.onchange = () =>
   state.updateScene(parseInt(el.sceneSelect.value.replace('scene-', ''), 10))
 
+let conn: Role[] = []
 const handle: ProtocolHandler = {
   conn: rs =>
-    rs.pipe(tap(r => ui('connected', r.filter(x => x !== 'control').join(' '))))
+    rs.pipe(
+      tap(rs => (conn = rs)),
+      tap(r => ui('connected', r.filter(x => x !== 'control').join(' ')))
+    )
 }
 
 connectWS('control')
@@ -74,12 +80,6 @@ connectWS('control')
           switchMap(s =>
             handleScene(s.plot, s.title === 'SCENA 23', el.scene).pipe(
               tap(x => {
-                if (x) {
-                  ws.send('txt', x.id)
-                  if (x.type === 'msgGet') {
-                    ws.send('msgGet', x as any, x.who! as any)
-                  }
-                }
                 if (!x) {
                   const idx = txt.findIndex(p => p === s) + 1
 
@@ -95,22 +95,35 @@ connectWS('control')
                 }
               }),
               switchMap(x => {
-                if (x && x.type === 'say' && state.missing.includes(x.who!)) {
-                  return playAudio(`recs/${x.who}/${x.id}.webm`)
+                if (x) {
+                  ws.send('txt', x.id)
+                  if (x.type === 'msgGet') {
+                    if (conn.includes(x.who! as Role)) {
+                      ws.send('msgGet', x as any, x.who! as any)
+                    } else {
+                      return playAudio(
+                        // @ts-ignore
+                        `${x.kind}/${x.who!}${x.variant || ''}.mp3`
+                      )
+                    }
+                  }
+                  if (x.type === 'say' && x.who!.endsWith('(GŁOS W TEL.)')) {
+                    const v = x
+                      .who!.replace(' (GŁOS W TEL.)', '')
+                      .replace(/\s/g, '_')
+                      .toLowerCase()
+                    return playAudio(`voices/${v}.mp3`).pipe(
+                      catchError(err => {
+                        console.warn('MISSING AUDIO', x, v)
+                        return of(true)
+                      })
+                    )
+                  }
+                  if (x.type === 'say' && state.missing.includes(x.who!)) {
+                    return playAudio(`recs/${x.who}/${x.id}.webm`)
+                  }
                 }
-                if (x && x.type === 'say' && x.who!.endsWith('(GŁOS W TEL.)')) {
-                  const v = x
-                    .who!.replace(' (GŁOS W TEL.)', '')
-                    .replace(/\s/g, '_')
-                    .toLowerCase()
-                  return playAudio(`voices/${v}.mp3`).pipe(
-                    catchError(err => {
-                      console.warn('MISSING AUDIO', x, v)
-                      return of(true)
-                    })
-                  )
-                }
-                return of(x)
+                return EMPTY
               })
             )
           )

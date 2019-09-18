@@ -4775,7 +4775,7 @@
                          (odkłada tel. na stół)
                Tęskni za twoimi pocałunkami.
 
-                    msgGet_sms_LEON_Darek!517849625_Tęsknię za Twoimi
+                    msgShow_sms_LEON_Darek!517849625_Tęsknię za Twoimi
                     pocałunkami..._frog
 
                     KAROLINA bierze kieliszek wina, wstaje i wychodzi
@@ -5432,7 +5432,7 @@
 
           EWA:
                          (do tel.)
-               Cześć.
+               Cześć...
 
           NIEZNAJOMY (GŁOS W TEL.):
                Wybacz, że napisałem wieczorem.

@@ -35,9 +35,7 @@ export const playAudio = (name: string) =>
     el.src = name.startsWith('https') ? name : `/assets/${name}`
     document.body.appendChild(el)
     el.play().catch(e => {
-      console.warn(e)
-      obs.complete()
-      // obs.error(e)
+      obs.error(e)
     })
     el.onended = () => obs.complete()
     obs.next(el)

@@ -1,6 +1,6 @@
 import { Plot, Say as _Say } from './state'
 import { BehaviorSubject, merge, fromEvent, EMPTY } from 'rxjs'
-import { filter, tap, map, switchMap, delay } from 'common'
+import { filter, tap, map, switchMap, delay, throttleTime } from 'common'
 
 type Say = _Say & { next: () => Say | undefined }
 
@@ -82,6 +82,7 @@ export const handleScene = (
       fromEvent<KeyboardEvent>(document, 'keydown').pipe(
         filter(e => e.key === 'ArrowDown'),
         tap(e => e.preventDefault()),
+        throttleTime(250),
         tap(() => sel(current.value.say && current.value.say.next())),
         filter(_ => !current.value.say && !actIEnd)
       )

@@ -9088,10 +9088,10 @@
             "id": "29_1898317073"
           },
           {
-            "id": "29_1778040566",
-            "type": "msgGet",
+            "id": "29_1839506045",
+            "type": "msgShow",
             "who": "LEON",
-            "what": "msgGet:sms -- LEON -- Tęsknię za Twoimi",
+            "what": "msgShow:sms -- LEON -- Tęsknię za Twoimi",
             "kind": "sms",
             "from": "Darek",
             "number": "517849625",
@@ -10013,8 +10013,8 @@
           {
             "type": "say",
             "who": "EWA",
-            "what": "Cześć.",
-            "id": "33_732707779"
+            "what": "Cześć...",
+            "id": "33_m242459453"
           },
           {
             "type": "say",
