@@ -1728,7 +1728,7 @@
                KOPYTA CI WALO !!!
 
                     callEnd_CZAREK_!505414628
-                    
+
                          (śmieje się)
 
                     KAROLINA wybucha gromkim śmiechem. Pozostali lekko
@@ -2003,6 +2003,8 @@
 
                                    SCENA 14
 
+                    callGet_KRYSTIAN_Martuś!662501448
+
                     Dźwięk tel. KRYSTIANA.
 
                     PROJEKTOR - dzwoni MARTA.
@@ -2017,6 +2019,8 @@
 
           CZAREK:
                Głośnik.
+
+                    callStart_KRYSTIAN_Martuś!662501448
 
                     PROJEKTOR - odebrany tel.
 
@@ -2092,6 +2096,8 @@
 
           MARTA (GŁOS W TEL.):
                Cześć.
+
+                    callEnd_KRYSTIAN_Martuś!662501448
 
                     PROJEKTOR - koniec rozmowy.
 
@@ -2333,6 +2339,8 @@
 
                                    SCENA 16
 
+                    callGet_EWA_Tatuś!503420847
+
                     Światło - rozjaśnienie sceny, jadalni.
 
                     ROBERT i LEON wchodzą do jadalni. W tym momencie
@@ -2350,6 +2358,8 @@
                Mój ojciec.
                          (do Roberta)
                To tata.
+
+                    callStart_EWA_Tatuś!503420847
 
                     EWA odbiera tel. i włącza głośnik.
 
@@ -2377,6 +2387,8 @@
 
           EWA:
                OK, dzięki tato. Pozdrów mamę.
+
+                    callEnd_EWA_Tatuś!503420847
 
                     EWA rozłącza się.
 

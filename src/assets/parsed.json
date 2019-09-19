@@ -3764,6 +3764,14 @@
         "title": "SCENA 14",
         "plot": [
           {
+            "id": "13_m1200962463",
+            "type": "callGet",
+            "who": "KRYSTIAN",
+            "what": "callGet -- KRYSTIAN -- Martuś!662501448",
+            "from": "Martuś",
+            "number": "662501448"
+          },
+          {
             "type": "desc",
             "what": "Dźwięk tel. KRYSTIANA. PROJEKTOR - dzwoni MARTA. KRYSTIAN podnosi tel.",
             "id": ""
@@ -3785,6 +3793,14 @@
             "who": "CZAREK",
             "what": "Głośnik.",
             "id": "13_236038675"
+          },
+          {
+            "id": "13_1050394285",
+            "type": "callStart",
+            "who": "KRYSTIAN",
+            "what": "callStart -- KRYSTIAN -- Martuś!662501448",
+            "from": "Martuś",
+            "number": "662501448"
           },
           {
             "type": "desc",
@@ -3931,6 +3947,14 @@
             "who": "MARTA (GŁOS W TEL.)",
             "what": "Cześć.",
             "id": "13_m332534606"
+          },
+          {
+            "id": "13_1209217446",
+            "type": "callEnd",
+            "who": "KRYSTIAN",
+            "what": "callEnd -- KRYSTIAN -- Martuś!662501448",
+            "from": "Martuś",
+            "number": "662501448"
           },
           {
             "type": "desc",
@@ -4402,6 +4426,14 @@
         "title": "SCENA 16",
         "plot": [
           {
+            "id": "15_403011271",
+            "type": "callGet",
+            "who": "EWA",
+            "what": "callGet -- EWA -- Tatuś!503420847",
+            "from": "Tatuś",
+            "number": "503420847"
+          },
+          {
             "type": "desc",
             "what": "Światło - rozjaśnienie sceny, jadalni. ROBERT i LEON wchodzą do jadalni. W tym momencie dzwoni kolejny telefon. Sygnał - dzwonek tel. EWY. PROJEKTOR - połączenie przychodzące - TATA.",
             "id": ""
@@ -4433,6 +4465,14 @@
             "who": "EWA",
             "what": "To tata.",
             "id": "15_249285342"
+          },
+          {
+            "id": "15_1554568467",
+            "type": "callStart",
+            "who": "EWA",
+            "what": "callStart -- EWA -- Tatuś!503420847",
+            "from": "Tatuś",
+            "number": "503420847"
           },
           {
             "type": "desc",
@@ -4479,6 +4519,14 @@
             "who": "EWA",
             "what": "OK, dzięki tato. Pozdrów mamę.",
             "id": "15_1556455556"
+          },
+          {
+            "id": "15_1959164876",
+            "type": "callEnd",
+            "who": "EWA",
+            "what": "callEnd -- EWA -- Tatuś!503420847",
+            "from": "Tatuś",
+            "number": "503420847"
           },
           {
             "type": "desc",

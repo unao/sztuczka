@@ -29,6 +29,7 @@ const progress = plot.reduce(
 document.body.innerHTML = `<div style="background-color:black;width:100vw;">
   <video src="/assets/eclipse.mp4" style="width:100vw;height:100vh"></video>
   <img style="display:none;z-index:1;position:absolute;top:0;left:0;width:100vw;height:100vh"></img>
+  <link rel="stylesheet" href="assets/devices.min.css" type="text/css">
 </div>`
 
 const vid = document.getElementsByTagName('video')[0]
