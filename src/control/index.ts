@@ -62,13 +62,13 @@ el.sceneSelect.onchange = () =>
   state.updateScene(parseInt(el.sceneSelect.value.replace('scene-', ''), 10))
 
 let conn: Role[] = []
-const handle: ProtocolHandler = {
+const handle: ProtocolHandler = all => ({
   conn: rs =>
     rs.pipe(
       tap(rs => (conn = rs)),
       tap(r => ui('connected', r.filter(x => x !== 'control').join(' ')))
     )
-}
+})
 
 connectWS('control')
   .pipe(
@@ -111,6 +111,21 @@ connectWS('control')
                         })
                       )
                     }
+                  }
+                  if (x.type === 'callGet') {
+                    if (conn.includes(x.who! as Role)) {
+                      ws.send('callGet', x as any, x.who! as any)
+                    } else {
+                      return playAudio(`call/${x.who!}.mp3`).pipe(
+                        catchError(err => {
+                          console.warn('MISSING AUDIO', x, err)
+                          return of(true)
+                        })
+                      )
+                    }
+                  }
+                  if (x.type === 'callStart' || x.type === 'callEnd') {
+                    ws.send(x.type, x as any, x.who! as any)
                   }
                   if (x.type === 'say' && x.who!.endsWith('(GŁOS W TEL.)')) {
                     const v = x

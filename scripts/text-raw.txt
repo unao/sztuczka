@@ -1671,9 +1671,9 @@
                Nie wpisałem numeru, skąd mam wiedzieć ?! Pewnie
                pomyłka. Nie wiem. Co mam odpowiedzieć ?
 
-                    Wszyscy bohaterowie zdegustowani.
+                    callGet_CZAREK_!505414628
 
-                    DŹWIĘK - dzwonek tel. CZARKA - "I willl survive".
+                    Wszyscy bohaterowie zdegustowani.
 
                     PROJEKTOR - tel. dzwoni - zielona słuchawka.
 
@@ -1688,6 +1688,8 @@
 
           CZAREK:
                Dobrze.
+
+                    callStart_CZAREK_!505414628
 
                     CZAREK odbiera tel. i przykłada go do ucha. ANIELA
                     ściąga jego rękę, aż do blatu stołu.
@@ -1724,6 +1726,9 @@
 
           ROBERT:
                KOPYTA CI WALO !!!
+
+                    callEnd_CZAREK_!505414628
+                    
                          (śmieje się)
 
                     KAROLINA wybucha gromkim śmiechem. Pozostali lekko

@@ -36,9 +36,9 @@ const img = document.getElementsByTagName('img')[0]
 // vid.playbackRate = 0.07
 // vid.play()
 
-const handle: ProtocolHandler = {
+const handle: ProtocolHandler = all => ({
   txt: ms => ms.pipe(tap(m => (vid.currentTime = progress[m] * vid.duration)))
-}
+})
 
 connectWS('screen')
   .pipe(

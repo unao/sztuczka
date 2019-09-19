@@ -3099,8 +3099,16 @@
             "id": "11_m810607427"
           },
           {
+            "id": "11_1482723290",
+            "type": "callGet",
+            "who": "CZAREK",
+            "what": "callGet -- CZAREK -- !505414628",
+            "from": "",
+            "number": "505414628"
+          },
+          {
             "type": "desc",
-            "what": "Wszyscy bohaterowie zdegustowani. DŹWIĘK - dzwonek tel. CZARKA - \"I willl survive\". PROJEKTOR - tel. dzwoni - zielona słuchawka.",
+            "what": "Wszyscy bohaterowie zdegustowani. PROJEKTOR - tel. dzwoni - zielona słuchawka.",
             "id": ""
           },
           {
@@ -3126,6 +3134,14 @@
             "who": "CZAREK",
             "what": "Dobrze.",
             "id": "11_1676466426"
+          },
+          {
+            "id": "11_1663454438",
+            "type": "callStart",
+            "who": "CZAREK",
+            "what": "callStart -- CZAREK -- !505414628",
+            "from": "",
+            "number": "505414628"
           },
           {
             "type": "desc",
@@ -3198,6 +3214,14 @@
             "who": "ROBERT",
             "what": "KOPYTA CI WALO !!!",
             "id": "11_m1561040604"
+          },
+          {
+            "id": "11_m1992748513",
+            "type": "callEnd",
+            "who": "CZAREK",
+            "what": "callEnd -- CZAREK -- !505414628",
+            "from": "",
+            "number": "505414628"
           },
           {
             "type": "desc",

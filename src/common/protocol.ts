@@ -1,8 +1,10 @@
 import { Role } from './names'
-import { Observable, merge, fromEvent, EMPTY } from 'rxjs'
-import { map, groupBy, mergeMap } from 'rxjs/operators'
+import { Observable, fromEvent, EMPTY, GroupedObservable, Subject } from 'rxjs'
+import { map, groupBy, mergeMap, tap } from 'rxjs/operators'
 
-export type ProtocolHandler = Partial<
+export type ProtocolHandler = (
+  gs: Observable<Message<keyof Protocol>>
+) => Partial<
   {
     [K in keyof Protocol]: (m: Observable<Protocol[K]>) => Observable<unknown>
   }
@@ -61,13 +63,19 @@ export const withProtocol = (ws: {
         })
       )
     },
-    handle: (h: ProtocolHandler) =>
-      fromEvent<{ data: string }>(ws as any, 'message').pipe(
+    handle: (hc: ProtocolHandler) => {
+      const s = new Subject<Message<keyof Protocol>>()
+      return fromEvent<{ data: string }>(ws as any, 'message').pipe(
         map(m => unwrap(m.data)),
+        tap(x => s.next(x)),
         groupBy(d => d.type),
-        mergeMap(ms =>
-          h[ms.key] ? h[ms.key]!(ms.pipe(map(m => m.payload)) as any) : EMPTY
-        )
+        mergeMap(ms => {
+          const h = hc(s)
+          return h[ms.key]
+            ? h[ms.key]!(ms.pipe(map(m => m.payload)) as any)
+            : EMPTY
+        })
       )
+    }
   }
 }

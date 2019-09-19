@@ -50,6 +50,18 @@ const t = fs
           variant: variant || ''
         }
       }
+      const call = (line: string) => {
+        const [type, who, other] = line.split('_')
+        console.log(type, who, other)
+        return {
+          id: id(who, line),
+          type,
+          who,
+          what: `${type} -- ${who} -- ${other}`,
+          from: other.split('!')[0] || '',
+          number: other.split('!')[1] || ''
+        }
+      }
       if (n[0] === 35) {
         if (n[1][0] === 'A') {
           act = n[1]
@@ -87,6 +99,8 @@ const t = fs
         } else {
           if (n[1].startsWith('msg')) {
             s.plot.push(msg(n[1]))
+          } else if (n[1].startsWith('call')) {
+            s.plot.push(call(n[1]))
           } else {
             s.plot.push({
               type: 'desc',
