@@ -82,7 +82,7 @@ export const handleScene = (
       fromEvent<KeyboardEvent>(document, 'keydown').pipe(
         filter(e => e.key === 'ArrowDown'),
         tap(e => e.preventDefault()),
-        throttleTime(250),
+        throttleTime(200),
         tap(() => sel(current.value.say && current.value.say.next())),
         filter(_ => !current.value.say && !actIEnd)
       )

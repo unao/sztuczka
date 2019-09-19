@@ -4802,8 +4802,19 @@
             "id": "15_m491444981"
           },
           {
+            "id": "15_m959992006",
+            "type": "msgGet",
+            "who": "ROBERT",
+            "what": "msgGet:sound -- ROBERT",
+            "kind": "sound",
+            "from": "",
+            "number": "",
+            "body": "",
+            "variant": ""
+          },
+          {
             "type": "desc",
-            "what": "Śmiech. Dźwięk - dzwonek, krótki sygnał - timer kuchenny.",
+            "what": "Śmiech.",
             "id": ""
           },
           {
@@ -5884,8 +5895,19 @@
         "title": "SCENA 21",
         "plot": [
           {
+            "id": "20_449191898",
+            "type": "msgGet",
+            "who": "KRYSTIAN",
+            "what": "msgGet:sound -- KRYSTIAN",
+            "kind": "sound",
+            "from": "",
+            "number": "",
+            "body": "",
+            "variant": ""
+          },
+          {
             "type": "desc",
-            "what": "Dźwięk - dziwny sygnał - tel. KRYSTIANA. PROJEKTOR - treningowa aplikacja KRYSTIANA.",
+            "what": "PROJEKTOR - treningowa aplikacja KRYSTIANA.",
             "id": ""
           },
           {
@@ -11048,6 +11070,17 @@
       {
         "title": "SCENA 41",
         "plot": [
+          {
+            "id": "40_449191898",
+            "type": "msgGet",
+            "who": "KRYSTIAN",
+            "what": "msgGet:sound -- KRYSTIAN",
+            "kind": "sound",
+            "from": "",
+            "number": "",
+            "body": "",
+            "variant": ""
+          },
           {
             "type": "desc",
             "what": "Światło - szperacz - drzwi, którymi wyszedł KRYSTIAN. KRYSTIAN pojawia się w snopie światła, idzie w stronę sceny, śledzi go szperacz. Dźwięk - treningowa apka KRYSTIANA. PROJEKTOR - treningowa aplikacja w tel. KRYSTIANA - zrzut ekranu - człowieczek na ekranie robi pajacyki. KRYSTIAN zatrzymuje się w centralnym punkcie pomiędzy sceną, a widownią, wyjmuje tel. patrzy, trzyma go w ręku i zaczyna ćwiczyć. PROJEKTOR - Aplikacja zmienia ćwiczenie na bieg z wysokim unoszeniem kolan - człowieczek to pokazuje. KRYSTIAN - spogląda na tel. i zmienia ćwiczenie, biegnie wysoko unosząc kolana. Wybiega przez drzwi po lewej stronie, najbliżej sceny. ŚWIATŁO - szperacz odprowadza KRYSTIANA i gaśnie. DŹWIĘK - cała seria następujących po sobie sygnałów tel., itp. Muzyka. KURTYNA - Kurtyna w dół.",

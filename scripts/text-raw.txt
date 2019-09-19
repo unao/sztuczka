@@ -2552,9 +2552,10 @@
                cycki i podnosimy ludzi na duchu. Ty w ciągu paru lat,
                ja w dwie godziny.
 
+                    msgGet_sound_ROBERT__
+                    
                     Śmiech.
-
-                    Dźwięk - dzwonek, krótki sygnał - timer kuchenny.
+                    
 
           LEON:
                Czyj to ?
@@ -3076,7 +3077,7 @@
 
                                    SCENA 21
 
-                    Dźwięk - dziwny sygnał - tel. KRYSTIANA.
+                    msgGet_sound_KRYSTIAN__
 
                     PROJEKTOR - treningowa aplikacja KRYSTIANA.
 
@@ -6068,6 +6069,8 @@
                     Światło - ściemnienie sceny.
 
                                    SCENA 41
+
+                    msgGet_sound_KRYSTIAN__
 
                     Światło - szperacz - drzwi, którymi wyszedł
                     KRYSTIAN.

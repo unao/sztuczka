@@ -104,6 +104,11 @@ connectWS('control')
                       return playAudio(
                         // @ts-ignore
                         `${x.kind}/${x.who!}${x.variant || ''}.mp3`
+                      ).pipe(
+                        catchError(err => {
+                          console.warn('MISSING AUDIO', x, err)
+                          return of(true)
+                        })
                       )
                     }
                   }
