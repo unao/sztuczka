@@ -37,9 +37,11 @@ const initUI = () => {
     <div id="scene" style="width:66vw"></div>
 
     <div id="aux" style="width:33vw;position:fixed;right:0;top:0">
-      <iframe seamless src="${
-        location.origin
-      }/screen" style="width:33vw;height:18.562vw;border:0"></iframe>
+      ${
+        state.showScreen
+          ? `<iframe seamless src="${location.origin}/screen" style="width:33vw;height:18.562vw;border:0"></iframe>`
+          : ''
+      }
 
       <div>połączeni:</div>
       <div id="connected"></div>

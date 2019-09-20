@@ -28,6 +28,8 @@ const ps = new URLSearchParams(location.search)
 const s = parseInt(ps.get('s') || '1', 10) - 1
 const scene = new BehaviorSubject(txt.find((_, idx) => idx === s) || txt[0])
 
+const showScreen = ps.has('screen')
+
 export const state = {
   txt,
   plot,
@@ -35,6 +37,7 @@ export const state = {
   progress,
   sceneTitles,
   scene,
+  showScreen,
 
   updateScene: (idx: number) => {
     ps.set('s', `${idx + 1}`)
