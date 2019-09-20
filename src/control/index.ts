@@ -131,6 +131,14 @@ connectWS('control')
                   }
                   if (x.type === 'callStart' || x.type === 'callEnd') {
                     ws.send(x.type, x as any, x.who! as any)
+                    ws.send(x.type, x as any, 'screen')
+                  }
+                  if (
+                    x.type === 'callLaud' ||
+                    x.type === 'audioStart' ||
+                    x.type === 'audioStop'
+                  ) {
+                    ws.send(x.type, x as any, 'screen')
                   }
                   if (x.type === 'say' && x.who!.endsWith('(GŁOS W TEL.)')) {
                     const v = x

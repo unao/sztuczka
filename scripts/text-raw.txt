@@ -392,6 +392,8 @@
 
                                    SCENA 5
 
+                    audioStart_doorbell.mp3
+
                     Dzwonek do drzwi. ROBERT odrywa się od pracy w
                     kuchni, wyciera ręce w fartuszek, idzie w stronę
                     drzwi wejściowych.
@@ -474,9 +476,12 @@
                          (przerażona, zaniepokojona)
 
           LEON:
+                    Wszyscy stoją i rozmawiają wokół kuchennej wyspy.
+
                Rozalia kończy sześć lat w czerwcu.
 
-                    Wszyscy stoją i rozmawiają wokół kuchennej wyspy.
+                    audioStart_doorbell.mp3_
+                    audioStart_doorbell.mp3__
 
                     Głos z kulis.
 
@@ -607,11 +612,10 @@
                A i owszem.
 
           ROBERT:
+                    (wypija łyk wina z kieliszka)
                Całkiem niezłe to wino.
-                         (wypija łyk wina z kieliszka)
                
-
-                    Dzwonek do drzwi.
+                    audioStart_doorbell.mp3___
 
           EWA:
                Są !
@@ -1698,10 +1702,9 @@
                Nie. Włącz głośnik.
 
           CZAREK:
-                         (włączając głośnik)
+                    callLaud_CZAREK_!505414628
                Włączyłem, już...
 
-                    PROJEKTOR - ikona głośnika w tel.
 
           CZAREK:
                          (do tel. głośno)
@@ -2034,9 +2037,9 @@
           KRYSTIAN:
                Poczekaj chwilkę.
 
-                    KRYSTIAN odkłada tel. na stół i włącza głośnik.
+                    callLaud_KRYSTIAN_Martuś!662501448
 
-                    PROJEKTOR - głośnik.
+                    KRYSTIAN odkłada tel. na stół i włącza głośnik.
 
           KRYSTIAN:
                Cześć !
@@ -2360,6 +2363,8 @@
                To tata.
 
                     callStart_EWA_Tatuś!503420847
+
+                    callLaud_EWA_Tatuś!503420847
 
                     EWA odbiera tel. i włącza głośnik.
 
@@ -2776,7 +2781,7 @@
                          słyszy)
                Od Leona. Tylko ani słowa. 
 
-                    Dźwięk - dzwonek tel. KAROLINY.
+                    callGet_KAROLINA_Steve Jobs!505414628
 
                     Światło - rozjaśnienie jadalni.
 
@@ -2833,10 +2838,14 @@
                     KAROLINA ustawia półmiski na stole.
 
           KAROLINA:
-               Odbierz i nie pleć głupstw.
-
                     Wszyscy bohaterowie patrzą bardzo zaciekawieni raz
                     na KAROLINĘ, raz na tel.
+
+               Odbierz i nie pleć głupstw.
+
+                    callStart_KAROLINA_Steve Jobs!505414628
+
+                    callLaud_KAROLINA_Steve Jobs!505414628
 
                     KAROLINA przejmuje tel. od LEONA. odbiera
                     połączenie.
@@ -2865,6 +2874,8 @@
 
           KAROLINA:
                Dobranoc.
+
+                    callEnd_KAROLINA_Steve Jobs!505414628
 
                     KAROLINA wymachuje telefonem.
 
@@ -4158,12 +4169,18 @@
                Nie ma potrzeby. Nie ma co wyjaśniać. Naprawdę nie
                chcę. Słyszysz ?!
 
+                    audioStart_outgoing-call.mp3
+
                     ANIELA wybiera numer do IGORA i włącza głośnik.
 
                     PROJEKTOR - tel. Anieli - wybieranie numeru.
 
           ANIELA:
                Będziesz cicho ?
+
+                    audioStop_outgoing-call.mp3
+                    callStart_ANIELA_Igor!509657412
+                    callLaud_ANIELA_Igor!509657412
 
                     Dźwięk - sygnał w tel. - ktoś odbiera.
 
@@ -4212,7 +4229,7 @@
           ANIELA:
                Cześć. Igor ! Nie idź.
 
-                    PROJEKTOR - koniec rozmowy.
+                    callEnd_ANIELA_Igor!509657412
 
           ANIELA:
                          (do Czarka)

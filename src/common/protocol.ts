@@ -44,6 +44,7 @@ export interface Protocol {
   txt: string
   callGet: Call
   callStart: Call
+  callLaud: Call
   callEnd: null
   msgGet: MSGBase
   msgShow: MSG
@@ -52,9 +53,7 @@ export interface Protocol {
 const unwrap = <K extends keyof Protocol>(m: string) =>
   JSON.parse(m) as Message<K>
 
-export const withProtocol = (ws: {
-  send: (m: string) => void
-}) => {
+export const withProtocol = (ws: { send: (m: string) => void }) => {
   return {
     send: <K extends keyof Protocol>(k: K, p: Protocol[K], to?: Role) => {
       ws.send(

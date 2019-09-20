@@ -5,7 +5,11 @@ import {
   retryWhen,
   delay,
   switchMap,
-  ProtocolHandler
+  ProtocolHandler,
+  mergeMap,
+  playAudio,
+  takeUntil,
+  filter
 } from 'common'
 import * as play from '../assets/parsed.json'
 import { smsUI } from './message'
@@ -46,7 +50,15 @@ const vid = document.getElementsByTagName('video')[0]
 const img = document.getElementsByTagName('img')[0]
 
 const handle: ProtocolHandler = all => ({
-  txt: ms => ms.pipe(tap(m => (vid.currentTime = progress[m] * vid.duration)))
+  txt: ms => ms.pipe(tap(m => (vid.currentTime = progress[m] * vid.duration))),
+  audioStart: ms =>
+    ms.pipe(
+      mergeMap(m =>
+        playAudio(`sound/${m.url}`, false).pipe(
+          takeUntil(all.pipe(filter(a => a.type === 'audioStop')))
+        )
+      )
+    )
 })
 
 connectWS('screen')

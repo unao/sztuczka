@@ -51,9 +51,9 @@ init()
       render(`
       <div style="padding:16px">
     <h1>${scene.title} <small>-- ${a}</small></h1>
-    ${scene.plot
+    ${(scene.plot as any)
       .map(
-        p => `<div style="padding:12px;margin-left:${
+        (p: any) => `<div style="padding:12px;margin-left:${
           p.who ? 0 : 64
         }px;font-size:${p.who ? 18 : 12}px;${
           p.who === a ? 'background-color:rgba(0,255,0,0.1)' : ''

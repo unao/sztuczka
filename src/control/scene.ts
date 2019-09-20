@@ -59,7 +59,7 @@ export const handleScene = (
   root: HTMLDivElement
 ) => {
   root.innerHTML = txtUI(plot)
-  const _says = plot.filter(p => !!p.who)
+  const _says = plot.filter(p => p.type !== 'desc')
   const says = _says.map((s, idx) => ({ ...s, next: () => says[idx + 1] }))
   current.next({
     say: says[0],

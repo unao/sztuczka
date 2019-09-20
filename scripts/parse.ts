@@ -44,7 +44,7 @@ const t = fs
           who,
           what: `${type}:${kind} -- ${who}${body ? ` -- ${body}` : ''}`,
           kind,
-          from: other.split('!')[0] || '',
+          other: other.split('!')[0] || '',
           number: other.split('!')[1] || '',
           body: body || '',
           variant: variant || ''
@@ -58,8 +58,19 @@ const t = fs
           type,
           who,
           what: `${type} -- ${who} -- ${other}`,
-          from: other.split('!')[0] || '',
+          other: other.split('!')[0] || '',
           number: other.split('!')[1] || ''
+        }
+      }
+      const audio = (line: string) => {
+        const [type, url] = line.split('_')
+        console.log(type, url)
+        return {
+          id: id('audio', line),
+          type,
+          who: undefined,
+          what: `${type} -- ${url}`,
+          url
         }
       }
       if (n[0] === 35) {
@@ -101,6 +112,8 @@ const t = fs
             s.plot.push(msg(n[1]))
           } else if (n[1].startsWith('call')) {
             s.plot.push(call(n[1]))
+          } else if (n[1].startsWith('audio')) {
+            s.plot.push(audio(n[1]))
           } else {
             s.plot.push({
               type: 'desc',

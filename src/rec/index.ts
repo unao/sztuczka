@@ -59,7 +59,7 @@ init()
         .map((s, idx) => ({
           idx: idx,
           title: s.title,
-          plot: s.plot.filter(p => p.who === actor)
+          plot: (s.plot as any).filter((p: any) => p.who === actor)
         }))
         .filter(s => s.plot.length)
       return merge(
@@ -88,7 +88,7 @@ init()
           s =>
             `<h3>${s.title}</h3>
             ${s.plot
-              .map(p =>
+              .map((p: any) =>
                 ps.get('f') === 'no' && recs[p.id] && !recs[p.id].new
                   ? ''
                   : `<div style="${

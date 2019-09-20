@@ -1,6 +1,15 @@
-import { fromEvent, merge, Observable } from 'rxjs'
+import { fromEvent, merge, Observable, timer } from 'rxjs'
 
-import { startWith, map, Protocol, ProtocolHandler, tap } from '../common'
+import {
+  startWith,
+  map,
+  ProtocolHandler,
+  tap,
+  switchMap,
+  takeUntil,
+  filter,
+  finalize
+} from '../common'
 import { initPhoneUI, PhoneUI } from './ui'
 
 const size = fromEvent(window, 'resize').pipe(
@@ -8,12 +17,6 @@ const size = fromEvent(window, 'resize').pipe(
   map(() => ({ w: window.innerWidth, h: window.innerHeight })),
   tap(x => console.log(x))
 )
-
-const msgShow = (m: Protocol['msgShow']) => {}
-
-const callStart = (c: Protocol['callStart']) => {}
-
-const callEnd = () => {}
 
 const updateLayout = (c: PhoneUI) => (s: { w: number; h: number }) => {
   const h = s.h - 40
@@ -32,7 +35,25 @@ export const run = (
 ) => {
   const phone = initPhoneUI(root)
 
-  const h: ProtocolHandler = all => ({})
+  const h: ProtocolHandler = all => ({
+    callStart: cs =>
+      cs.pipe(
+        tap(x => console.log(x)),
+        tap(c => phone.start(c.other || c.number)),
+        switchMap(() =>
+          timer(0, 1000).pipe(
+            map(t => ({ min: Math.floor(t / 60), sec: t % 60 })),
+            tap(({ min, sec }) =>
+              phone.updateTime(
+                `${min < 10 ? `0${min}` : min}:${sec < 10 ? `0${sec}` : sec}`
+              )
+            ),
+            takeUntil(all.pipe(filter(m => m.type === 'callEnd'))),
+            finalize(() => phone.end())
+          )
+        )
+      )
+  })
 
-  return merge(size.pipe(tap(updateLayout(phone))))
+  return merge(size.pipe(tap(updateLayout(phone))), handle(h))
 }

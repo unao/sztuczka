@@ -567,6 +567,12 @@
         "title": "SCENA 5",
         "plot": [
           {
+            "id": "4_m601483312",
+            "type": "audioStart",
+            "what": "audioStart -- doorbell.mp3",
+            "url": "doorbell.mp3"
+          },
+          {
             "type": "desc",
             "what": "Dzwonek do drzwi. ROBERT odrywa się od pracy w kuchni, wyciera ręce w fartuszek, idzie w stronę drzwi wejściowych. EWA w tym czasie nakrywa do stołu. Rozpuszcza włosy, które wcześniej miała związane gumką.",
             "id": ""
@@ -735,7 +741,7 @@
           },
           {
             "type": "desc",
-            "what": "(przerażona, zaniepokojona)",
+            "what": "(przerażona, zaniepokojona) Wszyscy stoją i rozmawiają wokół kuchennej wyspy.",
             "id": ""
           },
           {
@@ -745,8 +751,20 @@
             "id": "4_633405199"
           },
           {
+            "id": "4_m1466113393",
+            "type": "audioStart",
+            "what": "audioStart -- doorbell.mp3",
+            "url": "doorbell.mp3"
+          },
+          {
+            "id": "4_1795125168",
+            "type": "audioStart",
+            "what": "audioStart -- doorbell.mp3",
+            "url": "doorbell.mp3"
+          },
+          {
             "type": "desc",
-            "what": "Wszyscy stoją i rozmawiają wokół kuchennej wyspy. Głos z kulis.",
+            "what": "Głos z kulis.",
             "id": ""
           },
           {
@@ -1016,15 +1034,21 @@
             "id": "4_1700979177"
           },
           {
+            "type": "desc",
+            "what": "(wypija łyk wina z kieliszka)",
+            "id": ""
+          },
+          {
             "type": "say",
             "who": "ROBERT",
             "what": "Całkiem niezłe to wino.",
             "id": "4_m818084821"
           },
           {
-            "type": "desc",
-            "what": "(wypija łyk wina z kieliszka) Dzwonek do drzwi.",
-            "id": ""
+            "id": "4_m185694545",
+            "type": "audioStart",
+            "what": "audioStart -- doorbell.mp3",
+            "url": "doorbell.mp3"
           },
           {
             "type": "say",
@@ -3030,7 +3054,7 @@
             "who": "CZAREK",
             "what": "msgGet:sms -- CZAREK",
             "kind": "sms",
-            "from": "",
+            "other": "",
             "number": "505414628",
             "body": "",
             "variant": ""
@@ -3058,7 +3082,7 @@
             "who": "CZAREK",
             "what": "msgShow:sms -- CZAREK -- Pragnę twojego ciała.",
             "kind": "sms",
-            "from": "",
+            "other": "",
             "number": "505414628",
             "body": "Pragnę twojego ciała.",
             "variant": ""
@@ -3103,7 +3127,7 @@
             "type": "callGet",
             "who": "CZAREK",
             "what": "callGet -- CZAREK -- !505414628",
-            "from": "",
+            "other": "",
             "number": "505414628"
           },
           {
@@ -3140,7 +3164,7 @@
             "type": "callStart",
             "who": "CZAREK",
             "what": "callStart -- CZAREK -- !505414628",
-            "from": "",
+            "other": "",
             "number": "505414628"
           },
           {
@@ -3155,19 +3179,16 @@
             "id": "11_2047203122"
           },
           {
-            "type": "desc",
-            "what": "(włączając głośnik)",
-            "id": ""
-          },
-          {
-            "type": "say",
+            "id": "11_m854531761",
+            "type": "callLaud",
             "who": "CZAREK",
-            "what": "Włączyłem, już...",
-            "id": "11_m2086003131"
+            "what": "callLaud -- CZAREK -- !505414628 Włączyłem, już...",
+            "other": "",
+            "number": "505414628"
           },
           {
             "type": "desc",
-            "what": "PROJEKTOR - ikona głośnika w tel. (do tel. głośno)",
+            "what": "(do tel. głośno)",
             "id": ""
           },
           {
@@ -3220,7 +3241,7 @@
             "type": "callEnd",
             "who": "CZAREK",
             "what": "callEnd -- CZAREK -- !505414628",
-            "from": "",
+            "other": "",
             "number": "505414628"
           },
           {
@@ -3768,7 +3789,7 @@
             "type": "callGet",
             "who": "KRYSTIAN",
             "what": "callGet -- KRYSTIAN -- Martuś!662501448",
-            "from": "Martuś",
+            "other": "Martuś",
             "number": "662501448"
           },
           {
@@ -3799,7 +3820,7 @@
             "type": "callStart",
             "who": "KRYSTIAN",
             "what": "callStart -- KRYSTIAN -- Martuś!662501448",
-            "from": "Martuś",
+            "other": "Martuś",
             "number": "662501448"
           },
           {
@@ -3825,8 +3846,16 @@
             "id": "13_1935995843"
           },
           {
+            "id": "13_m35105743",
+            "type": "callLaud",
+            "who": "KRYSTIAN",
+            "what": "callLaud -- KRYSTIAN -- Martuś!662501448",
+            "other": "Martuś",
+            "number": "662501448"
+          },
+          {
             "type": "desc",
-            "what": "KRYSTIAN odkłada tel. na stół i włącza głośnik. PROJEKTOR - głośnik.",
+            "what": "KRYSTIAN odkłada tel. na stół i włącza głośnik.",
             "id": ""
           },
           {
@@ -3953,7 +3982,7 @@
             "type": "callEnd",
             "who": "KRYSTIAN",
             "what": "callEnd -- KRYSTIAN -- Martuś!662501448",
-            "from": "Martuś",
+            "other": "Martuś",
             "number": "662501448"
           },
           {
@@ -4430,7 +4459,7 @@
             "type": "callGet",
             "who": "EWA",
             "what": "callGet -- EWA -- Tatuś!503420847",
-            "from": "Tatuś",
+            "other": "Tatuś",
             "number": "503420847"
           },
           {
@@ -4471,7 +4500,15 @@
             "type": "callStart",
             "who": "EWA",
             "what": "callStart -- EWA -- Tatuś!503420847",
-            "from": "Tatuś",
+            "other": "Tatuś",
+            "number": "503420847"
+          },
+          {
+            "id": "15_2133151855",
+            "type": "callLaud",
+            "who": "EWA",
+            "what": "callLaud -- EWA -- Tatuś!503420847",
+            "other": "Tatuś",
             "number": "503420847"
           },
           {
@@ -4525,7 +4562,7 @@
             "type": "callEnd",
             "who": "EWA",
             "what": "callEnd -- EWA -- Tatuś!503420847",
-            "from": "Tatuś",
+            "other": "Tatuś",
             "number": "503420847"
           },
           {
@@ -4879,7 +4916,7 @@
             "who": "ROBERT",
             "what": "msgGet:sound -- ROBERT",
             "kind": "sound",
-            "from": "",
+            "other": "",
             "number": "",
             "body": "",
             "variant": ""
@@ -5270,8 +5307,16 @@
             "id": "17_m1237837648"
           },
           {
+            "id": "17_m1222482573",
+            "type": "callGet",
+            "who": "KAROLINA",
+            "what": "callGet -- KAROLINA -- Steve Jobs!505414628",
+            "other": "Steve Jobs",
+            "number": "505414628"
+          },
+          {
             "type": "desc",
-            "what": "Dźwięk - dzwonek tel. KAROLINY. Światło - rozjaśnienie jadalni. (ogląda się w stronę jadalni)",
+            "what": "Światło - rozjaśnienie jadalni. (ogląda się w stronę jadalni)",
             "id": ""
           },
           {
@@ -5379,7 +5424,7 @@
           },
           {
             "type": "desc",
-            "what": "KAROLINA ustawia półmiski na stole.",
+            "what": "KAROLINA ustawia półmiski na stole. Wszyscy bohaterowie patrzą bardzo zaciekawieni raz na KAROLINĘ, raz na tel.",
             "id": ""
           },
           {
@@ -5389,8 +5434,24 @@
             "id": "17_1686822737"
           },
           {
+            "id": "17_m667414081",
+            "type": "callStart",
+            "who": "KAROLINA",
+            "what": "callStart -- KAROLINA -- Steve Jobs!505414628",
+            "other": "Steve Jobs",
+            "number": "505414628"
+          },
+          {
+            "id": "17_605135619",
+            "type": "callLaud",
+            "who": "KAROLINA",
+            "what": "callLaud -- KAROLINA -- Steve Jobs!505414628",
+            "other": "Steve Jobs",
+            "number": "505414628"
+          },
+          {
             "type": "desc",
-            "what": "Wszyscy bohaterowie patrzą bardzo zaciekawieni raz na KAROLINĘ, raz na tel. KAROLINA przejmuje tel. od LEONA. odbiera połączenie. PROJEKTOR - odebrane połączenie.",
+            "what": "KAROLINA przejmuje tel. od LEONA. odbiera połączenie. PROJEKTOR - odebrane połączenie.",
             "id": ""
           },
           {
@@ -5441,6 +5502,14 @@
             "id": "17_1030656783"
           },
           {
+            "id": "17_915974200",
+            "type": "callEnd",
+            "who": "KAROLINA",
+            "what": "callEnd -- KAROLINA -- Steve Jobs!505414628",
+            "other": "Steve Jobs",
+            "number": "505414628"
+          },
+          {
             "type": "desc",
             "what": "KAROLINA wymachuje telefonem.",
             "id": ""
@@ -5485,7 +5554,7 @@
             "who": "CZAREK",
             "what": "msgGet:sms -- CZAREK",
             "kind": "sms",
-            "from": "Roman",
+            "other": "Roman",
             "number": "668541286",
             "body": "",
             "variant": ""
@@ -5496,7 +5565,7 @@
             "who": "LEON",
             "what": "msgGet:sms -- LEON",
             "kind": "sms",
-            "from": "Romek",
+            "other": "Romek",
             "number": "668541286",
             "body": "",
             "variant": ""
@@ -5524,7 +5593,7 @@
             "who": "ROBERT",
             "what": "msgGet:sms -- ROBERT",
             "kind": "sms",
-            "from": "Romek",
+            "other": "Romek",
             "number": "668541286",
             "body": "",
             "variant": ""
@@ -5743,7 +5812,7 @@
             "who": "CZAREK",
             "what": "msgGet:sms -- CZAREK",
             "kind": "sms",
-            "from": "Marika",
+            "other": "Marika",
             "number": "505843759",
             "body": "",
             "variant": ""
@@ -5754,7 +5823,7 @@
             "who": "CZAREK",
             "what": "msgShow:sms -- CZAREK -- Zadzwoń. to pilne!!!",
             "kind": "sms",
-            "from": "Marika",
+            "other": "Marika",
             "number": "505843759",
             "body": "Zadzwoń. to pilne!!!",
             "variant": ""
@@ -5972,7 +6041,7 @@
             "who": "KRYSTIAN",
             "what": "msgGet:sound -- KRYSTIAN",
             "kind": "sound",
-            "from": "",
+            "other": "",
             "number": "",
             "body": "",
             "variant": ""
@@ -6403,7 +6472,7 @@
             "who": "KRYSTIAN",
             "what": "msgGet:sms -- KRYSTIAN",
             "kind": "sms",
-            "from": "Iza",
+            "other": "Iza",
             "number": "What's Up",
             "body": "",
             "variant": ""
@@ -6803,7 +6872,7 @@
             "who": "LEON",
             "what": "msgGet:sms -- LEON -- Jak się miewasz?",
             "kind": "sms",
-            "from": "Darek",
+            "other": "Darek",
             "number": "517849625",
             "body": "Jak się miewasz?",
             "variant": "frog"
@@ -7065,7 +7134,7 @@
             "who": "ROBERT",
             "what": "msgGet:sms -- ROBERT",
             "kind": "sms",
-            "from": "booking.com",
+            "other": "booking.com",
             "number": "",
             "body": "",
             "variant": ""
@@ -7076,7 +7145,7 @@
             "who": "KAROLINA",
             "what": "msgGet:sms -- KAROLINA",
             "kind": "sms",
-            "from": "",
+            "other": "",
             "number": "555937416",
             "body": "",
             "variant": ""
@@ -7674,7 +7743,7 @@
             "who": "ANIELA",
             "what": "msgGet:sms -- ANIELA -- Cześć",
             "kind": "sms",
-            "from": "Igor",
+            "other": "Igor",
             "number": "509657412",
             "body": "Cześć",
             "variant": ""
@@ -7685,7 +7754,7 @@
             "who": "ANIELA",
             "what": "msgShow:sms -- ANIELA -- Cześć",
             "kind": "sms",
-            "from": "Igor",
+            "other": "Igor",
             "number": "509657412",
             "body": "Cześć",
             "variant": ""
@@ -7824,7 +7893,7 @@
             "who": "ANIELA",
             "what": "msgGet:sms -- ANIELA -- Chce mi się bzykać!",
             "kind": "sms",
-            "from": "Igor",
+            "other": "Igor",
             "number": "509657412",
             "body": "Chce mi się bzykać!",
             "variant": ""
@@ -7835,7 +7904,7 @@
             "who": "ANIELA",
             "what": "msgShow:sms -- ANIELA -- Chce mi się bzykać!",
             "kind": "sms",
-            "from": "Igor",
+            "other": "Igor",
             "number": "509657412",
             "body": "Chce mi się bzykać!",
             "variant": ""
@@ -7934,6 +8003,12 @@
             "id": "25_1579331534"
           },
           {
+            "id": "25_m2046781404",
+            "type": "audioStart",
+            "what": "audioStart -- outgoing-call.mp3",
+            "url": "outgoing-call.mp3"
+          },
+          {
             "type": "desc",
             "what": "ANIELA wybiera numer do IGORA i włącza głośnik. PROJEKTOR - tel. Anieli - wybieranie numeru.",
             "id": ""
@@ -7943,6 +8018,28 @@
             "who": "ANIELA",
             "what": "Będziesz cicho ?",
             "id": "25_1967803569"
+          },
+          {
+            "id": "25_m1220830332",
+            "type": "audioStop",
+            "what": "audioStop -- outgoing-call.mp3",
+            "url": "outgoing-call.mp3"
+          },
+          {
+            "id": "25_m1815537245",
+            "type": "callStart",
+            "who": "ANIELA",
+            "what": "callStart -- ANIELA -- Igor!509657412",
+            "other": "Igor",
+            "number": "509657412"
+          },
+          {
+            "id": "25_582917757",
+            "type": "callLaud",
+            "who": "ANIELA",
+            "what": "callLaud -- ANIELA -- Igor!509657412",
+            "other": "Igor",
+            "number": "509657412"
           },
           {
             "type": "desc",
@@ -8039,8 +8136,16 @@
             "id": "25_1842350997"
           },
           {
+            "id": "25_2145971804",
+            "type": "callEnd",
+            "who": "ANIELA",
+            "what": "callEnd -- ANIELA -- Igor!509657412",
+            "other": "Igor",
+            "number": "509657412"
+          },
+          {
             "type": "desc",
-            "what": "PROJEKTOR - koniec rozmowy. (do Czarka)",
+            "what": "(do Czarka)",
             "id": ""
           },
           {
@@ -8647,7 +8752,7 @@
             "who": "LEON",
             "what": "msgGet:sms -- LEON",
             "kind": "sms",
-            "from": "Darek",
+            "other": "Darek",
             "number": "517849625",
             "body": "",
             "variant": "frog"
@@ -8726,7 +8831,7 @@
             "who": "LEON",
             "what": "msgGet:sms -- LEON -- Dupek",
             "kind": "sms",
-            "from": "Darek",
+            "other": "Darek",
             "number": "517849625",
             "body": "Dupek",
             "variant": "frog"
@@ -9154,7 +9259,7 @@
             "who": "LEON",
             "what": "msgGet:sms -- LEON -- Tęsknię...",
             "kind": "sms",
-            "from": "Darek",
+            "other": "Darek",
             "number": "517849625",
             "body": "Tęsknię...",
             "variant": "frog"
@@ -9187,7 +9292,7 @@
             "who": "LEON",
             "what": "msgShow:sms -- LEON -- Tęsknię za Twoimi",
             "kind": "sms",
-            "from": "Darek",
+            "other": "Darek",
             "number": "517849625",
             "body": "Tęsknię za Twoimi",
             "variant": ""
@@ -10914,7 +11019,7 @@
             "who": "CZAREK",
             "what": "msgGet:sms -- CZAREK",
             "kind": "sms",
-            "from": "Marika",
+            "other": "Marika",
             "number": "505843759",
             "body": "",
             "variant": ""
@@ -10925,7 +11030,7 @@
             "who": "CZAREK",
             "what": "msgShow:sms -- CZAREK -- Zadzwoń! to pilne!",
             "kind": "sms",
-            "from": "Marika",
+            "other": "Marika",
             "number": "505843759",
             "body": "Zadzwoń! to pilne!",
             "variant": ""
@@ -10936,7 +11041,7 @@
             "who": "CZAREK",
             "what": "msgGet:sms -- CZAREK",
             "kind": "sms",
-            "from": "Ewa",
+            "other": "Ewa",
             "number": "882683498",
             "body": "",
             "variant": ""
@@ -10947,7 +11052,7 @@
             "who": "CZAREK",
             "what": "msgShow:sms -- CZAREK -- Pragnęłam Cię dziś BARDZO",
             "kind": "sms",
-            "from": "Ewa",
+            "other": "Ewa",
             "number": "882683498",
             "body": "Pragnęłam Cię dziś BARDZO",
             "variant": ""
@@ -11148,7 +11253,7 @@
             "who": "KRYSTIAN",
             "what": "msgGet:sound -- KRYSTIAN",
             "kind": "sound",
-            "from": "",
+            "other": "",
             "number": "",
             "body": "",
             "variant": ""

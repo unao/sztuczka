@@ -18,9 +18,9 @@ export const text = (actor: Actor) =>
     scene => `
   <div>
 <h3 style="margin-left:48px">${scene.title}</h3>
-${scene.plot
+${(scene.plot as any)
   .map(
-    p => `<div id="txt-${p.id}" style="padding:4px;margin-left:${
+    (p: any) => `<div id="txt-${p.id}" style="padding:4px;margin-left:${
       p.type === 'say' ? 4 : 64
     }px;font-size:${p.type === 'say' ? 18 : 12}px;${
       p.who === actor ? 'background-color:rgba(0,255,0,0.1)' : ''
