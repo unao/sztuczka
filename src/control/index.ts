@@ -9,7 +9,8 @@ import {
   playAudio,
   catchError,
   Role,
-  filter
+  filter,
+  Actor
 } from 'common'
 
 import { merge, of, EMPTY } from 'rxjs'
@@ -71,6 +72,8 @@ const handle: ProtocolHandler = all => ({
       tap(r => ui('connected', r.filter(x => x !== 'control').join(' ')))
     )
 })
+
+const toActorOrScreen = (who: Actor) => conn.includes(who)
 
 connectWS('control')
   .pipe(

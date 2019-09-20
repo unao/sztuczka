@@ -9,6 +9,8 @@ import {
 } from 'common'
 import * as play from '../assets/parsed.json'
 import { smsUI } from './message'
+import { merge } from 'rxjs'
+import { run } from './phone'
 
 const txt = play['AKT I'].scenes.concat(play['AKT II'].scenes)
 const plot = txt.reduce((acc, t) => acc.concat(t.plot), [] as Array<{
@@ -28,10 +30,9 @@ const progress = plot.reduce(
 )
 
 document.body.innerHTML = `<div style="background-color:black;width:100vw;">
-  ${smsUI('Darek', 'Dupek!')}
   <video src="/assets/eclipse.mp4" style="width:100vw;height:100vh"></video>
-  <button id="fullscreen" style="z-index:2;position:absolute;top:0;left:0">fullscreen</button>
-  <img style="display:none;z-index:1;position:absolute;top:0;left:0;width:100vw;height:100vh"></img>
+  <button id="fullscreen" style="z-index:10;position:absolute;top:0;left:0">fullscreen</button>
+  <img style="display:none;z-index:5;position:absolute;top:0;left:0;width:100vw;height:100vh"></img>
 </div>`
 
 document.getElementById('fullscreen')!.onclick = () =>
@@ -50,7 +51,12 @@ const handle: ProtocolHandler = all => ({
 
 connectWS('screen')
   .pipe(
-    switchMap(ws => ws.handle(handle)),
+    switchMap(ws =>
+      merge(
+        run(document.body.children[0] as HTMLDivElement, ws.handle),
+        ws.handle(handle)
+      )
+    ),
     retryWhen(errs =>
       errs.pipe(
         tap(err => console.warn(err)),

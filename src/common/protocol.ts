@@ -31,12 +31,16 @@ interface Call {
   number: string
 }
 
-interface Protocol {
+export interface Protocol {
   conn: Role[]
   img: {
     url: string
     duration: number
   }
+  audioStart: {
+    url: string
+  }
+  audioStop: null
   txt: string
   callGet: Call
   callStart: Call
@@ -50,8 +54,6 @@ const unwrap = <K extends keyof Protocol>(m: string) =>
 
 export const withProtocol = (ws: {
   send: (m: string) => void
-  // on: (m: string, cb: (m: string) => void) => void
-  // off: (m: string) => void
 }) => {
   return {
     send: <K extends keyof Protocol>(k: K, p: Protocol[K], to?: Role) => {

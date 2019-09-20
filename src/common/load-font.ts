@@ -1,28 +1,28 @@
 const fontFace = `
 @font-face {
     font-family: "Roboto";
-    src: url("/fonts/Roboto-Regular.ttf") format('truetype');
+    src: url("/assets/fonts/Roboto-Regular.ttf") format('truetype');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url("/fonts/Roboto-RegularItalic.ttf") format('truetype');
+  src: url("/assets/fonts/Roboto-RegularItalic.ttf") format('truetype');
   font-weight: 400;
   font-style: Italic;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url("/fonts/Roboto-Bold.ttf") format('truetype');
+  src: url("/assets/fonts/Roboto-Bold.ttf") format('truetype');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url("/fonts/Roboto-BoldItalic.ttf") format('truetype');
+  src: url("/assets/fonts/Roboto-BoldItalic.ttf") format('truetype');
   font-weight: 700;
   font-style: italic;
 }
