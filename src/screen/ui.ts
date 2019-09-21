@@ -1,3 +1,59 @@
+import { Actor } from 'common'
+
+const m = '16px'
+export const pos: {
+  [K in Actor]: Partial<{ [K in 'left' | 'right' | 'top' | 'bottom']: string }>
+} = {
+  ANIELA: {
+    top: m,
+    right: m
+  },
+  CZAREK: {
+    top: `33vh`,
+    right: m
+  },
+  ROBERT: {
+    bottom: m,
+    right: m
+  },
+  EWA: {
+    bottom: m,
+    left: `33vw`
+  },
+  KAROLINA: {
+    bottom: m,
+    left: m
+  },
+  LEON: {
+    top: `33vh`,
+    left: m
+  },
+  KRYSTIAN: {
+    top: m,
+    left: m
+  }
+}
+
+const toPos = (a: Actor) => `position:absolute;
+  ${Object.keys(pos[a])
+    .map(k => `${k}:${pos[a][k as 'left']}`)
+    .join(';')}`
+
+const trans = `opacity:1;filter:blur(0px);transition: all 0.4s ease-in-out;`
+
+export const smsUI = (who: string, msg: string, actor: Actor) =>
+  `<div style="max-width:30vw;max-height:30vh;color:white;
+  ${trans}
+  ${toPos(actor)}">
+    <b style="font-size:42px">${who.toUpperCase()}</b>
+    <div style="font-size:48px;max-width:320px;
+      border-radius:16px;
+      background:black;padding:32px;
+      border:2px solid white">
+      ${msg}
+    </div>
+  </div>`
+
 export type PhoneUI = ReturnType<typeof initPhoneUI>
 
 const iconColor = 'white'

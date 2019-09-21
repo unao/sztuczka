@@ -1,4 +1,4 @@
-import { Role } from './names'
+import { Role, Actor } from './names'
 import { Observable, fromEvent, EMPTY, GroupedObservable, Subject } from 'rxjs'
 import { map, groupBy, mergeMap, tap } from 'rxjs/operators'
 
@@ -16,12 +16,13 @@ export type Message<K extends keyof Protocol> = {
 }
 
 interface MSGBase {
+  who: Actor
   kind: 'sms' | 'email' | 'whatsup' | 'timer'
   variant: string
 }
 
 interface MSG extends MSGBase {
-  from: string
+  other: string
   number: string
   body: string
 }

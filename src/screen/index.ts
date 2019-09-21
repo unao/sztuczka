@@ -9,12 +9,14 @@ import {
   mergeMap,
   playAudio,
   takeUntil,
-  filter
+  filter,
+  take
 } from 'common'
 import * as play from '../assets/parsed.json'
-import { smsUI } from './message'
-import { merge } from 'rxjs'
+import { merge, Observable } from 'rxjs'
 import { run } from './phone'
+import { smsUI } from './ui'
+import { Observer } from 'firebase'
 
 const txt = play['AKT I'].scenes.concat(play['AKT II'].scenes)
 const plot = txt.reduce((acc, t) => acc.concat(t.plot), [] as Array<{
@@ -56,6 +58,29 @@ const handle: ProtocolHandler = all => ({
       mergeMap(m =>
         playAudio(`sound/${m.url}`, false).pipe(
           takeUntil(all.pipe(filter(a => a.type === 'audioStop')))
+        )
+      )
+    ),
+  msgShow: ms =>
+    ms.pipe(
+      mergeMap(m =>
+        Observable.create((obs: Observer<HTMLDivElement>) => {
+          console.log(m)
+          const div = document.createElement('div')
+          document.body.append(div)
+          div.innerHTML = smsUI(m.other, m.body, m.who)
+          obs.next(div.children[0]! as any)
+          return () => div.remove()
+        }).pipe(
+          delay(5000),
+          tap((d: HTMLDivElement) =>
+            Object.assign(d.style, {
+              opacity: '0',
+              filter: 'blur(25px)'
+            })
+          ),
+          delay(1000),
+          take(1)
         )
       )
     )

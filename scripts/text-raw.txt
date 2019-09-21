@@ -614,7 +614,7 @@
           ROBERT:
                     (wypija łyk wina z kieliszka)
                Całkiem niezłe to wino.
-               
+
                     audioStart_doorbell.mp3___
 
           EWA:
@@ -2897,18 +2897,25 @@
                                    SCENA 19
 
                     msgGet_sms_CZAREK_Roman!668541286
-
-                    msgGet_sms_LEON_Romek!668541286
+                    
+                    msgShow_sms_CZAREK_Roman!668541286_Jutr⚽ gramy ⚽ 17:⚽⚽
 
           ANIELA:
                O ! SMS.
+
+                    msgGet_sms_LEON_Roman!668541286
+                    
+                    msgShow_sms_LEON_Roman!668541286_Jutr⚽ gramy ⚽ 17:⚽⚽
+               
                O ! Dwa !
 
           CZAREK:
                          (patrzy na swój tel.)
                To od Romka w sprawie gały.
 
-                    msgGet_sms_ROBERT_Romek!668541286
+                    msgGet_sms_ROBERT_Roman!668541286
+                    
+                    msgShow_sms_ROBERT_Roman!668541286_Jutr⚽ gramy ⚽ 17:⚽⚽
 
           LEON:
                Potwierdza jutro.
@@ -3587,7 +3594,6 @@
 
                     ROBERT zajmuje swoje miejsce przy stole.
 
-                    msgShow_sms_LEON_Darek!517849625_Jak się miewasz?_frog
 
           EWA:
                Co to ? SMS ?
@@ -3608,6 +3614,9 @@
           LEON:
                Nie jestem, aż taki głupi. Pewnie dzieciaki mi
                ustawiły.
+
+                    msgShow_sms_LEON_Darek!517849625_Jak się miewasz?_frog
+                    
                          (czyta sms)
                Darek - "Jak się miewasz ?". To miłe.
 
@@ -4592,7 +4601,7 @@
 
                     KAROLINA podnosi tel. i czyta.
 
-                    msgShow_sms_LEON_Darek!517849625_Dupek_frog
+                    msgShow_sms_LEON_Darek!517849625_Dupek 😡_frog
 
           KAROLINA:
                Napisał: "Dupek".

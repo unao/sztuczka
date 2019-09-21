@@ -5560,21 +5560,49 @@
             "variant": ""
           },
           {
-            "id": "18_m1477061092",
-            "type": "msgGet",
-            "who": "LEON",
-            "what": "msgGet:sms -- LEON",
+            "id": "18_1543144158",
+            "type": "msgShow",
+            "who": "CZAREK",
+            "what": "msgShow:sms -- CZAREK -- Jutr⚽ gramy ⚽ 17:⚽⚽",
             "kind": "sms",
-            "other": "Romek",
+            "other": "Roman",
             "number": "668541286",
-            "body": "",
+            "body": "Jutr⚽ gramy ⚽ 17:⚽⚽",
             "variant": ""
           },
           {
             "type": "say",
             "who": "ANIELA",
-            "what": "O ! SMS. O ! Dwa !",
-            "id": "18_m312817150"
+            "what": "O ! SMS.",
+            "id": "18_1765034723"
+          },
+          {
+            "id": "18_1205688547",
+            "type": "msgGet",
+            "who": "LEON",
+            "what": "msgGet:sms -- LEON",
+            "kind": "sms",
+            "other": "Roman",
+            "number": "668541286",
+            "body": "",
+            "variant": ""
+          },
+          {
+            "id": "18_m235477710",
+            "type": "msgShow",
+            "who": "LEON",
+            "what": "msgShow:sms -- LEON -- Jutr⚽ gramy ⚽ 17:⚽⚽",
+            "kind": "sms",
+            "other": "Roman",
+            "number": "668541286",
+            "body": "Jutr⚽ gramy ⚽ 17:⚽⚽",
+            "variant": ""
+          },
+          {
+            "type": "say",
+            "who": "ANIELA",
+            "what": "O ! Dwa !",
+            "id": "18_m1131086975"
           },
           {
             "type": "desc",
@@ -5588,14 +5616,25 @@
             "id": "18_838219949"
           },
           {
-            "id": "18_587258204",
+            "id": "18_m1024959453",
             "type": "msgGet",
             "who": "ROBERT",
             "what": "msgGet:sms -- ROBERT",
             "kind": "sms",
-            "other": "Romek",
+            "other": "Roman",
             "number": "668541286",
             "body": "",
+            "variant": ""
+          },
+          {
+            "id": "18_1320911302",
+            "type": "msgShow",
+            "who": "ROBERT",
+            "what": "msgShow:sms -- ROBERT -- Jutr⚽ gramy ⚽ 17:⚽⚽",
+            "kind": "sms",
+            "other": "Roman",
+            "number": "668541286",
+            "body": "Jutr⚽ gramy ⚽ 17:⚽⚽",
             "variant": ""
           },
           {
@@ -6879,7 +6918,7 @@
           },
           {
             "type": "desc",
-            "what": "ROBERT zajmuje swoje miejsce przy stole. msgShow_sms_LEON_Darek!517849625_Jak się miewasz?_frog",
+            "what": "ROBERT zajmuje swoje miejsce przy stole.",
             "id": ""
           },
           {
@@ -6922,6 +6961,17 @@
             "who": "LEON",
             "what": "Nie jestem, aż taki głupi. Pewnie dzieciaki mi ustawiły.",
             "id": "23_185973688"
+          },
+          {
+            "id": "23_1090539007",
+            "type": "msgShow",
+            "who": "LEON",
+            "what": "msgShow:sms -- LEON -- Jak się miewasz?",
+            "kind": "sms",
+            "other": "Darek",
+            "number": "517849625",
+            "body": "Jak się miewasz?",
+            "variant": "frog"
           },
           {
             "type": "desc",
@@ -8838,7 +8888,7 @@
           },
           {
             "type": "desc",
-            "what": "KAROLINA podnosi tel. i czyta. msgShow_sms_LEON_Darek!517849625_Dupek_frog",
+            "what": "KAROLINA podnosi tel. i czyta. msgShow_sms_LEON_Darek!517849625_Dupek 😡_frog",
             "id": ""
           },
           {
