@@ -56,8 +56,16 @@ const handle: ProtocolHandler = all => ({
   audioStart: ms =>
     ms.pipe(
       mergeMap(m =>
-        playAudio(`sound/${m.url}`, false).pipe(
+        playAudio(m.url, false).pipe(
           takeUntil(all.pipe(filter(a => a.type === 'audioStop')))
+        )
+      )
+    ),
+  callGet: ms =>
+    ms.pipe(
+      mergeMap(m =>
+        playAudio(`call/${m.who!}.mp3`, false).pipe(
+          takeUntil(all.pipe(filter(a => a.type === 'callStart')))
         )
       )
     ),

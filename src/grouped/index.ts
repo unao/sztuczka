@@ -4,7 +4,7 @@ const scene = actors
   .filter(a => a !== 'KRYSTIAN')
   .map(
     a => `<iframe
-  seamless style="border:0;width:33vw;height:49vh" src="${window.location.origin}/actor?a=${a}"></iframe>`
+  seamless style="border:0;width:33vw;height:49vh" src="${window.location.origin}/actor?a=${a}&fake=1"></iframe>`
   )
 
 render(

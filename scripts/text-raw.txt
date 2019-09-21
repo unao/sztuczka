@@ -392,7 +392,7 @@
 
                                    SCENA 5
 
-                    audioStart_doorbell.mp3
+                    audioStart_sound/doorbell.mp3
 
                     Dzwonek do drzwi. ROBERT odrywa się od pracy w
                     kuchni, wyciera ręce w fartuszek, idzie w stronę
@@ -480,8 +480,8 @@
 
                Rozalia kończy sześć lat w czerwcu.
 
-                    audioStart_doorbell.mp3_
-                    audioStart_doorbell.mp3__
+                    audioStart_sound/doorbell.mp3_
+                    audioStart_sound/doorbell.mp3__
 
                     Głos z kulis.
 
@@ -615,7 +615,7 @@
                     (wypija łyk wina z kieliszka)
                Całkiem niezłe to wino.
 
-                    audioStart_doorbell.mp3___
+                    audioStart_sound/doorbell.mp3___
 
           EWA:
                Są !
@@ -3616,7 +3616,7 @@
                ustawiły.
 
                     msgShow_sms_LEON_Darek!517849625_Jak się miewasz?_frog
-                    
+
                          (czyta sms)
                Darek - "Jak się miewasz ?". To miłe.
 
@@ -4016,6 +4016,8 @@
           ANIELA:
                Zróbmy sobie zdjęcie.
 
+                    selfieStart_ANIELA
+
                     ANIELA uruchamia aparat w tel. i wyciąga rękę do
                     ujęcia.
 
@@ -4133,6 +4135,8 @@
           CZAREK:
                Co to ma być ?
 
+                    selfieStop_ANIELA
+
           ANIELA:
                Wyjaśnię ci.
 
@@ -4178,7 +4182,7 @@
                Nie ma potrzeby. Nie ma co wyjaśniać. Naprawdę nie
                chcę. Słyszysz ?!
 
-                    audioStart_outgoing-call.mp3
+                    audioStart_sound/outgoing-call.mp3
 
                     ANIELA wybiera numer do IGORA i włącza głośnik.
 
@@ -4187,7 +4191,7 @@
           ANIELA:
                Będziesz cicho ?
 
-                    audioStop_outgoing-call.mp3
+                    audioStop_sound/outgoing-call.mp3
                     callStart_ANIELA_Igor!509657412
                     callLaud_ANIELA_Igor!509657412
 

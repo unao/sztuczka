@@ -9,7 +9,6 @@ import {
   playAudio,
   catchError,
   Role,
-  filter,
   Actor
 } from 'common'
 
@@ -106,14 +105,11 @@ connectWS('control')
                     if (conn.includes(x.who! as Role)) {
                       ws.send('msgGet', x as any, x.who! as any)
                     } else {
-                      return playAudio(
+                      ws.send(
+                        'audioStart',
                         // @ts-ignore
-                        `${x.kind}/${x.who!}${x.variant || ''}.mp3`
-                      ).pipe(
-                        catchError(err => {
-                          console.warn('MISSING AUDIO', x, err)
-                          return of(true)
-                        })
+                        { url: `${x.kind}/${x.who!}${x.variant || ''}.mp3` },
+                        'screen'
                       )
                     }
                   }
@@ -121,12 +117,7 @@ connectWS('control')
                     if (conn.includes(x.who! as Role)) {
                       ws.send('callGet', x as any, x.who! as any)
                     } else {
-                      return playAudio(`call/${x.who!}.mp3`).pipe(
-                        catchError(err => {
-                          console.warn('MISSING AUDIO', x, err)
-                          return of(true)
-                        })
-                      )
+                      ws.send('callGet', x as any, 'screen')
                     }
                   }
                   if (x.type === 'callStart' || x.type === 'callEnd') {

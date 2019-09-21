@@ -16,8 +16,8 @@ import {
   catchError,
   selfie
 } from '../common'
-import { fromEvent, merge, of, Observable, EMPTY } from 'rxjs'
-import { text, setCurrent } from './text'
+import { fromEvent, merge, of } from 'rxjs'
+import { text } from './text'
 
 const ps = new URLSearchParams(location.search)
 
@@ -40,7 +40,13 @@ const selectActor = () => {
     filter(actor => actors.includes(actor)),
     take(1),
     tap(() => navigator.vibrate([200, 200, 200])),
-    // tap(fullscreen),
+    tap(() => !ps.has('fake') && fullscreen()),
+    tap(
+      a =>
+        !ps.has('fake') &&
+        a === 'ANIELA' &&
+        navigator.mediaDevices.getUserMedia({ video: true })
+    ),
     shareReplay()
   )
 }

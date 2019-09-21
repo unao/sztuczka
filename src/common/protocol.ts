@@ -28,6 +28,7 @@ interface MSG extends MSGBase {
 }
 
 interface Call {
+  who: Actor
   other: string
   number: string
 }
@@ -49,6 +50,8 @@ export interface Protocol {
   callEnd: null
   msgGet: MSGBase
   msgShow: MSG
+  selfieStart: null
+  selfieStop: null
 }
 
 const unwrap = <K extends keyof Protocol>(m: string) =>
