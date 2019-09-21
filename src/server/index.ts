@@ -41,9 +41,7 @@ const run = (port = 3356) => {
       sendConn()
     })
     ws.on('message', m => {
-      // console.log('MSG', (m as string).substr(0, 16))
       const msg = JSON.parse(m as string)
-      // console.log(msg)
       if (msg.to && conn[msg.to as Role]) {
         conn[msg.to as Role]!.send(m)
       }
@@ -51,7 +49,6 @@ const run = (port = 3356) => {
       if (!msg.to) {
         wss.clients.forEach(w => w.send(m))
       }
-      // conn['screen'] && conn['screen'].send(m)
     })
   })
 }

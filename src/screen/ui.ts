@@ -34,7 +34,7 @@ export const pos: {
   }
 }
 
-const toPos = (a: Actor) => `position:absolute;
+const toPos = (a: Actor) => `position:absolute;z-index:3;
   ${Object.keys(pos[a])
     .map(k => `${k}:${pos[a][k as 'left']}`)
     .join(';')}`

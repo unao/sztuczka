@@ -13,7 +13,7 @@ import {
   take
 } from 'common'
 import * as play from '../assets/parsed.json'
-import { merge, Observable } from 'rxjs'
+import { merge, Observable, timer } from 'rxjs'
 import { run } from './phone'
 import { smsUI } from './ui'
 import { Observer } from 'firebase'
@@ -38,7 +38,7 @@ const progress = plot.reduce(
 document.body.innerHTML = `<div style="background-color:black;width:100vw;">
   <video src="/assets/eclipse.mp4" style="width:100vw;height:100vh"></video>
   <button id="fullscreen" style="z-index:10;position:absolute;top:0;left:0">fullscreen</button>
-  <img style="display:none;z-index:5;position:absolute;top:0;left:0;width:100vw;height:100vh"></img>
+  <img style="display:none;z-index:2;position:absolute;top:0;left:0;width:100vw;height:100vh"></img>
 </div>`
 
 document.getElementById('fullscreen')!.onclick = () =>
@@ -53,6 +53,16 @@ const img = document.getElementsByTagName('img')[0]
 
 const handle: ProtocolHandler = all => ({
   txt: ms => ms.pipe(tap(m => (vid.currentTime = progress[m] * vid.duration))),
+  img: ms =>
+    ms.pipe(
+      tap(m => {
+        img.style.display = 'block'
+        img.src = m.url
+      }),
+      switchMap(m =>
+        timer(m.duration).pipe(tap(() => (img.style.display = 'none')))
+      )
+    ),
   audioStart: ms =>
     ms.pipe(
       mergeMap(m =>

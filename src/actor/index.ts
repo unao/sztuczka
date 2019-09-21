@@ -11,11 +11,12 @@ import {
   filter,
   selfie,
   map,
-  finalize
+  finalize,
+  Send
 } from 'common'
 import { setCurrent } from './text'
 
-const handle = (a: Actor): ProtocolHandler => all => ({
+const handle = (a: Actor, send: Send): ProtocolHandler => all => ({
   txt: ms => ms.pipe(tap(setCurrent)),
   msgGet: ms =>
     ms.pipe(switchMap(m => playAudio(`${m.kind}/${a}${m.variant || ''}.mp3`))),
@@ -38,6 +39,7 @@ const handle = (a: Actor): ProtocolHandler => all => ({
       }),
       switchMap(vid =>
         selfie(vid).pipe(
+          tap(f => send('img', { url: f, duration: 500 }, 'screen')),
           takeUntil(all.pipe(filter(x => x.type === 'selfieStop'))),
           finalize(() => vid.remove())
         )
@@ -47,7 +49,7 @@ const handle = (a: Actor): ProtocolHandler => all => ({
 
 init()
   .pipe(
-    switchMap(x => x.ws.handle(handle(x.actor))),
+    switchMap(x => x.ws.handle(handle(x.actor, x.ws.send))),
     retryWhen(errs => errs.pipe(delay(250)))
   )
   .subscribe()

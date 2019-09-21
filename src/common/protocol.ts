@@ -1,6 +1,8 @@
 import { Role, Actor } from './names'
-import { Observable, fromEvent, EMPTY, GroupedObservable, Subject } from 'rxjs'
+import { Observable, fromEvent, EMPTY, Subject } from 'rxjs'
 import { map, groupBy, mergeMap, tap } from 'rxjs/operators'
+
+export type Send = ReturnType<typeof withProtocol>['send']
 
 export type ProtocolHandler = (
   gs: Observable<Message<keyof Protocol>>
@@ -59,15 +61,14 @@ const unwrap = <K extends keyof Protocol>(m: string) =>
 
 export const withProtocol = (ws: { send: (m: string) => void }) => {
   return {
-    send: <K extends keyof Protocol>(k: K, p: Protocol[K], to?: Role) => {
+    send: <K extends keyof Protocol>(k: K, p: Protocol[K], to?: Role) =>
       ws.send(
         JSON.stringify({
           type: k,
           payload: p,
           to
         })
-      )
-    },
+      ),
     handle: (hc: ProtocolHandler) => {
       const s = new Subject<Message<keyof Protocol>>()
       return fromEvent<{ data: string }>(ws as any, 'message').pipe(
