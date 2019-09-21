@@ -280,6 +280,9 @@
 
                                    SCENA 4
 
+                    audioStart_sound/radio.mp3
+                    audioStop_sound/radio.mp3
+                    
                     KURTYNA.
 
                     Kurtyna w górę.
@@ -2044,7 +2047,7 @@
           KRYSTIAN:
                Cześć !
 
-          MARTA (GŁOS W TEL.):
+          MARTA_0 (GŁOS W TEL.):
                Cześć !
 
           KRYSTIAN:
@@ -2053,7 +2056,7 @@
           EWA:
                Grasz nieczysto.
 
-          MARTA (GŁOS W TEL.):
+          MARTA_1 (GŁOS W TEL.):
                Jak to głośnik ?
 
           KRYSTIAN:
@@ -2062,19 +2065,19 @@
           ANIELA:
                Nie uprzedzaj jej.
 
-          MARTA (GŁOS W TEL.):
+          MARTA_2 (GŁOS W TEL.):
                To wyłącz.
 
           KRYSTIAN:
                Nie mogę.
 
-          MARTA (GŁOS W TEL.):
+          MARTA_3 (GŁOS W TEL.):
                Dlaczego ?
 
           KRYSTIAN:
                Bo nie.
 
-          MARTA (GŁOS W TEL.):
+          MARTA_4 (GŁOS W TEL.):
                A ten gwar ?
 
           KRYSTIAN:
@@ -2085,19 +2088,19 @@
 
                     Wszyscy chóralnie witają się z MARTĄ.
 
-          MARTA (GŁOS W TEL.):
+          MARTA_5 (GŁOS W TEL.):
                Cześć wszystkim. To kończę.
 
           KRYSTIAN:
                Jeśli chodzi o Sopot, to nie pojadę.
 
-          MARTA (GŁOS W TEL.):
+          MARTA_6 (GŁOS W TEL.):
                Odezwę się jutro.
 
           KRYSTIAN:
                OK, cześć.
 
-          MARTA (GŁOS W TEL.):
+          MARTA_7 (GŁOS W TEL.):
                Cześć.
 
                     callEnd_KRYSTIAN_Martuś!662501448

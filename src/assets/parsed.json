@@ -362,6 +362,18 @@
         "title": "SCENA 4",
         "plot": [
           {
+            "id": "3_2012970432",
+            "type": "audioStart",
+            "what": "audioStart -- sound/radio.mp3",
+            "url": "sound/radio.mp3"
+          },
+          {
+            "id": "3_1356847392",
+            "type": "audioStop",
+            "what": "audioStop -- sound/radio.mp3",
+            "url": "sound/radio.mp3"
+          },
+          {
             "type": "desc",
             "what": "KURTYNA. Kurtyna w górę. ŚWIATŁO - Światła rozjaśniają scenę. Miejsce akcji - mieszkanie: salon z jadalnią i aneksem kuchennym. W kuchni, przy wyspie kuchennej, krząta się mężczyzna w fartuszku. Gotuje, próbuje, kroi warzywa na desce, itd. Do pomieszczenia wchodzi EWA i podchodzi do wyspy kuchennej. Mężczyzna to Robert.",
             "id": ""
@@ -3866,9 +3878,9 @@
           },
           {
             "type": "say",
-            "who": "MARTA (GŁOS W TEL.)",
+            "who": "MARTA_0 (GŁOS W TEL.)",
             "what": "Cześć !",
-            "id": "13_m1718638595"
+            "id": "13_m201446484"
           },
           {
             "type": "say",
@@ -3884,9 +3896,9 @@
           },
           {
             "type": "say",
-            "who": "MARTA (GŁOS W TEL.)",
+            "who": "MARTA_1 (GŁOS W TEL.)",
             "what": "Jak to głośnik ?",
-            "id": "13_1803159053"
+            "id": "13_m1798570113"
           },
           {
             "type": "say",
@@ -3902,9 +3914,9 @@
           },
           {
             "type": "say",
-            "who": "MARTA (GŁOS W TEL.)",
+            "who": "MARTA_2 (GŁOS W TEL.)",
             "what": "To wyłącz.",
-            "id": "13_m273712629"
+            "id": "13_m1698808322"
           },
           {
             "type": "say",
@@ -3914,9 +3926,9 @@
           },
           {
             "type": "say",
-            "who": "MARTA (GŁOS W TEL.)",
+            "who": "MARTA_3 (GŁOS W TEL.)",
             "what": "Dlaczego ?",
-            "id": "13_566082682"
+            "id": "13_1358744942"
           },
           {
             "type": "say",
@@ -3926,9 +3938,9 @@
           },
           {
             "type": "say",
-            "who": "MARTA (GŁOS W TEL.)",
+            "who": "MARTA_4 (GŁOS W TEL.)",
             "what": "A ten gwar ?",
-            "id": "13_m2009743200"
+            "id": "13_491091285"
           },
           {
             "type": "say",
@@ -3949,9 +3961,9 @@
           },
           {
             "type": "say",
-            "who": "MARTA (GŁOS W TEL.)",
+            "who": "MARTA_5 (GŁOS W TEL.)",
             "what": "Cześć wszystkim. To kończę.",
-            "id": "13_932278248"
+            "id": "13_371871666"
           },
           {
             "type": "say",
@@ -3961,9 +3973,9 @@
           },
           {
             "type": "say",
-            "who": "MARTA (GŁOS W TEL.)",
+            "who": "MARTA_6 (GŁOS W TEL.)",
             "what": "Odezwę się jutro.",
-            "id": "13_329913755"
+            "id": "13_m1115125308"
           },
           {
             "type": "say",
@@ -3973,9 +3985,9 @@
           },
           {
             "type": "say",
-            "who": "MARTA (GŁOS W TEL.)",
+            "who": "MARTA_7 (GŁOS W TEL.)",
             "what": "Cześć.",
-            "id": "13_m332534606"
+            "id": "13_1195863466"
           },
           {
             "id": "13_1209217446",
