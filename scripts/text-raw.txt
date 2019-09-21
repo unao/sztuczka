@@ -27,6 +27,9 @@
                     numer nieznany.
 
           ANIELA:
+                    audioStart_call/CZAREK.mp3
+                    audioStop_call/CZAREK.mp3
+
                Dawki są podane na opakowaniu...Tak, zależą od
                wielkości. Radzę ukryć tabletkę w karmie.
                          (do telefonu; ciągle szykuje się na
@@ -192,6 +195,9 @@
 
                                    SCENA 3
 
+                    audioStart_sound/radio.mp3
+                    audioStop_sound/radio.mp3
+
                     W świetle dwie panie - kobieta/matka i
                     dziewczyna/nastolatka/córka.
 
@@ -279,9 +285,6 @@
                     Szperacz gaśnie. Ciemność.
 
                                    SCENA 4
-
-                    audioStart_sound/radio.mp3
-                    audioStop_sound/radio.mp3
                     
                     KURTYNA.
 
@@ -2858,13 +2861,13 @@
           KAROLINA:
                Dobry wieczór Panie Pawle.
 
-          PAWEŁ (GŁOS W TEL.):
+          PAWEŁ_0 (GŁOS W TEL.):
                Dobry wieczór. Pani komputer gotowy.
 
           KAROLINA:
                Aaa, świetnie. O tej porze pan pracuje ?
 
-          PAWEŁ (GŁOS W TEL.):
+          PAWEŁ_1 (GŁOS W TEL.):
                Nadgodziny. Za dużo wirusów w sieci.
 
                     EWA wraca z kuchni do jadalni.
@@ -2872,7 +2875,7 @@
           KAROLINA:
                Wpadnę jutro po niego około ósmej.
 
-          PAWEŁ (GŁOS W TEL.):
+          PAWEŁ_2 (GŁOS W TEL.):
                Dobrze. Do jutra.
 
           KAROLINA:
@@ -4383,13 +4386,13 @@
                          (do tel.)
                Cześć Neluś. Wszystko dobrze ?
 
-          NELA (GŁOS W TEL.):
+          NELA TEL:
                Tak tato. Możesz rozmawiać ?
 
           ROBERT:
                Tak, słucham.
 
-          NELA (GŁOS W TEL.):
+          NELA TEL:
                Rodzice Szymona wyjechali na weekend. Zaproponował abym
                przenocowała u niego.
 
@@ -4397,26 +4400,26 @@
 
                     EWA zgaszona, popija wino.
 
-          NELA (GŁOS W TEL.):
+          NELA TEL:
                Jesteś tam tato ?
 
           ROBERT:
                Tak. A ty co na to ?
 
-          NELA (GŁOS W TEL.):
+          NELA TEL:
                Nie wiem. Trochę mam ochotę, ale dziś się nie
                spodziewałam. Jak nie pójdę on się obrazi. Co robić ?
 
           ROBERT:
                Nie powinnaś iść jeśli to jedyny powód.
 
-          NELA (GŁOS W TEL.):
+          NELA TEL:
                Wiadomo, że nie.
 
           ROBERT:
                I nie spodziewaj się, że będę skakał z radości.
 
-          NELA (GŁOS W TEL.):
+          NELA TEL:
                Daj spokój tato.
 
           ROBERT:
@@ -4434,26 +4437,26 @@
 
                     Wszyscy słuchają słów ROBERTA w skupieniu.
 
-          NELA (GŁOS W TEL.):
+          NELA TEL:
                Wiesz co ?
 
           ROBERT:
                Co ?
 
-          NELA (GŁOS W TEL.):
+          NELA TEL:
                Nieee, już nic.
 
           ROBERT:
                Powiedz.
 
-          NELA (GŁOS W TEL.):
+          NELA TEL:
                Miałam ochotę zapaść się pod ziemię kiedy mi dawałeś
                prezerwatywy. 
 
           ROBERT:
                Nie po to żebyś ich użyła.
 
-          NELA (GŁOS W TEL.):
+          NELA TEL:
                Więc po co ? Tak, jakbyś przeczuwał. Nigdy przedtem mi
                nie dałeś... Ale jeśli pójdę do Szymona powiedz mamie,
                że nocuję u Zuźki.
@@ -4461,31 +4464,31 @@
           ROBERT:
                Aha. Czemu ty jej nie powiesz ?
 
-          NELA (GŁOS W TEL.):
+          NELA TEL:
                Czego ?
 
           ROBERT:
                Prawdy.
 
-          NELA (GŁOS W TEL.):
+          NELA TEL:
                Zwariowałeś ?!
 
           ROBERT:
                Od dawna ci to radzę.
 
-          NELA (GŁOS W TEL.):
+          NELA TEL:
                Znasz ją. Wścieka się i nie słucha mnie.
 
           ROBERT:
                Uzbrój się w cierpliwość.
 
-          NELA (GŁOS W TEL.):
+          NELA TEL:
                Dużo by jej trzeba.
 
           ROBERT:
                Fakt. Ale moim zdaniem warto. Spróbuj.
 
-          NELA (GŁOS W TEL.):
+          NELA TEL:
                Zbyt ją kochasz, żeby dostrzec jaka jest wredna. Muszę
                kończyć. Dzięki.
 

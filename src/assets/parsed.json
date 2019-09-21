@@ -6,6 +6,18 @@
         "title": "SCENA 1",
         "plot": [
           {
+            "id": "0_1985949476",
+            "type": "audioStart",
+            "what": "audioStart -- call/CZAREK.mp3",
+            "url": "call/CZAREK.mp3"
+          },
+          {
+            "id": "0_1329826436",
+            "type": "audioStop",
+            "what": "audioStop -- call/CZAREK.mp3",
+            "url": "call/CZAREK.mp3"
+          },
+          {
             "type": "say",
             "who": "ANIELA",
             "what": "Dawki są podane na opakowaniu...Tak, zależą od wielkości. Radzę ukryć tabletkę w karmie.",
@@ -231,6 +243,18 @@
         "title": "SCENA 3",
         "plot": [
           {
+            "id": "2_2012970432",
+            "type": "audioStart",
+            "what": "audioStart -- sound/radio.mp3",
+            "url": "sound/radio.mp3"
+          },
+          {
+            "id": "2_1356847392",
+            "type": "audioStop",
+            "what": "audioStop -- sound/radio.mp3",
+            "url": "sound/radio.mp3"
+          },
+          {
             "type": "desc",
             "what": "W świetle dwie panie - kobieta/matka i dziewczyna/nastolatka/córka. Dziewczyna maluje sobie rzęsy lub przymierza i zakłada jakąś biżuterię, przegląda się w lustereczku. Kobieta z marsową miną stoi za nią i przygląda się jej czynnościom. Kobieta to EWA, dziewczyna to NELA.",
             "id": ""
@@ -361,18 +385,6 @@
       {
         "title": "SCENA 4",
         "plot": [
-          {
-            "id": "3_2012970432",
-            "type": "audioStart",
-            "what": "audioStart -- sound/radio.mp3",
-            "url": "sound/radio.mp3"
-          },
-          {
-            "id": "3_1356847392",
-            "type": "audioStop",
-            "what": "audioStop -- sound/radio.mp3",
-            "url": "sound/radio.mp3"
-          },
           {
             "type": "desc",
             "what": "KURTYNA. Kurtyna w górę. ŚWIATŁO - Światła rozjaśniają scenę. Miejsce akcji - mieszkanie: salon z jadalnią i aneksem kuchennym. W kuchni, przy wyspie kuchennej, krząta się mężczyzna w fartuszku. Gotuje, próbuje, kroi warzywa na desce, itd. Do pomieszczenia wchodzi EWA i podchodzi do wyspy kuchennej. Mężczyzna to Robert.",
@@ -5474,9 +5486,9 @@
           },
           {
             "type": "say",
-            "who": "PAWEŁ (GŁOS W TEL.)",
+            "who": "PAWEŁ_0 (GŁOS W TEL.)",
             "what": "Dobry wieczór. Pani komputer gotowy.",
-            "id": "17_m1810794164"
+            "id": "17_m483994051"
           },
           {
             "type": "say",
@@ -5486,9 +5498,9 @@
           },
           {
             "type": "say",
-            "who": "PAWEŁ (GŁOS W TEL.)",
+            "who": "PAWEŁ_1 (GŁOS W TEL.)",
             "what": "Nadgodziny. Za dużo wirusów w sieci.",
-            "id": "17_584481071"
+            "id": "17_m1250495519"
           },
           {
             "type": "desc",
@@ -5503,9 +5515,9 @@
           },
           {
             "type": "say",
-            "who": "PAWEŁ (GŁOS W TEL.)",
+            "who": "PAWEŁ_2 (GŁOS W TEL.)",
             "what": "Dobrze. Do jutra.",
-            "id": "17_2046881374"
+            "id": "17_644537547"
           },
           {
             "type": "say",
