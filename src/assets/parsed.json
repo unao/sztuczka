@@ -8498,9 +8498,9 @@
           },
           {
             "type": "say",
-            "who": "NELA (GŁOS W TEL.)",
+            "who": "NELA TEL",
             "what": "Tak tato. Możesz rozmawiać ?",
-            "id": "26_1563988757"
+            "id": "26_417305821"
           },
           {
             "type": "say",
@@ -8510,9 +8510,9 @@
           },
           {
             "type": "say",
-            "who": "NELA (GŁOS W TEL.)",
+            "who": "NELA TEL",
             "what": "Rodzice Szymona wyjechali na weekend. Zaproponował abym przenocowała u niego.",
-            "id": "26_m84775273"
+            "id": "26_1952142799"
           },
           {
             "type": "desc",
@@ -8521,9 +8521,9 @@
           },
           {
             "type": "say",
-            "who": "NELA (GŁOS W TEL.)",
+            "who": "NELA TEL",
             "what": "Jesteś tam tato ?",
-            "id": "26_113455606"
+            "id": "26_1818983726"
           },
           {
             "type": "say",
@@ -8533,9 +8533,9 @@
           },
           {
             "type": "say",
-            "who": "NELA (GŁOS W TEL.)",
+            "who": "NELA TEL",
             "what": "Nie wiem. Trochę mam ochotę, ale dziś się nie spodziewałam. Jak nie pójdę on się obrazi. Co robić ?",
-            "id": "26_282938825"
+            "id": "26_141064961"
           },
           {
             "type": "say",
@@ -8545,9 +8545,9 @@
           },
           {
             "type": "say",
-            "who": "NELA (GŁOS W TEL.)",
+            "who": "NELA TEL",
             "what": "Wiadomo, że nie.",
-            "id": "26_m465614294"
+            "id": "26_m549144590"
           },
           {
             "type": "say",
@@ -8557,9 +8557,9 @@
           },
           {
             "type": "say",
-            "who": "NELA (GŁOS W TEL.)",
+            "who": "NELA TEL",
             "what": "Daj spokój tato.",
-            "id": "26_m689766072"
+            "id": "26_m773296368"
           },
           {
             "type": "say",
@@ -8585,9 +8585,9 @@
           },
           {
             "type": "say",
-            "who": "NELA (GŁOS W TEL.)",
+            "who": "NELA TEL",
             "what": "Wiesz co ?",
-            "id": "26_1177241424"
+            "id": "26_m1775719656"
           },
           {
             "type": "say",
@@ -8597,9 +8597,9 @@
           },
           {
             "type": "say",
-            "who": "NELA (GŁOS W TEL.)",
+            "who": "NELA TEL",
             "what": "Nieee, już nic.",
-            "id": "26_261564916"
+            "id": "26_2059985708"
           },
           {
             "type": "say",
@@ -8609,9 +8609,9 @@
           },
           {
             "type": "say",
-            "who": "NELA (GŁOS W TEL.)",
+            "who": "NELA TEL",
             "what": "Miałam ochotę zapaść się pod ziemię kiedy mi dawałeś prezerwatywy.",
-            "id": "26_885242199"
+            "id": "26_81995039"
           },
           {
             "type": "say",
@@ -8621,9 +8621,9 @@
           },
           {
             "type": "say",
-            "who": "NELA (GŁOS W TEL.)",
+            "who": "NELA TEL",
             "what": "Więc po co ? Tak, jakbyś przeczuwał. Nigdy przedtem mi nie dałeś... Ale jeśli pójdę do Szymona powiedz mamie, że nocuję u Zuźki.",
-            "id": "26_980102484"
+            "id": "26_1387309852"
           },
           {
             "type": "say",
@@ -8633,9 +8633,9 @@
           },
           {
             "type": "say",
-            "who": "NELA (GŁOS W TEL.)",
+            "who": "NELA TEL",
             "what": "Czego ?",
-            "id": "26_m1550622634"
+            "id": "26_1154339214"
           },
           {
             "type": "say",
@@ -8645,9 +8645,9 @@
           },
           {
             "type": "say",
-            "who": "NELA (GŁOS W TEL.)",
+            "who": "NELA TEL",
             "what": "Zwariowałeś ?!",
-            "id": "26_m712986873"
+            "id": "26_1561784015"
           },
           {
             "type": "say",
@@ -8657,9 +8657,9 @@
           },
           {
             "type": "say",
-            "who": "NELA (GŁOS W TEL.)",
+            "who": "NELA TEL",
             "what": "Znasz ją. Wścieka się i nie słucha mnie.",
-            "id": "26_137006808"
+            "id": "26_1521820832"
           },
           {
             "type": "say",
@@ -8669,9 +8669,9 @@
           },
           {
             "type": "say",
-            "who": "NELA (GŁOS W TEL.)",
+            "who": "NELA TEL",
             "what": "Dużo by jej trzeba.",
-            "id": "26_m1202856183"
+            "id": "26_1427127361"
           },
           {
             "type": "say",
@@ -8681,9 +8681,9 @@
           },
           {
             "type": "say",
-            "who": "NELA (GŁOS W TEL.)",
+            "who": "NELA TEL",
             "what": "Zbyt ją kochasz, żeby dostrzec jaka jest wredna. Muszę kończyć. Dzięki.",
-            "id": "26_752385235"
+            "id": "26_m2081608181"
           },
           {
             "type": "say",

@@ -1,5 +1,5 @@
 import {
-  actors,
+  actors as _actors,
   filter,
   map,
   tap,
@@ -21,6 +21,8 @@ const ps = new URLSearchParams(location.search)
 
 const scenes = txt['AKT I'].scenes.concat(txt['AKT II'].scenes)
 document.body.style.overflow = 'auto'
+
+const actors = ['NELA'].concat(_actors)
 
 const init = () => {
   render(
@@ -59,7 +61,9 @@ init()
         .map((s, idx) => ({
           idx: idx,
           title: s.title,
-          plot: (s.plot as any).filter((p: any) => p.who === actor)
+          plot: (s.plot as any).filter(
+            (p: any) => p.who === actor || p.who === `${actor} TEL`
+          )
         }))
         .filter(s => s.plot.length)
       return merge(
