@@ -73,6 +73,16 @@ const t = fs
           url
         }
       }
+      const selfie = (line: string) => {
+        const [type, who] = line.split('_')
+        console.log(type, who)
+        return {
+          id: id('selfie', line),
+          type,
+          who: who,
+          what: `${type} -- ${who}`
+        }
+      }
       if (n[0] === 35) {
         if (n[1][0] === 'A') {
           act = n[1]
@@ -114,6 +124,8 @@ const t = fs
             s.plot.push(call(n[1]))
           } else if (n[1].startsWith('audio')) {
             s.plot.push(audio(n[1]))
+          } else if (n[1].startsWith('selfie')) {
+            s.plot.push(selfie(n[1]))
           } else {
             s.plot.push({
               type: 'desc',

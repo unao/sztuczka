@@ -4133,9 +4133,10 @@
                Na szczęście niegroźny.
 
           CZAREK:
+                    selfieStop_ANIELA
+
                Co to ma być ?
 
-                    selfieStop_ANIELA
 
           ANIELA:
                Wyjaśnię ci.

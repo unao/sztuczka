@@ -567,10 +567,10 @@
         "title": "SCENA 5",
         "plot": [
           {
-            "id": "4_m601483312",
+            "id": "4_m20789488",
             "type": "audioStart",
-            "what": "audioStart -- doorbell.mp3",
-            "url": "doorbell.mp3"
+            "what": "audioStart -- sound/doorbell.mp3",
+            "url": "sound/doorbell.mp3"
           },
           {
             "type": "desc",
@@ -751,16 +751,16 @@
             "id": "4_633405199"
           },
           {
-            "id": "4_m1466113393",
+            "id": "4_m644474033",
             "type": "audioStart",
-            "what": "audioStart -- doorbell.mp3",
-            "url": "doorbell.mp3"
+            "what": "audioStart -- sound/doorbell.mp3",
+            "url": "sound/doorbell.mp3"
           },
           {
-            "id": "4_1795125168",
+            "id": "4_1496141552",
             "type": "audioStart",
-            "what": "audioStart -- doorbell.mp3",
-            "url": "doorbell.mp3"
+            "what": "audioStart -- sound/doorbell.mp3",
+            "url": "sound/doorbell.mp3"
           },
           {
             "type": "desc",
@@ -1045,10 +1045,10 @@
             "id": "4_m818084821"
           },
           {
-            "id": "4_m185694545",
+            "id": "4_m864252049",
             "type": "audioStart",
-            "what": "audioStart -- doorbell.mp3",
-            "url": "doorbell.mp3"
+            "what": "audioStart -- sound/doorbell.mp3",
+            "url": "sound/doorbell.mp3"
           },
           {
             "type": "say",
@@ -7737,6 +7737,12 @@
             "id": "25_m413672235"
           },
           {
+            "id": "25_m306271061",
+            "type": "selfieStart",
+            "who": "ANIELA",
+            "what": "selfieStart -- ANIELA"
+          },
+          {
             "type": "desc",
             "what": "ANIELA uruchamia aparat w tel. i wyciąga rękę do ujęcia.",
             "id": ""
@@ -7971,6 +7977,12 @@
             "id": "25_m1797745393"
           },
           {
+            "id": "25_m1316915925",
+            "type": "selfieStop",
+            "who": "ANIELA",
+            "what": "selfieStop -- ANIELA"
+          },
+          {
             "type": "say",
             "who": "CZAREK",
             "what": "Co to ma być ?",
@@ -8053,10 +8065,10 @@
             "id": "25_1579331534"
           },
           {
-            "id": "25_m2046781404",
+            "id": "25_m1305513756",
             "type": "audioStart",
-            "what": "audioStart -- outgoing-call.mp3",
-            "url": "outgoing-call.mp3"
+            "what": "audioStart -- sound/outgoing-call.mp3",
+            "url": "sound/outgoing-call.mp3"
           },
           {
             "type": "desc",
@@ -8070,10 +8082,10 @@
             "id": "25_1967803569"
           },
           {
-            "id": "25_m1220830332",
+            "id": "25_1412590660",
             "type": "audioStop",
-            "what": "audioStop -- outgoing-call.mp3",
-            "url": "outgoing-call.mp3"
+            "what": "audioStop -- sound/outgoing-call.mp3",
+            "url": "sound/outgoing-call.mp3"
           },
           {
             "id": "25_m1815537245",

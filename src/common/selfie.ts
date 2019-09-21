@@ -1,14 +1,9 @@
-import { render } from './dom'
 import { defer, timer } from 'rxjs'
-import { switchMap, tap } from 'rxjs/operators'
+import { switchMap, map, tap, finalize } from 'rxjs/operators'
 
-export const selfie = (ws: WebSocket) => {
+export const selfie = (video: HTMLVideoElement) => {
   const w = 1280 / 2
   const h = 720 / 2
-  render(
-    `<video id="vid" autoplay style="background-color:black;width:100vw;height:100vh"></video>`
-  )
-  const video = document.getElementById('vid')! as HTMLVideoElement
 
   const getFrame = () => {
     const canvas = document.createElement('canvas')
@@ -20,17 +15,13 @@ export const selfie = (ws: WebSocket) => {
   }
 
   return defer(() =>
-    navigator.mediaDevices
-      .getUserMedia({ video: { width: w, height: h } })
-      .then(stream => (video.srcObject = stream))
+    navigator.mediaDevices.getUserMedia({ video: { width: w, height: h } })
   ).pipe(
-    switchMap(() => timer(0, 1000 / 8)),
-    tap(() =>
-      ws.send(
-        JSON.stringify({
-          type: 'img',
-          payload: getFrame()
-        })
+    tap(s => (video.srcObject = s)),
+    switchMap(stream =>
+      timer(0, 1000 / 8).pipe(
+        map(() => getFrame()),
+        finalize(() => stream.getTracks().forEach(t => t.stop()))
       )
     )
   )

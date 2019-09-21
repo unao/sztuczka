@@ -124,6 +124,9 @@ connectWS('control')
                     ws.send(x.type, x as any, x.who! as any)
                     ws.send(x.type, x as any, 'screen')
                   }
+                  if (x.type === 'selfieStart' || x.type === 'selfieStop') {
+                    ws.send(x.type, x as any, x.who! as any)
+                  }
                   if (
                     x.type === 'callLaud' ||
                     x.type === 'audioStart' ||

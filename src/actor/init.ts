@@ -11,10 +11,7 @@ import {
   render,
   fullscreen,
   delay,
-  retryWhen,
-  playAudio,
-  catchError,
-  selfie
+  retryWhen
 } from '../common'
 import { fromEvent, merge, of } from 'rxjs'
 import { text } from './text'
@@ -40,13 +37,15 @@ const selectActor = () => {
     filter(actor => actors.includes(actor)),
     take(1),
     tap(() => navigator.vibrate([200, 200, 200])),
-    tap(() => !ps.has('fake') && fullscreen()),
-    tap(
-      a =>
-        !ps.has('fake') &&
-        a === 'ANIELA' &&
-        navigator.mediaDevices.getUserMedia({ video: true })
-    ),
+    // tap(() => !ps.has('fake') && fullscreen()),
+    // tap(
+    //   a =>
+    //     !ps.has('fake') &&
+    //     a === 'ANIELA' &&
+    //     navigator.mediaDevices
+    //       .getUserMedia({ video: true })
+    //       .then(s => s.getTracks().forEach(t => t.stop()))
+    // ),
     shareReplay()
   )
 }
@@ -61,7 +60,6 @@ export const init = () =>
             actor: a
           }))
         )
-        // playAudio(`/call/${a}.mp3`).pipe(catchError(() => EMPTY))
       )
     ),
     tap(a =>
@@ -69,7 +67,6 @@ export const init = () =>
       <h1>${a.actor}</h1>
       ${text(a.actor)}`)
     ),
-    // switchMap(x => (x.actor === 'ANIELA' ? selfie(x.ws) : EMPTY)),
     retryWhen(errs =>
       errs.pipe(
         tap(err => console.warn(err)),
