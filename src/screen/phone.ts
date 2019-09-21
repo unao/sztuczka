@@ -8,7 +8,8 @@ import {
   switchMap,
   takeUntil,
   filter,
-  finalize
+  finalize,
+  delay
 } from '../common'
 import { initPhoneUI, PhoneUI } from './ui'
 
@@ -38,9 +39,9 @@ export const run = (
   const h: ProtocolHandler = all => ({
     callStart: cs =>
       cs.pipe(
-        tap(c => phone.start(c.other || c.number)),
-        switchMap(() =>
+        switchMap(c =>
           timer(0, 1000).pipe(
+            tap(t => t === 0 && phone.start(c.other || c.number)),
             map(t => ({ min: Math.floor(t / 60), sec: t % 60 })),
             tap(({ min, sec }) =>
               phone.updateTime(
@@ -48,7 +49,10 @@ export const run = (
               )
             ),
             takeUntil(all.pipe(filter(m => m.type === 'callEnd'))),
-            finalize(() => phone.end())
+            finalize(() => {
+              console.log('END')
+              phone.end()
+            })
           )
         )
       ),

@@ -68,7 +68,7 @@ const handle: ProtocolHandler = all => ({
           console.log(m)
           const div = document.createElement('div')
           document.body.append(div)
-          div.innerHTML = smsUI(m.other, m.body, m.who)
+          div.innerHTML = smsUI(m.other || m.number, m.body, m.who)
           obs.next(div.children[0]! as any)
           return () => div.remove()
         }).pipe(
