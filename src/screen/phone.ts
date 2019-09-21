@@ -38,7 +38,6 @@ export const run = (
   const h: ProtocolHandler = all => ({
     callStart: cs =>
       cs.pipe(
-        tap(x => console.log(x)),
         tap(c => phone.start(c.other || c.number)),
         switchMap(() =>
           timer(0, 1000).pipe(
@@ -52,7 +51,8 @@ export const run = (
             finalize(() => phone.end())
           )
         )
-      )
+      ),
+    callLaud: cs => cs.pipe(tap(phone.loud))
   })
 
   return merge(size.pipe(tap(updateLayout(phone))), handle(h))
