@@ -5456,6 +5456,8 @@
           KAROLINA:
                Co ja mu powiem ?
 
+                    audioStart_sound/outgoing-call.mp3
+
                     LEON nawiązuje połączenie z numerem z facebook'a.
                     Rzuca tel. na stół.
 
@@ -5467,6 +5469,10 @@
           LEON:
                          (do Karoliny)
                No,... graj !
+
+                    audioStop_sound/outgoing-call.mp3
+                    callStart_KAROLINA_!663430093
+                    callLaud_KAROLINA_!663430093
 
                     Wszyscy patrzą na KAROLINĘ i LEONA zamurowani.
                     Cisza. Tel. łączy się.
@@ -5501,7 +5507,7 @@
           EWA:
                Byłam ciekawa twojego głosu...
 
-          NIEZNAJOMY_4 (GŁOS W TEL.):
+          NIEZNAJOMY_3 (GŁOS W TEL.):
                Fajnie...
 
                     KAROLINA stoi i ciężko oddycha.
@@ -5512,7 +5518,7 @@
           EWA:
                ... i chciałabym cię zobaczyć.
 
-          NIEZNAJOMY_5 (GŁOS W TEL.):
+          NIEZNAJOMY_4 (GŁOS W TEL.):
                ... Eeeee... umawialiśmy się, że nie..., a raczej ty
                tak powiedziałaś.
 
@@ -5521,18 +5527,19 @@
 
                     KAROLINA i LEON patrzą sobie w oczy.
 
-          NIEZNAJOMY_6 (GŁOS W TEL.):
+          NIEZNAJOMY_5 (GŁOS W TEL.):
                Jeśli zmieniłaś zdanie chętnie się z tobą spotkam.
 
           EWA:
                Muszę już kończyć.
 
-          NIEZNAJOMY_7 (GŁOS W TEL.):
+          NIEZNAJOMY_6 (GŁOS W TEL.):
                Zaczekaj ! Masz ładny głos. Inny niż sobie wyobrażałem.
 
           EWA:
                Cześć.
 
+                    callEnd_KAROLINA_!663430093
                     EWA rozłącza rozmowę i spogląda na LEONA.
 
           EWA:

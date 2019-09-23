@@ -10258,6 +10258,12 @@
             "id": "33_602262872"
           },
           {
+            "id": "33_m1305513756",
+            "type": "audioStart",
+            "what": "audioStart -- sound/outgoing-call.mp3",
+            "url": "sound/outgoing-call.mp3"
+          },
+          {
             "type": "desc",
             "what": "LEON nawiązuje połączenie z numerem z facebook'a. Rzuca tel. na stół.",
             "id": ""
@@ -10278,6 +10284,28 @@
             "who": "LEON",
             "what": "No,... graj !",
             "id": "33_1799118298"
+          },
+          {
+            "id": "33_1412590660",
+            "type": "audioStop",
+            "what": "audioStop -- sound/outgoing-call.mp3",
+            "url": "sound/outgoing-call.mp3"
+          },
+          {
+            "id": "33_m526170167",
+            "type": "callStart",
+            "who": "KAROLINA",
+            "what": "callStart -- KAROLINA -- !663430093",
+            "other": "",
+            "number": "663430093"
+          },
+          {
+            "id": "33_2134957581",
+            "type": "callLaud",
+            "who": "KAROLINA",
+            "what": "callLaud -- KAROLINA -- !663430093",
+            "other": "",
+            "number": "663430093"
           },
           {
             "type": "desc",
@@ -10327,9 +10355,9 @@
           },
           {
             "type": "say",
-            "who": "NIEZNAJOMY_4 (GŁOS W TEL.)",
+            "who": "NIEZNAJOMY_3 (GŁOS W TEL.)",
             "what": "Fajnie...",
-            "id": "33_67535287"
+            "id": "33_134542040"
           },
           {
             "type": "desc",
@@ -10344,9 +10372,9 @@
           },
           {
             "type": "say",
-            "who": "NIEZNAJOMY_5 (GŁOS W TEL.)",
+            "who": "NIEZNAJOMY_4 (GŁOS W TEL.)",
             "what": "... Eeeee... umawialiśmy się, że nie..., a raczej ty tak powiedziałaś.",
-            "id": "33_1878543441"
+            "id": "33_m1207181616"
           },
           {
             "type": "say",
@@ -10361,9 +10389,9 @@
           },
           {
             "type": "say",
-            "who": "NIEZNAJOMY_6 (GŁOS W TEL.)",
+            "who": "NIEZNAJOMY_5 (GŁOS W TEL.)",
             "what": "Jeśli zmieniłaś zdanie chętnie się z tobą spotkam.",
-            "id": "33_m203782812"
+            "id": "33_m1508176541"
           },
           {
             "type": "say",
@@ -10373,15 +10401,23 @@
           },
           {
             "type": "say",
-            "who": "NIEZNAJOMY_7 (GŁOS W TEL.)",
+            "who": "NIEZNAJOMY_6 (GŁOS W TEL.)",
             "what": "Zaczekaj ! Masz ładny głos. Inny niż sobie wyobrażałem.",
-            "id": "33_1549934695"
+            "id": "33_595705800"
           },
           {
             "type": "say",
             "who": "EWA",
             "what": "Cześć.",
             "id": "33_732707779"
+          },
+          {
+            "id": "33_m465702526",
+            "type": "callEnd",
+            "who": "KAROLINA",
+            "what": "callEnd -- KAROLINA -- !663430093",
+            "other": "",
+            "number": "663430093"
           },
           {
             "type": "desc",
