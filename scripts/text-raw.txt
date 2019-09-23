@@ -4204,37 +4204,37 @@
 
                     Dźwięk - sygnał w tel. - ktoś odbiera.
 
-          IGOR (GŁOS W TEL.):
+          IGOR_0 (GŁOS W TEL.):
                Dzięki, że się odezwałaś.
 
           ANIELA:
                Dzwoniła do ciebie ?
 
-          IGOR (GŁOS W TEL.):
+          IGOR_1 (GŁOS W TEL.):
                Tak.
 
           ANIELA:
                Iii ?
 
-          IGOR (GŁOS W TEL.):
+          IGOR_2 (GŁOS W TEL.):
                Czeka na mnie w domu.
 
           ANIELA:
                Nie idź.
 
-          IGOR (GŁOS W TEL.):
+          IGOR_3 (GŁOS W TEL.):
                Ale chcę. To silniejsze ode mnie.
 
           ANIELA:
                Potem będziesz zdołowany.
 
-          IGOR (GŁOS W TEL.):
+          IGOR_4 (GŁOS W TEL.):
                Już jestem.
 
           ANIELA:
                Będzie tylko gorzej.
 
-          IGOR (GŁOS W TEL.):
+          IGOR_5 (GŁOS W TEL.):
                Aleś mi pomogła.
 
           ANIELA:
@@ -4243,7 +4243,7 @@
 
                     CZAREK chodzi po kuchni i szuka jeszcze wina.
 
-          IGOR (GŁOS W TEL.):
+          IGOR_6 (GŁOS W TEL.):
                Trujesz. Cześć !
 
           ANIELA:

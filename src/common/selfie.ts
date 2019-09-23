@@ -2,8 +2,8 @@ import { defer, timer } from 'rxjs'
 import { switchMap, map, tap, finalize } from 'rxjs/operators'
 
 export const selfie = (video: HTMLVideoElement) => {
-  const w = 1280 / 2
-  const h = 720 / 2
+  const w = 1280 / 4
+  const h = 720 / 4
 
   const getFrame = () => {
     const canvas = document.createElement('canvas')

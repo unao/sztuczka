@@ -8134,9 +8134,9 @@
           },
           {
             "type": "say",
-            "who": "IGOR (GŁOS W TEL.)",
+            "who": "IGOR_0 (GŁOS W TEL.)",
             "what": "Dzięki, że się odezwałaś.",
-            "id": "25_m1953097714"
+            "id": "25_m1679205507"
           },
           {
             "type": "say",
@@ -8146,9 +8146,9 @@
           },
           {
             "type": "say",
-            "who": "IGOR (GŁOS W TEL.)",
+            "who": "IGOR_1 (GŁOS W TEL.)",
             "what": "Tak.",
-            "id": "25_1792922948"
+            "id": "25_m2081633226"
           },
           {
             "type": "say",
@@ -8158,9 +8158,9 @@
           },
           {
             "type": "say",
-            "who": "IGOR (GŁOS W TEL.)",
+            "who": "IGOR_2 (GŁOS W TEL.)",
             "what": "Czeka na mnie w domu.",
-            "id": "25_m169952532"
+            "id": "25_m805208423"
           },
           {
             "type": "say",
@@ -8170,9 +8170,9 @@
           },
           {
             "type": "say",
-            "who": "IGOR (GŁOS W TEL.)",
+            "who": "IGOR_3 (GŁOS W TEL.)",
             "what": "Ale chcę. To silniejsze ode mnie.",
-            "id": "25_m510135289"
+            "id": "25_m821805549"
           },
           {
             "type": "say",
@@ -8182,9 +8182,9 @@
           },
           {
             "type": "say",
-            "who": "IGOR (GŁOS W TEL.)",
+            "who": "IGOR_4 (GŁOS W TEL.)",
             "what": "Już jestem.",
-            "id": "25_1381568295"
+            "id": "25_655474002"
           },
           {
             "type": "say",
@@ -8194,9 +8194,9 @@
           },
           {
             "type": "say",
-            "who": "IGOR (GŁOS W TEL.)",
+            "who": "IGOR_5 (GŁOS W TEL.)",
             "what": "Aleś mi pomogła.",
-            "id": "25_m487360350"
+            "id": "25_m1967082088"
           },
           {
             "type": "say",
@@ -8211,9 +8211,9 @@
           },
           {
             "type": "say",
-            "who": "IGOR (GŁOS W TEL.)",
+            "who": "IGOR_6 (GŁOS W TEL.)",
             "what": "Trujesz. Cześć !",
-            "id": "25_m1117051452"
+            "id": "25_2048994043"
           },
           {
             "type": "say",
