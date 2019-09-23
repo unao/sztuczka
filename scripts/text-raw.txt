@@ -4367,6 +4367,8 @@
 
                                    SCENA 27
 
+                    callGet_ROBERT_Neluś
+
                     Dźwięk - sygnał tel. ROBERTA - dzwoni NELA.
 
                     PROJEKTOR - zrzut ekranu tel. ROBERTA - połączenie
@@ -4378,6 +4380,9 @@
           EWA:
                Odbierz.
 
+                    callStart_ROBERT_Neluś
+                    callLaud_ROBERT_Neluś
+                    
                     ROBERT odbiera tel. i włącza głośnik.
 
                     PROJEKTOR - odebrane połączenie i głośnik.
@@ -4494,6 +4499,8 @@
 
           ROBERT:
                Nela...
+
+                    callEnd_ROBERT_Neluś
 
                     Połączenie przerwane/zakończone przez NELĘ.
 
@@ -4652,6 +4659,8 @@
           KAROLINA:
                Kolega z pracy tak sobie pozwala ?
 
+                    callGet_LEON_Darek
+
                     Dźwięk - sygnał - dzwoni tel. LEONA/KRYSTIANA.
 
                     PROJEKTOR - połączenie przychodzące - DAREK.
@@ -4670,9 +4679,8 @@
           KAROLINA:
                Jasne, że włącz.
 
-                    LEON odbiera tel. i włącza głośnik.
-
-                    PROJEKTOR - jw.
+                    callStart_LEON_Darek
+                    callLaud_LEON_Darek
 
           LEON:
                Słucham ?
@@ -4695,6 +4703,8 @@
           DAREK 3 (GŁOS W TEL.):
                Nie wiesz czego chcesz w życiu. Nie wiesz nawet czy
                wolisz mężczyzn, czy kobiety. Wal się !!!
+
+                    callEnd_LEON_Darek
 
                     DAREK zrywa połączenie.
 
@@ -5100,6 +5110,8 @@
 
                                    SCENA 32
 
+                    callGet_CZAREK_Marcin!505414628
+
                     KRYSTIAN zdjął okulary. Dłonią przeciera spoconą,
                     zmęczoną, przerażoną twarz.
 
@@ -5109,6 +5121,8 @@
 
           ANIELA:
                Twój, odbierz.
+
+                    callStart_CZAREK_Marcin!505414628
 
                     CZAREK wstaje, idzie do jadalni, podchodzi do
                     stołu.
@@ -5129,7 +5143,10 @@
                     PROJEKTOR - rozmowa przez głośnik.
 
           MARCIN 1 (GŁOS W TEL.):
+
                Od dwóch tygodni ci się nagrywam.
+
+                    callLaud_CZAREK_Marcin!505414628
 
                     CZAREK odkłada tel. na stół.
 
@@ -5159,6 +5176,8 @@
 
           CZAREK:
                Naprawdę muszę kończyć. Wybacz.
+
+                    callEnd_CZAREK_Marcin!505414628
 
                     CZAREK jednym ruchem kończy rozmowę.
 
@@ -5211,6 +5230,8 @@
           ANIELA:
                To dla kogo były do cholery !!!
 
+                    callGet_CZAREK_Marika!505414628
+
                     Dźwięk - sygnał, dzwonek tel. CZARKA - "I will
                     survive" - MARIKA.
 
@@ -5238,6 +5259,10 @@
           CZAREK:
                Oddaj mi telefon. Oddawaj go do cholery !!!
 
+                    callStart_CZAREK_Marika!505414628
+                    callLaud_CZAREK_Marika!505414628
+
+
                     ANIELA ucieka, potyka się o meble, odbiera tel.
 
                     PROJEKTOR - odebrane połączenie - MARIKA -
@@ -5249,6 +5274,8 @@
                dwie kreski. To dodatni wynik... nie rozumiem...
                słyszysz mnie ? ... Chyba jestem w ciąży... Słyszysz ?
                ... Jesteś tam ?
+
+                    callEnd_CZAREK_Marika!505414628
 
                     Pauza - cisza.
 

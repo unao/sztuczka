@@ -8469,6 +8469,14 @@
         "title": "SCENA 27",
         "plot": [
           {
+            "id": "26_m1964230649",
+            "type": "callGet",
+            "who": "ROBERT",
+            "what": "callGet -- ROBERT -- Neluś",
+            "other": "Neluś",
+            "number": ""
+          },
+          {
             "type": "desc",
             "what": "Dźwięk - sygnał tel. ROBERTA - dzwoni NELA. PROJEKTOR - zrzut ekranu tel. ROBERTA - połączenie przychodzące.",
             "id": ""
@@ -8484,6 +8492,22 @@
             "who": "EWA",
             "what": "Odbierz.",
             "id": "26_832045612"
+          },
+          {
+            "id": "26_m1994729861",
+            "type": "callStart",
+            "who": "ROBERT",
+            "what": "callStart -- ROBERT -- Neluś",
+            "other": "Neluś",
+            "number": ""
+          },
+          {
+            "id": "26_132929881",
+            "type": "callLaud",
+            "who": "ROBERT",
+            "what": "callLaud -- ROBERT -- Neluś",
+            "other": "Neluś",
+            "number": ""
           },
           {
             "type": "desc",
@@ -8690,6 +8714,14 @@
             "who": "ROBERT",
             "what": "Nela...",
             "id": "26_1693987232"
+          },
+          {
+            "id": "26_m761094494",
+            "type": "callEnd",
+            "who": "ROBERT",
+            "what": "callEnd -- ROBERT -- Neluś",
+            "other": "Neluś",
+            "number": ""
           },
           {
             "type": "desc",
@@ -9003,6 +9035,14 @@
             "id": "27_1027268482"
           },
           {
+            "id": "27_m349758829",
+            "type": "callGet",
+            "who": "LEON",
+            "what": "callGet -- LEON -- Darek",
+            "other": "Darek",
+            "number": ""
+          },
+          {
             "type": "desc",
             "what": "Dźwięk - sygnał - dzwoni tel. LEONA/KRYSTIANA. PROJEKTOR - połączenie przychodzące - DAREK.",
             "id": ""
@@ -9037,15 +9077,20 @@
             "id": "27_1452294192"
           },
           {
-            "type": "desc",
-            "what": "LEON odbiera tel. i włącza głośnik. PROJEKTOR - jw.",
-            "id": ""
+            "id": "27_1366268039",
+            "type": "callStart",
+            "who": "LEON",
+            "what": "callStart -- LEON -- Darek",
+            "other": "Darek",
+            "number": ""
           },
           {
-            "type": "say",
+            "id": "27_m220369345",
+            "type": "callLaud",
             "who": "LEON",
-            "what": "Słucham ?",
-            "id": "27_m634016866"
+            "what": "callLaud -- LEON -- Darek Słucham ?",
+            "other": "Darek",
+            "number": ""
           },
           {
             "type": "desc",
@@ -9079,6 +9124,14 @@
             "who": "DAREK 3 (GŁOS W TEL.)",
             "what": "Nie wiesz czego chcesz w życiu. Nie wiesz nawet czy wolisz mężczyzn, czy kobiety. Wal się !!!",
             "id": "27_1845317914"
+          },
+          {
+            "id": "27_250375150",
+            "type": "callEnd",
+            "who": "LEON",
+            "what": "callEnd -- LEON -- Darek",
+            "other": "Darek",
+            "number": ""
           },
           {
             "type": "desc",
@@ -9814,6 +9867,14 @@
         "title": "SCENA 32",
         "plot": [
           {
+            "id": "31_m827770588",
+            "type": "callGet",
+            "who": "CZAREK",
+            "what": "callGet -- CZAREK -- Marcin!505414628",
+            "other": "Marcin",
+            "number": "505414628"
+          },
+          {
             "type": "desc",
             "what": "KRYSTIAN zdjął okulary. Dłonią przeciera spoconą, zmęczoną, przerażoną twarz. Dźwięk - sygnał - tel. CZARKA - \"I will survive\". PROJEKTOR - połączenie przychodzące - MARCIN.",
             "id": ""
@@ -9823,6 +9884,14 @@
             "who": "ANIELA",
             "what": "Twój, odbierz.",
             "id": "31_m463950679"
+          },
+          {
+            "id": "31_1714945328",
+            "type": "callStart",
+            "who": "CZAREK",
+            "what": "callStart -- CZAREK -- Marcin!505414628",
+            "other": "Marcin",
+            "number": "505414628"
           },
           {
             "type": "desc",
@@ -9845,6 +9914,14 @@
             "who": "MARCIN 1 (GŁOS W TEL.)",
             "what": "Od dwóch tygodni ci się nagrywam.",
             "id": "31_m429172651"
+          },
+          {
+            "id": "31_m1831806422",
+            "type": "callLaud",
+            "who": "CZAREK",
+            "what": "callLaud -- CZAREK -- Marcin!505414628",
+            "other": "Marcin",
+            "number": "505414628"
           },
           {
             "type": "desc",
@@ -9902,6 +9979,14 @@
             "who": "CZAREK",
             "what": "Naprawdę muszę kończyć. Wybacz.",
             "id": "31_1276221927"
+          },
+          {
+            "id": "31_698758057",
+            "type": "callEnd",
+            "who": "CZAREK",
+            "what": "callEnd -- CZAREK -- Marcin!505414628",
+            "other": "Marcin",
+            "number": "505414628"
           },
           {
             "type": "desc",
@@ -9992,6 +10077,14 @@
             "id": "31_560711490"
           },
           {
+            "id": "31_m444492005",
+            "type": "callGet",
+            "who": "CZAREK",
+            "what": "callGet -- CZAREK -- Marika!505414628",
+            "other": "Marika",
+            "number": "505414628"
+          },
+          {
             "type": "desc",
             "what": "Dźwięk - sygnał, dzwonek tel. CZARKA - \"I will survive\" - MARIKA. PROJEKTOR - dzwoni MARIKA. CZAREK i ANIELA przekręcają głowami spoglądając co raz to na siebie, to na ciągle dzwoniący tel.",
             "id": ""
@@ -10020,6 +10113,22 @@
             "id": "31_m1909972515"
           },
           {
+            "id": "31_2098223911",
+            "type": "callStart",
+            "who": "CZAREK",
+            "what": "callStart -- CZAREK -- Marika!505414628",
+            "other": "Marika",
+            "number": "505414628"
+          },
+          {
+            "id": "31_m1448527839",
+            "type": "callLaud",
+            "who": "CZAREK",
+            "what": "callLaud -- CZAREK -- Marika!505414628",
+            "other": "Marika",
+            "number": "505414628"
+          },
+          {
             "type": "desc",
             "what": "ANIELA ucieka, potyka się o meble, odbiera tel. PROJEKTOR - odebrane połączenie - MARIKA - głośnik.",
             "id": ""
@@ -10029,6 +10138,14 @@
             "who": "MARIKA (GŁOS W TEL.)",
             "what": "Halo, Czarek ? Halo, kochanie ! Późno już, ale spanikowałam. Jestem w łazience. Zrobiłam test i wyszły dwie kreski. To dodatni wynik... nie rozumiem... słyszysz mnie ? ... Chyba jestem w ciąży... Słyszysz ? ... Jesteś tam ?",
             "id": "31_m1757916031"
+          },
+          {
+            "id": "31_1082036640",
+            "type": "callEnd",
+            "who": "CZAREK",
+            "what": "callEnd -- CZAREK -- Marika!505414628",
+            "other": "Marika",
+            "number": "505414628"
           },
           {
             "type": "desc",
