@@ -10286,9 +10286,9 @@
           },
           {
             "type": "say",
-            "who": "NIEZNAJOMY (GŁOS W TEL.)",
+            "who": "NIEZNAJOMY_0 (GŁOS W TEL.)",
             "what": "Karolina, to ty ?",
-            "id": "33_m2006075925"
+            "id": "33_m1818547942"
           },
           {
             "type": "desc",
@@ -10303,9 +10303,9 @@
           },
           {
             "type": "say",
-            "who": "NIEZNAJOMY (GŁOS W TEL.)",
+            "who": "NIEZNAJOMY_1 (GŁOS W TEL.)",
             "what": "Wybacz, że napisałem wieczorem.",
-            "id": "33_993462413"
+            "id": "33_2099202843"
           },
           {
             "type": "say",
@@ -10315,9 +10315,9 @@
           },
           {
             "type": "say",
-            "who": "NIEZNAJOMY (GŁOS W TEL.)",
+            "who": "NIEZNAJOMY_2 (GŁOS W TEL.)",
             "what": "Ale niespodzianka. Czemu dzwonisz ?",
-            "id": "33_m1987366036"
+            "id": "33_855450905"
           },
           {
             "type": "say",
@@ -10327,9 +10327,9 @@
           },
           {
             "type": "say",
-            "who": "NIEZNAJOMY (GŁOS W TEL.)",
+            "who": "NIEZNAJOMY_4 (GŁOS W TEL.)",
             "what": "Fajnie...",
-            "id": "33_m768527348"
+            "id": "33_67535287"
           },
           {
             "type": "desc",
@@ -10344,9 +10344,9 @@
           },
           {
             "type": "say",
-            "who": "NIEZNAJOMY (GŁOS W TEL.)",
+            "who": "NIEZNAJOMY_5 (GŁOS W TEL.)",
             "what": "... Eeeee... umawialiśmy się, że nie..., a raczej ty tak powiedziałaś.",
-            "id": "33_m1669759845"
+            "id": "33_1878543441"
           },
           {
             "type": "say",
@@ -10361,9 +10361,9 @@
           },
           {
             "type": "say",
-            "who": "NIEZNAJOMY (GŁOS W TEL.)",
+            "who": "NIEZNAJOMY_6 (GŁOS W TEL.)",
             "what": "Jeśli zmieniłaś zdanie chętnie się z tobą spotkam.",
-            "id": "33_m721697107"
+            "id": "33_m203782812"
           },
           {
             "type": "say",
@@ -10373,9 +10373,9 @@
           },
           {
             "type": "say",
-            "who": "NIEZNAJOMY (GŁOS W TEL.)",
+            "who": "NIEZNAJOMY_7 (GŁOS W TEL.)",
             "what": "Zaczekaj ! Masz ładny głos. Inny niż sobie wyobrażałem.",
-            "id": "33_915596319"
+            "id": "33_1549934695"
           },
           {
             "type": "say",

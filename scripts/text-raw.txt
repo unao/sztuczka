@@ -5482,26 +5482,26 @@
                     o stół, kładzie obie ręce na blacie. Spuszcza
                     głowę.
 
-          NIEZNAJOMY (GŁOS W TEL.):
+          NIEZNAJOMY_0 (GŁOS W TEL.):
                Karolina, to ty ?
 
           EWA:
                          (do tel.)
                Cześć...
 
-          NIEZNAJOMY (GŁOS W TEL.):
+          NIEZNAJOMY_1 (GŁOS W TEL.):
                Wybacz, że napisałem wieczorem.
 
           EWA:
                To nic.
 
-          NIEZNAJOMY (GŁOS W TEL.):
+          NIEZNAJOMY_2 (GŁOS W TEL.):
                Ale niespodzianka. Czemu dzwonisz ?
 
           EWA:
                Byłam ciekawa twojego głosu...
 
-          NIEZNAJOMY (GŁOS W TEL.):
+          NIEZNAJOMY_4 (GŁOS W TEL.):
                Fajnie...
 
                     KAROLINA stoi i ciężko oddycha.
@@ -5512,7 +5512,7 @@
           EWA:
                ... i chciałabym cię zobaczyć.
 
-          NIEZNAJOMY (GŁOS W TEL.):
+          NIEZNAJOMY_5 (GŁOS W TEL.):
                ... Eeeee... umawialiśmy się, że nie..., a raczej ty
                tak powiedziałaś.
 
@@ -5521,13 +5521,13 @@
 
                     KAROLINA i LEON patrzą sobie w oczy.
 
-          NIEZNAJOMY (GŁOS W TEL.):
+          NIEZNAJOMY_6 (GŁOS W TEL.):
                Jeśli zmieniłaś zdanie chętnie się z tobą spotkam.
 
           EWA:
                Muszę już kończyć.
 
-          NIEZNAJOMY (GŁOS W TEL.):
+          NIEZNAJOMY_7 (GŁOS W TEL.):
                Zaczekaj ! Masz ładny głos. Inny niż sobie wyobrażałem.
 
           EWA:
