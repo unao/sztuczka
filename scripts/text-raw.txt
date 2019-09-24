@@ -3730,6 +3730,8 @@
           CZAREK:
                To zaćmienie źle na nas wpływa.
 
+                    audioStart_sound/waterphone1.mp3
+
                                    SCENA 25
 
                     msgGet_sms_ROBERT_booking.com
@@ -4617,9 +4619,10 @@
 
                     msgGet_sms_LEON_Darek!517849625_Dupek_frog
 
+                    msgShow_sms_LEON_Darek!517849625_Dupek 😡_frog
+
                     KAROLINA podnosi tel. i czyta.
 
-                    msgShow_sms_LEON_Darek!517849625_Dupek 😡_frog
 
           KAROLINA:
                Napisał: "Dupek".
@@ -4840,8 +4843,8 @@
                          (odkłada tel. na stół)
                Tęskni za twoimi pocałunkami.
 
-                    msgShow_sms_LEON_Darek!517849625_Tęsknię za Twoimi
-                    pocałunkami..._frog
+                    msgShow_sms_LEON_Darek!517849625_Tęsknię za Twoimi pocałunkami..._frog
+                    audioStart_sound/waterphone2.mp3
 
                     KAROLINA bierze kieliszek wina, wstaje i wychodzi
                     z jadalni. Idzie na taras.
@@ -5170,6 +5173,8 @@
 
           MARCIN 4 (GŁOS W TEL.):
                Powiedz tylko czy kolczyki też się podobały ?
+
+                    audioStart_sound/waterphone3.mp3
 
                     ANIELA zbystrzała, zdębiała, jakby piorun w nią
                     strzelił.

@@ -7196,6 +7196,12 @@
             "who": "CZAREK",
             "what": "To zaćmienie źle na nas wpływa.",
             "id": "23_m1596097878"
+          },
+          {
+            "id": "23_1050750047",
+            "type": "audioStart",
+            "what": "audioStart -- sound/waterphone1.mp3",
+            "url": "sound/waterphone1.mp3"
           }
         ]
       },
@@ -8955,8 +8961,19 @@
             "variant": "frog"
           },
           {
+            "id": "27_m1317017202",
+            "type": "msgShow",
+            "who": "LEON",
+            "what": "msgShow:sms -- LEON -- Dupek 😡",
+            "kind": "sms",
+            "other": "Darek",
+            "number": "517849625",
+            "body": "Dupek 😡",
+            "variant": "frog"
+          },
+          {
             "type": "desc",
-            "what": "KAROLINA podnosi tel. i czyta. msgShow_sms_LEON_Darek!517849625_Dupek 😡_frog",
+            "what": "KAROLINA podnosi tel. i czyta.",
             "id": ""
           },
           {
@@ -9426,19 +9443,25 @@
             "id": "29_1898317073"
           },
           {
-            "id": "29_1839506045",
+            "id": "29_m1420910910",
             "type": "msgShow",
             "who": "LEON",
-            "what": "msgShow:sms -- LEON -- Tęsknię za Twoimi",
+            "what": "msgShow:sms -- LEON -- Tęsknię za Twoimi pocałunkami...",
             "kind": "sms",
             "other": "Darek",
             "number": "517849625",
-            "body": "Tęsknię za Twoimi",
-            "variant": ""
+            "body": "Tęsknię za Twoimi pocałunkami...",
+            "variant": "frog"
+          },
+          {
+            "id": "29_1051673568",
+            "type": "audioStart",
+            "what": "audioStart -- sound/waterphone2.mp3",
+            "url": "sound/waterphone2.mp3"
           },
           {
             "type": "desc",
-            "what": "pocałunkami..._frog KAROLINA bierze kieliszek wina, wstaje i wychodzi z jadalni. Idzie na taras. ANIELA zabiera ze stołu całą butelkę wina i idzie za KAROLINĄ. LEON zagubiony, patrzy po twarzach innych i zatrzymuje się na KRYSTIANIE. Wymieniają się spojrzeniami. KAROLINA i ANIELA są już na tarasie. ANIELA podaje KAROLINIE chusteczki higieniczne. W jadalni:",
+            "what": "KAROLINA bierze kieliszek wina, wstaje i wychodzi z jadalni. Idzie na taras. ANIELA zabiera ze stołu całą butelkę wina i idzie za KAROLINĄ. LEON zagubiony, patrzy po twarzach innych i zatrzymuje się na KRYSTIANIE. Wymieniają się spojrzeniami. KAROLINA i ANIELA są już na tarasie. ANIELA podaje KAROLINIE chusteczki higieniczne. W jadalni:",
             "id": ""
           },
           {
@@ -9968,6 +9991,12 @@
             "who": "MARCIN 4 (GŁOS W TEL.)",
             "what": "Powiedz tylko czy kolczyki też się podobały ?",
             "id": "31_666102271"
+          },
+          {
+            "id": "31_1052597089",
+            "type": "audioStart",
+            "what": "audioStart -- sound/waterphone3.mp3",
+            "url": "sound/waterphone3.mp3"
           },
           {
             "type": "desc",
