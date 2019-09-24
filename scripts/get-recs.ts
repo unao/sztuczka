@@ -78,7 +78,7 @@ export const getFiles = (actor: string) =>
     })
   )
 
-from(['KRYSTIAN'] || actors)
+from(['ROBERT', 'NELA'] || actors)
   .pipe(mergeMap(a => getFiles(a), 1))
   .subscribe({
     error: e => console.log(e)

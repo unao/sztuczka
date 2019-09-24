@@ -10253,8 +10253,30 @@
         "title": "SCENA 34",
         "plot": [
           {
+            "id": "33_m529241323",
+            "type": "msgGet",
+            "who": "KAROLINA",
+            "what": "msgGet:sms -- KAROLINA",
+            "kind": "sms",
+            "other": "Facebook",
+            "number": "",
+            "body": "",
+            "variant": ""
+          },
+          {
+            "id": "33_1112517858",
+            "type": "msgShow",
+            "who": "KAROLINA",
+            "what": "msgShow:sms -- KAROLINA -- Jakie włożyłaś majtki ? Jedwabne figi, czy koronkowe stringi?",
+            "kind": "sms",
+            "other": "Facebook",
+            "number": "",
+            "body": "Jakie włożyłaś majtki ? Jedwabne figi, czy koronkowe stringi?",
+            "variant": ""
+          },
+          {
             "type": "desc",
-            "what": "Dźwięk - sygnał wiadomości z facebook'a - tel. KAROLINY. LEON podnosi tel. KAROLINY i odczytuje wiadomość. PROJEKTOR - facebook KAROLINY - \"Jakie włożyłaś majtki ? Jedwabne figi, czy koronkowe stringi ?\". LEON podnosi się i idzie do drzwi w kuchni, puka do drzwi. (zza drzwi)",
+            "what": "LEON podnosi tel. KAROLINY i odczytuje wiadomość. LEON podnosi się i idzie do drzwi w kuchni, puka do drzwi. (zza drzwi)",
             "id": ""
           },
           {
@@ -10931,6 +10953,22 @@
         "title": "SCENA 36",
         "plot": [
           {
+            "id": "35_m1357192670",
+            "type": "callGet",
+            "who": "CZAREK",
+            "what": "callGet -- CZAREK -- Mama!505414628",
+            "other": "Mama",
+            "number": "505414628"
+          },
+          {
+            "id": "35_929249582",
+            "type": "callStart",
+            "who": "CZAREK",
+            "what": "callStart -- CZAREK -- Mama!505414628",
+            "other": "Mama",
+            "number": "505414628"
+          },
+          {
             "type": "desc",
             "what": "Ciszę przerywa dzwonek tel. Dźwięk - sygnał tel. CZARKA - \"I will survive\", dobiega zza drzwi. PROJEKTOR - zrzut ekranu tel. CZARKA - połączenie przychodzące - MAMA. CZAREK podnosi się i idzie w stronę drzwi w kuchni. Podchodzi do drzwi i opiera o nie obie dłonie, ręce, wysoko.",
             "id": ""
@@ -11041,6 +11079,14 @@
             "who": "KRYSTIAN",
             "what": "Odsuńcie się.",
             "id": "35_m497057002"
+          },
+          {
+            "id": "35_m542197273",
+            "type": "callEnd",
+            "who": "CZAREK",
+            "what": "callEnd -- CZAREK -- Mama!505414628",
+            "other": "Mama",
+            "number": "505414628"
           },
           {
             "type": "desc",

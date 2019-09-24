@@ -5399,13 +5399,10 @@
 
                                    SCENA 34
 
-                    Dźwięk - sygnał wiadomości z facebook'a - tel.
-                    KAROLINY.
+                    msgGet_sms_KAROLINA_Facebook
+                    msgShow_sms_KAROLINA_Facebook_Jakie włożyłaś majtki ? Jedwabne figi, czy koronkowe stringi?
 
                     LEON podnosi tel. KAROLINY i odczytuje wiadomość.
-
-                    PROJEKTOR - facebook KAROLINY - "Jakie włożyłaś
-                    majtki ? Jedwabne figi, czy koronkowe stringi ?".
 
                     LEON podnosi się i idzie do drzwi w kuchni, puka
                     do drzwi.
@@ -5772,6 +5769,10 @@
 
                                    SCENA 36
 
+                    callGet_CZAREK_Mama!505414628
+
+                    callStart_CZAREK_Mama!505414628
+
                     Ciszę przerywa dzwonek tel.
 
                     Dźwięk - sygnał tel. CZARKA - "I will survive",
@@ -5837,6 +5838,8 @@
 
           KRYSTIAN:
                Odsuńcie się.
+
+                    callEnd_CZAREK_Mama!505414628
 
                     Wszyscy ustępują miejsca KRYSTIANOWI.
 
