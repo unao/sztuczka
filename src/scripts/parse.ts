@@ -1,6 +1,6 @@
 import * as fs from 'fs'
 import { resolve } from 'path'
-import { hash } from '../src/common/utils'
+import { hash } from '../common/utils'
 
 const countLeftSpaces = (s: string) => {
   let c = 0
@@ -143,6 +143,6 @@ const t = fs
   )
 
 fs.writeFileSync(
-  resolve(__dirname, '../src/assets/parsed.json'),
+  resolve(__dirname, '../assets/parsed.json'),
   JSON.stringify(t, null, 2)
 )

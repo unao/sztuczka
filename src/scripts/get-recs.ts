@@ -14,10 +14,10 @@ import {
 import { resolve } from 'path'
 import * as fs from 'fs'
 
-import { actors } from '../src/common/names'
+import { actors } from '../common/names'
 
 F.initializeApp({
-  credential: F.credential.cert(require('../cert/firebase.json')),
+  credential: F.credential.cert(require('../../cert/firebase.json')),
   storageBucket: 'g25-luna.appspot.com'
 })
 
@@ -44,7 +44,7 @@ export const getFiles = (actor: string) =>
       )
 
       const files = Object.keys(fi)
-      const dest = resolve(__dirname, '..', 'src/assets/recs', actor)
+      const dest = resolve(__dirname, '..', 'assets/recs', actor)
       if (!fs.existsSync(dest)) {
         fs.mkdirSync(dest)
       }
@@ -58,7 +58,7 @@ export const getFiles = (actor: string) =>
                 destination: resolve(
                   __dirname,
                   '..',
-                  'src/assets/recs',
+                  'assets/recs',
                   actor,
                   `${f.id}.webm`
                 )
@@ -78,7 +78,7 @@ export const getFiles = (actor: string) =>
     })
   )
 
-from(['ROBERT', 'NELA'] || actors)
+from(['LEON'] || actors)
   .pipe(mergeMap(a => getFiles(a), 1))
   .subscribe({
     error: e => console.log(e)

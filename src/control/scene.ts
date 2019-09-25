@@ -1,6 +1,6 @@
 import { Plot, Say as _Say } from './state'
 import { BehaviorSubject, merge, fromEvent, EMPTY } from 'rxjs'
-import { filter, tap, map, switchMap, delay, throttleTime } from 'common'
+import { filter, tap, map, switchMap, throttleTime } from 'common'
 
 type Say = _Say & { next: () => Say | undefined }
 

@@ -1176,14 +1176,8 @@
             "id": "5_1381861898"
           },
           {
-            "type": "say",
-            "who": "WSZYSCY",
-            "what": "No co ty ?! Skądże ! Nie wygłupiaj się ! WITAJ.",
-            "id": "5_m1630165548"
-          },
-          {
             "type": "desc",
-            "what": "Następuje powitanie. Wszyscy witają KRYSTIANA. Następnie wszyscy przechodzą do kuchni.",
+            "what": "(wszyscy) No co ty ?! Skądże ! Nie wygłupiaj się ! WITAJ. Następuje powitanie. Wszyscy witają KRYSTIANA. Następnie wszyscy przechodzą do kuchni.",
             "id": ""
           }
         ]
@@ -1231,12 +1225,6 @@
             "who": "KRYSTIAN",
             "what": "Chyba nie mówiłem, ale jest w naszym wieku.",
             "id": "6_1716118172"
-          },
-          {
-            "type": "say",
-            "who": "CZAREK I ROBERT",
-            "what": "AJ !",
-            "id": "6_1222922229"
           },
           {
             "type": "say",
@@ -7596,12 +7584,6 @@
             "id": "24_m900779210"
           },
           {
-            "type": "say",
-            "who": "WSZYSCY",
-            "what": "Ooooo...",
-            "id": "24_m830523251"
-          },
-          {
             "type": "desc",
             "what": "(pomruk zadowolenia)",
             "id": ""
@@ -11206,9 +11188,9 @@
           },
           {
             "type": "say",
-            "who": "Leon",
+            "who": "LEON",
             "what": "Idę, idę,...",
-            "id": "36_981025510"
+            "id": "36_m219023674"
           },
           {
             "type": "desc",

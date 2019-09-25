@@ -5,9 +5,11 @@
   "main": "-",
   "scripts": {
     "build": "rm -rf ./build && node_modules/.bin/webpack --env PROD",
-    "text": "ts-node scripts/parse.ts",
-    "text-dev": "nodemon --watch scripts/ --exec 'ts-node' scripts/parse.ts",
-    "recs": "ts-node scripts/get-recs.ts",
+    "text": "ts-node src/scripts/parse.ts",
+    "text-dev": "nodemon --watch src/scripts/ --exec 'ts-node' src/scripts/parse.ts",
+    "recs": "ts-node src/scripts/get-recs.ts",
+    "audio": "ts-node src/scripts/audio.ts",
+    "audio-dev": "nodemon --watch src/scripts/ --exec 'ts-node' src/scripts/audio.ts",
     "dev": "rm -rf ./build && node_modules/.bin/webpack-dev-server --env DEV",
     "server-dev": "nodemon --watch 'src/server/**/*.ts' --exec 'ts-node' src/server/index.ts"
   },

@@ -4,3 +4,4 @@ node_modules/
 build/
 cert/firebase.json
 src/assets/recs
+src/assets/audio

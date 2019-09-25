@@ -682,8 +682,8 @@
           KRYSTIAN:
                Mam sobie pójść ?
 
-          WSZYSCY:
-               No co ty ?! Skądże ! Nie wygłupiaj się ! WITAJ.
+                    (wszyscy)
+                    No co ty ?! Skądże ! Nie wygłupiaj się ! WITAJ.
 
                     Następuje powitanie. Wszyscy witają KRYSTIANA.
 
@@ -713,9 +713,6 @@
 
           KRYSTIAN:
                Chyba nie mówiłem, ale jest w naszym wieku.
-
-          CZAREK I ROBERT:
-               AJ !
 
           ROBERT:
                Leciwa.
@@ -3924,8 +3921,6 @@
           LEON:
                Przyznaję, bywa męcząca.
 
-          WSZYSCY:
-               Ooooo...
                          (pomruk zadowolenia)
 
           ANIELA:
@@ -5963,7 +5958,7 @@
 
                     W tym momencie przez drzwi wypada KRYSTIAN.
 
-          Leon:
+          LEON:
                Idę, idę,...
 
                     Wszyscy zbierają się w jednym miejscu.
