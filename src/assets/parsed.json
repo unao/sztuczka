@@ -7845,6 +7845,12 @@
             "id": "25_m680100032"
           },
           {
+            "id": "25_m1185605102",
+            "type": "selfieEnd",
+            "who": "ANIELA",
+            "what": "selfieEnd -- ANIELA"
+          },
+          {
             "type": "say",
             "who": "EWA",
             "what": "Igor ???",
@@ -7946,8 +7952,19 @@
           {
             "type": "say",
             "who": "LEON",
-            "what": "Zróbmy to zdjęcie. CZAREK wyciąga rękę z tel.",
-            "id": "25_1102344561"
+            "what": "Zróbmy to zdjęcie.",
+            "id": "25_m1115011336"
+          },
+          {
+            "id": "25_m306271061",
+            "type": "selfieStart",
+            "who": "ANIELA",
+            "what": "selfieStart -- ANIELA"
+          },
+          {
+            "type": "desc",
+            "what": "CZAREK wyciąga rękę z tel.",
+            "id": ""
           },
           {
             "type": "say",
@@ -7989,10 +8006,10 @@
             "id": "25_m1797745393"
           },
           {
-            "id": "25_m1316915925",
-            "type": "selfieStop",
+            "id": "25_m1185605102",
+            "type": "selfieEnd",
             "who": "ANIELA",
-            "what": "selfieStop -- ANIELA"
+            "what": "selfieEnd -- ANIELA"
           },
           {
             "type": "say",

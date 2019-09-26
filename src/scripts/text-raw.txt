@@ -4058,6 +4058,8 @@
 
           ANIELA:
                Nie wiem.
+                    
+                    selfieEnd_ANIELA
 
           EWA:
                Igor ???
@@ -4117,7 +4119,9 @@
           LEON:
                Zróbmy to zdjęcie.
 
-               CZAREK wyciąga rękę z tel.
+                    selfieStart_ANIELA
+
+                    CZAREK wyciąga rękę z tel.
 
           CZAREK:
                A tam ... jest niegroźny. To kwestia zasad. Uśmiech.
@@ -4136,7 +4140,7 @@
                Na szczęście niegroźny.
 
           CZAREK:
-                    selfieStop_ANIELA
+                    selfieEnd_ANIELA
 
                Co to ma być ?
 
