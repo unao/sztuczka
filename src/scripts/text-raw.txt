@@ -1705,7 +1705,7 @@
                Nie. Włącz głośnik.
 
           CZAREK:
-                    callLaud_CZAREK_!505414628
+                    callLoud_CZAREK_!505414628
                Włączyłem, już...
 
 
@@ -2040,7 +2040,7 @@
           KRYSTIAN:
                Poczekaj chwilkę.
 
-                    callLaud_KRYSTIAN_Martuś!662501448
+                    callLoud_KRYSTIAN_Martuś!662501448
 
                     KRYSTIAN odkłada tel. na stół i włącza głośnik.
 
@@ -2367,7 +2367,7 @@
 
                     callStart_EWA_Tatuś!503420847
 
-                    callLaud_EWA_Tatuś!503420847
+                    callLoud_EWA_Tatuś!503420847
 
                     EWA odbiera tel. i włącza głośnik.
 
@@ -2848,7 +2848,7 @@
 
                     callStart_KAROLINA_Steve Jobs!505414628
 
-                    callLaud_KAROLINA_Steve Jobs!505414628
+                    callLoud_KAROLINA_Steve Jobs!505414628
 
                     KAROLINA przejmuje tel. od LEONA. odbiera
                     połączenie.
@@ -4201,7 +4201,7 @@
 
                     audioStop_sound/outgoing-call.mp3
                     callStart_ANIELA_Igor!509657412
-                    callLaud_ANIELA_Igor!509657412
+                    callLoud_ANIELA_Igor!509657412
 
                     Dźwięk - sygnał w tel. - ktoś odbiera.
 
@@ -4382,7 +4382,7 @@
                Odbierz.
 
                     callStart_ROBERT_Neluś
-                    callLaud_ROBERT_Neluś
+                    callLoud_ROBERT_Neluś
                     
                     ROBERT odbiera tel. i włącza głośnik.
 
@@ -4682,7 +4682,7 @@
                Jasne, że włącz.
 
                     callStart_LEON_Darek
-                    callLaud_LEON_Darek
+                    callLoud_LEON_Darek
 
           LEON:
                Słucham ?
@@ -5148,7 +5148,7 @@
 
                Od dwóch tygodni ci się nagrywam.
 
-                    callLaud_CZAREK_Marcin!505414628
+                    callLoud_CZAREK_Marcin!505414628
 
                     CZAREK odkłada tel. na stół.
 
@@ -5264,7 +5264,7 @@
                Oddaj mi telefon. Oddawaj go do cholery !!!
 
                     callStart_CZAREK_Marika!505414628
-                    callLaud_CZAREK_Marika!505414628
+                    callLoud_CZAREK_Marika!505414628
 
 
                     ANIELA ucieka, potyka się o meble, odbiera tel.
@@ -5500,7 +5500,7 @@
 
                     audioStop_sound/outgoing-call.mp3
                     callStart_KAROLINA_!663430093
-                    callLaud_KAROLINA_!663430093
+                    callLoud_KAROLINA_!663430093
 
                     Wszyscy patrzą na KAROLINĘ i LEONA zamurowani.
                     Cisza. Tel. łączy się.

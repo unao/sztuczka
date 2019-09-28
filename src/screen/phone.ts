@@ -56,7 +56,7 @@ export const run = (
           )
         )
       ),
-    callLaud: cs => cs.pipe(tap(phone.loud))
+    callLoud: cs => cs.pipe(tap(phone.loud))
   })
 
   return merge(size.pipe(tap(updateLayout(phone))), handle(h))

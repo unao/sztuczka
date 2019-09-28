@@ -3191,10 +3191,10 @@
             "id": "11_2047203122"
           },
           {
-            "id": "11_m854531761",
-            "type": "callLaud",
+            "id": "11_1104905309",
+            "type": "callLoud",
             "who": "CZAREK",
-            "what": "callLaud -- CZAREK -- !505414628 Włączyłem, już...",
+            "what": "callLoud -- CZAREK -- !505414628 Włączyłem, już...",
             "other": "",
             "number": "505414628"
           },
@@ -3858,10 +3858,10 @@
             "id": "13_1935995843"
           },
           {
-            "id": "13_m35105743",
-            "type": "callLaud",
+            "id": "13_1078383423",
+            "type": "callLoud",
             "who": "KRYSTIAN",
-            "what": "callLaud -- KRYSTIAN -- Martuś!662501448",
+            "what": "callLoud -- KRYSTIAN -- Martuś!662501448",
             "other": "Martuś",
             "number": "662501448"
           },
@@ -4516,10 +4516,10 @@
             "number": "503420847"
           },
           {
-            "id": "15_2133151855",
-            "type": "callLaud",
+            "id": "15_m1914981891",
+            "type": "callLoud",
             "who": "EWA",
-            "what": "callLaud -- EWA -- Tatuś!503420847",
+            "what": "callLoud -- EWA -- Tatuś!503420847",
             "other": "Tatuś",
             "number": "503420847"
           },
@@ -5454,10 +5454,10 @@
             "number": "505414628"
           },
           {
-            "id": "17_605135619",
-            "type": "callLaud",
+            "id": "17_98429713",
+            "type": "callLoud",
             "who": "KAROLINA",
-            "what": "callLaud -- KAROLINA -- Steve Jobs!505414628",
+            "what": "callLoud -- KAROLINA -- Steve Jobs!505414628",
             "other": "Steve Jobs",
             "number": "505414628"
           },
@@ -8125,10 +8125,10 @@
             "number": "509657412"
           },
           {
-            "id": "25_582917757",
-            "type": "callLaud",
+            "id": "25_1566758027",
+            "type": "callLoud",
             "who": "ANIELA",
-            "what": "callLaud -- ANIELA -- Igor!509657412",
+            "what": "callLoud -- ANIELA -- Igor!509657412",
             "other": "Igor",
             "number": "509657412"
           },
@@ -8507,10 +8507,10 @@
             "number": ""
           },
           {
-            "id": "26_132929881",
-            "type": "callLaud",
+            "id": "26_1575385995",
+            "type": "callLoud",
             "who": "ROBERT",
-            "what": "callLaud -- ROBERT -- Neluś",
+            "what": "callLoud -- ROBERT -- Neluś",
             "other": "Neluś",
             "number": ""
           },
@@ -9101,10 +9101,10 @@
             "number": ""
           },
           {
-            "id": "27_m220369345",
-            "type": "callLaud",
+            "id": "27_m61943567",
+            "type": "callLoud",
             "who": "LEON",
-            "what": "callLaud -- LEON -- Darek Słucham ?",
+            "what": "callLoud -- LEON -- Darek Słucham ?",
             "other": "Darek",
             "number": ""
           },
@@ -9938,10 +9938,10 @@
             "id": "31_m429172651"
           },
           {
-            "id": "31_m1831806422",
-            "type": "callLaud",
+            "id": "31_m1254112072",
+            "type": "callLoud",
             "who": "CZAREK",
-            "what": "callLaud -- CZAREK -- Marcin!505414628",
+            "what": "callLoud -- CZAREK -- Marcin!505414628",
             "other": "Marcin",
             "number": "505414628"
           },
@@ -10149,10 +10149,10 @@
             "number": "505414628"
           },
           {
-            "id": "31_m1448527839",
-            "type": "callLaud",
+            "id": "31_m870833489",
+            "type": "callLoud",
             "who": "CZAREK",
-            "what": "callLaud -- CZAREK -- Marika!505414628",
+            "what": "callLoud -- CZAREK -- Marika!505414628",
             "other": "Marika",
             "number": "505414628"
           },
@@ -10467,10 +10467,10 @@
             "number": "663430093"
           },
           {
-            "id": "33_2134957581",
-            "type": "callLaud",
+            "id": "33_m1913176165",
+            "type": "callLoud",
             "who": "KAROLINA",
-            "what": "callLaud -- KAROLINA -- !663430093",
+            "what": "callLoud -- KAROLINA -- !663430093",
             "other": "",
             "number": "663430093"
           },

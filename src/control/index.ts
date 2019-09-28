@@ -128,7 +128,7 @@ connectWS('control')
                     ws.send(x.type, x as any, x.who! as any)
                   }
                   if (
-                    x.type === 'callLaud' ||
+                    x.type === 'callLoud' ||
                     x.type === 'audioStart' ||
                     x.type === 'audioStop' ||
                     x.type === 'msgShow'

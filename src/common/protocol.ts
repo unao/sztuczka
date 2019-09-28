@@ -48,7 +48,7 @@ export interface Protocol {
   txt: string
   callGet: Call
   callStart: Call
-  callLaud: Call
+  callLoud: Call
   callEnd: null
   msgGet: MSGBase
   msgShow: MSG
