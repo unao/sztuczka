@@ -99,6 +99,7 @@ connectWS('control')
                 }
               }),
               switchMap(x => {
+                console.log('HMM', x)
                 if (x) {
                   ws.send('txt', x.id)
                   if (x.type === 'msgGet') {

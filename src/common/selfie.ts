@@ -18,6 +18,7 @@ export const selfie = (video: HTMLVideoElement) => {
     navigator.mediaDevices.getUserMedia({ video: { width: w, height: h } })
   ).pipe(
     tap(s => (video.srcObject = s)),
+    tap(() => video.play()),
     switchMap(stream =>
       timer(0, 1000 / 8).pipe(
         map(() => getFrame()),

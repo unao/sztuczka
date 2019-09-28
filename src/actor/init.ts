@@ -9,7 +9,6 @@ import {
   switchMap,
   connectWS,
   render,
-  fullscreen,
   delay,
   retryWhen
 } from '../common'
@@ -41,7 +40,7 @@ const selectActor = () => {
     map(a => a.toUpperCase() as Actor),
     filter(actor => actors.includes(actor)),
     take(1),
-    tap(() => !ps.has('fake') && fullscreen()),
+    // tap(() => !ps.has('fake') && fullscreen()),
     tap(
       a =>
         !ps.has('fake') &&

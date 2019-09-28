@@ -7749,7 +7749,7 @@
             "id": "25_m413672235"
           },
           {
-            "id": "25_m306271061",
+            "id": "25_m904468204",
             "type": "selfieStart",
             "who": "ANIELA",
             "what": "selfieStart -- ANIELA"
@@ -7845,10 +7845,10 @@
             "id": "25_m680100032"
           },
           {
-            "id": "25_m1185605102",
-            "type": "selfieEnd",
+            "id": "25_2125279380",
+            "type": "selfieStop",
             "who": "ANIELA",
-            "what": "selfieEnd -- ANIELA"
+            "what": "selfieStop -- ANIELA"
           },
           {
             "type": "say",
@@ -8006,10 +8006,10 @@
             "id": "25_m1797745393"
           },
           {
-            "id": "25_m1185605102",
-            "type": "selfieEnd",
+            "id": "25_m1316915925",
+            "type": "selfieStop",
             "who": "ANIELA",
-            "what": "selfieEnd -- ANIELA"
+            "what": "selfieStop -- ANIELA"
           },
           {
             "type": "say",

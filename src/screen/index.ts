@@ -37,7 +37,7 @@ const progress = plot.reduce(
 document.body.innerHTML = `<div style="background-color:black;width:100vw;">
   <video src="/assets/eclipse.mp4" style="width:100vw;height:100vh"></video>
   <button id="fullscreen" style="z-index:10;position:absolute;top:0;left:0">fullscreen</button>
-  <img style="display:none;z-index:2;position:absolute;top:0;left:0;width:100vw;height:100vh"></img>
+  <img style="display:none;z-index:2;position:absolute;top:0;left:0;width:75vh;height:100vh"></img>
 </div>`
 
 document.getElementById('fullscreen')!.onclick = () =>

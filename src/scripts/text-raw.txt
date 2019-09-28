@@ -4019,7 +4019,7 @@
           ANIELA:
                Zróbmy sobie zdjęcie.
 
-                    selfieStart_ANIELA
+                    selfieStart_ANIELA_
 
                     ANIELA uruchamia aparat w tel. i wyciąga rękę do
                     ujęcia.
@@ -4059,7 +4059,7 @@
           ANIELA:
                Nie wiem.
                     
-                    selfieEnd_ANIELA
+                    selfieStop_ANIELA_
 
           EWA:
                Igor ???
@@ -4140,7 +4140,7 @@
                Na szczęście niegroźny.
 
           CZAREK:
-                    selfieEnd_ANIELA
+                    selfieStop_ANIELA
 
                Co to ma być ?
 

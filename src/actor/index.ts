@@ -30,10 +30,11 @@ const handle = (a: Actor, send: Send): ProtocolHandler => all => ({
     ),
   selfieStart: ms =>
     ms.pipe(
+      tap(x => console.log(x)),
       map(() => {
         document.body.insertAdjacentHTML(
           'beforeend',
-          `<video id="selfie" autoplay style="z-index:1;position:fixed;top:0;left:0;background-color:black;width:100vw;height:100vh"></video>`
+          `<video id="selfie" style="z-index:2;position:fixed;top:0;left:0;background-color:black;width:100vw;height:100vh"></video>`
         )
         return document.getElementById('selfie')! as HTMLVideoElement
       }),
