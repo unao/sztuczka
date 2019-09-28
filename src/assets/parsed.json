@@ -11388,6 +11388,17 @@
             "id": "38_1682430601"
           },
           {
+            "id": "38_m756835469",
+            "type": "msgShow",
+            "who": "CZAREK",
+            "what": "msgShow:sms -- CZAREK -- A ja byłem rozgrzany do czerwoności",
+            "kind": "sms",
+            "other": "Ewa",
+            "number": "882683498",
+            "body": "A ja byłem rozgrzany do czerwoności",
+            "variant": ""
+          },
+          {
             "type": "say",
             "who": "ANIELA",
             "what": "Świetnie było, prawda ?",
@@ -11405,8 +11416,16 @@
             "id": "38_1575233764"
           },
           {
+            "id": "38_1364771997",
+            "type": "callGet",
+            "who": "CZAREK",
+            "what": "callGet -- CZAREK -- Marika",
+            "other": "Marika",
+            "number": ""
+          },
+          {
             "type": "desc",
-            "what": "PROJEKTOR - zrzut ekranu tel. CZARKA - wysyła sms do EWY - \"A ja byłem rozgrzany do czerwoności\". PROJEKTOR - nagle pojawia się połączenie przychodzące - MARIKA. (z niedowierzaniem)",
+            "what": "(z niedowierzaniem)",
             "id": ""
           },
           {
@@ -11428,8 +11447,24 @@
             "id": "38_m763979435"
           },
           {
+            "id": "38_m784406615",
+            "type": "callStart",
+            "who": "CZAREK",
+            "what": "callStart -- CZAREK -- Marika",
+            "other": "Marika",
+            "number": ""
+          },
+          {
+            "id": "38_7287138",
+            "type": "callEnd",
+            "who": "CZAREK",
+            "what": "callEnd -- CZAREK -- Marika",
+            "other": "Marika",
+            "number": ""
+          },
+          {
             "type": "desc",
-            "what": "PROJEKTOR - odrzucenie połączenia.",
+            "what": "(odrzucone połączenie)",
             "id": ""
           },
           {

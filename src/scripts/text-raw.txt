@@ -6062,17 +6062,15 @@
                Do Ewy i Roberta. Dziękuję im za wieczór.
 
           ANIELA:
+                    msgShow_sms_CZAREK_Ewa!882683498_A ja byłem rozgrzany do czerwoności
+
                Świetnie było, prawda ?
 
           CZAREK:
                          (nie odrywając się od tel.)
                Yhhmmm... tak.
 
-                    PROJEKTOR - zrzut ekranu tel. CZARKA - wysyła sms
-                    do EWY - "A ja byłem rozgrzany do czerwoności".
-
-                    PROJEKTOR - nagle pojawia się połączenie
-                    przychodzące - MARIKA.
+                    callGet_CZAREK_Marika
 
           CZAREK:
                          (z niedowierzaniem)
@@ -6084,8 +6082,10 @@
           CZAREK:
                Nie odbieram...
 
-                    PROJEKTOR - odrzucenie połączenia.
+                    callStart_CZAREK_Marika
+                    callEnd_CZAREK_Marika
 
+                    (odrzucone połączenie)
           CZAREK:
                Biodynamicznego - nigdy więcej.
 
