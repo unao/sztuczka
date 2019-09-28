@@ -1,7 +1,7 @@
 import { Observable, Observer } from 'rxjs'
 import { loadFont } from './load-font'
 
-Object.assign(document.body.style, { margin: 0 })
+Object.assign(document.body.style, { margin: 0, overflow: 'hidden' })
 
 document.body.innerHTML = '<div style="background-color:white"></div>'
 const c = document.body.firstElementChild as HTMLDivElement

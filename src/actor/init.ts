@@ -18,8 +18,10 @@ import { text } from './text'
 
 const ps = new URLSearchParams(location.search)
 
-// window.history.pushState(null, document.title, null)
-// window.onpopstate = () => window.history.pushState(null, document.title, null)
+window.history.pushState(null, document.title, window.location.href)
+window.onpopstate = () =>
+  window.history.pushState(null, document.title, window.location.href)
+// window.onbeforeunload = () => 'Czy na pewno?'
 
 const selectActor = () => {
   render(
@@ -39,7 +41,6 @@ const selectActor = () => {
     map(a => a.toUpperCase() as Actor),
     filter(actor => actors.includes(actor)),
     take(1),
-    tap(() => navigator.vibrate([200, 200, 200])),
     tap(() => !ps.has('fake') && fullscreen()),
     tap(
       a =>

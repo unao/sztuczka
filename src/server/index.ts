@@ -4,7 +4,7 @@ import * as https from 'https'
 import * as path from 'path'
 
 import { localIP } from './utils'
-import { Role } from '../common'
+import { Role, Message } from '../common'
 
 const run = (port = 3356) => {
   const host = localIP()
@@ -30,18 +30,25 @@ const run = (port = 3356) => {
       })
     )
 
+  let lastTxt: any
   wss.on('connection', (ws, req) => {
     const role = req.url!.split('role=')[1] as Role
     console.log('joined:', role)
     conn[role] = ws
     sendConn()
+    lastTxt && ws.send(lastTxt)
     ws.on('close', () => {
       console.log('left:', role)
       delete conn[role]
       sendConn()
     })
     ws.on('message', m => {
-      const msg = JSON.parse(m as string)
+      const msg = JSON.parse(m as string) as Message & { to?: string }
+
+      if (msg.type === 'txt') {
+        lastTxt = m
+      }
+
       if (msg.to && conn[msg.to as Role]) {
         conn[msg.to as Role]!.send(m)
       }

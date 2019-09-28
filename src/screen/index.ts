@@ -1,7 +1,6 @@
 import {
   connectWS,
   tap,
-  fullscreen,
   retryWhen,
   delay,
   switchMap,

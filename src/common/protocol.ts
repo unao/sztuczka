@@ -12,7 +12,7 @@ export type ProtocolHandler = (
   }
 >
 
-export type Message<K extends keyof Protocol> = {
+export type Message<K extends keyof Protocol = keyof Protocol> = {
   type: K
   payload: Protocol[K]
 }
