@@ -1,14 +1,14 @@
 import { Observable, Observer } from 'rxjs'
 import { loadFont } from './load-font'
 
-Object.assign(document.body.style, { margin: 0, overflow: 'hidden' })
+Object.assign(document.body.style, { margin: 0 })
 
 document.body.innerHTML = '<div style="background-color:white"></div>'
 const c = document.body.firstElementChild as HTMLDivElement
 window.onbeforeunload = () => window.scrollTo(0, 0)
 loadFont()
 
-export const fullscreen = () => c.requestFullscreen()
+export const fullscreen = () => document.documentElement.requestFullscreen()
 
 export const render = (content: string) => (c.innerHTML = content)
 

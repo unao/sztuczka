@@ -18,6 +18,9 @@ import { text } from './text'
 
 const ps = new URLSearchParams(location.search)
 
+// window.history.pushState(null, document.title, null)
+// window.onpopstate = () => window.history.pushState(null, document.title, null)
+
 const selectActor = () => {
   render(
     actors
@@ -37,15 +40,15 @@ const selectActor = () => {
     filter(actor => actors.includes(actor)),
     take(1),
     tap(() => navigator.vibrate([200, 200, 200])),
-    // tap(() => !ps.has('fake') && fullscreen()),
-    // tap(
-    //   a =>
-    //     !ps.has('fake') &&
-    //     a === 'ANIELA' &&
-    //     navigator.mediaDevices
-    //       .getUserMedia({ video: true })
-    //       .then(s => s.getTracks().forEach(t => t.stop()))
-    // ),
+    tap(() => !ps.has('fake') && fullscreen()),
+    tap(
+      a =>
+        !ps.has('fake') &&
+        a === 'ANIELA' &&
+        navigator.mediaDevices
+          .getUserMedia({ video: true })
+          .then(s => s.getTracks().forEach(t => t.stop()))
+    ),
     shareReplay()
   )
 }

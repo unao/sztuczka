@@ -10,13 +10,15 @@ export const setCurrent = (id: string) => {
   currentEl.style.border = null
   currentEl = document.getElementById(`txt-${id}`)!
   currentEl.style.border = `2px solid black`
+  // alert(currentEl.offsetTop)
+  // document.documentElement.scrollTop = currentEl.offsetTop
   currentEl.scrollIntoView()
 }
 
 export const text = (actor: Actor) =>
   scenes.map(
     scene => `
-  <div>
+  <div id="txt-wrap">
 <h3 style="margin-left:48px">${scene.title}</h3>
 ${(scene.plot as any)
   .map(
