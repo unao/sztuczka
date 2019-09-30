@@ -12,9 +12,11 @@ import {
   selfie,
   map,
   finalize,
-  Send
+  Send,
+  repeat
 } from 'common'
 import { setCurrent } from './text'
+import { merge } from 'rxjs'
 
 const handle = (a: Actor, send: Send): ProtocolHandler => all => ({
   txt: ms => ms.pipe(tap(setCurrent)),
@@ -50,7 +52,12 @@ const handle = (a: Actor, send: Send): ProtocolHandler => all => ({
 
 init()
   .pipe(
-    switchMap(x => x.ws.handle(handle(x.actor, x.ws.send))),
+    switchMap(x =>
+      merge(
+        playAudio('sound/silence.mp3', false).pipe(repeat()),
+        x.ws.handle(handle(x.actor, x.ws.send))
+      )
+    ),
     retryWhen(errs => errs.pipe(delay(250)))
   )
   .subscribe()

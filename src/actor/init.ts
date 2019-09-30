@@ -10,17 +10,19 @@ import {
   connectWS,
   render,
   delay,
-  retryWhen
+  retryWhen,
+  fullscreen
 } from '../common'
 import { fromEvent, merge, of } from 'rxjs'
 import { text } from './text'
 
 const ps = new URLSearchParams(location.search)
 
-window.history.pushState(null, document.title, window.location.href)
-window.onpopstate = () =>
+const preventBack = () => {
   window.history.pushState(null, document.title, window.location.href)
-// window.onbeforeunload = () => 'Czy na pewno?'
+  window.onpopstate = () =>
+    window.history.pushState(null, document.title, window.location.href)
+}
 
 const selectActor = () => {
   render(
@@ -40,7 +42,7 @@ const selectActor = () => {
     map(a => a.toUpperCase() as Actor),
     filter(actor => actors.includes(actor)),
     take(1),
-    // tap(() => !ps.has('fake') && fullscreen()),
+    tap(() => !ps.has('fake') && fullscreen()),
     tap(
       a =>
         !ps.has('fake') &&
@@ -70,6 +72,7 @@ export const init = () =>
       <h1>${a.actor}</h1>
       ${text(a.actor)}`)
     ),
+    tap(() => setTimeout(preventBack, 1000)),
     retryWhen(errs =>
       errs.pipe(
         tap(err => console.warn(err)),
