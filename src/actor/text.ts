@@ -38,6 +38,7 @@ ${(scene.plot as any)
 </div>`
   )
   .join('')}
-<div>
+  <div style="height:40px"></div>
+</div>
 `
   )

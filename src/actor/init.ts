@@ -70,7 +70,8 @@ export const init = () =>
     tap(a =>
       render(`
       <h1>${a.actor}</h1>
-      ${text(a.actor)}`)
+      ${text(a.actor)}
+      `)
     ),
     tap(() => setTimeout(preventBack, 1000)),
     retryWhen(errs =>

@@ -17,6 +17,7 @@ import {
 } from 'common'
 import { setCurrent } from './text'
 import { merge } from 'rxjs'
+import { logic } from './actions'
 
 const handle = (a: Actor, send: Send): ProtocolHandler => all => ({
   txt: ms => ms.pipe(tap(setCurrent)),
@@ -55,7 +56,8 @@ init()
     switchMap(x =>
       merge(
         playAudio('sound/silence.mp3', false).pipe(repeat()),
-        x.ws.handle(handle(x.actor, x.ws.send))
+        x.ws.handle(handle(x.actor, x.ws.send)),
+        logic(document.body)
       )
     ),
     retryWhen(errs => errs.pipe(delay(250)))
