@@ -9,10 +9,11 @@ import {
   playAudio,
   takeUntil,
   filter,
-  take
+  take,
+  map
 } from 'common'
 import * as play from '../assets/parsed.json'
-import { merge, Observable, timer } from 'rxjs'
+import { merge, Observable, timer, of } from 'rxjs'
 import { run } from './phone'
 import { smsUI } from './ui'
 import { Observer } from 'firebase'
@@ -47,11 +48,19 @@ document.body.onfullscreenchange = () =>
     'fullscreen'
   )!.style.display = document.fullscreenElement ? 'none' : 'block')
 
-const vid = document.getElementsByTagName('video')[0]
+// const vid = document.getElementsByTagName('video')[0]
 const img = document.getElementsByTagName('img')[0]
 
 const handle: ProtocolHandler = all => ({
-  txt: ms => ms.pipe(tap(m => (vid.currentTime = progress[m] * vid.duration))),
+  txt: ms =>
+    of(Array.from(document.getElementsByTagName('video'))).pipe(
+      switchMap(vs =>
+        ms.pipe(
+          map(m => (0.4 + 0.6 * progress[m]) * vs[0].duration),
+          tap((t: number) => vs.forEach(v => (v.currentTime = t)))
+        )
+      )
+    ),
   img: ms =>
     ms.pipe(
       tap(m => {

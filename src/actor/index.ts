@@ -26,7 +26,7 @@ const handle = (a: Actor, send: Send): ProtocolHandler => all => ({
   callGet: ms =>
     ms.pipe(
       switchMap(c =>
-        playAudio(`call/${a}.mp3`).pipe(
+        playAudio(`call/${a}.mp3`, { smoothStart: 2000 }).pipe(
           takeUntil(
             all.pipe(
               filter(x => x.type === 'callStart' || x.type === 'callEnd')

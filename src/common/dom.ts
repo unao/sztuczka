@@ -39,6 +39,7 @@ export const smoothVolume = (
   return timer(0, 1, animationFrameScheduler).pipe(
     map(() => (Date.now() - start) / op.duration),
     takeWhile(progress => progress < 1),
+    map(p => 0.5 - Math.cos(p * Math.PI) / 2),
     map(p => from + p * (op.to - from)),
     map(v => Math.min(1, Math.max(0, v))),
     tap(x => (el.volume = x)),
