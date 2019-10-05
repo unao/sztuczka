@@ -6204,6 +6204,9 @@
                                    SCENA 42                                   
 
                     audioStart_sound/telefony-telefony.mp3
+
+                    aux_vibrate
+
                     audioStop_sound/telefony-telefony.mp3
 
                     

@@ -83,6 +83,16 @@ const t = fs
           what: `${type} -- ${who}`
         }
       }
+      const aux = (line: string) => {
+        const [_, type] = line.split('_')
+        console.log(type)
+        return {
+          id: id(type, line),
+          type,
+          who: '',
+          what: `${type}`
+        }
+      }
       if (n[0] === 35) {
         if (n[1][0] === 'A') {
           act = n[1]
@@ -126,6 +136,8 @@ const t = fs
             s.plot.push(audio(n[1]))
           } else if (n[1].startsWith('selfie')) {
             s.plot.push(selfie(n[1]))
+          } else if (n[1].startsWith('aux')) {
+            s.plot.push(aux(n[1]))
           } else {
             s.plot.push({
               type: 'desc',

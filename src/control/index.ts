@@ -168,6 +168,9 @@ connectWS('control')
                   if (x.type === 'say' && state.missing.includes(x.who!)) {
                     return playAudio(`recs/${x.who}/${x.id}.webm`)
                   }
+                  if (x.type === 'vibrate') {
+                    ws.send('vibrate', null)
+                  }
                 }
                 return EMPTY
               })

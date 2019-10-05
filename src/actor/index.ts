@@ -21,21 +21,21 @@ import { merge } from 'rxjs'
 import { logic } from './actions'
 
 const handle = (a: Actor, send: Send): ProtocolHandler => all => ({
+  vibrate: ms => ms.pipe(tap(() => navigator.vibrate([2000]))),
   txt: ms => ms.pipe(tap(setCurrent)),
   msgGet: ms =>
     ms.pipe(switchMap(m => playAudio(`${m.kind}/${a}${m.variant || ''}.mp3`))),
   callGet: ms =>
     ms.pipe(
       switchMap(c =>
-        playAudio(`call/${a}.mp3`, { smoothStart: 2000 })
-          .pipe(
-            repeat(),
-            takeUntil(
-              all.pipe(
-                filter(x => x.type === 'callStart' || x.type === 'callEnd')
-              )
+        playAudio(`call/${a}.mp3`, { smoothStart: 2000 }).pipe(
+          repeat(),
+          takeUntil(
+            all.pipe(
+              filter(x => x.type === 'callStart' || x.type === 'callEnd')
             )
           )
+        )
       )
     ),
   selfieStart: ms =>

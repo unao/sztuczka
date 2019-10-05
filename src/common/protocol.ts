@@ -54,6 +54,7 @@ export interface Protocol {
   msgShow: MSG
   selfieStart: null
   selfieStop: null
+  vibrate: null
 }
 
 const unwrap = <K extends keyof Protocol>(m: string) =>

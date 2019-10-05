@@ -11627,6 +11627,12 @@
             "url": "sound/telefony-telefony.mp3"
           },
           {
+            "id": "41_m138956251",
+            "type": "vibrate",
+            "who": "",
+            "what": "vibrate"
+          },
+          {
             "id": "41_m261939054",
             "type": "audioStop",
             "what": "audioStop -- sound/telefony-telefony.mp3",
