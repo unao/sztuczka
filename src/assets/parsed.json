@@ -11612,6 +11612,23 @@
             "id": ""
           }
         ]
+      },
+      {
+        "title": "SCENA 42",
+        "plot": [
+          {
+            "id": "41_1225577778",
+            "type": "audioStart",
+            "what": "audioStart -- sound/telefony-telefony.mp3",
+            "url": "sound/telefony-telefony.mp3"
+          },
+          {
+            "id": "41_m261939054",
+            "type": "audioStop",
+            "what": "audioStop -- sound/telefony-telefony.mp3",
+            "url": "sound/telefony-telefony.mp3"
+          }
+        ]
       }
     ]
   }

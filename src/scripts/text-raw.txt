@@ -6200,8 +6200,10 @@
 
                     KURTYNA - Kurtyna w dół.
 
-                                                         KONIEC 
+                                   SCENA 42                                   
 
+                    audioStart_sound/telefony-telefony.mp3
+                    audioStop_sound/telefony-telefony.mp3
 
                     
 
