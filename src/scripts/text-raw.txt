@@ -3727,6 +3727,7 @@
                To zaćmienie źle na nas wpływa.
 
                     audioStart_sound/waterphone1.mp3
+                    audioWait_sound/waterphone1.mp3
 
                                    SCENA 25
 
@@ -5172,14 +5173,13 @@
           MARCIN 4 (GŁOS W TEL.):
                Powiedz tylko czy kolczyki też się podobały ?
 
-                    audioStart_sound/waterphone3.mp3
-
                     ANIELA zbystrzała, zdębiała, jakby piorun w nią
                     strzelił.
 
           CZAREK:
                Naprawdę muszę kończyć. Wybacz.
 
+                    audioStart_sound/waterphone3.mp3
                     callEnd_CZAREK_Marcin!505414628
 
                     CZAREK jednym ruchem kończy rozmowę.
@@ -6042,6 +6042,8 @@
                     msgGet_sms_CZAREK_Marika!505843759
 
                     msgShow_sms_CZAREK_Marika!505843759_Zadzwoń! to pilne!
+
+                    audioWait__
 
                     msgGet_sms_CZAREK_Ewa!882683498
 

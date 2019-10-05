@@ -7184,6 +7184,12 @@
             "type": "audioStart",
             "what": "audioStart -- sound/waterphone1.mp3",
             "url": "sound/waterphone1.mp3"
+          },
+          {
+            "id": "23_41427186",
+            "type": "audioWait",
+            "what": "audioWait -- sound/waterphone1.mp3",
+            "url": "sound/waterphone1.mp3"
           }
         ]
       },
@@ -9986,12 +9992,6 @@
             "id": "31_666102271"
           },
           {
-            "id": "31_1052597089",
-            "type": "audioStart",
-            "what": "audioStart -- sound/waterphone3.mp3",
-            "url": "sound/waterphone3.mp3"
-          },
-          {
             "type": "desc",
             "what": "ANIELA zbystrzała, zdębiała, jakby piorun w nią strzelił.",
             "id": ""
@@ -10001,6 +10001,12 @@
             "who": "CZAREK",
             "what": "Naprawdę muszę kończyć. Wybacz.",
             "id": "31_1276221927"
+          },
+          {
+            "id": "31_1052597089",
+            "type": "audioStart",
+            "what": "audioStart -- sound/waterphone3.mp3",
+            "url": "sound/waterphone3.mp3"
           },
           {
             "id": "31_698758057",
@@ -11341,6 +11347,12 @@
             "number": "505843759",
             "body": "Zadzwoń! to pilne!",
             "variant": ""
+          },
+          {
+            "id": "38_236234229",
+            "type": "audioWait",
+            "what": "audioWait -- ",
+            "url": ""
           },
           {
             "id": "38_m895628653",

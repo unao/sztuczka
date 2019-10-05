@@ -1,5 +1,5 @@
 import { Plot, Say as _Say } from './state'
-import { BehaviorSubject, merge, fromEvent, EMPTY } from 'rxjs'
+import { BehaviorSubject, merge, fromEvent, EMPTY, Subject } from 'rxjs'
 import { filter, tap, map, switchMap, throttleTime } from 'common'
 
 type Say = _Say & { next: () => Say | undefined }
@@ -32,6 +32,8 @@ const txtUI = (plot: Plot) =>
     <button id="next-scene" style="padding:8px;margin:8px">Następna</button>
   </div>`
 
+const forceNext = new Subject<unknown>()
+
 const el = (i: string) => document.getElementById(`txt-${i}`)! as HTMLDivElement
 const sel = (s?: Say & { next: () => Say | undefined }) => {
   if (s) {
@@ -45,6 +47,7 @@ const sel = (s?: Say & { next: () => Say | undefined }) => {
       say: s,
       el: e
     })
+    if (s.type !== 'say' && s.type !== 'audioWait') forceNext.next()
   } else {
     current.next({
       say: undefined,
@@ -79,10 +82,14 @@ export const handleScene = (
     current.pipe(map(c => c.say)),
     merge(
       fromEvent(document.getElementById('next-scene')!, 'click'),
-      fromEvent<KeyboardEvent>(document, 'keydown').pipe(
-        filter(e => e.key === 'ArrowDown'),
-        tap(e => e.preventDefault()),
-        throttleTime(200),
+      merge(
+        forceNext,
+        fromEvent<KeyboardEvent>(document, 'keydown').pipe(
+          filter(e => e.key === 'ArrowDown'),
+          tap(e => e.preventDefault()),
+          throttleTime(200)
+        )
+      ).pipe(
         tap(() => sel(current.value.say && current.value.say.next())),
         filter(_ => !current.value.say && !actIEnd)
       )

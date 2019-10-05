@@ -84,7 +84,7 @@ const handle: ProtocolHandler = all => ({
       mergeMap(m =>
         playAudio(`call/${m.who!}.mp3`, {
           vibrate: false,
-          smoothStart: 2000
+          smoothStart: 3000
         }).pipe(
           takeUntil(
             all.pipe(
