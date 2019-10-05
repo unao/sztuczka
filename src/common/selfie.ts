@@ -1,4 +1,4 @@
-import { defer, timer } from 'rxjs'
+import { defer, timer, animationFrameScheduler } from 'rxjs'
 import { switchMap, map, tap, finalize } from 'rxjs/operators'
 
 export const selfie = (video: HTMLVideoElement) => {
@@ -20,7 +20,7 @@ export const selfie = (video: HTMLVideoElement) => {
     tap(s => (video.srcObject = s)),
     tap(() => video.play()),
     switchMap(stream =>
-      timer(0, 1000 / 8).pipe(
+      timer(0, 1, animationFrameScheduler).pipe(
         map(() => getFrame()),
         finalize(() => stream.getTracks().forEach(t => t.stop()))
       )

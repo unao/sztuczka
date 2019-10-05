@@ -9,6 +9,7 @@ import {
 } from 'rxjs'
 import { loadFont } from './load-font'
 import { takeWhile, map, tap, switchMap, finalize } from 'rxjs/operators'
+import { getAudioConfig } from './audio-config'
 
 Object.assign(document.body.style, { margin: 0, overflow: 'hidden' })
 
@@ -61,7 +62,8 @@ export const playAudio = (
       smoothStart: 0,
       smoothEnd: 0
     },
-    options || {}
+    options || {},
+    getAudioConfig(name)
   )
   return Observable.create((obs: Observer<any>) => {
     const el = document.createElement('audio')

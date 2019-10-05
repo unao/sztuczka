@@ -6,3 +6,5 @@ export * from './dom'
 export * from './protocol'
 export * from './utils'
 export * from './selfie'
+
+export * from './audio-config'

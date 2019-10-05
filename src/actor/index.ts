@@ -13,7 +13,8 @@ import {
   map,
   finalize,
   Send,
-  repeat
+  repeat,
+  fullscreen
 } from 'common'
 import { setCurrent } from './text'
 import { merge } from 'rxjs'
@@ -37,7 +38,7 @@ const handle = (a: Actor, send: Send): ProtocolHandler => all => ({
     ),
   selfieStart: ms =>
     ms.pipe(
-      tap(x => console.log(x)),
+      tap(fullscreen),
       map(() => {
         document.body.insertAdjacentHTML(
           'beforeend',
