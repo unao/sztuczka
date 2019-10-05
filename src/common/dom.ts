@@ -56,6 +56,7 @@ export const playAudio = (
     smoothEnd?: number
   }
 ): Observable<HTMLAudioElement> => {
+  const cfg = getAudioConfig(name)
   const op = Object.assign(
     {
       vibrate: true,
@@ -63,7 +64,7 @@ export const playAudio = (
       smoothEnd: 0
     },
     options || {},
-    getAudioConfig(name)
+    cfg
   )
   return Observable.create((obs: Observer<any>) => {
     const el = document.createElement('audio')
@@ -93,7 +94,8 @@ export const playAudio = (
         of(el),
         smoothVolume(el, { to: 1, duration: op.smoothStart }).pipe(
           switchMap(() => EMPTY)
-        )
+        ),
+        ((cfg && cfg!.custom(el)) || EMPTY).pipe(switchMap(() => EMPTY))
       )
     )
   )

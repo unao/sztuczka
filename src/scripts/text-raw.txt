@@ -486,9 +486,8 @@
 
                Rozalia kończy sześć lat w czerwcu.
 
-                    audioStart_sound/doorbell.mp3_
-                    audioStart_sound/doorbell.mp3__
-
+                    audioStart_sound/doorbellx3.mp3_
+          
                     Głos z kulis.
 
           CZAREK:
