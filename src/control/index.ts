@@ -9,12 +9,15 @@ import {
   playAudio,
   catchError,
   Role,
-  Actor
+  filter,
+  takeUntil,
+  Send,
+  exhaustMap
 } from 'common'
 
-import { merge, of, EMPTY } from 'rxjs'
+import { merge, of, EMPTY, fromEvent, timer } from 'rxjs'
 
-import { state, Say } from './state'
+import { state } from './state'
 import { handleScene } from './scene'
 
 const { txt } = state
@@ -72,13 +75,29 @@ const handle: ProtocolHandler = all => ({
     )
 })
 
-const toActorOrScreen = (who: Actor) => conn.includes(who)
+const key = (s: string) =>
+  fromEvent<KeyboardEvent>(document, 'keydown').pipe(
+    tap(x => console.log(x)),
+    filter(ev => ev.key === s)
+  )
+
+const stopAll = (send: Send) =>
+  key('s').pipe(
+    exhaustMap(() => key('s').pipe(takeUntil(timer(200)))),
+    tap(() => {
+      send('audioStop', null)
+      send('callStart', {} as any)
+      send('callEnd', null)
+      send('selfieStop', null)
+    })
+  )
 
 connectWS('control')
   .pipe(
     retryWhen(errs => errs.pipe(delay(250))),
     switchMap(ws =>
       merge(
+        stopAll(ws.send),
         ws.handle(handle),
         state.scene.pipe(
           switchMap(s =>
@@ -87,7 +106,7 @@ connectWS('control')
                 if (!x) {
                   const idx = txt.findIndex(p => p === s) + 1
 
-                  if (idx === 41) {
+                  if (idx === 42) {
                     console.log('THE-END')
                     return
                   }
