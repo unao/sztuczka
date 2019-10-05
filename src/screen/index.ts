@@ -10,7 +10,8 @@ import {
   takeUntil,
   filter,
   take,
-  map
+  map,
+  repeat
 } from 'common'
 import * as play from '../assets/parsed.json'
 import { merge, Observable, timer, of } from 'rxjs'
@@ -81,11 +82,12 @@ const handle: ProtocolHandler = all => ({
     ),
   callGet: ms =>
     ms.pipe(
-      mergeMap(m =>
+      switchMap(m =>
         playAudio(`call/${m.who!}.mp3`, {
           vibrate: false,
           smoothStart: 3000
         }).pipe(
+          repeat(),
           takeUntil(
             all.pipe(
               filter(a => a.type === 'callStart' || a.type === 'callEnd')

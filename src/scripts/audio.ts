@@ -60,10 +60,7 @@ const combine = (a: Actor) => {
 }
 
 from(actors.concat(['NELA' as Actor]))
-  .pipe(
-    mergeMap(combine)
-    // tap(x => console.log(x))
-  )
+  .pipe(mergeMap(combine))
   .subscribe()
 
 // from(fs.readdirSync(inAssets('voices')))

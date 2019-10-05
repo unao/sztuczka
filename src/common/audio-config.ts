@@ -21,11 +21,11 @@ const configs: { [K in string]: ReturnType<typeof def> } = {
       )
   ],
   'call/KAROLINA.mp3': [
-    2000,
+    0,
     0,
     (el: HTMLAudioElement) =>
-      timer(5000).pipe(
-        switchMap(() => smoothVolume(el, { to: 0.2, duration: 2000 }))
+      timer(3000).pipe(
+        switchMap(() => smoothVolume(el, { to: 0.33, duration: 2000 }))
       )
   ]
 }

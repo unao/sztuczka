@@ -27,13 +27,15 @@ const handle = (a: Actor, send: Send): ProtocolHandler => all => ({
   callGet: ms =>
     ms.pipe(
       switchMap(c =>
-        playAudio(`call/${a}.mp3`, { smoothStart: 2000 }).pipe(
-          takeUntil(
-            all.pipe(
-              filter(x => x.type === 'callStart' || x.type === 'callEnd')
+        playAudio(`call/${a}.mp3`, { smoothStart: 2000 })
+          .pipe(
+            repeat(),
+            takeUntil(
+              all.pipe(
+                filter(x => x.type === 'callStart' || x.type === 'callEnd')
+              )
             )
           )
-        )
       )
     ),
   selfieStart: ms =>
@@ -60,7 +62,7 @@ init()
   .pipe(
     switchMap(x =>
       merge(
-        playAudio('sound/silence.mp3', { vibrate: false }).pipe(repeat()),
+        // playAudio('sound/silence.mp3', { vibrate: false }).pipe(repeat()),
         x.ws.handle(handle(x.actor, x.ws.send)),
         logic(document.body)
       )

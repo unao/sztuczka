@@ -47,7 +47,14 @@ const sel = (s?: Say & { next: () => Say | undefined }) => {
       say: s,
       el: e
     })
-    if (s.type !== 'say' && s.type !== 'audioWait') forceNext.next()
+    if (
+      s.type !== 'say' &&
+      s.type !== 'audioWait' &&
+      s.type !== 'audioStart' &&
+      s.type !== 'callGet'
+    ) {
+      forceNext.next()
+    }
   } else {
     current.next({
       say: undefined,
