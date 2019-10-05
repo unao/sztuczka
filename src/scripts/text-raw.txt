@@ -6082,7 +6082,6 @@
           CZAREK:
                Nie odbieram...
 
-                    callStart_CZAREK_Marika
                     callEnd_CZAREK_Marika
 
                     (odrzucone połączenie)

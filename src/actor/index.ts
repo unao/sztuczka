@@ -27,7 +27,11 @@ const handle = (a: Actor, send: Send): ProtocolHandler => all => ({
     ms.pipe(
       switchMap(c =>
         playAudio(`call/${a}.mp3`).pipe(
-          takeUntil(all.pipe(filter(x => x.type === 'callStart')))
+          takeUntil(
+            all.pipe(
+              filter(x => x.type === 'callStart' || x.type === 'callEnd')
+            )
+          )
         )
       )
     ),
@@ -55,7 +59,7 @@ init()
   .pipe(
     switchMap(x =>
       merge(
-        playAudio('sound/silence.mp3', false).pipe(repeat()),
+        playAudio('sound/silence.mp3', { vibrate: false }).pipe(repeat()),
         x.ws.handle(handle(x.actor, x.ws.send)),
         logic(document.body)
       )

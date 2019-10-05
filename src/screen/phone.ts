@@ -8,8 +8,7 @@ import {
   switchMap,
   takeUntil,
   filter,
-  finalize,
-  delay
+  finalize
 } from '../common'
 import { initPhoneUI, PhoneUI } from './ui'
 
@@ -50,7 +49,6 @@ export const run = (
             ),
             takeUntil(all.pipe(filter(m => m.type === 'callEnd'))),
             finalize(() => {
-              console.log('END')
               phone.end()
             })
           )

@@ -63,8 +63,10 @@ const el = initUI()
 const ui = <K extends keyof ReturnType<typeof initUI>>(k: K, c: string) =>
   (el[k].innerHTML = c)
 
-el.sceneSelect.onchange = () =>
+el.sceneSelect.onchange = () => {
   state.updateScene(parseInt(el.sceneSelect.value.replace('scene-', ''), 10))
+  document.activeElement && (document.activeElement as any).blur()
+}
 
 let conn: Role[] = []
 const handle: ProtocolHandler = all => ({
@@ -76,10 +78,7 @@ const handle: ProtocolHandler = all => ({
 })
 
 const key = (s: string) =>
-  fromEvent<KeyboardEvent>(document, 'keydown').pipe(
-    tap(x => console.log(x)),
-    filter(ev => ev.key === s)
-  )
+  fromEvent<KeyboardEvent>(document, 'keydown').pipe(filter(ev => ev.key === s))
 
 const stopAll = (send: Send) =>
   key('s').pipe(
@@ -161,7 +160,7 @@ connectWS('control')
                       .toLowerCase()
                     return playAudio(`voices/${v}.mp3`).pipe(
                       catchError(err => {
-                        console.warn('MISSING AUDIO', x, v)
+                        console.warn('MISSING AUDIO', err, x, v)
                         return of(true)
                       })
                     )

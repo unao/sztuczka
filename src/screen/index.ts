@@ -65,7 +65,7 @@ const handle: ProtocolHandler = all => ({
   audioStart: ms =>
     ms.pipe(
       mergeMap(m =>
-        playAudio(m.url, false).pipe(
+        playAudio(m.url, { vibrate: false }).pipe(
           takeUntil(all.pipe(filter(a => a.type === 'audioStop')))
         )
       )
@@ -73,8 +73,15 @@ const handle: ProtocolHandler = all => ({
   callGet: ms =>
     ms.pipe(
       mergeMap(m =>
-        playAudio(`call/${m.who!}.mp3`, false).pipe(
-          takeUntil(all.pipe(filter(a => a.type === 'callStart')))
+        playAudio(`call/${m.who!}.mp3`, {
+          vibrate: false,
+          smoothStart: 2000
+        }).pipe(
+          takeUntil(
+            all.pipe(
+              filter(a => a.type === 'callStart' || a.type === 'callEnd')
+            )
+          )
         )
       )
     ),
@@ -82,7 +89,6 @@ const handle: ProtocolHandler = all => ({
     ms.pipe(
       mergeMap(m =>
         Observable.create((obs: Observer<HTMLDivElement>) => {
-          console.log(m)
           const div = document.createElement('div')
           document.body.append(div)
           div.innerHTML = smsUI(m.other || m.number, m.body, m.who)

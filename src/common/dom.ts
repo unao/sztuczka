@@ -1,5 +1,14 @@
-import { Observable, Observer } from 'rxjs'
+import {
+  Observable,
+  Observer,
+  timer,
+  animationFrameScheduler,
+  EMPTY,
+  merge,
+  of
+} from 'rxjs'
 import { loadFont } from './load-font'
+import { takeWhile, map, tap, switchMap, finalize } from 'rxjs/operators'
 
 Object.assign(document.body.style, { margin: 0, overflow: 'hidden' })
 
@@ -18,20 +27,71 @@ for (let i = 0; i < 30; i++) {
   pattern.push(1000)
 }
 
-export const playAudio = (name: string, vibrate = true) =>
-  Observable.create((obs: Observer<any>) => {
+export const smoothVolume = (
+  el: HTMLAudioElement,
+  op: {
+    to: number
+    duration: number
+  }
+) => {
+  const start = Date.now()
+  const from = el.volume
+  return timer(0, 1, animationFrameScheduler).pipe(
+    map(() => (Date.now() - start) / op.duration),
+    takeWhile(progress => progress < 1),
+    map(p => from + p * (op.to - from)),
+    map(v => Math.min(1, Math.max(0, v))),
+    tap(x => (el.volume = x)),
+    finalize(() => (el.volume = op.to))
+  )
+}
+
+export const playAudio = (
+  name: string,
+  options?: {
+    vibrate?: boolean
+    smoothStart?: number
+    smoothEnd?: number
+  }
+): Observable<HTMLAudioElement> => {
+  const op = Object.assign(
+    {
+      vibrate: true,
+      smoothStart: 0,
+      smoothEnd: 0
+    },
+    options || {}
+  )
+  return Observable.create((obs: Observer<any>) => {
     const el = document.createElement('audio')
     el.src = name.startsWith('https') ? name : `/assets/${name}`
     document.body.appendChild(el)
+    el.volume = 0
     el.play().catch(e => {
       obs.error(e)
     })
     el.onended = () => obs.complete()
     obs.next(el)
-    vibrate && navigator.vibrate(pattern)
+    op.vibrate && navigator.vibrate(pattern)
     return () => {
-      vibrate && navigator.vibrate(0)
-      el.pause()
-      el.remove()
+      op.vibrate && navigator.vibrate(0)
+      smoothVolume(el, { to: 0, duration: op.smoothEnd })
+        .pipe(
+          finalize(() => {
+            el.pause()
+            el.remove()
+          })
+        )
+        .subscribe()
     }
-  })
+  }).pipe(
+    switchMap((el: HTMLAudioElement) =>
+      merge(
+        of(el),
+        smoothVolume(el, { to: 1, duration: op.smoothStart }).pipe(
+          switchMap(() => EMPTY)
+        )
+      )
+    )
+  )
+}
