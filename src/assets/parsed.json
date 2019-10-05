@@ -7184,12 +7184,6 @@
             "type": "audioStart",
             "what": "audioStart -- sound/waterphone1.mp3",
             "url": "sound/waterphone1.mp3"
-          },
-          {
-            "id": "23_41427186",
-            "type": "audioWait",
-            "what": "audioWait -- sound/waterphone1.mp3",
-            "url": "sound/waterphone1.mp3"
           }
         ]
       },
@@ -11349,12 +11343,6 @@
             "variant": ""
           },
           {
-            "id": "38_236234229",
-            "type": "audioWait",
-            "what": "audioWait -- ",
-            "url": ""
-          },
-          {
             "id": "38_m895628653",
             "type": "msgGet",
             "who": "CZAREK",
@@ -11603,12 +11591,6 @@
             "number": "",
             "body": "",
             "variant": ""
-          },
-          {
-            "id": "40_236234229",
-            "type": "audioWait",
-            "what": "audioWait -- ",
-            "url": ""
           },
           {
             "type": "desc",

@@ -74,7 +74,7 @@ const handle: ProtocolHandler = all => ({
     ),
   audioStart: ms =>
     ms.pipe(
-      mergeMap(m =>
+      switchMap(m =>
         playAudio(m.url, { vibrate: false }).pipe(
           takeUntil(all.pipe(filter(a => a.type === 'audioStop')))
         )
@@ -85,7 +85,8 @@ const handle: ProtocolHandler = all => ({
       switchMap(m =>
         playAudio(`call/${m.who!}.mp3`, {
           vibrate: false,
-          smoothStart: 3000
+          smoothStart: 2000,
+          smoothEnd: 0
         }).pipe(
           repeat(),
           takeUntil(

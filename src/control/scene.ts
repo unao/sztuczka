@@ -1,6 +1,7 @@
 import { Plot, Say as _Say } from './state'
-import { BehaviorSubject, merge, fromEvent, EMPTY, Subject } from 'rxjs'
-import { filter, tap, map, switchMap, throttleTime } from 'common'
+import { BehaviorSubject, merge, fromEvent, EMPTY, Subject, timer } from 'rxjs'
+import { filter, tap, map, switchMap, throttleTime, throttle } from 'common'
+import { type } from 'os'
 
 type Say = _Say & { next: () => Say | undefined }
 
@@ -32,8 +33,6 @@ const txtUI = (plot: Plot) =>
     <button id="next-scene" style="padding:8px;margin:8px">Następna</button>
   </div>`
 
-const forceNext = new Subject<unknown>()
-
 const el = (i: string) => document.getElementById(`txt-${i}`)! as HTMLDivElement
 const sel = (s?: Say & { next: () => Say | undefined }) => {
   if (s) {
@@ -47,20 +46,17 @@ const sel = (s?: Say & { next: () => Say | undefined }) => {
       say: s,
       el: e
     })
-    if (
-      s.type !== 'say' &&
-      s.type !== 'audioWait' &&
-      s.type !== 'audioStart' &&
-      s.type !== 'callGet'
-    ) {
-      forceNext.next()
-    }
   } else {
     current.next({
       say: undefined,
       el: current.value.el
     })
   }
+}
+
+const typeToThrottle: { [K in string]: number } = {
+  say: 200,
+  audioStart: 500
 }
 
 export const handleScene = (
@@ -90,11 +86,16 @@ export const handleScene = (
     merge(
       fromEvent(document.getElementById('next-scene')!, 'click'),
       merge(
-        forceNext,
         fromEvent<KeyboardEvent>(document, 'keydown').pipe(
           filter(e => e.key === 'ArrowDown'),
           tap(e => e.preventDefault()),
-          throttleTime(200)
+          throttle(ev =>
+            timer(
+              typeToThrottle[
+                (current.value.say && current.value.say.type) || ''
+              ] || 0
+            )
+          )
         )
       ).pipe(
         tap(() => sel(current.value.say && current.value.say.next())),

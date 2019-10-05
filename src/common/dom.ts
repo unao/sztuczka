@@ -63,8 +63,8 @@ export const playAudio = (
       smoothStart: 0,
       smoothEnd: 0
     },
-    options || {},
-    cfg
+    cfg,
+    options || {}
   )
   return Observable.create((obs: Observer<any>) => {
     const el = document.createElement('audio')

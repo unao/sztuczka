@@ -3727,7 +3727,7 @@
                To zaćmienie źle na nas wpływa.
 
                     audioStart_sound/waterphone1.mp3
-                    audioWait_sound/waterphone1.mp3
+
 
                                    SCENA 25
 
@@ -6043,8 +6043,6 @@
 
                     msgShow_sms_CZAREK_Marika!505843759_Zadzwoń! to pilne!
 
-                    audioWait__
-
                     msgGet_sms_CZAREK_Ewa!882683498
 
                     msgShow_sms_CZAREK_Ewa!882683498_Pragnęłam Cię dziś BARDZO
@@ -6166,7 +6164,6 @@
                                    SCENA 41
 
                     msgGet_sound_KRYSTIAN__
-                    audioWait__
 
                     Światło - szperacz - drzwi, którymi wyszedł
                     KRYSTIAN.

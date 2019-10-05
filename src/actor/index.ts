@@ -27,8 +27,8 @@ const handle = (a: Actor, send: Send): ProtocolHandler => all => ({
     ms.pipe(switchMap(m => playAudio(`${m.kind}/${a}${m.variant || ''}.mp3`))),
   callGet: ms =>
     ms.pipe(
-      switchMap(c =>
-        playAudio(`call/${a}.mp3`, { smoothStart: 2000 }).pipe(
+      switchMap(() =>
+        playAudio(`call/${a}.mp3`, { smoothStart: 2000, smoothEnd: 0 }).pipe(
           repeat(),
           takeUntil(
             all.pipe(
