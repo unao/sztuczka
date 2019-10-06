@@ -20,8 +20,6 @@ import { setCurrent } from './text'
 import { merge, fromEvent } from 'rxjs'
 import { logic } from './actions'
 
-import { callEndBtn } from '../screen/ui'
-
 const handle = (a: Actor, send: Send): ProtocolHandler => all => ({
   vibrate: ms => ms.pipe(tap(() => navigator.vibrate([2000]))),
   txt: ms => ms.pipe(tap(setCurrent)),
@@ -29,31 +27,25 @@ const handle = (a: Actor, send: Send): ProtocolHandler => all => ({
     ms.pipe(switchMap(m => playAudio(`${m.kind}/${a}${m.variant || ''}.mp3`))),
   callGet: ms =>
     ms.pipe(
+      tap(x => console.log('MSG', x)),
       switchMap(() => {
-        document.body.insertAdjacentHTML(
-          'beforeend',
-          callEndBtn(
-            'call-end-btn',
-            'position:fixed; z-index:50; bottom: 64px; left: 40vw;transform: scale(2)'
-          )
-        )
-        const btn = document.getElementById('call-end-btn')!
+        const btn = document.getElementById('call-start-btn')!
         return playAudio(`call/${a}.mp3`, {
           smoothStart: 2000,
           smoothEnd: 0
         }).pipe(
+          delay(200),
+          tap(() => (btn.style.display = 'flex')),
           repeat(),
           takeUntil(
             merge(
-              fromEvent(document, 'click').pipe(
-                filter(e => !!e.target && (e.target as any).id === btn.id)
-              ),
+              fromEvent(btn, 'click'),
               all.pipe(
                 filter(x => x.type === 'callStart' || x.type === 'callEnd')
               )
             )
           ),
-          finalize(() => btn.remove())
+          finalize(() => (btn.style.display = 'none'))
         )
       })
     ),

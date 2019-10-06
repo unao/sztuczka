@@ -15,6 +15,7 @@ import {
 } from '../common'
 import { fromEvent, merge, of } from 'rxjs'
 import { text } from './text'
+import { callStartBtn } from 'screen/ui'
 
 const ps = new URLSearchParams(location.search)
 
@@ -73,6 +74,14 @@ export const init = () =>
       ${text(a.actor)}
       <video style="z-index:-1;position:fixed" src="/assets/eclipse.mp4" autoplay loop></video>
       `)
+    ),
+    tap(() =>
+      document.body.insertAdjacentHTML(
+        'beforeend',
+        callStartBtn(
+          'display:none;position:fixed;z-index:50;bottom:64px;left:40vw;transform:scale(3)'
+        )
+      )
     ),
     tap(() => setTimeout(preventBack, 1000)),
     retryWhen(errs =>
