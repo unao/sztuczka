@@ -62,7 +62,6 @@ init()
   .pipe(
     switchMap(x =>
       merge(
-        // playAudio('sound/silence.mp3', { vibrate: false }).pipe(repeat()),
         x.ws.handle(handle(x.actor, x.ws.send)),
         logic(document.body)
       )

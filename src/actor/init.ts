@@ -71,6 +71,7 @@ export const init = () =>
       render(`
       <h1>${a.actor}</h1>
       ${text(a.actor)}
+      <video style="z-index:-1;position:fixed" src="/assets/eclipse.mp4" autoplay loop></video>
       `)
     ),
     tap(() => setTimeout(preventBack, 1000)),
