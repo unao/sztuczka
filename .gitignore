@@ -5,3 +5,4 @@ build/
 cert/firebase.json
 src/assets/recs
 src/assets/audio
+src/assets/selfie
