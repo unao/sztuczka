@@ -45,7 +45,9 @@ const handle = (a: Actor, send: Send): ProtocolHandler => all => ({
           repeat(),
           takeUntil(
             merge(
-              fromEvent(btn, 'click'),
+              fromEvent(document, 'click').pipe(
+                filter(e => !!e.target && (e.target as any).id === btn.id)
+              ),
               all.pipe(
                 filter(x => x.type === 'callStart' || x.type === 'callEnd')
               )
