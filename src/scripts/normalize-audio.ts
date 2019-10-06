@@ -19,10 +19,10 @@ from(['call', 'sms', 'sound', 'voices'])
             input: input,
             output: output,
             loudness: {
-              normalization: 'ebuR128',
+              normalization: 'peak',
               target: {
-                input_i: -23,
-                input_lra: 7.0,
+                input_i: -13,
+                input_lra: 5,
                 input_tp: -2.0
               }
             }
