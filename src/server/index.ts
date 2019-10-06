@@ -6,22 +6,24 @@ import * as path from 'path'
 import { localIP } from './utils'
 import { Role, Message } from '../common'
 
-const inAssets = (s: string) => path.resolve(__dirname, '../assets', s)
+const inTemp = (s: string) => path.resolve(__dirname, '../../', s)
 
 const initSelfie = () => {
-  if (!fs.existsSync(inAssets('selfie'))) {
-    fs.mkdirSync(inAssets('selfie'))
+  if (!fs.existsSync(inTemp('selfie'))) {
+    fs.mkdirSync(inTemp('selfie'))
   }
   const sessionId = Date.now()
   let fileId = 0
-  fs.mkdirSync(inAssets(`selfie/${sessionId}`))
-  return (img: string) =>
+  fs.mkdirSync(inTemp(`selfie/${sessionId}`))
+  return (img: string) => {
+    const i = img.replace(/^data:image\/png;base64,/, '')
     fs.writeFile(
-      inAssets(`selfie/${sessionId}/${fileId++}.png`),
-      img.replace(/^data:image\/png;base64,/, ''),
+      inTemp(`selfie/${sessionId}/${fileId++}-${Date.now()}.png`),
+      i,
       'base64',
-      () => null
+      err => err && console.error(err)
     )
+  }
 }
 
 const run = (port = 3356) => {

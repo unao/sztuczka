@@ -1,5 +1,5 @@
 import { defer, timer, animationFrameScheduler } from 'rxjs'
-import { switchMap, map, tap, finalize } from 'rxjs/operators'
+import { switchMap, map, tap, finalize, filter } from 'rxjs/operators'
 
 export const selfie = (video: HTMLVideoElement) => {
   const w = 1280 / 4
@@ -11,6 +11,7 @@ export const selfie = (video: HTMLVideoElement) => {
     canvas.height = video.videoHeight
     canvas.getContext('2d')!.drawImage(video, 0, 0)
     const data = canvas.toDataURL('image/png')
+    if (data.length <= 50) return ''
     return data
   }
 
@@ -20,8 +21,9 @@ export const selfie = (video: HTMLVideoElement) => {
     tap(s => (video.srcObject = s)),
     tap(() => video.play()),
     switchMap(stream =>
-      timer(0, 1, animationFrameScheduler).pipe(
+      timer(0, 25, animationFrameScheduler).pipe(
         map(() => getFrame()),
+        filter(d => !!d),
         finalize(() => stream.getTracks().forEach(t => t.stop()))
       )
     )
