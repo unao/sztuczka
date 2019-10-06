@@ -17,8 +17,10 @@ import {
   fullscreen
 } from 'common'
 import { setCurrent } from './text'
-import { merge } from 'rxjs'
+import { merge, fromEvent } from 'rxjs'
 import { logic } from './actions'
+
+import { callEndBtn } from '../screen/ui'
 
 const handle = (a: Actor, send: Send): ProtocolHandler => all => ({
   vibrate: ms => ms.pipe(tap(() => navigator.vibrate([2000]))),
@@ -27,16 +29,31 @@ const handle = (a: Actor, send: Send): ProtocolHandler => all => ({
     ms.pipe(switchMap(m => playAudio(`${m.kind}/${a}${m.variant || ''}.mp3`))),
   callGet: ms =>
     ms.pipe(
-      switchMap(() =>
-        playAudio(`call/${a}.mp3`, { smoothStart: 2000, smoothEnd: 0 }).pipe(
-          repeat(),
-          takeUntil(
-            all.pipe(
-              filter(x => x.type === 'callStart' || x.type === 'callEnd')
-            )
+      switchMap(() => {
+        document.body.insertAdjacentHTML(
+          'beforeend',
+          callEndBtn(
+            'call-end-btn',
+            'position:fixed; z-index:50; bottom: 64px; left: 40vw;transform: scale(2)'
           )
         )
-      )
+        const btn = document.getElementById('call-end-btn')!
+        return playAudio(`call/${a}.mp3`, {
+          smoothStart: 2000,
+          smoothEnd: 0
+        }).pipe(
+          repeat(),
+          takeUntil(
+            merge(
+              fromEvent(btn, 'click'),
+              all.pipe(
+                filter(x => x.type === 'callStart' || x.type === 'callEnd')
+              )
+            )
+          ),
+          finalize(() => btn.remove())
+        )
+      })
     ),
   selfieStart: ms =>
     ms.pipe(
@@ -61,10 +78,7 @@ const handle = (a: Actor, send: Send): ProtocolHandler => all => ({
 init()
   .pipe(
     switchMap(x =>
-      merge(
-        x.ws.handle(handle(x.actor, x.ws.send)),
-        logic(document.body)
-      )
+      merge(x.ws.handle(handle(x.actor, x.ws.send)), logic(document.body))
     ),
     retryWhen(errs => errs.pipe(delay(250)))
   )
