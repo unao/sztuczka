@@ -6137,9 +6137,10 @@
             "id": "20_2034934642"
           },
           {
-            "type": "desc",
-            "what": "PROJEKTOR - zrzut ekranu tel. KRYSTIANA - animowany człowieczek pokazuje jak robić pajacyki.",
-            "id": ""
+            "id": "20_252438610",
+            "type": "img",
+            "who": "",
+            "what": "jumping-jacks.gif"
           },
           {
             "type": "say",
@@ -6243,6 +6244,12 @@
             "who": "KRYSTIAN",
             "what": "Właśnie je spalam !",
             "id": "20_1452747612"
+          },
+          {
+            "id": "20_1917542207",
+            "type": "img",
+            "who": "",
+            "what": "image-stop"
           },
           {
             "type": "desc",
@@ -11610,10 +11617,22 @@
             "url": "sound/KRYSTIANjacks-end.mp3"
           },
           {
+            "id": "40_252438610",
+            "type": "img",
+            "who": "",
+            "what": "jumping-jacks.gif"
+          },
+          {
             "id": "40_m822481308",
             "type": "audioStop",
             "what": "audioStop -- sound/KRYSTIANjacks-end.mp3",
             "url": "sound/KRYSTIANjacks-end.mp3"
+          },
+          {
+            "id": "40_1917542207",
+            "type": "img",
+            "who": "",
+            "what": "image-stop"
           },
           {
             "type": "desc",

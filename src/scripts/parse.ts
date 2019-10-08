@@ -85,12 +85,20 @@ const t = fs
       }
       const aux = (line: string) => {
         const [_, type] = line.split('_')
-        console.log(type)
         return {
           id: id(type, line),
           type,
           who: '',
           what: `${type}`
+        }
+      }
+      const img = (line: string) => {
+        const [_, url] = line.split('_')
+        return {
+          id: id('img', line),
+          type: 'img',
+          who: '',
+          what: url || 'image-stop'
         }
       }
       if (n[0] === 35) {
@@ -138,6 +146,8 @@ const t = fs
             s.plot.push(selfie(n[1]))
           } else if (n[1].startsWith('aux')) {
             s.plot.push(aux(n[1]))
+          } else if (n[1].startsWith('img')) {
+            s.plot.push(img(n[1]))
           } else {
             s.plot.push({
               type: 'desc',

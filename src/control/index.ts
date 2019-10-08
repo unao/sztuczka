@@ -119,6 +119,19 @@ connectWS('control')
               switchMap(x => {
                 if (x) {
                   ws.send('txt', x.id)
+                  if (x.type === 'img') {
+                    ws.send(
+                      'img',
+                      {
+                        url:
+                          x.what === 'image-stop'
+                            ? ''
+                            : `/assets/img/${x.what}`,
+                        duration: 10 * 60000
+                      },
+                      'screen'
+                    )
+                  }
                   if (x.type === 'msgGet') {
                     if (conn.includes(x.who! as Role)) {
                       ws.send('msgGet', x as any, x.who! as any)

@@ -64,13 +64,15 @@ const handle: ProtocolHandler = all => ({
     ),
   img: ms =>
     ms.pipe(
-      tap(m => {
-        img.style.display = 'block'
-        img.src = m.url
-      }),
-      switchMap(m =>
-        timer(m.duration).pipe(tap(() => (img.style.display = 'none')))
-      )
+      switchMap(m => {
+        if (m.url) {
+          img.style.display = 'block'
+          img.src = m.url
+        }
+        return timer(m.url ? m.duration : 0).pipe(
+          tap(() => (img.style.display = 'none'))
+        )
+      })
     ),
   audioStart: ms =>
     ms.pipe(

@@ -3136,8 +3136,7 @@
           ANIELA:
                Dokąd idziesz ? Co to takiego ?
 
-                    PROJEKTOR - zrzut ekranu tel. KRYSTIANA -
-                    animowany człowieczek pokazuje jak robić pajacyki.
+                    img_jumping-jacks.gif
 
           KRYSTIAN:
                Program treningowy. Trwa dwanaście tygodni. Można
@@ -3190,6 +3189,8 @@
 
           KRYSTIAN:
                Właśnie je spalam !
+
+                    img_
 
                     KRYSTIAN zdyszany i zasapany przestaje ćwiczyć.
 
@@ -6164,8 +6165,11 @@
 
                                    SCENA 41
 
+                    img_jumping-jacks.gif
                     audioStart_sound/KRYSTIANjacks-end.mp3
+                    img_
                     audioStop_sound/KRYSTIANjacks-end.mp3
+                    
 
                     Światło - szperacz - drzwi, którymi wyszedł
                     KRYSTIAN.
