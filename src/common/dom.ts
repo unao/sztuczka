@@ -57,7 +57,6 @@ export const playAudio = (
   }
 ): Observable<HTMLAudioElement> => {
   const cfg = getAudioConfig(name)
-  console.log(cfg, name)
   const op = Object.assign(
     {
       vibrate: true,

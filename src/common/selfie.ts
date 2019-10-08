@@ -21,7 +21,7 @@ export const selfie = (video: HTMLVideoElement) => {
     tap(s => (video.srcObject = s)),
     tap(() => video.play()),
     switchMap(stream =>
-      timer(0, 25, animationFrameScheduler).pipe(
+      timer(0, 125, animationFrameScheduler).pipe(
         map(() => getFrame()),
         filter(d => !!d),
         finalize(() => stream.getTracks().forEach(t => t.stop()))

@@ -36,8 +36,12 @@ const progress = plot.reduce(
 document.body.innerHTML = `<div style="background-color:black;width:100vw;">
   <video src="/assets/eclipse.mp4" style="width:100vw;height:100vh"></video>
   <button id="fullscreen" style="z-index:10;position:absolute;top:0;left:0">fullscreen</button>
-  <img style="display:none;z-index:2;position:absolute;top:0;left:0;width:75vh;height:100vh"></img>
-</div>`
+  <div style="z-index:2;display:flex;justify-content:center;position:absolute;top:0;left:0;width:100vw;height:100vh">
+    <div style="width:75vh;height:100vh">
+      <img style="display:none;width:100%;height:100%;object-fit:contain"></img>
+    </div>
+  </div>
+  </div>`
 
 document.getElementById('fullscreen')!.onclick = () =>
   document.body.requestFullscreen()
@@ -46,7 +50,6 @@ document.body.onfullscreenchange = () =>
     'fullscreen'
   )!.style.display = document.fullscreenElement ? 'none' : 'block')
 
-// const vid = document.getElementsByTagName('video')[0]
 const img = document.getElementsByTagName('img')[0]
 
 const handle: ProtocolHandler = all => ({
