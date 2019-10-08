@@ -8881,8 +8881,19 @@
             "id": "27_m1931828064"
           },
           {
+            "id": "27_m773100804",
+            "type": "msgShow",
+            "who": "LEON",
+            "what": "msgShow:sms -- LEON -- Odpiszesz? Proszę...",
+            "kind": "sms",
+            "other": "Darek",
+            "number": "517849625",
+            "body": "Odpiszesz? Proszę...",
+            "variant": "frog"
+          },
+          {
             "type": "desc",
-            "what": "LEON nie zdążył zareagować i tel. przejmuje KAROLINA. KAROLINA czyta szybko i po cichu sms. msgShow_sms_LEON_Darek!517849625_Odpiszesz? Proszę..._frog (do Leona)",
+            "what": "LEON nie zdążył zareagować i tel. przejmuje KAROLINA. KAROLINA czyta szybko i po cichu sms. (do Leona)",
             "id": ""
           },
           {
@@ -8915,8 +8926,19 @@
             "id": "27_m89482801"
           },
           {
+            "id": "27_m589070209",
+            "type": "msgShow",
+            "who": "Darek",
+            "what": "msgShow:sms -- Darek -- Jestem na kolacji u znajomych. Odezwę się rano.",
+            "kind": "sms",
+            "other": "LEON",
+            "number": "517849625",
+            "body": "Jestem na kolacji u znajomych. Odezwę się rano.",
+            "variant": "frog"
+          },
+          {
             "type": "desc",
-            "what": "PROJEKTOR - stopniowo pojawia się teks pisany przez LEONA. (głośno mówi co pisze)",
+            "what": "(głośno mówi co pisze)",
             "id": ""
           },
           {
