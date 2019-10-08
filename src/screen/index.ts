@@ -15,9 +15,10 @@ import {
 } from 'common'
 import * as play from '../assets/parsed.json'
 import { merge, Observable, timer, of } from 'rxjs'
-import { run } from './phone'
-import { smsUI } from './ui'
+import { phone } from './phone'
+// import { smsUI } from './ui'
 import { Observer } from 'firebase'
+import { content } from './content'
 
 const txt = play['AKT I'].scenes.concat(play['AKT II'].scenes)
 const plot = txt.reduce((acc, t) => acc.concat(t.plot), [] as Array<{
@@ -39,6 +40,7 @@ const progress = plot.reduce(
 document.body.innerHTML = `<div style="background-color:black;width:100vw;">
   <video src="/assets/eclipse.mp4" style="width:100vw;height:100vh"></video>
   <button id="fullscreen" style="z-index:10;position:absolute;top:0;left:0">fullscreen</button>
+  <div id="content"></div>
   <img style="display:none;z-index:2;position:absolute;top:0;left:0;width:75vh;height:100vh"></img>
 </div>`
 
@@ -103,7 +105,7 @@ const handle: ProtocolHandler = all => ({
         Observable.create((obs: Observer<HTMLDivElement>) => {
           const div = document.createElement('div')
           document.body.append(div)
-          div.innerHTML = smsUI(m.other || m.number, m.body, m.who)
+          // div.innerHTML = smsUI(m.other || m.number, m.body, m.who)
           obs.next(div.children[0]! as any)
           return () => div.remove()
         }).pipe(
@@ -125,7 +127,8 @@ connectWS('screen')
   .pipe(
     switchMap(ws =>
       merge(
-        run(document.body.children[0] as HTMLDivElement, ws.handle),
+        phone(document.body.children[0] as HTMLDivElement, ws.handle),
+        content(document.body.children[0] as HTMLDivElement, ws.handle),
         ws.handle(handle)
       )
     ),

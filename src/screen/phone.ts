@@ -14,22 +14,24 @@ import { initPhoneUI, PhoneUI } from './ui'
 
 const size = fromEvent(window, 'resize').pipe(
   startWith(true),
-  map(() => ({ w: window.innerWidth, h: window.innerHeight })),
-  tap(x => console.log(x))
+  map(() => ({ w: window.innerWidth, h: window.innerHeight }))
 )
 
-const updateLayout = (c: PhoneUI) => (s: { w: number; h: number }) => {
+const updateLayout = (
+  c: { width: number; height: number },
+  wrap: HTMLElement
+) => (s: { w: number; h: number }) => {
   const h = s.h - 40
   const r = h / c.height
   const w = c.width * r
 
-  c.wrap.style.top = '20px'
-  c.wrap.style.left = `${(s.w - w) / 2}px`
-  c.wrap.style.transform = `scale(${r})`
-  c.wrap.style.transformOrigin = `top left`
+  wrap.style.top = '20px'
+  wrap.style.left = `${(s.w - w) / 2}px`
+  wrap.style.transform = `scale(${r})`
+  wrap.style.transformOrigin = `top left`
 }
 
-export const run = (
+export const phone = (
   root: HTMLDivElement,
   handle: (h: ProtocolHandler) => Observable<unknown>
 ) => {
@@ -57,5 +59,5 @@ export const run = (
     callLoud: cs => cs.pipe(tap(phone.loud))
   })
 
-  return merge(size.pipe(tap(updateLayout(phone))), handle(h))
+  return merge(size.pipe(tap(updateLayout(phone, phone.wrap))), handle(h))
 }

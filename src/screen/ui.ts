@@ -1,50 +1,28 @@
 import { Actor } from 'common'
 
-const m = '16px'
-export const pos: {
-  [K in Actor]: Partial<{ [K in 'left' | 'right' | 'top' | 'bottom']: string }>
-} = {
-  ANIELA: {
-    top: m,
-    right: m
-  },
-  CZAREK: {
-    top: `33vh`,
-    right: m
-  },
-  ROBERT: {
-    bottom: m,
-    right: m
-  },
-  EWA: {
-    bottom: m,
-    left: `33vw`
-  },
-  KAROLINA: {
-    bottom: m,
-    left: m
-  },
-  LEON: {
-    top: `33vh`,
-    left: m
-  },
-  KRYSTIAN: {
-    top: m,
-    left: m
-  }
+export const centerContent = (
+  c: { width: number; height: number },
+  wrap: HTMLElement
+) => (s: { w: number; h: number }) => {
+  const h = s.h - 40
+  const r = h / c.height
+  const w = c.width * r
+
+  wrap.style.top = '20px'
+  wrap.style.left = `${(s.w - w) / 2}px`
+  wrap.style.transform = `scale(${r})`
+  wrap.style.transformOrigin = `top left`
 }
 
-const toPos = (a: Actor) => `position:absolute;z-index:3;
-  ${Object.keys(pos[a])
-    .map(k => `${k}:${pos[a][k as 'left']}`)
-    .join(';')}`
-
+interface SmsUI {
+  background: string
+  color: string
+}
 const trans = `opacity:1;filter:blur(0px);transition: all 0.4s ease-in-out;`
 
 export const smsUI = (who: string, msg: string, actor: Actor) =>
   `<div style="max-width:30vw;max-height:30vh;color:white;
-  ${trans}
-  ${toPos(actor)}">
+  ${trans}">
     <b style="font-size:42px">${who.toUpperCase()}</b>
     <div style="font-size:48px;max-width:320px;
       border-radius:16px;
