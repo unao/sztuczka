@@ -6081,15 +6081,15 @@
         "title": "SCENA 21",
         "plot": [
           {
-            "id": "20_449191898",
+            "id": "20_m205935382",
             "type": "msgGet",
             "who": "KRYSTIAN",
-            "what": "msgGet:sound -- KRYSTIAN",
-            "kind": "sound",
-            "other": "",
+            "what": "msgGet:sms -- KRYSTIAN -- hop-hop",
+            "kind": "sms",
+            "other": "JJ",
             "number": "",
-            "body": "",
-            "variant": ""
+            "body": "hop-hop",
+            "variant": "jacks"
           },
           {
             "type": "desc",
@@ -11604,15 +11604,16 @@
         "title": "SCENA 41",
         "plot": [
           {
-            "id": "40_449191898",
-            "type": "msgGet",
-            "who": "KRYSTIAN",
-            "what": "msgGet:sound -- KRYSTIAN",
-            "kind": "sound",
-            "other": "",
-            "number": "",
-            "body": "",
-            "variant": ""
+            "id": "40_665035524",
+            "type": "audioStart",
+            "what": "audioStart -- sound/KRYSTIANjacks-end.mp3",
+            "url": "sound/KRYSTIANjacks-end.mp3"
+          },
+          {
+            "id": "40_m822481308",
+            "type": "audioStop",
+            "what": "audioStop -- sound/KRYSTIANjacks-end.mp3",
+            "url": "sound/KRYSTIANjacks-end.mp3"
           },
           {
             "type": "desc",

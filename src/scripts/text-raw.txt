@@ -3114,8 +3114,8 @@
 
                                    SCENA 21
 
-                    msgGet_sound_KRYSTIAN__
-
+                    msgGet_sms_KRYSTIAN_JJ_hop-hop_jacks
+          
                     PROJEKTOR - treningowa aplikacja KRYSTIANA.
 
           KAROLINA:
@@ -6164,7 +6164,8 @@
 
                                    SCENA 41
 
-                    msgGet_sound_KRYSTIAN__
+                    audioStart_sound/KRYSTIANjacks-end.mp3
+                    audioStop_sound/KRYSTIANjacks-end.mp3
 
                     Światło - szperacz - drzwi, którymi wyszedł
                     KRYSTIAN.
