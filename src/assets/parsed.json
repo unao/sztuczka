@@ -6592,6 +6592,12 @@
             "id": "22_m1288138273"
           },
           {
+            "id": "22_m2120965927",
+            "type": "img",
+            "who": "",
+            "what": "joga.png"
+          },
+          {
             "type": "say",
             "who": "KRYSTIAN",
             "what": "Iza przesyła czasem... aaałłł...",
@@ -6607,6 +6613,12 @@
             "who": "LEON",
             "what": "Ej, stłuczesz ekran.",
             "id": "22_m2132057595"
+          },
+          {
+            "id": "22_1917542207",
+            "type": "img",
+            "who": "",
+            "what": "image-stop"
           },
           {
             "type": "desc",
@@ -6664,6 +6676,12 @@
             "who": "CZAREK",
             "what": "Puszczaj ! Dziś wszyscy możemy zobaczyć.",
             "id": "22_m825954127"
+          },
+          {
+            "id": "22_m1325434202",
+            "type": "img",
+            "who": "",
+            "what": "joga.png"
           },
           {
             "type": "desc",
@@ -6793,6 +6811,12 @@
             "who": "LEON",
             "what": "Nie to yoga i \"powitanie słońca\".",
             "id": "22_66985876"
+          },
+          {
+            "id": "22_m685733632",
+            "type": "img",
+            "who": "",
+            "what": "image-stop"
           },
           {
             "type": "say",
@@ -7270,9 +7294,10 @@
             "id": "24_184210652"
           },
           {
-            "type": "desc",
-            "what": "PROJEKTOR - zrzut ekranu tel. ROBERTA - e-mail z booking.com. ROBERT wyciąga rękę z tel. i pokazuje wszystkim.",
-            "id": ""
+            "id": "24_m1510030731",
+            "type": "img",
+            "who": "",
+            "what": "booking.png"
           },
           {
             "type": "say",
@@ -7285,6 +7310,12 @@
             "who": "ROBERT",
             "what": "Teraz wiadomość Karoliny.",
             "id": "24_m1299590125"
+          },
+          {
+            "id": "24_1917542207",
+            "type": "img",
+            "who": "",
+            "what": "image-stop"
           },
           {
             "type": "say",
@@ -11611,21 +11642,15 @@
         "title": "SCENA 41",
         "plot": [
           {
-            "id": "40_665035524",
-            "type": "audioStart",
-            "what": "audioStart -- sound/KRYSTIANjacks-end.mp3",
-            "url": "sound/KRYSTIANjacks-end.mp3"
-          },
-          {
             "id": "40_252438610",
             "type": "img",
             "who": "",
             "what": "jumping-jacks.gif"
           },
           {
-            "id": "40_m822481308",
-            "type": "audioStop",
-            "what": "audioStop -- sound/KRYSTIANjacks-end.mp3",
+            "id": "40_665035524",
+            "type": "audioStart",
+            "what": "audioStart -- sound/KRYSTIANjacks-end.mp3",
             "url": "sound/KRYSTIANjacks-end.mp3"
           },
           {
@@ -11633,6 +11658,12 @@
             "type": "img",
             "who": "",
             "what": "image-stop"
+          },
+          {
+            "id": "40_m822481308",
+            "type": "audioStop",
+            "what": "audioStop -- sound/KRYSTIANjacks-end.mp3",
+            "url": "sound/KRYSTIANjacks-end.mp3"
           },
           {
             "type": "desc",

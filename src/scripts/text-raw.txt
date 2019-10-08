@@ -3394,6 +3394,8 @@
           LEON:
                Żeby podkreślić.
 
+                    img_joga.png
+
           KRYSTIAN:
                Iza przesyła czasem... aaałłł...
                          (robi wielkie oczy i zaciska usta)
@@ -3403,7 +3405,11 @@
                     na blat stołu ekranem do dołu.
 
           LEON:
+
+
                Ej, stłuczesz ekran.
+
+                    img_
 
                     ANIELA zaniemówiła. Patrzy na KRYSTIANA i też ma
                     zaciśnięte usta.
@@ -3437,6 +3443,8 @@
 
           CZAREK:
                Puszczaj ! Dziś wszyscy możemy zobaczyć.
+
+                    img_joga.png_
 
                     CZAREK odbiera tel. KRYSTIANOWI.
 
@@ -3519,6 +3527,8 @@
 
           LEON:
                Nie to yoga i "powitanie słońca".
+
+                    img__
 
           KAROLINA:
                Po rozwodzie przez parę lat nic, a teraz narzeczona,
@@ -3758,16 +3768,15 @@
                Niby czego ? Z booking.com. Potwierdzenie rezerwacji
                domku na Mazurach.
 
-                    PROJEKTOR - zrzut ekranu tel. ROBERTA - e-mail z
-                    booking.com.
-
-                    ROBERT wyciąga rękę z tel. i pokazuje wszystkim.
+                    img_booking.png
 
           EWA:
                Świetnie.
 
           ROBERT:
                Teraz wiadomość Karoliny.
+
+                    img_
 
           KAROLINA:
                Nooooo...
