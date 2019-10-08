@@ -5566,14 +5566,14 @@
             "variant": ""
           },
           {
-            "id": "18_1543144158",
+            "id": "18_942174714",
             "type": "msgShow",
             "who": "CZAREK",
-            "what": "msgShow:sms -- CZAREK -- Jutr⚽ gramy ⚽ 17:⚽⚽",
+            "what": "msgShow:sms -- CZAREK -- Jutr⚽ gramy ⚽<br />17:⚽⚽!",
             "kind": "sms",
             "other": "Roman",
             "number": "668541286",
-            "body": "Jutr⚽ gramy ⚽ 17:⚽⚽",
+            "body": "Jutr⚽ gramy ⚽<br />17:⚽⚽!",
             "variant": ""
           },
           {
@@ -5594,14 +5594,14 @@
             "variant": ""
           },
           {
-            "id": "18_m235477710",
+            "id": "18_m547437234",
             "type": "msgShow",
             "who": "LEON",
-            "what": "msgShow:sms -- LEON -- Jutr⚽ gramy ⚽ 17:⚽⚽",
+            "what": "msgShow:sms -- LEON -- Jutr⚽ gramy ⚽<br />17:⚽⚽!",
             "kind": "sms",
             "other": "Roman",
             "number": "668541286",
-            "body": "Jutr⚽ gramy ⚽ 17:⚽⚽",
+            "body": "Jutr⚽ gramy ⚽<br />17:⚽⚽!",
             "variant": ""
           },
           {
@@ -5633,14 +5633,14 @@
             "variant": ""
           },
           {
-            "id": "18_1320911302",
+            "id": "18_2052629218",
             "type": "msgShow",
             "who": "ROBERT",
-            "what": "msgShow:sms -- ROBERT -- Jutr⚽ gramy ⚽ 17:⚽⚽",
+            "what": "msgShow:sms -- ROBERT -- Jutr⚽ gramy ⚽<br />17:⚽⚽!",
             "kind": "sms",
             "other": "Roman",
             "number": "668541286",
-            "body": "Jutr⚽ gramy ⚽ 17:⚽⚽",
+            "body": "Jutr⚽ gramy ⚽<br />17:⚽⚽!",
             "variant": ""
           },
           {
@@ -8882,7 +8882,7 @@
           },
           {
             "type": "desc",
-            "what": "LEON nie zdążył zareagować i tel. przejmuje KAROLINA. KAROLINA czyta szybko i po cichu sms. PROJEKTOR - zrzut ekranu - DAREK \"Odpiszesz ? Proszę.\" (do Leona)",
+            "what": "LEON nie zdążył zareagować i tel. przejmuje KAROLINA. KAROLINA czyta szybko i po cichu sms. msgShow_sms_LEON_Darek!517849625_Odpiszesz? Proszę..._frog (do Leona)",
             "id": ""
           },
           {
@@ -11382,12 +11382,12 @@
             "id": "38_1682430601"
           },
           {
-            "id": "38_m756835469",
+            "id": "38_m203963980",
             "type": "msgShow",
-            "who": "CZAREK",
-            "what": "msgShow:sms -- CZAREK -- A ja byłem rozgrzany do czerwoności",
+            "who": "EWA",
+            "what": "msgShow:sms -- EWA -- A ja byłem rozgrzany do czerwoności",
             "kind": "sms",
-            "other": "Ewa",
+            "other": "Czarek",
             "number": "882683498",
             "body": "A ja byłem rozgrzany do czerwoności",
             "variant": ""

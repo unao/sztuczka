@@ -2900,14 +2900,14 @@
 
                     msgGet_sms_CZAREK_Roman!668541286
                     
-                    msgShow_sms_CZAREK_Roman!668541286_Jutr⚽ gramy ⚽ 17:⚽⚽
+                    msgShow_sms_CZAREK_Roman!668541286_Jutr⚽ gramy ⚽<br />17:⚽⚽!
 
           ANIELA:
                O ! SMS.
 
                     msgGet_sms_LEON_Roman!668541286
                     
-                    msgShow_sms_LEON_Roman!668541286_Jutr⚽ gramy ⚽ 17:⚽⚽
+                    msgShow_sms_LEON_Roman!668541286_Jutr⚽ gramy ⚽<br />17:⚽⚽!
                
                O ! Dwa !
 
@@ -2917,7 +2917,7 @@
 
                     msgGet_sms_ROBERT_Roman!668541286
                     
-                    msgShow_sms_ROBERT_Roman!668541286_Jutr⚽ gramy ⚽ 17:⚽⚽
+                    msgShow_sms_ROBERT_Roman!668541286_Jutr⚽ gramy ⚽<br />17:⚽⚽!
 
           LEON:
                Potwierdza jutro.
@@ -4583,10 +4583,9 @@
 
                     KAROLINA czyta szybko i po cichu sms.
 
-                    PROJEKTOR - zrzut ekranu - DAREK "Odpiszesz ?
-                    Proszę."
-
           KAROLINA:
+                    msgShow_sms_LEON_Darek!517849625_Odpiszesz? Proszę..._frog
+
                          (do Leona)
                Darek prosi o odpowiedź.
 
@@ -6061,7 +6060,7 @@
                Do Ewy i Roberta. Dziękuję im za wieczór.
 
           ANIELA:
-                    msgShow_sms_CZAREK_Ewa!882683498_A ja byłem rozgrzany do czerwoności
+                    msgShow_sms_EWA_Czarek!882683498_A ja byłem rozgrzany do czerwoności
 
                Świetnie było, prawda ?
 

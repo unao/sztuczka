@@ -1,5 +1,3 @@
-import { Actor } from 'common'
-
 export const centerContent = (
   c: { width: number; height: number },
   wrap: HTMLElement
@@ -15,17 +13,6 @@ export const centerContent = (
 }
 
 const trans = `opacity:1;filter:blur(0px);transition: all 0.4s ease-in-out;`
-
-const messages = {
-  gray: {
-    color: 'black',
-    back: '#e5e5ea'
-  },
-  blue: {
-    color: 'white',
-    back: '#0d86fe'
-  }
-}
 
 export const smsUI = (from: string, to: string, msg: string) =>
   `<div style="${trans};display:flex;flex-direction:column;align-items:center">
