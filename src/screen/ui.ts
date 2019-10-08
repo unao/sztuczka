@@ -14,20 +14,42 @@ export const centerContent = (
   wrap.style.transformOrigin = `top left`
 }
 
-interface SmsUI {
-  background: string
-  color: string
-}
 const trans = `opacity:1;filter:blur(0px);transition: all 0.4s ease-in-out;`
 
-export const smsUI = (who: string, msg: string, actor: Actor) =>
-  `<div style="max-width:30vw;max-height:30vh;color:white;
-  ${trans}">
-    <b style="font-size:42px">${who.toUpperCase()}</b>
-    <div style="font-size:48px;max-width:320px;
-      border-radius:16px;
-      background:black;padding:32px;
-      border:2px solid white">
+const messages = {
+  gray: {
+    color: 'black',
+    back: '#e5e5ea'
+  },
+  blue: {
+    color: 'white',
+    back: '#0d86fe'
+  }
+}
+
+export const smsUI = (from: string, to: string, msg: string) =>
+  `<div style="${trans};display:flex;flex-direction:column;align-items:center">
+    <div style="display:flex;width:100%;justify-content:space-between">
+      <div style="font-size:20px;
+        font-weight: bold;
+        background:#e5e5ea;color:black;
+        border-radius:8px 8px 0 0;
+        ">&nbsp;${from.toUpperCase()}&nbsp;</div>
+        <div style="font-size:20px;
+        font-weight: bold;
+        background:#0d86fe;
+        color: white;
+        border-radius:8px 8px 0 0;
+        ">&nbsp;${to.toUpperCase()}&nbsp;</div>
+    </div>
+    <div id="msg-out" style="font-size:32px;width:320px;
+      border-radius:12px;
+      padding:12px;
+      background:#0d86fe;
+      color: white;
+      border-top: 1px solid #e5e5ea;
+      margin-bottom:12px;
+      ">
       ${msg}
     </div>
   </div>`
