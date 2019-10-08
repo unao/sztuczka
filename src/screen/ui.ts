@@ -29,7 +29,7 @@ export const smsUI = (from: string, to: string, msg: string) =>
         border-radius:8px 8px 0 0;
         ">&nbsp;${to.toUpperCase()}&nbsp;</div>
     </div>
-    <div id="msg-out" style="font-size:32px;width:320px;
+    <div class="msg" style="font-size:32px;width:320px;
       border-radius:12px;
       padding:12px;
       background:#0d86fe;

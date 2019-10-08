@@ -1,4 +1,4 @@
-import { Observable, fromEvent, merge, Observer } from 'rxjs'
+import { Observable, fromEvent, merge, Observer, of, from, timer } from 'rxjs'
 
 import {
   ProtocolHandler,
@@ -9,9 +9,15 @@ import {
   delay,
   take,
   debounceTime,
-  filter
+  filter,
+  switchMap,
+  scan,
+  concatMap,
+  delayWhen,
+  takeUntil
 } from '../common'
 import { centerContent, smsUI } from './ui'
+import bodyParser = require('body-parser')
 
 type Config = ReturnType<typeof config>
 const config = () => {
@@ -53,28 +59,68 @@ export const content = (
   const cont = container(root, cfg)
   return merge(
     size.pipe(tap(centerContent(cfg, cont))),
-    handle(() => ({
+    handle(all => ({
       msgShow: ms =>
         ms.pipe(
           mergeMap(m =>
-            Observable.create((obs: Observer<HTMLDivElement>) => {
-              const div = document.createElement('div')
-              cont.append(div)
-              div.innerHTML = smsUI(m.other || m.number, m.who, m.body)
-              obs.next(div.children[0]! as any)
-            }).pipe(
-              delay(8000),
-              tap((d: HTMLDivElement) =>
-                Object.assign(d.style, {
-                  opacity: '0',
-                  filter: 'blur(25px)'
+            Observable.create(
+              (
+                obs: Observer<{
+                  el: HTMLDivElement
+                  body: string
+                  type: boolean
+                }>
+              ) => {
+                const div = document.createElement('div')
+                cont.append(div)
+                div.innerHTML = smsUI(m.other || m.number, m.who, '')
+                console.log(m, div)
+                obs.next({
+                  el: div.getElementsByClassName('msg')[0] as HTMLDivElement,
+                  body: m.body,
+                  type:
+                    (m as any).who === 'Darek' ||
+                    (m.who === 'EWA' && m.other === 'Czarek') ||
+                    (m.who === 'CZAREK' && m.other === 'Ewa')
                 })
-              ),
-              filter(() => false),
-              startWith(true)
+              }
+            ).pipe(
+              switchMap(
+                ({
+                  el,
+                  body,
+                  type
+                }: {
+                  el: HTMLDivElement
+                  body: string
+                  type: boolean
+                }) =>
+                  (!type
+                    ? of(body)
+                    : from(body.split('')).pipe(
+                        scan((a, l) => a + l, ''),
+                        concatMap(t =>
+                          timer(50 + Math.random() * 50).pipe(map(() => t))
+                        )
+                      )
+                  ).pipe(tap(n => (el.innerText = n)))
+              )
             )
           ),
-          debounceTime(9000),
+          debounceTime(8000),
+          tap(() =>
+            Array.from(cont.children).forEach(d =>
+              Object.assign((d.children[0] as HTMLElement).style, {
+                opacity: '0',
+                filter: 'blur(25px)'
+              })
+            )
+          ),
+          delayWhen(() =>
+            timer(1000).pipe(
+              takeUntil(all.pipe(filter(m => m.type === 'msgShow')))
+            )
+          ),
           tap(() => (cont.innerHTML = ''))
         )
     }))

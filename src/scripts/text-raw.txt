@@ -4578,13 +4578,14 @@
           KRYSTIAN:
                Znowu żaba.
 
+                    msgShow_sms_LEON_Darek!517849625_Odpiszesz? Proszę..._frog
+
                     LEON nie zdążył zareagować i tel. przejmuje
                     KAROLINA.
 
                     KAROLINA czyta szybko i po cichu sms.
 
           KAROLINA:
-                    msgShow_sms_LEON_Darek!517849625_Odpiszesz? Proszę..._frog
 
                          (do Leona)
                Darek prosi o odpowiedź.
@@ -4598,12 +4599,13 @@
                     LEON bierze tel. do ręki i zaczyna pisać.
 
           LEON:
+
                Inaczej się nie odczepi.
 
-                    PROJEKTOR - stopniowo pojawia się teks pisany
-                    przez LEONA.
+                    msgShow_sms_Darek_LEON!517849625_Jestem na kolacji u znajomych. Odezwę się rano._frog
 
           LEON:
+
                          (głośno mówi co pisze)
                "Jestem na kolacji u znajomych. Odezwę się rano."
                Zobaczymy czy odpisze.
@@ -6044,7 +6046,7 @@
 
                     msgGet_sms_CZAREK_Ewa!882683498
 
-                    msgShow_sms_CZAREK_Ewa!882683498_Pragnęłam Cię dziś BARDZO
+                    msgShow_sms_CZAREK_Ewa!882683498_Pragnęłam Cię dziś BARDZO 😈 💋
 
                     Światło - szperacz 1 - w snopie światła stoją
                     ANIELA i CZAREK.
@@ -6060,7 +6062,7 @@
                Do Ewy i Roberta. Dziękuję im za wieczór.
 
           ANIELA:
-                    msgShow_sms_EWA_Czarek!882683498_A ja byłem rozgrzany do czerwoności
+                    msgShow_sms_EWA_Czarek!882683498_A ja byłem rozgrzany do czerwoności 🔥
 
                Świetnie było, prawda ?
 
