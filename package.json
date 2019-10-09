@@ -11,7 +11,9 @@
     "audio": "ts-node src/scripts/audio.ts",
     "audio-dev": "nodemon --watch src/scripts/ --exec 'ts-node' src/scripts/audio.ts",
     "dev": "rm -rf ./build && node_modules/.bin/webpack-dev-server --env DEV",
-    "server-dev": "nodemon --watch 'src/server/**/*.ts' --exec 'ts-node' src/server/index.ts"
+    "server-dev": "nodemon --watch 'src/server/**/*.ts' --exec 'ts-node' src/server/index.ts",
+    "server": "ts-node src/server/index.ts",
+    "static": "node src/server/static.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,7 @@
   "author": "-",
   "license": "ISC",
   "dependencies": {
+    "express": "4.17.1",
     "firebase": "^6.6.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
