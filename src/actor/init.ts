@@ -28,6 +28,7 @@ const preventBack = () => {
 const selectActor = () => {
   render(
     actors
+      .concat(['TEKST' as Actor])
       .map(
         a => `<button style="margin:32px;padding:32px" id="${a}">${a}</button>`
       )
@@ -41,7 +42,7 @@ const selectActor = () => {
     of(ps.get('a') || ('' as Actor))
   ).pipe(
     map(a => a.toUpperCase() as Actor),
-    filter(actor => actors.includes(actor)),
+    filter(actor => actor === ('TEKST' as Actor) || actors.includes(actor)),
     take(1),
     tap(() => !ps.has('fake') && fullscreen()),
     tap(
@@ -74,6 +75,11 @@ export const init = () =>
       ${text(a.actor)}
       <video style="z-index:-1;position:fixed" src="/assets/eclipse.mp4" autoplay loop></video>
       `)
+    ),
+    tap(
+      a =>
+        a.actor === ('TEKST' as Actor) &&
+        (document.body.style.overflow = 'auto')
     ),
     tap(() =>
       document.body.insertAdjacentHTML(

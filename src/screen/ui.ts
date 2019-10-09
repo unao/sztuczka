@@ -118,8 +118,8 @@ export const initPhoneUI = (root: HTMLElement) => {
         box-sizing:border-box;
         background-color:black"
     >
-      <div id="call-time" style="opacity:0.8;font-size:10px;margin:24px 0">00:00</div>
-      <div id="call-who" style="font-weight:bold;margin-bottom:24px">MARTUŚ</div>
+      <div id="call-time" style="opacity:0.8;font-size:16px;margin:24px 0">00:00</div>
+      <div id="call-who" style="font-size:32px;font-weight:bold;margin-bottom:24px">MARTUŚ</div>
       <div style="width:84px;height:84px;
         background-color:gray;
         display:flex; align-items:center;

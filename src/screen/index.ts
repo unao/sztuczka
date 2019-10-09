@@ -43,8 +43,7 @@ document.body.innerHTML = `<div style="background-color:black;width:100vw;">
   </div>
   </div>`
 
-document.getElementById('fullscreen')!.onclick = () =>
-  document.body.requestFullscreen()
+document.onclick = () => document.body.requestFullscreen()
 document.body.onfullscreenchange = () =>
   (document.getElementById(
     'fullscreen'
