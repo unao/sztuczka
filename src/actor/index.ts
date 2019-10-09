@@ -61,7 +61,7 @@ const handle = (a: Actor, send: Send): ProtocolHandler => all => ({
       }),
       switchMap(vid =>
         selfie(vid).pipe(
-          tap(f => send('img', { url: f, duration: 350 }, 'screen')),
+          tap(f => send('img', { url: f, duration: 1000 }, 'screen')),
           takeUntil(all.pipe(filter(x => x.type === 'selfieStop'))),
           finalize(() => vid.remove())
         )
