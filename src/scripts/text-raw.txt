@@ -27,6 +27,7 @@
                     numer nieznany.
 
           ANIELA:
+                    callStart_ANIELA_516455286
                     audioStart_call/CZAREK.mp3
                     audioStop_call/CZAREK.mp3
 
@@ -59,9 +60,8 @@
                ... mam labradora... tak, tak... LEŻEĆ... Tak, są
                serdeczne dla dzieci, a zwłaszcza dla dorosłych. Do
                widzenia.
-                         (kończy rozmowę tel.)
 
-                    PROJEKTOR - połączenie zakończone.
+                    callEnd_ANIELA_516455286
 
                     CZAREK i ANIELA stojąc już twarzą w twarz obejmują
                     się i patrzą sobie w oczy.

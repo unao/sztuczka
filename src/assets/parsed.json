@@ -6,6 +6,14 @@
         "title": "SCENA 1",
         "plot": [
           {
+            "id": "0_m1701117394",
+            "type": "callStart",
+            "who": "ANIELA",
+            "what": "callStart -- ANIELA -- 516455286",
+            "other": "516455286",
+            "number": ""
+          },
+          {
             "id": "0_1985949476",
             "type": "audioStart",
             "what": "audioStart -- call/CZAREK.mp3",
@@ -79,8 +87,16 @@
             "id": "0_1735410660"
           },
           {
+            "id": "0_1421172181",
+            "type": "callEnd",
+            "who": "ANIELA",
+            "what": "callEnd -- ANIELA -- 516455286",
+            "other": "516455286",
+            "number": ""
+          },
+          {
             "type": "desc",
-            "what": "(kończy rozmowę tel.) PROJEKTOR - połączenie zakończone. CZAREK i ANIELA stojąc już twarzą w twarz obejmują się i patrzą sobie w oczy.",
+            "what": "CZAREK i ANIELA stojąc już twarzą w twarz obejmują się i patrzą sobie w oczy.",
             "id": ""
           },
           {
