@@ -71,7 +71,6 @@ export const content = (
                 const div = document.createElement('div')
                 cont.append(div)
                 div.innerHTML = smsUI(m.other || m.number, m.who, '')
-                console.log(m, div)
                 obs.next({
                   el: div.getElementsByClassName('msg')[0] as HTMLDivElement,
                   body: m.body,
@@ -94,13 +93,13 @@ export const content = (
                 }) =>
                   (!type
                     ? of(body)
-                    : from(body.split('')).pipe(
+                    : from(Array.from(body)).pipe(
                         scan((a, l) => a + l, ''),
                         concatMap(t =>
-                          timer(50 + Math.random() * 50).pipe(map(() => t))
+                          timer(70 + Math.random() * 70).pipe(map(() => t))
                         )
                       )
-                  ).pipe(tap(n => (el.innerText = n)))
+                  ).pipe(tap(n => (el.innerHTML = n)))
               )
             )
           ),

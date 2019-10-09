@@ -2898,16 +2898,16 @@
 
                                    SCENA 19
 
-                    msgGet_sms_CZAREK_Roman!668541286
+                    msgGet_sms_CZAREK_Kapitan Roman!668541286
                     
-                    msgShow_sms_CZAREK_Roman!668541286_Jutr⚽ gramy ⚽<br />17:⚽⚽!
+                    msgShow_sms_CZAREK_Kapitan Roman!668541286_Jutr⚽ gramy ⚽<br />17:⚽⚽!
 
           ANIELA:
                O ! SMS.
 
-                    msgGet_sms_LEON_Roman!668541286
+                    msgGet_sms_LEON_Romek!668541286
                     
-                    msgShow_sms_LEON_Roman!668541286_Jutr⚽ gramy ⚽<br />17:⚽⚽!
+                    msgShow_sms_LEON_Romek!668541286_Jutr⚽ gramy ⚽<br />17:⚽⚽!
                
                O ! Dwa !
 
@@ -3115,8 +3115,8 @@
                                    SCENA 21
 
                     msgGet_sms_KRYSTIAN_JJ_hop-hop_jacks
-          
-                    PROJEKTOR - treningowa aplikacja KRYSTIANA.
+
+                    img_jumping-jacks.gif                    
 
           KAROLINA:
                Co to ?
@@ -3135,8 +3135,6 @@
 
           ANIELA:
                Dokąd idziesz ? Co to takiego ?
-
-                    img_jumping-jacks.gif
 
           KRYSTIAN:
                Program treningowy. Trwa dwanaście tygodni. Można
@@ -4509,7 +4507,7 @@
                kończyć. Dzięki.
 
           ROBERT:
-               Nela...
+               Nela ...
 
                     callEnd_ROBERT_Neluś
 
@@ -5190,8 +5188,9 @@
           CZAREK:
                Naprawdę muszę kończyć. Wybacz.
 
-                    audioStart_sound/waterphone3.mp3
                     callEnd_CZAREK_Marcin!505414628
+
+                    audioStart_sound/waterphone3.mp3
 
                     CZAREK jednym ruchem kończy rozmowę.
 
@@ -5414,7 +5413,7 @@
                                    SCENA 34
 
                     msgGet_sms_KAROLINA_Facebook
-                    msgShow_sms_KAROLINA_Facebook_Jakie włożyłaś majtki ? Jedwabne figi, czy koronkowe stringi?
+                    msgShow_sms_KAROLINA_Facebook_Jakie włożyłaś majtki? Jedwabne figi, czy koronkowe stringi?
 
                     LEON podnosi tel. KAROLINY i odczytuje wiadomość.
 
@@ -6054,9 +6053,11 @@
 
                     msgShow_sms_CZAREK_Marika!505843759_Zadzwoń! to pilne!
 
+                    msgShow_sms_CZAREK_Ewa!882683498_Pragnęłam Cię dziś BARDZO 😈 💋
+
                     msgGet_sms_CZAREK_Ewa!882683498
 
-                    msgShow_sms_CZAREK_Ewa!882683498_Pragnęłam Cię dziś BARDZO 😈 💋
+                    msgShow_sms_EWA_Czarek!882683498_A ja byłem rozgrzany do czerwoności 🔥
 
                     Światło - szperacz 1 - w snopie światła stoją
                     ANIELA i CZAREK.
@@ -6072,7 +6073,7 @@
                Do Ewy i Roberta. Dziękuję im za wieczór.
 
           ANIELA:
-                    msgShow_sms_EWA_Czarek!882683498_A ja byłem rozgrzany do czerwoności 🔥
+                    
 
                Świetnie było, prawda ?
 

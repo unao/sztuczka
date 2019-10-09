@@ -5555,23 +5555,23 @@
         "title": "SCENA 19",
         "plot": [
           {
-            "id": "18_3503523",
+            "id": "18_m2012389419",
             "type": "msgGet",
             "who": "CZAREK",
             "what": "msgGet:sms -- CZAREK",
             "kind": "sms",
-            "other": "Roman",
+            "other": "Kapitan Roman",
             "number": "668541286",
             "body": "",
             "variant": ""
           },
           {
-            "id": "18_942174714",
+            "id": "18_m1997078868",
             "type": "msgShow",
             "who": "CZAREK",
             "what": "msgShow:sms -- CZAREK -- Jutr⚽ gramy ⚽<br />17:⚽⚽!",
             "kind": "sms",
-            "other": "Roman",
+            "other": "Kapitan Roman",
             "number": "668541286",
             "body": "Jutr⚽ gramy ⚽<br />17:⚽⚽!",
             "variant": ""
@@ -5583,23 +5583,23 @@
             "id": "18_1765034723"
           },
           {
-            "id": "18_1205688547",
+            "id": "18_m1477061092",
             "type": "msgGet",
             "who": "LEON",
             "what": "msgGet:sms -- LEON",
             "kind": "sms",
-            "other": "Roman",
+            "other": "Romek",
             "number": "668541286",
             "body": "",
             "variant": ""
           },
           {
-            "id": "18_m547437234",
+            "id": "18_699514183",
             "type": "msgShow",
             "who": "LEON",
             "what": "msgShow:sms -- LEON -- Jutr⚽ gramy ⚽<br />17:⚽⚽!",
             "kind": "sms",
-            "other": "Roman",
+            "other": "Romek",
             "number": "668541286",
             "body": "Jutr⚽ gramy ⚽<br />17:⚽⚽!",
             "variant": ""
@@ -6092,9 +6092,10 @@
             "variant": "jacks"
           },
           {
-            "type": "desc",
-            "what": "PROJEKTOR - treningowa aplikacja KRYSTIANA.",
-            "id": ""
+            "id": "20_252438610",
+            "type": "img",
+            "who": "",
+            "what": "jumping-jacks.gif"
           },
           {
             "type": "say",
@@ -6135,12 +6136,6 @@
             "who": "ANIELA",
             "what": "Dokąd idziesz ? Co to takiego ?",
             "id": "20_2034934642"
-          },
-          {
-            "id": "20_252438610",
-            "type": "img",
-            "who": "",
-            "what": "jumping-jacks.gif"
           },
           {
             "type": "say",
@@ -8749,8 +8744,8 @@
           {
             "type": "say",
             "who": "ROBERT",
-            "what": "Nela...",
-            "id": "26_1693987232"
+            "what": "Nela ...",
+            "id": "26_973579612"
           },
           {
             "id": "26_m761094494",
@@ -10057,18 +10052,18 @@
             "id": "31_1276221927"
           },
           {
-            "id": "31_1052597089",
-            "type": "audioStart",
-            "what": "audioStart -- sound/waterphone3.mp3",
-            "url": "sound/waterphone3.mp3"
-          },
-          {
             "id": "31_698758057",
             "type": "callEnd",
             "who": "CZAREK",
             "what": "callEnd -- CZAREK -- Marcin!505414628",
             "other": "Marcin",
             "number": "505414628"
+          },
+          {
+            "id": "31_1052597089",
+            "type": "audioStart",
+            "what": "audioStart -- sound/waterphone3.mp3",
+            "url": "sound/waterphone3.mp3"
           },
           {
             "type": "desc",
@@ -10346,14 +10341,14 @@
             "variant": ""
           },
           {
-            "id": "33_1112517858",
+            "id": "33_2075717294",
             "type": "msgShow",
             "who": "KAROLINA",
-            "what": "msgShow:sms -- KAROLINA -- Jakie włożyłaś majtki ? Jedwabne figi, czy koronkowe stringi?",
+            "what": "msgShow:sms -- KAROLINA -- Jakie włożyłaś majtki? Jedwabne figi, czy koronkowe stringi?",
             "kind": "sms",
             "other": "Facebook",
             "number": "",
-            "body": "Jakie włożyłaś majtki ? Jedwabne figi, czy koronkowe stringi?",
+            "body": "Jakie włożyłaś majtki? Jedwabne figi, czy koronkowe stringi?",
             "variant": ""
           },
           {
@@ -11403,6 +11398,17 @@
             "variant": ""
           },
           {
+            "id": "38_m365839626",
+            "type": "msgShow",
+            "who": "CZAREK",
+            "what": "msgShow:sms -- CZAREK -- Pragnęłam Cię dziś BARDZO 😈 💋",
+            "kind": "sms",
+            "other": "Ewa",
+            "number": "882683498",
+            "body": "Pragnęłam Cię dziś BARDZO 😈 💋",
+            "variant": ""
+          },
+          {
             "id": "38_m895628653",
             "type": "msgGet",
             "who": "CZAREK",
@@ -11414,14 +11420,14 @@
             "variant": ""
           },
           {
-            "id": "38_m365839626",
+            "id": "38_1089599092",
             "type": "msgShow",
-            "who": "CZAREK",
-            "what": "msgShow:sms -- CZAREK -- Pragnęłam Cię dziś BARDZO 😈 💋",
+            "who": "EWA",
+            "what": "msgShow:sms -- EWA -- A ja byłem rozgrzany do czerwoności 🔥",
             "kind": "sms",
-            "other": "Ewa",
+            "other": "Czarek",
             "number": "882683498",
-            "body": "Pragnęłam Cię dziś BARDZO 😈 💋",
+            "body": "A ja byłem rozgrzany do czerwoności 🔥",
             "variant": ""
           },
           {
@@ -11440,17 +11446,6 @@
             "who": "CZAREK",
             "what": "Do Ewy i Roberta. Dziękuję im za wieczór.",
             "id": "38_1682430601"
-          },
-          {
-            "id": "38_1089599092",
-            "type": "msgShow",
-            "who": "EWA",
-            "what": "msgShow:sms -- EWA -- A ja byłem rozgrzany do czerwoności 🔥",
-            "kind": "sms",
-            "other": "Czarek",
-            "number": "882683498",
-            "body": "A ja byłem rozgrzany do czerwoności 🔥",
-            "variant": ""
           },
           {
             "type": "say",
