@@ -42,7 +42,7 @@ const configs: { [K in string]: ReturnType<typeof def> } = {
     false,
     (el: HTMLAudioElement) =>
       timer(4000).pipe(
-        switchMap(() => smoothVolume(el, { to: 0.1, duration: 1000 }))
+        switchMap(() => smoothVolume(el, { to: 0.4, duration: 1000 }))
       )
   ]
 }

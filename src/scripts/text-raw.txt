@@ -3114,9 +3114,7 @@
 
                                    SCENA 21
 
-                    msgGet_sms_KRYSTIAN_JJ_hop-hop_jacks
-
-                    img_jumping-jacks.gif                    
+                    msgGet_sms_KRYSTIAN_JJ_hop-hop_jacks                    
 
           KAROLINA:
                Co to ?
@@ -3139,7 +3137,9 @@
           KRYSTIAN:
                Program treningowy. Trwa dwanaście tygodni. Można
                schudnąć od ośmiu do dwunastu kilo.
-                         (zaczyna ćwiczyć - pajacyki)
+
+                         img_jumping-jacks.gif
+
                Gwarantowany sukces.
 
                     EWA śmieje się.
@@ -3392,7 +3392,7 @@
           LEON:
                Żeby podkreślić.
 
-                    img_joga.png
+                    img_joga.jpg
 
           KRYSTIAN:
                Iza przesyła czasem... aaałłł...
@@ -3442,7 +3442,7 @@
           CZAREK:
                Puszczaj ! Dziś wszyscy możemy zobaczyć.
 
-                    img_joga.png_
+                    img_joga.jpg_
 
                     CZAREK odbiera tel. KRYSTIANOWI.
 

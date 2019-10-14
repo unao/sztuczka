@@ -6108,12 +6108,6 @@
             "variant": "jacks"
           },
           {
-            "id": "20_252438610",
-            "type": "img",
-            "who": "",
-            "what": "jumping-jacks.gif"
-          },
-          {
             "type": "say",
             "who": "KAROLINA",
             "what": "Co to ?",
@@ -6160,9 +6154,10 @@
             "id": "20_2091121679"
           },
           {
-            "type": "desc",
-            "what": "(zaczyna ćwiczyć - pajacyki)",
-            "id": ""
+            "id": "20_252438610",
+            "type": "img",
+            "who": "",
+            "what": "jumping-jacks.gif"
           },
           {
             "type": "say",
@@ -6603,10 +6598,10 @@
             "id": "22_m1288138273"
           },
           {
-            "id": "22_m2120965927",
+            "id": "22_m2120971631",
             "type": "img",
             "who": "",
-            "what": "joga.png"
+            "what": "joga.jpg"
           },
           {
             "type": "say",
@@ -6689,10 +6684,10 @@
             "id": "22_m825954127"
           },
           {
-            "id": "22_m1325434202",
+            "id": "22_m1325611026",
             "type": "img",
             "who": "",
-            "what": "joga.png"
+            "what": "joga.jpg"
           },
           {
             "type": "desc",
