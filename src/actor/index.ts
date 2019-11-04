@@ -14,7 +14,8 @@ import {
   finalize,
   Send,
   repeat,
-  fullscreen
+  fullscreen,
+  exhaustMap
 } from 'common'
 import { setCurrent } from './text'
 import { merge, fromEvent } from 'rxjs'
@@ -61,7 +62,18 @@ const handle = (a: Actor, send: Send): ProtocolHandler => all => ({
       }),
       switchMap(vid =>
         selfie(vid).pipe(
-          tap(f => send('img', { url: f, duration: 1000 }, 'screen')),
+          exhaustMap(f => {
+            const url = `/selfie/${Date.now()}.png`
+            return fetch(url, {
+              method: 'POST',
+              body: f,
+              headers: {
+                'content-type': 'text/plain'
+              }
+            })
+              .then(() => send('img', { url, duration: 1000 }, 'screen'))
+              .catch(_ => console.warn(_))
+          }),
           takeUntil(all.pipe(filter(x => x.type === 'selfieStop'))),
           finalize(() => vid.remove())
         )

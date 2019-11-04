@@ -6,25 +6,25 @@ import * as path from 'path'
 import { localIP } from './utils'
 import { Role, Message } from '../common'
 
-const inTemp = (s: string) => path.resolve(__dirname, '../../', s)
+// const inTemp = (s: string) => path.resolve(__dirname, '../../', s)
 
-const initSelfie = () => {
-  if (!fs.existsSync(inTemp('selfie'))) {
-    fs.mkdirSync(inTemp('selfie'))
-  }
-  const sessionId = Date.now()
-  let fileId = 0
-  fs.mkdirSync(inTemp(`selfie/${sessionId}`))
-  return (img: string) => {
-    const i = img.replace(/^data:image\/png;base64,/, '')
-    fs.writeFile(
-      inTemp(`selfie/${sessionId}/${fileId++}-${Date.now()}.png`),
-      i,
-      'base64',
-      err => err && console.error(err)
-    )
-  }
-}
+// const initSelfie = () => {
+//   if (!fs.existsSync(inTemp('selfie'))) {
+//     fs.mkdirSync(inTemp('selfie'))
+//   }
+//   const sessionId = Date.now()
+//   let fileId = 0
+//   fs.mkdirSync(inTemp(`selfie/${sessionId}`))
+//   return (img: string) => {
+//     const i = img.replace(/^data:image\/png;base64,/, '')
+//     fs.writeFile(
+//       inTemp(`selfie/${sessionId}/${fileId++}-${Date.now()}.png`),
+//       i,
+//       'base64',
+//       err => err && console.error(err)
+//     )
+//   }
+// }
 
 const run = (port = 3356) => {
   const host = localIP()
@@ -40,7 +40,7 @@ const run = (port = 3356) => {
   server.listen(port, '0.0.0.0')
   console.log(`Server listening on ${host}:${port}`)
 
-  const saveSelfie = initSelfie()
+  // const saveSelfie = initSelfie()
 
   const conn: { [K in Role]?: WebSocket } = {}
   const sendConn = () =>
@@ -79,9 +79,9 @@ const run = (port = 3356) => {
         wss.clients.forEach(w => w.send(m))
       }
 
-      if (msg.type === 'img') {
-        saveSelfie((msg as Message<'img'>).payload.url)
-      }
+      // if (msg.type === 'img') {
+      // saveSelfie((msg as Message<'img'>).payload.url)
+      // }
     })
   })
 }
